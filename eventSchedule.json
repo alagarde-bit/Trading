@@ -1,0 +1,16 @@
+{
+  "UK": {
+    "Inflationary Reports": "2025-07-16",
+    "Consumer Confidence": "2025-07-24",
+    "Industrial Reports": "2025-07-24",
+    "Trade Balance Reports": "2025-08-15",
+    "Labor Market Reports": "2025-07-17"
+  },
+  "Australia": {
+    "Labor Market Reports": "2025-07-16",
+    "Industrial Reports": "2025-07-23",
+    "Inflationary Reports": "2025-07-29",
+    "Trade Balance Reports": "2025-08-06",
+    "Consumer Confidence": "2025-08-12"
+  }
+}

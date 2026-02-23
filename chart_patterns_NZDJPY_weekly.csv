@@ -1,0 +1,586 @@
+date,open,high,low,close,pattern
+2014-11-14,88.92,92.257,88.731,91.931,
+2014-11-21,92.55,93.677,91.797,92.91,
+2014-11-28,93.056,93.29,91.811,93.03,
+2014-12-05,92.9,93.98,92.493,93.66,FallingBottoms_M1_P142_2 ;FallingTops_X1_P240_4 
+2014-12-12,93.574,93.66,90.619,92.314,FallingBottoms_M1_P274_4 ;FallingTops_X1_P105_2 ;FallingTops_X1_P352_8 ;FallingTops_X1_P458_12 ;FallingTops_X1_P548_26 ;FallingTops_X1_P625_52 
+2014-12-19,91.958,93.02,89.956,92.51,FallingBottoms_M1_P15_NN 
+2015-01-02,92.441,93.85,92.063,92.86,
+2015-01-09,92.424,93.749,91.591,92.92,
+2015-01-16,92.938,93.05,89.823,91.7,FallingBottoms_M2_P142_2 ;FallingBottoms_M2_P274_4 ;FallingTops_X1_P459_12 ;FallingTops_X1_P549_26 ;FallingTops_X1_P626_52 ;FallingTops_X2_P105_2 ;FallingTops_X2_P240_4 ;FallingTops_X2_P352_8 ;FallingTops_X2_P458_12 ;FallingTops_X2_P548_26 ;FallingTops_X2_P625_52 
+2015-01-23,91.373,91.912,87.62,87.84,
+2015-01-30,87.252,88.34,84.753,85.29,
+2015-02-06,84.895,87.832,84.047,87.66,FallingBottoms_M1_P16_NN ;FallingBottoms_M1_P573_26 ;FallingBottoms_M2_P15_NN ;FallingBottoms_M3_P142_2 ;FallingBottoms_M3_P274_4 ;FallingTops_X3_P105_2 ;RisingBottoms_M1_P194_4 ;RisingBottoms_M1_P62_2 ;RisingTops_X1_P19_2 
+2015-02-13,87.511,88.972,87.24,88.53,
+2015-02-20,88.692,90.106,88.512,89.51,FallingTops_X3_P240_4 ;RisingTops_X1_P154_4 
+2015-02-27,89.573,90.596,88.661,90.44,RisingTops_X2_P19_2 
+2015-03-06,90.368,91.102,88.796,88.9,RisingBottoms_M1_P63_2 ;RisingBottoms_M2_P62_2 
+2015-03-13,88.892,89.926,87.247,89.024,
+2015-03-20,88.974,91.142,88.203,90.799,FallingTops_X3_P352_8 ;RisingBottoms_M2_P194_4 ;RisingTops_X2_P154_4 ;RisingTops_X3_P19_2 
+2015-03-27,90.875,91.905,89.936,90.09,
+2015-04-03,90.08,90.643,88.734,90.28,RisingBottoms_M2_P63_2 ;RisingBottoms_M3_P62_2 
+2015-04-10,90.39,91.52,89.863,90.51,
+2015-04-17,90.52,91.818,89.007,91.3,FallingTops_X1_P241_4 ;FallingTops_X1_P353_8 ;FallingTops_X1_P460_12 ;FallingTops_X2_P459_12 ;FallingTops_X3_P458_12 ;RisingTops_X3_P154_4 
+2015-04-24,91.41,92.412,90.198,90.4,FallingBottoms_M1_P143_2 ;FallingTops_X1_P550_26 ;FallingTops_X1_P627_52 ;FallingTops_X1_P9_NN ;FallingTops_X2_P549_26 ;FallingTops_X2_P626_52 ;FallingTops_X3_P548_26 ;FallingTops_X3_P625_52 ;RisingBottoms_M3_P63_2 
+2015-05-01,90.29,92.063,89.949,90.56,FallingBottoms_M1_P275_4 ;RisingBottoms_M3_P194_4 
+2015-05-08,90.51,90.781,88.758,89.72,FallingTops_X1_P106_2 ;FallingTops_X1_P242_4 ;FallingTops_X1_P354_8 ;FallingTops_X1_P461_12 ;FallingTops_X2_P241_4 ;FallingTops_X2_P353_8 ;FallingTops_X2_P460_12 ;FallingTops_X3_P459_12 
+2015-05-15,88.921,90.111,87.635,89.11,FallingBottoms_M1_P144_2 ;FallingBottoms_M1_P386_8 ;FallingBottoms_M2_P143_2 ;FallingTops_X1_P551_26 ;FallingTops_X1_P628_52 ;FallingTops_X2_P550_26 ;FallingTops_X2_P627_52 ;FallingTops_X3_P549_26 ;FallingTops_X3_P626_52 
+2015-05-22,88.93,89.396,88.282,88.73,FallingBottoms_M1_P276_4 ;FallingBottoms_M1_P489_12 ;FallingBottoms_M2_P275_4 
+2015-05-29,88.812,89.955,87.862,88.18,FallingTops_X1_P107_2 ;FallingTops_X1_P243_4 ;FallingTops_X1_P355_8 ;FallingTops_X1_P462_12 ;FallingTops_X2_P106_2 ;FallingTops_X2_P242_4 ;FallingTops_X2_P354_8 ;FallingTops_X2_P461_12 ;FallingTops_X3_P241_4 ;FallingTops_X3_P353_8 ;FallingTops_X3_P460_12 
+2015-06-05,88.11,89.271,88.016,88.5,
+2015-06-12,88.56,89.108,85.878,86.16,FallingBottoms_M1_P145_2 ;FallingBottoms_M1_P277_4 ;FallingBottoms_M1_P387_8 ;FallingBottoms_M1_P490_12 ;FallingBottoms_M2_P144_2 ;FallingBottoms_M2_P276_4 ;FallingBottoms_M2_P386_8 ;FallingBottoms_M2_P489_12 ;FallingBottoms_M3_P143_2 ;FallingBottoms_M3_P275_4 ;FallingTops_X1_P552_26 ;FallingTops_X1_P629_52 ;FallingTops_X2_P551_26 ;FallingTops_X2_P628_52 ;FallingTops_X3_P550_26 ;FallingTops_X3_P627_52 
+2015-06-19,86.14,86.578,84.506,84.7,FallingBottoms_M1_P574_26 ;FallingBottoms_M2_P573_26 ;FallingTops_X1_P108_2 ;FallingTops_X1_P244_4 ;FallingTops_X1_P356_8 ;FallingTops_X1_P463_12 ;FallingTops_X2_P107_2 ;FallingTops_X2_P243_4 ;FallingTops_X2_P355_8 ;FallingTops_X2_P462_12 ;FallingTops_X3_P106_2 ;FallingTops_X3_P242_4 ;FallingTops_X3_P354_8 ;FallingTops_X3_P461_12 
+2015-06-26,84.729,85.682,84.502,84.73,
+2015-07-03,83.531,84.544,81.857,82.18,FallingBottoms_M1_P388_8 ;FallingBottoms_M1_P491_12 ;FallingBottoms_M2_P145_2 ;FallingBottoms_M2_P277_4 ;FallingBottoms_M2_P387_8 ;FallingBottoms_M2_P490_12 ;FallingBottoms_M3_P144_2 ;FallingBottoms_M3_P276_4 ;FallingBottoms_M3_P386_8 ;FallingBottoms_M3_P489_12 ;FallingTops_X1_P553_26 ;FallingTops_X2_P552_26 ;FallingTops_X2_P629_52 ;FallingTops_X3_P551_26 ;FallingTops_X3_P628_52 
+2015-07-10,81.827,82.8,80.655,82.57,FallingBottoms_M1_P575_26 ;FallingBottoms_M2_P574_26 ;FallingBottoms_M3_P573_26 ;FallingTops_X1_P109_2 ;FallingTops_X1_P245_4 ;FallingTops_X1_P357_8 ;FallingTops_X2_P108_2 ;FallingTops_X2_P244_4 ;FallingTops_X2_P356_8 ;FallingTops_X2_P463_12 ;FallingTops_X3_P107_2 ;FallingTops_X3_P243_4 ;FallingTops_X3_P355_8 ;FallingTops_X3_P462_12 
+2015-07-17,82.18,83.028,80.444,80.87,FallingBottoms_M2_P16_NN ;FallingBottoms_M3_P15_NN 
+2015-07-24,80.965,82.87,80.749,81.36,FallingBottoms_M3_P145_2 ;FallingBottoms_M3_P277_4 
+2015-07-31,81.46,83.286,81.231,81.59,FallingTops_X1_P110_2 ;FallingTops_X2_P109_2 ;FallingTops_X3_P108_2 
+2015-08-07,81.69,82.402,81.018,82.244,
+2015-08-14,82.19,82.646,80.953,81.24,FallingTops_X1_P246_4 ;FallingTops_X2_P245_4 ;FallingTops_X2_P357_8 ;FallingTops_X3_P244_4 ;FallingTops_X3_P356_8 ;FallingTops_X3_P463_12 
+2015-08-21,81.33,82.19,81.177,81.5,FallingTops_X2_P110_2 ;FallingTops_X3_P109_2 
+2015-08-28,80.716,80.786,72.349,78.66,FallingBottoms_M1_P576_26 ;FallingBottoms_M2_P388_8 ;FallingBottoms_M2_P491_12 ;FallingBottoms_M2_P575_26 ;FallingBottoms_M3_P387_8 ;FallingBottoms_M3_P490_12 ;FallingBottoms_M3_P574_26 
+2015-09-04,78.168,78.464,74.566,74.7,FallingBottoms_M1_P641_52 ;FallingBottoms_M3_P16_NN ;FallingTops_X2_P246_4 ;FallingTops_X3_P245_4 ;RisingBottoms_M1_P195_4 ;RisingBottoms_M1_P64_2 
+2015-09-11,74.98,77.817,74.434,76.08,
+2015-09-18,76.124,77.509,75.322,76.69,FallingBottoms_M3_P388_8 ;FallingBottoms_M3_P491_12 ;FallingTops_X3_P110_2 ;RisingBottoms_M1_P315_8 ;RisingBottoms_M1_P427_12 ;RisingTops_X1_P20_2 
+2015-09-25,76.701,77.21,74.865,76.95,RisingBottoms_M1_P196_4 ;RisingBottoms_M2_P195_4 ;RisingBottoms_M2_P64_2 
+2015-10-02,76.83,77.434,75.163,77.23,FallingTops_X3_P246_4 ;RisingTops_X1_P155_4 
+2015-10-09,77.3,80.848,77.193,80.48,RisingBottoms_M2_P315_8 ;RisingBottoms_M2_P427_12 ;RisingTops_X1_P21_2 ;RisingTops_X2_P20_2 
+2015-10-16,80.284,81.941,79.241,81.28,FallingTops_X3_P357_8 ;RisingBottoms_M3_P64_2 
+2015-10-23,81.25,82.689,80.242,81.96,RisingTops_X2_P155_4 
+2015-10-30,81.942,82.27,80.216,81.69,RisingTops_X2_P21_2 ;RisingTops_X3_P20_2 
+2015-11-06,81.442,81.877,79.891,80.31,
+2015-11-13,80.48,81.07,79.819,80.13,RisingBottoms_M2_P196_4 ;RisingBottoms_M3_P195_4 
+2015-11-20,79.936,81.176,79.441,80.54,FallingBottoms_M1_P17_NN ;FallingBottoms_M1_P389_8 ;FallingBottoms_M1_P492_12 ;RisingBottoms_M3_P315_8 ;RisingBottoms_M3_P427_12 
+2015-11-27,80.59,80.866,79.665,80.14,
+2015-12-04,80.246,83.376,79.964,83.01,FallingBottoms_M1_P278_4 ;FallingTops_X1_P10_NN ;FallingTops_X1_P111_2 ;FallingTops_X1_P247_4 ;FallingTops_X1_P358_8 ;FallingTops_X1_P464_12 ;FallingTops_X1_P554_26 ;FallingTops_X2_P553_26 ;FallingTops_X2_P9_NN ;FallingTops_X3_P552_26 ;FallingTops_X3_P629_52 ;RisingBottoms_M3_P196_4 ;RisingTops_X3_P155_4 ;RisingTops_X3_P21_2 
+2015-12-11,82.878,82.979,79.697,81.19,
+2015-12-18,81.25,83.165,80.905,81.46,
+2015-12-25,81.619,82.793,81.458,82.23,FallingTops_X2_P111_2 
+2016-01-01,82.196,82.89,81.942,82.15,
+2016-01-08,82.168,82.247,76.649,76.69,FallingBottoms_M1_P279_4 ;FallingBottoms_M1_P390_8 ;FallingBottoms_M1_P493_12 ;FallingBottoms_M2_P278_4 ;FallingBottoms_M2_P389_8 ;FallingBottoms_M2_P492_12 ;FallingTops_X1_P248_4 ;FallingTops_X1_P359_8 ;FallingTops_X1_P465_12 ;FallingTops_X1_P555_26 ;FallingTops_X2_P247_4 ;FallingTops_X2_P358_8 ;FallingTops_X2_P464_12 ;FallingTops_X2_P554_26 ;FallingTops_X3_P553_26 
+2016-01-15,76.154,77.965,74.592,75.6,
+2016-01-22,75.231,77.365,73.629,77.05,FallingBottoms_M2_P17_NN ;FallingTops_X3_P111_2 ;RisingTops_X1_P22_2 
+2016-01-29,76.883,79.087,75.724,78.58,FallingTops_X1_P249_4 ;FallingTops_X1_P360_8 ;FallingTops_X1_P466_12 ;FallingTops_X1_P556_26 ;FallingTops_X2_P10_NN ;FallingTops_X2_P248_4 ;FallingTops_X2_P359_8 ;FallingTops_X2_P465_12 ;FallingTops_X2_P555_26 ;FallingTops_X3_P247_4 ;FallingTops_X3_P358_8 ;FallingTops_X3_P464_12 ;FallingTops_X3_P554_26 ;FallingTops_X3_P9_NN 
+2016-02-05,78.454,79.387,77.34,77.35,
+2016-02-12,77.39,78.048,73.191,75.06,FallingBottoms_M1_P391_8 ;FallingBottoms_M1_P494_12 ;FallingBottoms_M2_P279_4 ;FallingBottoms_M2_P390_8 ;FallingBottoms_M2_P493_12 ;FallingBottoms_M3_P278_4 ;FallingBottoms_M3_P389_8 ;FallingBottoms_M3_P492_12 ;RisingTops_X2_P22_2 
+2016-02-19,75.206,76.535,74.153,74.63,
+2016-02-26,74.658,76.611,73.538,75.52,
+2016-03-04,74.915,77.81,73.933,77.48,FallingBottoms_M3_P279_4 ;FallingTops_X1_P112_2 ;FallingTops_X1_P250_4 ;FallingTops_X2_P249_4 ;FallingTops_X3_P248_4 ;RisingTops_X3_P22_2 
+2016-03-11,77.425,77.446,74.983,76.85,FallingTops_X1_P361_8 ;FallingTops_X1_P467_12 ;FallingTops_X1_P557_26 ;FallingTops_X2_P360_8 ;FallingTops_X2_P466_12 ;FallingTops_X2_P556_26 ;FallingTops_X3_P359_8 ;FallingTops_X3_P465_12 ;FallingTops_X3_P555_26 
+2016-03-18,76.499,76.924,74.413,75.76,
+2016-03-25,75.67,75.98,74.864,75.6,
+2016-04-01,75.762,78.23,75.642,77.06,FallingTops_X1_P113_2 ;FallingTops_X2_P112_2 
+2016-04-08,76.985,77.094,72.878,73.51,FallingBottoms_M1_P392_8 ;FallingBottoms_M1_P495_12 ;FallingBottoms_M1_P577_26 ;FallingBottoms_M1_P642_52 ;FallingBottoms_M2_P391_8 ;FallingBottoms_M2_P494_12 ;FallingBottoms_M2_P576_26 ;FallingBottoms_M2_P641_52 ;FallingBottoms_M3_P17_NN ;FallingBottoms_M3_P390_8 ;FallingBottoms_M3_P493_12 ;FallingBottoms_M3_P575_26 ;FallingTops_X1_P251_4 ;FallingTops_X1_P362_8 ;FallingTops_X1_P468_12 ;FallingTops_X1_P558_26 ;FallingTops_X2_P250_4 ;FallingTops_X2_P361_8 ;FallingTops_X2_P467_12 ;FallingTops_X2_P557_26 ;FallingTops_X3_P249_4 ;FallingTops_X3_P360_8 ;FallingTops_X3_P466_12 ;FallingTops_X3_P556_26 
+2016-04-15,73.763,75.745,73.125,75.156,
+2016-04-22,74.575,77.128,74.388,76.56,FallingTops_X2_P113_2 ;FallingTops_X3_P112_2 
+2016-04-29,76.58,77.36,74.101,74.17,FallingTops_X1_P363_8 ;FallingTops_X2_P251_4 ;FallingTops_X2_P362_8 ;FallingTops_X2_P468_12 ;FallingTops_X2_P558_26 ;FallingTops_X3_P250_4 ;FallingTops_X3_P361_8 ;FallingTops_X3_P467_12 ;FallingTops_X3_P557_26 
+2016-05-06,74.505,74.91,72.534,73.19,FallingBottoms_M1_P393_8 ;FallingBottoms_M1_P496_12 ;FallingBottoms_M1_P578_26 ;FallingBottoms_M1_P643_52 ;FallingBottoms_M2_P392_8 ;FallingBottoms_M2_P495_12 ;FallingBottoms_M2_P577_26 ;FallingBottoms_M2_P642_52 ;FallingBottoms_M3_P391_8 ;FallingBottoms_M3_P494_12 ;FallingBottoms_M3_P576_26 ;FallingBottoms_M3_P641_52 
+2016-05-13,73.35,74.716,72.984,73.475,
+2016-05-20,73.389,74.826,73.364,74.42,FallingTops_X3_P113_2 
+2016-05-27,74.629,74.723,73.264,73.74,FallingTops_X3_P251_4 
+2016-06-03,74.15,75.413,73.806,74.09,
+2016-06-10,73.967,76.365,73.75,75.43,FallingTops_X2_P363_8 ;FallingTops_X3_P10_NN ;FallingTops_X3_P362_8 ;FallingTops_X3_P468_12 ;RisingTops_X1_P399_12 
+2016-06-17,75.252,75.377,72.301,73.4,FallingTops_X1_P252_4 
+2016-06-24,74.215,77.72,69.172,72.85,FallingBottoms_M2_P393_8 ;FallingBottoms_M2_P496_12 ;FallingBottoms_M2_P578_26 ;FallingBottoms_M2_P643_52 ;FallingBottoms_M3_P392_8 ;FallingBottoms_M3_P495_12 ;FallingBottoms_M3_P577_26 ;FallingBottoms_M3_P642_52 
+2016-07-01,72.605,73.821,71.117,73.47,
+2016-07-08,73.69,74.272,71.236,73.39,
+2016-07-15,73.477,76.845,73.307,74.43,FallingTops_X2_P252_4 
+2016-07-22,74.755,75.613,73.712,74.26,FallingTops_X3_P363_8 
+2016-07-29,74.363,75.053,73.109,73.52,
+2016-08-05,73.749,74.186,72.202,72.71,FallingTops_X3_P252_4 ;RisingBottoms_M1_P197_4 ;Staircase_X0_P147_4 
+2016-08-12,72.774,74.336,72.34,72.9,FallingBottoms_M3_P393_8 ;FallingBottoms_M3_P496_12 ;FallingBottoms_M3_P578_26 ;FallingBottoms_M3_P643_52 ;RisingBottoms_M1_P316_8 ;RisingBottoms_M1_P428_12 ;RisingBottoms_M1_P526_26 ;RisingBottoms_M1_P606_52 
+2016-08-19,72.859,73.445,72.209,72.91,
+2016-08-26,72.942,74.018,72.659,73.67,RisingBottoms_M1_P198_4 ;RisingBottoms_M2_P197_4 ;Staircase_M1_P147_4 
+2016-09-02,73.673,75.992,73.478,75.86,RisingTops_X1_P400_12 ;RisingTops_X2_P399_12 ;Staircase_X0_P148_4 
+2016-09-09,75.913,76.062,75.03,75.1,
+2016-09-16,74.908,75.369,74.032,74.25,
+2016-09-23,74.34,74.994,72.956,73.15,RisingBottoms_M1_P199_4 ;RisingBottoms_M2_P198_4 ;RisingBottoms_M3_P197_4 ;Staircase_M1_P148_4 ;Staircase_X1_P147_4 
+2016-09-30,73.077,74.155,72.639,73.81,RisingBottoms_M1_P317_8 ;RisingBottoms_M1_P429_12 ;RisingBottoms_M1_P527_26 ;RisingBottoms_M1_P607_52 ;RisingBottoms_M2_P316_8 ;RisingBottoms_M2_P428_12 ;RisingBottoms_M2_P526_26 ;RisingBottoms_M2_P606_52 
+2016-10-07,73.849,74.729,73.479,73.74,
+2016-10-14,73.882,74.162,72.717,73.75,
+2016-10-21,73.801,75.271,73.664,74.32,RisingBottoms_M1_P200_4 ;RisingBottoms_M1_P318_8 ;RisingBottoms_M1_P430_12 ;RisingBottoms_M1_P528_26 ;RisingBottoms_M1_P608_52 ;RisingBottoms_M1_P65_2 ;RisingBottoms_M2_P199_4 ;RisingBottoms_M2_P317_8 ;RisingBottoms_M2_P429_12 ;RisingBottoms_M2_P527_26 ;RisingBottoms_M2_P607_52 ;RisingBottoms_M3_P198_4 ;RisingBottoms_M3_P316_8 ;RisingBottoms_M3_P428_12 ;RisingBottoms_M3_P526_26 ;RisingBottoms_M3_P606_52 ;RisingTops_X1_P156_4 ;RisingTops_X1_P23_2 ;Staircase_M2_P147_4 ;Staircase_X1_P148_4 
+2016-10-28,74.361,75.394,74.124,74.98,
+2016-11-04,74.87,75.624,74.446,75.53,RisingTops_X1_P284_8 
+2016-11-11,76.07,77.911,73.673,75.89,FallingTops_X3_P558_26 ;RisingBottoms_M1_P201_4 ;RisingBottoms_M1_P319_8 ;RisingBottoms_M1_P431_12 ;RisingBottoms_M1_P529_26 ;RisingBottoms_M1_P66_2 ;RisingBottoms_M2_P200_4 ;RisingBottoms_M2_P318_8 ;RisingBottoms_M2_P430_12 ;RisingBottoms_M2_P528_26 ;RisingBottoms_M2_P608_52 ;RisingBottoms_M2_P65_2 ;RisingBottoms_M3_P199_4 ;RisingBottoms_M3_P317_8 ;RisingBottoms_M3_P429_12 ;RisingBottoms_M3_P527_26 ;RisingBottoms_M3_P607_52 ;RisingTops_X1_P157_4 ;RisingTops_X1_P24_2 ;RisingTops_X1_P401_12 ;RisingTops_X1_P504_26 ;RisingTops_X2_P156_4 ;RisingTops_X2_P23_2 ;RisingTops_X2_P400_12 ;RisingTops_X3_P399_12 ;Staircase_M2_P148_4 
+2016-11-18,76.108,77.903,75.743,77.74,
+2016-11-25,77.634,79.763,77.554,79.7,RisingTops_X2_P284_8 
+2016-12-02,79.46,81.265,78.818,80.99,RisingBottoms_M1_P202_4 ;RisingBottoms_M1_P320_8 ;RisingBottoms_M1_P67_2 ;RisingBottoms_M2_P201_4 ;RisingBottoms_M2_P319_8 ;RisingBottoms_M2_P431_12 ;RisingBottoms_M2_P66_2 ;RisingBottoms_M3_P200_4 ;RisingBottoms_M3_P318_8 ;RisingBottoms_M3_P430_12 ;RisingBottoms_M3_P65_2 ;RisingTops_X2_P157_4 ;RisingTops_X2_P24_2 ;RisingTops_X2_P401_12 ;RisingTops_X2_P504_26 ;RisingTops_X3_P156_4 ;RisingTops_X3_P23_2 ;RisingTops_X3_P400_12 
+2016-12-09,80.14,82.527,80.131,82.21,
+2016-12-16,82.179,83.738,81.932,82.01,
+2016-12-23,82.074,82.18,80.436,80.73,RisingBottoms_M2_P67_2 ;RisingBottoms_M3_P66_2 ;RisingTops_X3_P157_4 ;RisingTops_X3_P24_2 
+2016-12-30,80.582,81.529,80.528,81.01,RisingBottoms_M2_P202_4 ;RisingBottoms_M2_P320_8 ;RisingBottoms_M3_P201_4 ;RisingBottoms_M3_P319_8 
+2017-01-06,80.982,82.026,80.868,81.4,
+2017-01-13,81.54,81.918,80.699,81.55,
+2017-01-20,81.471,82.866,80.748,82.13,RisingBottoms_M3_P67_2 
+2017-01-27,82.026,83.805,81.39,83.64,FallingTops_X1_P364_8 ;FallingTops_X1_P469_12 ;FallingTops_X1_P559_26 ;FallingTops_X1_P630_52 ;RisingTops_X3_P284_8 ;RisingTops_X3_P401_12 ;RisingTops_X3_P504_26 
+2017-02-03,83.525,83.594,81.903,82.33,FallingTops_X1_P114_2 
+2017-02-10,82.26,82.517,80.637,81.5,FallingBottoms_M1_P146_2 ;FallingTops_X1_P253_4 
+2017-02-17,81.82,82.598,80.98,81,FallingBottoms_M1_P280_4 ;FallingTops_X1_P365_8 ;FallingTops_X1_P470_12 ;FallingTops_X2_P364_8 ;FallingTops_X2_P469_12 ;RisingBottoms_M3_P202_4 
+2017-02-24,81.159,81.747,80.525,80.69,FallingBottoms_M1_P394_8 ;FallingTops_X1_P115_2 ;FallingTops_X2_P114_2 ;RisingBottoms_M3_P320_8 
+2017-03-03,80.76,81.501,80.141,80.3,FallingBottoms_M1_P497_12 ;FallingBottoms_M2_P146_2 ;FallingTops_X1_P254_4 ;FallingTops_X2_P253_4 ;RisingBottoms_M3_P431_12 
+2017-03-10,80.175,80.246,78.878,79.48,FallingBottoms_M1_P281_4 ;FallingBottoms_M2_P280_4 ;FallingTops_X2_P365_8 ;FallingTops_X2_P470_12 ;FallingTops_X3_P364_8 ;FallingTops_X3_P469_12 
+2017-03-17,79.532,79.938,78.821,78.99,FallingBottoms_M1_P395_8 ;FallingBottoms_M2_P394_8 ;FallingTops_X1_P116_2 ;FallingTops_X2_P115_2 ;FallingTops_X3_P114_2 
+2017-03-24,79.104,79.592,77.771,78.2,FallingBottoms_M2_P497_12 ;FallingBottoms_M3_P146_2 ;FallingTops_X2_P254_4 ;FallingTops_X3_P253_4 
+2017-03-31,77.822,78.411,77.443,77.99,FallingBottoms_M2_P281_4 ;FallingBottoms_M3_P280_4 
+2017-04-07,77.971,78.116,76.657,76.99,FallingBottoms_M2_P395_8 ;FallingBottoms_M3_P394_8 ;FallingTops_X2_P116_2 ;FallingTops_X3_P115_2 
+2017-04-14,77.204,77.439,75.63,75.97,FallingBottoms_M1_P644_52 ;FallingBottoms_M3_P497_12 ;RisingBottoms_M1_P432_12 ;RisingBottoms_M1_P68_2 ;RisingBottoms_M2_P529_26 ;RisingBottoms_M3_P528_26 ;RisingBottoms_M3_P608_52 
+2017-04-21,76.108,76.807,75.84,76.73,FallingBottoms_M3_P281_4 ;RisingBottoms_M1_P203_4 
+2017-04-28,77.476,77.6,76.11,76.58,FallingTops_X3_P116_2 ;RisingTops_X1_P25_2 
+2017-05-05,76.447,78.09,76.363,77.98,FallingBottoms_M1_P579_26 ;FallingBottoms_M3_P395_8 ;FallingTops_X3_P254_4 ;RisingBottoms_M1_P321_8 ;RisingBottoms_M1_P433_12 ;RisingBottoms_M1_P69_2 ;RisingBottoms_M2_P432_12 ;RisingBottoms_M2_P68_2 ;RisingBottoms_M3_P529_26 ;RisingTops_X1_P158_4 
+2017-05-12,77.878,79.367,77.52,77.78,
+2017-05-19,77.803,78.504,76.25,76.97,RisingBottoms_M1_P204_4 ;RisingBottoms_M2_P203_4 
+2017-05-26,77.167,78.866,77.062,78.61,FallingTops_X3_P365_8 ;RisingBottoms_M1_P322_8 ;RisingBottoms_M1_P70_2 ;RisingBottoms_M2_P321_8 ;RisingBottoms_M2_P433_12 ;RisingBottoms_M2_P69_2 ;RisingBottoms_M3_P432_12 ;RisingBottoms_M3_P68_2 ;RisingTops_X1_P159_4 ;RisingTops_X1_P26_2 ;RisingTops_X1_P285_8 ;RisingTops_X2_P158_4 ;RisingTops_X2_P25_2 
+2017-06-02,78.488,79.13,77.966,78.88,
+2017-06-09,78.843,79.76,78.374,79.54,FallingTops_X3_P470_12 ;RisingBottoms_M1_P205_4 ;RisingBottoms_M2_P204_4 ;RisingBottoms_M3_P203_4 ;RisingTops_X1_P402_12 
+2017-06-16,79.51,80.644,78.926,80.23,RisingBottoms_M2_P322_8 ;RisingBottoms_M2_P70_2 ;RisingBottoms_M3_P321_8 ;RisingBottoms_M3_P69_2 ;RisingTops_X1_P160_4 ;RisingTops_X1_P27_2 ;RisingTops_X1_P286_8 ;RisingTops_X2_P159_4 ;RisingTops_X2_P26_2 ;RisingTops_X2_P285_8 ;RisingTops_X3_P158_4 ;RisingTops_X3_P25_2 
+2017-06-23,80.408,81.181,80.137,81.01,
+2017-06-30,80.964,82.489,80.912,82.36,RisingBottoms_M2_P205_4 ;RisingBottoms_M3_P204_4 ;RisingTops_X2_P402_12 
+2017-07-07,82.449,83.048,82.036,82.87,RisingBottoms_M3_P70_2 ;RisingTops_X2_P160_4 ;RisingTops_X2_P27_2 ;RisingTops_X2_P286_8 ;RisingTops_X3_P159_4 ;RisingTops_X3_P26_2 ;RisingTops_X3_P285_8 
+2017-07-14,82.938,83.277,81.911,82.64,
+2017-07-21,82.79,83.174,81.666,82.82,
+2017-07-28,82.83,83.91,82.277,83.1,FallingTops_X1_P366_8 ;FallingTops_X1_P471_12 ;RisingTops_X3_P160_4 ;RisingTops_X3_P27_2 ;RisingTops_X3_P286_8 ;RisingTops_X3_P402_12 
+2017-08-04,83.055,83.126,81.673,82.01,FallingTops_X1_P560_26 ;FallingTops_X1_P631_52 ;FallingTops_X2_P559_26 ;FallingTops_X2_P630_52 ;RisingBottoms_M3_P205_4 
+2017-08-11,82.12,82.162,79.066,79.8,FallingBottoms_M1_P396_8 ;RisingBottoms_M3_P322_8 
+2017-08-18,79.911,80.62,79.502,79.77,
+2017-08-25,79.934,80.12,78.474,79.2,RisingTops_X1_P28_2 
+2017-09-01,79.271,79.906,78.266,78.84,FallingBottoms_M1_P397_8 ;FallingBottoms_M1_P498_12 ;FallingBottoms_M2_P396_8 ;RisingBottoms_M3_P433_12 
+2017-09-08,78.679,79.167,78.166,78.28,
+2017-09-15,78.53,81.046,78.241,80.78,RisingTops_X2_P28_2 
+2017-09-22,80.993,82.756,80.794,82.11,
+2017-09-29,82.102,82.111,80.47,81,FallingTops_X1_P367_8 ;FallingTops_X1_P561_26 ;FallingTops_X1_P632_52 ;FallingTops_X2_P366_8 ;FallingTops_X2_P471_12 ;FallingTops_X2_P560_26 ;FallingTops_X2_P631_52 ;FallingTops_X3_P559_26 ;FallingTops_X3_P630_52 
+2017-10-06,81.361,81.4,79.75,79.75,FallingTops_X1_P117_2 ;FallingTops_X1_P255_4 ;RisingTops_X3_P28_2 
+2017-10-13,79.469,80.543,79.244,80.19,
+2017-10-20,80.275,80.96,78.799,79.05,FallingTops_X2_P367_8 ;FallingTops_X3_P366_8 ;FallingTops_X3_P471_12 
+2017-10-27,79.078,79.486,77.827,78.14,FallingBottoms_M2_P397_8 ;FallingBottoms_M2_P498_12 ;FallingBottoms_M3_P396_8 ;FallingTops_X1_P118_2 ;FallingTops_X2_P117_2 ;FallingTops_X2_P255_4 ;Staircase_X0_P149_4 
+2017-11-03,78.045,79.211,77.324,78.76,
+2017-11-10,78.875,79.462,78.419,78.65,
+2017-11-17,78.615,78.797,76.193,76.33,FallingBottoms_M1_P580_26 ;FallingBottoms_M2_P579_26 ;FallingBottoms_M3_P397_8 ;FallingBottoms_M3_P498_12 ;FallingTops_X2_P118_2 ;FallingTops_X3_P117_2 ;FallingTops_X3_P255_4 ;RisingBottoms_M1_P323_8 ;RisingBottoms_M1_P71_2 ;RisingTops_X1_P161_4 
+2017-11-24,76.295,76.942,76.072,76.65,RisingBottoms_M1_P206_4 ;Staircase_M1_P149_4 
+2017-12-01,76.691,77.445,76.315,77.215,
+2017-12-08,77.358,77.819,76.915,77.51,FallingBottoms_M1_P499_12 ;FallingTops_X3_P118_2 ;RisingBottoms_M1_P72_2 ;RisingBottoms_M2_P323_8 ;RisingBottoms_M2_P71_2 ;RisingTops_X1_P29_2 
+2017-12-15,77.682,79.212,77.607,78.72,RisingBottoms_M2_P206_4 ;RisingTops_X2_P161_4 ;Staircase_X1_P149_4 
+2017-12-22,78.787,79.647,78.512,79.55,FallingTops_X3_P367_8 
+2017-12-29,79.43,80.174,79.234,79.89,RisingBottoms_M2_P72_2 ;RisingBottoms_M3_P71_2 ;RisingTops_X2_P29_2 
+2018-01-05,79.86,81.272,79.462,80.97,FallingTops_X1_P256_4 ;FallingTops_X1_P472_12 ;RisingTops_X3_P161_4 
+2018-01-12,81.049,81.311,79.977,80.38,FallingTops_X1_P368_8 ;FallingTops_X1_P562_26 ;FallingTops_X1_P633_52 ;FallingTops_X2_P561_26 ;FallingTops_X2_P632_52 ;FallingTops_X3_P560_26 ;FallingTops_X3_P631_52 
+2018-01-19,80.475,81.272,80.126,80.48,
+2018-01-26,80.52,81.567,79.574,79.8,FallingTops_X1_P119_2 ;FallingTops_X1_P257_4 ;FallingTops_X1_P473_12 ;FallingTops_X2_P256_4 ;FallingTops_X2_P472_12 ;RisingBottoms_M3_P72_2 ;RisingTops_X3_P29_2 
+2018-02-02,79.83,81.067,79.143,80.38,FallingTops_X1_P369_8 ;FallingTops_X1_P563_26 ;FallingTops_X1_P634_52 ;FallingTops_X2_P368_8 ;FallingTops_X2_P562_26 ;FallingTops_X2_P633_52 ;FallingTops_X3_P561_26 ;FallingTops_X3_P632_52 
+2018-02-09,80.278,80.582,78.077,78.93,RisingBottoms_M3_P206_4 ;Staircase_M2_P149_4 
+2018-02-16,78.874,79.098,77.628,78.35,FallingTops_X1_P120_2 ;FallingTops_X2_P119_2 ;FallingTops_X2_P257_4 ;FallingTops_X3_P256_4 ;RisingBottoms_M3_P323_8 
+2018-02-23,78.45,79.298,77.619,77.91,
+2018-03-02,78.04,78.313,76.137,76.51,FallingBottoms_M2_P499_12 
+2018-03-09,76.44,78.012,75.909,77.81,
+2018-03-16,78.02,78.623,76.409,76.5,FallingTops_X2_P120_2 ;FallingTops_X3_P119_2 ;FallingTops_X3_P257_4 
+2018-03-23,76.5,77.048,75.525,75.79,FallingBottoms_M1_P581_26 ;FallingBottoms_M1_P645_52 ;FallingBottoms_M2_P580_26 ;FallingBottoms_M2_P644_52 ;FallingBottoms_M3_P499_12 ;FallingBottoms_M3_P579_26 
+2018-03-30,75.86,77.18,75.827,76.98,
+2018-04-06,76.911,78.227,76.143,77.71,FallingTops_X3_P120_2 
+2018-04-13,77.787,79.615,77.679,78.95,FallingTops_X1_P258_4 ;FallingTops_X1_P370_8 ;FallingTops_X2_P369_8 ;FallingTops_X3_P368_8 
+2018-04-20,79.09,79.118,77.428,77.58,FallingTops_X1_P11_NN ;FallingTops_X1_P474_12 ;FallingTops_X1_P635_52 ;FallingTops_X2_P473_12 ;FallingTops_X2_P563_26 ;FallingTops_X2_P634_52 ;FallingTops_X3_P472_12 ;FallingTops_X3_P562_26 ;FallingTops_X3_P633_52 
+2018-04-27,77.68,77.82,76.917,77.23,
+2018-05-04,77.27,77.332,76.236,76.6,FallingTops_X1_P259_4 ;FallingTops_X1_P371_8 ;FallingTops_X2_P258_4 ;FallingTops_X2_P370_8 ;FallingTops_X3_P369_8 
+2018-05-11,76.56,76.795,75.788,76.22,
+2018-05-18,76.14,76.747,75.572,76.51,
+2018-05-25,76.6,77.501,75.343,75.72,FallingBottoms_M1_P398_8 ;FallingBottoms_M1_P500_12 
+2018-06-01,75.912,76.594,74.542,76.47,
+2018-06-08,76.46,77.684,76.377,77.06,FallingTops_X1_P260_4 ;FallingTops_X1_P372_8 ;FallingTops_X1_P475_12 ;FallingTops_X2_P11_NN ;FallingTops_X2_P259_4 ;FallingTops_X2_P371_8 ;FallingTops_X2_P474_12 ;FallingTops_X3_P258_4 ;FallingTops_X3_P370_8 ;FallingTops_X3_P473_12 ;FallingTops_X3_P563_26 ;RisingTops_X1_P505_26 
+2018-06-15,76.86,77.907,76.621,76.88,FallingTops_X1_P121_2 
+2018-06-22,76.713,76.87,75.279,75.96,
+2018-06-29,76.03,76.063,74.376,74.9,FallingBottoms_M1_P501_12 ;FallingBottoms_M1_P582_26 ;FallingBottoms_M1_P646_52 ;FallingBottoms_M2_P398_8 ;FallingBottoms_M2_P500_12 ;FallingBottoms_M2_P581_26 ;FallingBottoms_M2_P645_52 ;FallingBottoms_M3_P580_26 ;FallingBottoms_M3_P644_52 
+2018-07-06,75.04,75.607,74.066,75.54,
+2018-07-13,75.46,76.446,75.375,76.03,FallingTops_X1_P122_2 ;FallingTops_X2_P121_2 
+2018-07-20,76.035,76.86,75.471,75.87,FallingTops_X1_P261_4 ;FallingTops_X2_P260_4 ;FallingTops_X2_P372_8 ;FallingTops_X2_P475_12 ;FallingTops_X3_P259_4 ;FallingTops_X3_P371_8 ;FallingTops_X3_P474_12 
+2018-07-27,75.89,75.926,75.164,75.39,
+2018-08-03,75.42,76.304,74.867,75,FallingTops_X2_P122_2 ;FallingTops_X3_P121_2 
+2018-08-10,75,75.25,72.702,72.93,FallingBottoms_M1_P647_52 ;FallingBottoms_M2_P501_12 ;FallingBottoms_M2_P582_26 ;FallingBottoms_M2_P646_52 ;FallingBottoms_M3_P398_8 ;FallingBottoms_M3_P500_12 ;FallingBottoms_M3_P581_26 ;FallingBottoms_M3_P645_52 ;FallingTops_X2_P261_4 ;FallingTops_X3_P260_4 
+2018-08-17,72.848,73.382,72.326,73.35,
+2018-08-24,73.273,74.47,72.935,74.4,FallingTops_X3_P122_2 
+2018-08-31,74.48,75.06,73.3,73.54,FallingTops_X3_P11_NN ;FallingTops_X3_P261_4 ;RisingTops_X1_P162_4 
+2018-09-07,73.51,73.67,72.377,72.53,FallingBottoms_M1_P648_52 ;FallingBottoms_M2_P647_52 ;FallingBottoms_M3_P501_12 ;FallingBottoms_M3_P582_26 ;FallingBottoms_M3_P646_52 ;RisingBottoms_M1_P324_8 ;RisingBottoms_M1_P434_12 
+2018-09-14,72.468,73.78,72.232,73.32,
+2018-09-21,73.29,75.544,73.173,75.22,RisingTops_X1_P163_4 ;RisingTops_X2_P162_4 
+2018-09-28,75.12,75.543,74.699,75.25,
+2018-10-05,75.36,75.518,73.048,73.27,FallingTops_X3_P372_8 ;FallingTops_X3_P475_12 ;RisingTops_X1_P287_8 ;RisingTops_X1_P403_12 
+2018-10-12,73.23,73.475,72.284,72.96,
+2018-10-19,72.92,74.366,72.745,74.21,RisingTops_X1_P30_2 
+2018-10-26,74.22,74.393,72.347,72.95,
+2018-11-02,72.99,75.621,72.819,75.4,RisingBottoms_M2_P324_8 ;RisingTops_X2_P163_4 ;RisingTops_X3_P162_4 
+2018-11-09,75.19,77.262,75,76.75,RisingTops_X2_P287_8 ;RisingTops_X2_P30_2 ;RisingTops_X2_P403_12 
+2018-11-16,76.569,77.725,76.192,77.6,RisingTops_X2_P505_26 
+2018-11-23,77.43,77.481,76.324,76.6,
+2018-11-30,76.4,78.171,76.357,78.14,FallingTops_X1_P123_2 ;FallingTops_X1_P262_4 ;FallingTops_X1_P373_8 ;FallingTops_X1_P476_12 ;RisingTops_X3_P163_4 ;RisingTops_X3_P287_8 ;RisingTops_X3_P30_2 ;RisingTops_X3_P403_12 
+2018-12-07,78.501,78.863,77.119,77.42,FallingTops_X1_P12_NN ;FallingTops_X1_P564_26 ;FallingTops_X1_P636_52 ;FallingTops_X2_P635_52 ;FallingTops_X3_P634_52 ;RisingTops_X3_P505_26 
+2018-12-14,77.21,78.303,76.934,77.06,
+2018-12-21,77.011,77.418,74.547,74.62,FallingTops_X1_P477_12 ;FallingTops_X2_P123_2 ;FallingTops_X2_P262_4 ;FallingTops_X2_P373_8 ;FallingTops_X2_P476_12 
+2018-12-28,74.562,74.97,73.825,74.03,RisingBottoms_M3_P324_8 
+2019-01-04,74.04,74.219,69.194,73.02,
+2019-01-11,72.998,74.192,72.864,74.12,FallingTops_X3_P123_2 ;RisingBottoms_M1_P207_4 ;RisingBottoms_M1_P73_2 ;RisingBottoms_M2_P434_12 ;RisingTops_X1_P31_2 
+2019-01-18,74.023,74.457,73.187,74.04,
+2019-01-25,73.927,75.172,73.306,74.93,FallingTops_X3_P262_4 ;RisingBottoms_M1_P325_8 ;RisingTops_X1_P164_4 
+2019-02-01,74.833,75.73,74.433,75.52,RisingTops_X1_P32_2 ;RisingTops_X2_P31_2 ;Staircase_X0_P18_2 
+2019-02-08,75.502,75.92,73.806,74.02,FallingBottoms_M1_P502_12 ;RisingBottoms_M2_P207_4 ;RisingBottoms_M2_P73_2 ;RisingBottoms_M3_P434_12 ;Staircase_M1_P18_2 
+2019-02-15,74.15,76.011,74.098,75.82,FallingTops_X3_P373_8 ;RisingBottoms_M2_P325_8 ;RisingTops_X2_P164_4 
+2019-02-22,75.796,76.321,74.823,75.76,
+2019-03-01,75.92,76.553,75.644,76.09,RisingTops_X2_P32_2 ;RisingTops_X3_P31_2 
+2019-03-08,76.263,76.435,75,75.62,FallingTops_X1_P263_4 ;FallingTops_X1_P374_8 ;RisingBottoms_M3_P73_2 ;RisingTops_X3_P164_4 
+2019-03-15,75.55,76.593,75.3,76.3,
+2019-03-22,76.29,76.783,75.47,75.59,FallingTops_X1_P124_2 ;FallingTops_X1_P478_12 ;FallingTops_X1_P565_26 ;FallingTops_X1_P637_52 ;FallingTops_X2_P477_12 ;FallingTops_X2_P564_26 ;FallingTops_X2_P636_52 ;FallingTops_X3_P476_12 ;FallingTops_X3_P635_52 ;RisingTops_X3_P32_2 ;Staircase_X1_P18_2 
+2019-03-29,75.622,76.498,74.72,75.42,RisingBottoms_M3_P207_4 ;Staircase_M2_P18_2 
+2019-04-05,75.586,75.963,74.98,75.23,
+2019-04-12,75.175,75.892,74.75,75.75,FallingTops_X1_P125_2 ;FallingTops_X2_P124_2 
+2019-04-19,75.806,75.956,74.531,74.83,FallingTops_X1_P264_4 ;FallingTops_X1_P375_8 ;FallingTops_X1_P479_12 ;FallingTops_X1_P566_26 ;FallingTops_X2_P263_4 ;FallingTops_X2_P374_8 ;FallingTops_X2_P478_12 ;FallingTops_X2_P565_26 ;FallingTops_X2_P637_52 ;FallingTops_X3_P477_12 ;FallingTops_X3_P564_26 ;FallingTops_X3_P636_52 ;RisingBottoms_M3_P325_8 
+2019-04-26,74.84,74.875,73.61,74.33,
+2019-05-03,74.33,74.601,73.62,73.85,FallingBottoms_M1_P503_12 ;FallingBottoms_M2_P502_12 ;FallingTops_X2_P125_2 ;FallingTops_X3_P124_2 
+2019-05-10,73.43,73.467,71.821,72.55,FallingBottoms_M1_P583_26 ;FallingTops_X1_P480_12 ;FallingTops_X1_P567_26 ;FallingTops_X2_P264_4 ;FallingTops_X2_P375_8 ;FallingTops_X2_P479_12 ;FallingTops_X2_P566_26 ;FallingTops_X3_P263_4 ;FallingTops_X3_P374_8 ;FallingTops_X3_P478_12 ;FallingTops_X3_P565_26 ;FallingTops_X3_P637_52 ;RisingTops_X1_P587_52 
+2019-05-17,72.37,72.407,71.48,71.71,FallingBottoms_M1_P649_52 ;FallingBottoms_M2_P648_52 ;FallingBottoms_M3_P647_52 
+2019-05-24,71.78,72.131,71.27,71.62,FallingBottoms_M2_P503_12 ;FallingBottoms_M3_P502_12 
+2019-05-31,71.73,71.855,70.66,70.79,FallingBottoms_M1_P584_26 ;FallingBottoms_M2_P583_26 
+2019-06-07,70.72,72.15,70.66,72.12,FallingTops_X3_P125_2 ;RisingTops_X1_P33_2 
+2019-06-14,72.18,72.25,70.394,70.48,FallingBottoms_M1_P650_52 ;FallingBottoms_M2_P649_52 ;FallingBottoms_M3_P503_12 ;FallingBottoms_M3_P648_52 
+2019-06-21,70.49,71.107,70.25,70.71,
+2019-06-28,70.778,72.5,70.69,72.44,FallingTops_X3_P264_4 ;RisingTops_X2_P33_2 
+2019-07-05,72.929,72.93,71.67,71.89,FallingTops_X2_P12_NN ;FallingTops_X3_P375_8 
+2019-07-12,71.917,72.49,71.492,72.23,
+2019-07-19,72.22,73.014,72.14,72.8,FallingTops_X1_P126_2 ;RisingTops_X3_P33_2 
+2019-07-26,72.857,73.245,72,72.11,FallingTops_X2_P480_12 ;FallingTops_X3_P479_12 
+2019-08-02,72.1,72.232,69.452,69.66,FallingBottoms_M1_P585_26 ;FallingBottoms_M1_P651_52 ;FallingBottoms_M2_P584_26 ;FallingBottoms_M2_P650_52 ;FallingBottoms_M3_P583_26 ;FallingBottoms_M3_P649_52 
+2019-08-09,69.57,70.085,67.56,68.34,FallingTops_X1_P127_2 ;FallingTops_X2_P126_2 
+2019-08-16,68.29,69.161,67.53,68.39,
+2019-08-23,68.448,68.509,67.26,67.5,FallingBottoms_M1_P586_26 ;FallingBottoms_M1_P652_52 ;FallingBottoms_M2_P585_26 ;FallingBottoms_M2_P651_52 ;FallingBottoms_M3_P584_26 ;FallingBottoms_M3_P650_52 
+2019-08-30,66.588,67.933,66.57,67.08,
+2019-09-06,66.887,68.822,66.64,68.71,FallingTops_X2_P127_2 ;FallingTops_X3_P126_2 ;RisingTops_X1_P165_4 
+2019-09-13,68.685,69.686,68.56,68.93,FallingTops_X3_P12_NN ;RisingTops_X1_P288_8 ;Staircase_X0_P282_8 
+2019-09-20,68.838,68.959,67.26,67.31,RisingBottoms_M1_P208_4 ;RisingBottoms_M1_P326_8 ;RisingBottoms_M1_P435_12 ;RisingBottoms_M1_P74_2 ;Staircase_M1_P282_8 
+2019-09-27,67.46,68.263,67.18,67.95,FallingTops_X3_P127_2 ;RisingTops_X1_P34_2 
+2019-10-04,67.866,67.917,66.91,67.56,
+2019-10-11,67.456,68.998,67.11,68.69,RisingBottoms_M1_P209_4 ;RisingBottoms_M1_P327_8 ;RisingBottoms_M1_P75_2 ;RisingBottoms_M2_P208_4 ;RisingBottoms_M2_P326_8 ;RisingBottoms_M2_P435_12 ;RisingBottoms_M2_P74_2 
+2019-10-18,68.701,69.297,67.81,69.18,RisingTops_X1_P166_4 ;RisingTops_X1_P289_8 ;RisingTops_X1_P35_2 ;RisingTops_X2_P165_4 ;RisingTops_X2_P288_8 ;RisingTops_X2_P34_2 
+2019-10-25,69.153,69.96,68.934,68.97,
+2019-11-01,69.062,69.897,68.924,69.54,FallingTops_X3_P480_12 ;RisingBottoms_M1_P76_2 ;RisingBottoms_M2_P75_2 ;RisingBottoms_M3_P74_2 ;RisingTops_X1_P404_12 
+2019-11-08,69.615,70.03,68.94,69.16,RisingTops_X1_P167_4 ;RisingTops_X1_P290_8 ;RisingTops_X1_P36_2 ;RisingTops_X2_P166_4 ;RisingTops_X2_P289_8 ;RisingTops_X2_P35_2 ;RisingTops_X3_P165_4 ;RisingTops_X3_P288_8 ;RisingTops_X3_P34_2 ;Staircase_X1_P282_8 
+2019-11-15,69.12,69.906,68.86,69.69,RisingBottoms_M1_P210_4 ;RisingBottoms_M2_P209_4 ;RisingBottoms_M2_P327_8 ;RisingBottoms_M3_P208_4 ;RisingBottoms_M3_P326_8 ;RisingBottoms_M3_P435_12 ;Staircase_M2_P282_8 
+2019-11-22,69.599,69.935,69.22,69.59,RisingBottoms_M1_P77_2 ;RisingBottoms_M2_P76_2 ;RisingBottoms_M3_P75_2 
+2019-11-29,69.66,70.525,69.61,70.31,RisingTops_X2_P167_4 ;RisingTops_X2_P290_8 ;RisingTops_X2_P36_2 ;RisingTops_X2_P404_12 ;RisingTops_X3_P166_4 ;RisingTops_X3_P289_8 ;RisingTops_X3_P35_2 
+2019-12-06,70.42,71.505,70.35,71.27,RisingBottoms_M2_P210_4 ;RisingBottoms_M3_P209_4 ;RisingBottoms_M3_P327_8 
+2019-12-13,71.243,72.668,70.85,72.2,RisingBottoms_M1_P78_2 ;RisingBottoms_M2_P77_2 ;RisingBottoms_M3_P76_2 
+2019-12-20,72.104,72.454,71.7,72.26,
+2019-12-27,72.207,73.536,72.19,73.31,FallingTops_X1_P128_2 ;FallingTops_X1_P265_4 ;FallingTops_X1_P376_8 ;FallingTops_X1_P481_12 ;FallingTops_X1_P568_26 ;FallingTops_X2_P567_26 ;FallingTops_X3_P566_26 ;RisingTops_X3_P167_4 ;RisingTops_X3_P290_8 ;RisingTops_X3_P36_2 ;RisingTops_X3_P404_12 
+2020-01-03,73.31,73.504,71.79,72.04,RisingBottoms_M2_P78_2 ;RisingBottoms_M3_P77_2 
+2020-01-10,71.73,72.761,71.23,72.63,RisingBottoms_M3_P210_4 
+2020-01-17,72.67,73.346,72.34,72.83,FallingTops_X1_P129_2 ;FallingTops_X2_P128_2 
+2020-01-24,72.812,73,71.9,72.23,FallingTops_X1_P266_4 ;FallingTops_X1_P377_8 ;FallingTops_X1_P482_12 ;FallingTops_X2_P265_4 ;FallingTops_X2_P376_8 ;FallingTops_X2_P481_12 ;FallingTops_X2_P568_26 ;FallingTops_X3_P567_26 ;RisingBottoms_M3_P78_2 
+2020-01-31,71.798,71.86,69.97,70.04,
+2020-02-07,70.011,71.309,69.92,70.26,
+2020-02-14,70.283,71.346,69.918,70.624,FallingTops_X1_P130_2 ;FallingTops_X2_P129_2 ;FallingTops_X3_P128_2 
+2020-02-21,70.72,71.183,70.059,70.862,FallingTops_X2_P266_4 ;FallingTops_X2_P377_8 ;FallingTops_X2_P482_12 ;FallingTops_X3_P265_4 ;FallingTops_X3_P376_8 ;FallingTops_X3_P481_12 
+2020-02-28,70.381,70.673,66.738,67.492,
+2020-03-06,66.6,68.067,66.6,66.98,FallingBottoms_M2_P586_26 ;FallingBottoms_M3_P585_26 ;FallingTops_X2_P130_2 ;FallingTops_X3_P129_2 
+2020-03-13,65.592,66.626,61.195,65.47,FallingBottoms_M2_P652_52 ;FallingBottoms_M3_P651_52 ;FallingTops_X3_P266_4 ;Staircase_X0_P150_4 
+2020-03-20,64.156,65.262,59.487,63.303,RisingBottoms_M1_P211_4 ;RisingBottoms_M1_P328_8 ;RisingBottoms_M1_P436_12 
+2020-03-27,62.396,65.908,61.763,65.137,FallingBottoms_M3_P586_26 ;FallingTops_X3_P130_2 ;RisingBottoms_M1_P530_26 ;RisingBottoms_M1_P6_NN 
+2020-04-03,64.704,65.499,63.065,63.553,
+2020-04-10,63.529,66.186,63.519,65.637,FallingBottoms_M3_P652_52 ;RisingBottoms_M1_P212_4 ;RisingBottoms_M1_P329_8 ;RisingBottoms_M1_P437_12 ;RisingBottoms_M1_P609_52 ;RisingBottoms_M2_P211_4 ;RisingBottoms_M2_P328_8 ;RisingBottoms_M2_P436_12 ;Staircase_M1_P150_4 
+2020-04-17,65.761,66.003,63.806,64.885,FallingTops_X3_P377_8 ;RisingTops_X1_P291_8 
+2020-04-24,64.942,65.607,63.71,64.695,
+2020-05-01,64.615,66.103,64.249,64.808,
+2020-05-08,64.35,65.525,63.541,65.465,RisingBottoms_M1_P213_4 ;RisingBottoms_M2_P212_4 ;RisingBottoms_M3_P211_4 ;RisingTops_X1_P37_2 
+2020-05-15,65.539,65.796,63.454,63.594,RisingBottoms_M1_P330_8 ;RisingBottoms_M1_P438_12 ;RisingBottoms_M1_P531_26 ;RisingBottoms_M1_P610_52 ;RisingBottoms_M1_P79_2 ;RisingBottoms_M2_P329_8 ;RisingBottoms_M2_P437_12 ;RisingBottoms_M2_P530_26 ;RisingBottoms_M2_P609_52 ;RisingBottoms_M2_P6_NN ;RisingBottoms_M3_P328_8 ;RisingBottoms_M3_P436_12 ;Staircase_X1_P150_4 
+2020-05-22,63.703,66.255,63.549,65.596,
+2020-05-29,65.673,67.131,65.428,66.915,FallingTops_X3_P482_12 ;RisingBottoms_M1_P214_4 ;RisingBottoms_M2_P213_4 ;RisingBottoms_M3_P212_4 ;RisingTops_X1_P292_8 ;RisingTops_X1_P38_2 ;RisingTops_X1_P405_12 ;RisingTops_X2_P291_8 ;RisingTops_X2_P37_2 ;Staircase_M2_P150_4 
+2020-06-05,66.755,71.575,66.662,71.271,RisingBottoms_M1_P331_8 ;RisingBottoms_M1_P439_12 ;RisingBottoms_M1_P532_26 ;RisingBottoms_M1_P611_52 ;RisingBottoms_M1_P80_2 ;RisingBottoms_M2_P330_8 ;RisingBottoms_M2_P438_12 ;RisingBottoms_M2_P531_26 ;RisingBottoms_M2_P610_52 ;RisingBottoms_M2_P79_2 ;RisingBottoms_M3_P329_8 ;RisingBottoms_M3_P437_12 ;RisingBottoms_M3_P530_26 ;RisingBottoms_M3_P609_52 
+2020-06-12,71.44,71.667,68.17,69.248,FallingTops_X3_P568_26 ;RisingTops_X1_P506_26 
+2020-06-19,69.039,70.012,68.381,68.478,RisingTops_X2_P38_2 ;RisingTops_X3_P37_2 
+2020-06-26,68.367,69.668,68.275,68.857,RisingBottoms_M1_P533_26 ;RisingBottoms_M1_P612_52 ;RisingBottoms_M2_P214_4 ;RisingBottoms_M2_P331_8 ;RisingBottoms_M2_P439_12 ;RisingBottoms_M2_P532_26 ;RisingBottoms_M2_P611_52 ;RisingBottoms_M2_P80_2 ;RisingBottoms_M3_P213_4 ;RisingBottoms_M3_P330_8 ;RisingBottoms_M3_P438_12 ;RisingBottoms_M3_P531_26 ;RisingBottoms_M3_P610_52 ;RisingBottoms_M3_P6_NN ;RisingBottoms_M3_P79_2 
+2020-07-03,68.743,70.28,68.675,70.113,
+2020-07-10,70.302,70.715,69.956,70.256,RisingTops_X3_P38_2 
+2020-07-17,70.316,70.71,69.8,70.158,RisingBottoms_M3_P80_2 
+2020-07-24,70.177,71.673,70.013,70.484,RisingTops_X1_P293_8 ;RisingTops_X1_P2_NN ;RisingTops_X2_P292_8 ;RisingTops_X3_P291_8 
+2020-07-31,70.365,70.578,69.523,70.21,
+2020-08-07,70.223,70.616,69.815,69.869,RisingBottoms_M3_P214_4 
+2020-08-14,69.816,70.531,69.589,69.739,
+2020-08-21,69.719,70.051,68.735,69.241,
+2020-08-28,69.283,71.256,69.033,71.043,FallingTops_X1_P131_2 ;FallingTops_X1_P267_4 ;RisingTops_X1_P294_8 ;RisingTops_X2_P293_8 ;RisingTops_X3_P292_8 
+2020-09-04,71.157,71.978,70.869,71.396,RisingTops_X1_P406_12 ;RisingTops_X2_P405_12 
+2020-09-11,71.325,71.444,69.849,70.751,
+2020-09-18,70.677,71.22,70.021,70.696,
+2020-09-25,70.732,70.789,68.61,69.099,FallingTops_X2_P131_2 ;FallingTops_X2_P267_4 ;RisingBottoms_M1_P215_4 ;RisingBottoms_M3_P331_8 ;RisingBottoms_M3_P439_12 
+2020-10-02,69.188,70.256,68.872,69.891,
+2020-10-09,70.025,70.51,69.39,70.453,
+2020-10-16,70.366,70.458,69.188,69.598,FallingTops_X3_P131_2 ;FallingTops_X3_P267_4 ;RisingTops_X1_P168_4 ;RisingTops_X1_P39_2 
+2020-10-23,69.588,70.176,69.226,70.035,
+2020-10-30,69.98,70.279,68.846,69.206,RisingBottoms_M1_P216_4 ;RisingBottoms_M2_P215_4 
+2020-11-06,69.079,70.481,68.804,69.993,RisingBottoms_M1_P332_8 ;RisingBottoms_M1_P440_12 ;RisingBottoms_M1_P534_26 ;RisingBottoms_M1_P613_52 ;RisingBottoms_M1_P81_2 ;RisingBottoms_M2_P533_26 ;RisingBottoms_M2_P612_52 ;RisingBottoms_M3_P532_26 ;RisingBottoms_M3_P611_52 
+2020-11-13,70.107,72.79,69.993,71.621,RisingTops_X1_P169_4 ;RisingTops_X1_P295_8 ;RisingTops_X1_P407_12 ;RisingTops_X1_P40_2 ;RisingTops_X1_P507_26 ;RisingTops_X2_P168_4 ;RisingTops_X2_P294_8 ;RisingTops_X2_P39_2 ;RisingTops_X2_P406_12 ;RisingTops_X2_P506_26 ;RisingTops_X3_P293_8 ;RisingTops_X3_P405_12 
+2020-11-20,71.621,72.308,71.501,71.906,RisingBottoms_M1_P217_4 ;RisingBottoms_M2_P216_4 ;RisingBottoms_M3_P215_4 
+2020-11-27,71.856,73.278,71.625,73.054,RisingBottoms_M1_P333_8 ;RisingBottoms_M1_P441_12 ;RisingBottoms_M1_P535_26 ;RisingBottoms_M1_P614_52 ;RisingBottoms_M1_P82_2 ;RisingBottoms_M2_P332_8 ;RisingBottoms_M2_P440_12 ;RisingBottoms_M2_P534_26 ;RisingBottoms_M2_P613_52 ;RisingBottoms_M2_P81_2 ;RisingBottoms_M3_P533_26 ;RisingBottoms_M3_P612_52 
+2020-12-04,73.054,74.039,72.938,73.334,RisingTops_X1_P170_4 ;RisingTops_X1_P296_8 ;RisingTops_X1_P408_12 ;RisingTops_X1_P41_2 ;RisingTops_X1_P508_26 ;RisingTops_X2_P169_4 ;RisingTops_X2_P295_8 ;RisingTops_X2_P407_12 ;RisingTops_X2_P40_2 ;RisingTops_X2_P507_26 ;RisingTops_X3_P168_4 ;RisingTops_X3_P294_8 ;RisingTops_X3_P39_2 ;RisingTops_X3_P406_12 ;RisingTops_X3_P506_26 
+2020-12-11,73.304,74.007,73.01,73.732,RisingBottoms_M1_P218_4 ;RisingBottoms_M2_P217_4 ;RisingBottoms_M3_P216_4 ;RisingTops_X1_P588_52 ;RisingTops_X2_P587_52 
+2020-12-18,73.823,73.903,73.189,73.739,
+2020-12-25,73.631,73.807,72.702,73.512,RisingBottoms_M1_P83_2 ;RisingBottoms_M2_P82_2 ;RisingBottoms_M3_P81_2 
+2021-01-01,73.537,74.628,73.506,74.117,RisingBottoms_M1_P219_4 ;RisingBottoms_M1_P334_8 ;RisingBottoms_M1_P442_12 ;RisingBottoms_M1_P536_26 ;RisingBottoms_M1_P615_52 ;RisingBottoms_M2_P218_4 ;RisingBottoms_M2_P333_8 ;RisingBottoms_M2_P441_12 ;RisingBottoms_M2_P535_26 ;RisingBottoms_M2_P614_52 ;RisingBottoms_M3_P217_4 ;RisingBottoms_M3_P332_8 ;RisingBottoms_M3_P440_12 ;RisingBottoms_M3_P534_26 ;RisingBottoms_M3_P613_52 ;RisingTops_X1_P171_4 ;RisingTops_X1_P297_8 ;RisingTops_X1_P409_12 ;RisingTops_X1_P42_2 ;RisingTops_X1_P509_26 ;RisingTops_X1_P589_52 ;RisingTops_X2_P170_4 ;RisingTops_X2_P296_8 ;RisingTops_X2_P408_12 ;RisingTops_X2_P41_2 ;RisingTops_X2_P508_26 ;RisingTops_X2_P588_52 ;RisingTops_X3_P169_4 ;RisingTops_X3_P295_8 ;RisingTops_X3_P407_12 ;RisingTops_X3_P40_2 ;RisingTops_X3_P507_26 ;RisingTops_X3_P587_52 
+2021-01-08,74.133,75.579,73.777,74.964,
+2021-01-15,75.122,75.223,73.872,74.025,RisingBottoms_M1_P84_2 ;RisingBottoms_M2_P83_2 ;RisingBottoms_M3_P82_2 
+2021-01-22,74.113,74.795,73.624,74.491,RisingBottoms_M1_P220_4 ;RisingBottoms_M1_P335_8 ;RisingBottoms_M1_P443_12 ;RisingBottoms_M1_P616_52 ;RisingBottoms_M2_P219_4 ;RisingBottoms_M2_P334_8 ;RisingBottoms_M2_P442_12 ;RisingBottoms_M2_P536_26 ;RisingBottoms_M2_P615_52 ;RisingBottoms_M3_P218_4 ;RisingBottoms_M3_P333_8 ;RisingBottoms_M3_P441_12 ;RisingBottoms_M3_P535_26 ;RisingBottoms_M3_P614_52 
+2021-01-29,74.49,75.649,74.099,75.183,RisingTops_X1_P43_2 ;RisingTops_X2_P42_2 ;RisingTops_X3_P41_2 
+2021-02-05,74.953,75.947,74.901,75.871,RisingBottoms_M2_P84_2 ;RisingBottoms_M3_P83_2 ;RisingTops_X1_P172_4 ;RisingTops_X1_P298_8 ;RisingTops_X1_P410_12 ;RisingTops_X1_P510_26 ;RisingTops_X1_P590_52 ;RisingTops_X2_P171_4 ;RisingTops_X2_P297_8 ;RisingTops_X2_P409_12 ;RisingTops_X2_P509_26 ;RisingTops_X2_P589_52 ;RisingTops_X3_P170_4 ;RisingTops_X3_P296_8 ;RisingTops_X3_P408_12 ;RisingTops_X3_P508_26 ;RisingTops_X3_P588_52 
+2021-02-12,75.871,76.137,75.332,75.713,
+2021-02-19,75.559,77.224,75.558,76.888,RisingBottoms_M1_P221_4 ;RisingBottoms_M2_P220_4 ;RisingBottoms_M2_P335_8 ;RisingBottoms_M2_P443_12 ;RisingBottoms_M3_P219_4 ;RisingBottoms_M3_P334_8 ;RisingBottoms_M3_P442_12 ;RisingBottoms_M3_P536_26 ;RisingTops_X2_P43_2 ;RisingTops_X3_P42_2 
+2021-02-26,76.794,79.212,76.767,77.016,RisingBottoms_M3_P84_2 ;RisingTops_X1_P299_8 ;RisingTops_X1_P411_12 ;RisingTops_X1_P511_26 ;RisingTops_X1_P591_52 ;RisingTops_X2_P172_4 ;RisingTops_X2_P298_8 ;RisingTops_X2_P410_12 ;RisingTops_X2_P510_26 ;RisingTops_X2_P590_52 ;RisingTops_X3_P171_4 ;RisingTops_X3_P297_8 ;RisingTops_X3_P409_12 ;RisingTops_X3_P509_26 ;RisingTops_X3_P589_52 
+2021-03-05,77.09,78.215,76.973,77.602,
+2021-03-12,77.611,78.609,77.119,78.231,RisingTops_X3_P43_2 
+2021-03-19,78.237,79.14,77.805,78.023,RisingTops_X3_P172_4 
+2021-03-26,77.576,78.118,75.605,76.749,RisingBottoms_M1_P85_2 ;RisingBottoms_M2_P221_4 ;RisingBottoms_M3_P220_4 
+2021-04-02,76.677,77.932,76.309,77.846,RisingBottoms_M3_P335_8 ;RisingTops_X1_P44_2 
+2021-04-09,77.707,77.955,76.682,77.1,
+2021-04-16,77.13,78.128,76.637,77.714,RisingBottoms_M2_P85_2 ;RisingBottoms_M3_P221_4 
+2021-04-23,77.546,78.381,77.165,77.629,
+2021-04-30,77.583,79.164,77.523,78.312,RisingTops_X2_P44_2 
+2021-05-07,78.362,79.197,77.682,79.046,RisingBottoms_M3_P85_2 ;RisingTops_X1_P512_26 ;RisingTops_X1_P592_52 ;RisingTops_X2_P299_8 ;RisingTops_X2_P411_12 ;RisingTops_X2_P511_26 ;RisingTops_X2_P591_52 ;RisingTops_X3_P298_8 ;RisingTops_X3_P410_12 ;RisingTops_X3_P510_26 ;RisingTops_X3_P590_52 
+2021-05-14,79.078,79.424,78.197,79.277,
+2021-05-21,79.151,79.278,77.903,78.143,
+2021-05-28,78.07,80.182,77.95,79.613,FallingTops_X1_P132_2 ;FallingTops_X1_P268_4 ;RisingTops_X1_P513_26 ;RisingTops_X1_P593_52 ;RisingTops_X2_P512_26 ;RisingTops_X2_P592_52 ;RisingTops_X3_P299_8 ;RisingTops_X3_P411_12 ;RisingTops_X3_P44_2 ;RisingTops_X3_P511_26 ;RisingTops_X3_P591_52 
+2021-06-04,79.682,79.8,78.557,79.01,
+2021-06-11,78.887,79.136,78.058,78.153,
+2021-06-18,78.192,78.814,76.315,76.417,RisingBottoms_M3_P443_12 
+2021-06-25,76.471,78.479,76.197,78.288,FallingTops_X2_P132_2 
+2021-07-02,78.276,78.415,77.042,78.05,FallingTops_X2_P268_4 ;RisingTops_X1_P300_8 
+2021-07-09,78.04,78.77,75.965,77.021,
+2021-07-16,77.05,77.659,76.423,77.05,
+2021-07-23,77.004,77.289,75.243,77.082,
+2021-07-30,77.025,77.308,76.084,76.49,
+2021-08-06,76.399,77.713,76.011,77.296,FallingTops_X3_P132_2 ;FallingTops_X3_P268_4 ;RisingTops_X1_P173_4 
+2021-08-13,77.246,77.933,76.868,77.132,
+2021-08-20,77.196,77.279,74.549,75.022,RisingBottoms_M1_P222_4 ;RisingBottoms_M1_P537_26 
+2021-08-27,74.962,77.101,74.949,77.011,RisingBottoms_M1_P617_52 ;RisingBottoms_M2_P616_52 ;RisingBottoms_M3_P615_52 
+2021-09-03,76.973,78.651,76.684,78.467,RisingTops_X1_P174_4 ;RisingTops_X1_P301_8 ;RisingTops_X1_P412_12 ;RisingTops_X2_P173_4 ;RisingTops_X2_P300_8 
+2021-09-10,78.524,78.641,77.785,78.199,
+2021-09-17,78.115,78.619,77.229,77.38,
+2021-09-24,77.327,78.158,76.317,77.661,RisingTops_X1_P45_2 
+2021-10-01,77.564,78.151,76.421,77.118,RisingBottoms_M2_P222_4 
+2021-10-08,76.905,77.907,76.638,77.795,
+2021-10-15,77.602,80.867,77.602,80.799,RisingTops_X1_P514_26 ;RisingTops_X1_P594_52 ;RisingTops_X2_P174_4 ;RisingTops_X2_P301_8 ;RisingTops_X2_P412_12 ;RisingTops_X2_P45_2 ;RisingTops_X2_P513_26 ;RisingTops_X2_P593_52 ;RisingTops_X3_P173_4 ;RisingTops_X3_P300_8 ;RisingTops_X3_P512_26 ;RisingTops_X3_P592_52 
+2021-10-22,80.961,82.507,80.53,81.186,
+2021-10-29,81.125,82.105,80.978,81.698,
+2021-11-05,81.684,82.21,80.41,80.712,FallingTops_X1_P133_2 ;FallingTops_X1_P269_4 ;FallingTops_X1_P378_8 ;FallingTops_X1_P483_12 ;RisingTops_X3_P174_4 ;RisingTops_X3_P301_8 ;RisingTops_X3_P412_12 ;RisingTops_X3_P45_2 
+2021-11-12,80.696,81.342,79.912,80.161,RisingBottoms_M3_P222_4 
+2021-11-19,80.168,80.667,79.504,79.729,
+2021-11-26,79.866,80.175,77.004,77.316,FallingTops_X2_P133_2 ;FallingTops_X2_P269_4 ;FallingTops_X2_P378_8 ;FallingTops_X2_P483_12 
+2021-12-03,77.724,77.92,75.948,76.064,
+2021-12-10,76.247,77.571,76.143,77.032,
+2021-12-17,77.044,77.976,76.438,76.549,
+2021-12-24,76.691,78.233,76.004,77.933,FallingTops_X3_P133_2 ;FallingTops_X3_P269_4 
+2021-12-31,77.949,78.934,77.81,78.709,
+2022-01-07,78.79,79.24,77.896,78.249,FallingTops_X3_P378_8 ;FallingTops_X3_P483_12 ;RisingTops_X1_P413_12 ;RisingTops_X2_P2_NN 
+2022-01-14,78.353,78.835,77.451,77.692,
+2022-01-21,77.668,78.131,76.213,76.264,
+2022-01-28,76.313,76.665,75.214,75.354,RisingBottoms_M1_P336_8 ;RisingBottoms_M1_P444_12 
+2022-02-04,75.429,76.779,75.393,76.156,RisingBottoms_M1_P538_26 ;RisingBottoms_M1_P618_52 ;RisingBottoms_M1_P86_2 ;RisingBottoms_M2_P537_26 ;RisingBottoms_M2_P617_52 ;RisingBottoms_M3_P616_52 
+2022-02-11,76.199,78,75.936,76.794,RisingBottoms_M1_P223_4 ;RisingTops_X1_P46_2 
+2022-02-18,76.602,77.58,75.854,76.941,RisingBottoms_M1_P337_8 ;RisingBottoms_M1_P445_12 ;RisingBottoms_M2_P336_8 ;RisingBottoms_M2_P444_12 ;RisingTops_X1_P175_4 
+2022-02-25,76.926,78.373,76.466,77.863,
+2022-03-04,76.889,78.966,76.889,78.744,RisingBottoms_M1_P224_4 ;RisingBottoms_M1_P619_52 ;RisingBottoms_M1_P87_2 ;RisingBottoms_M2_P223_4 ;RisingBottoms_M2_P538_26 ;RisingBottoms_M2_P618_52 ;RisingBottoms_M2_P86_2 ;RisingBottoms_M3_P537_26 ;RisingBottoms_M3_P617_52 ;RisingTops_X1_P302_8 ;RisingTops_X1_P47_2 ;RisingTops_X2_P46_2 
+2022-03-11,78.692,80.148,78.509,79.838,RisingBottoms_M1_P338_8 ;RisingBottoms_M1_P446_12 ;RisingBottoms_M2_P337_8 ;RisingBottoms_M2_P445_12 ;RisingBottoms_M3_P336_8 ;RisingBottoms_M3_P444_12 ;RisingTops_X1_P414_12 ;RisingTops_X2_P175_4 ;RisingTops_X2_P413_12 
+2022-03-18,79.804,82.368,79.393,82.292,RisingTops_X1_P515_26 ;RisingTops_X1_P595_52 ;RisingTops_X2_P514_26 ;RisingTops_X2_P594_52 ;RisingTops_X3_P513_26 ;RisingTops_X3_P593_52 
+2022-03-25,82.151,85.241,81.898,85.118,RisingBottoms_M2_P224_4 ;RisingBottoms_M2_P87_2 ;RisingBottoms_M3_P223_4 ;RisingBottoms_M3_P86_2 ;RisingTops_X2_P302_8 ;RisingTops_X2_P47_2 ;RisingTops_X3_P46_2 
+2022-04-01,84.842,86.953,84.224,84.8,
+2022-04-08,84.757,86.389,84.503,85.115,
+2022-04-15,85.064,86.663,84.935,85.533,FallingTops_X1_P134_2 ;RisingBottoms_M3_P87_2 ;RisingTops_X1_P415_12 ;RisingTops_X1_P516_26 ;RisingTops_X1_P596_52 ;RisingTops_X2_P414_12 ;RisingTops_X2_P515_26 ;RisingTops_X2_P595_52 ;RisingTops_X3_P175_4 ;RisingTops_X3_P302_8 ;RisingTops_X3_P413_12 ;RisingTops_X3_P47_2 ;RisingTops_X3_P514_26 ;RisingTops_X3_P594_52 
+2022-04-22,85.469,87.348,85.04,85.232,
+2022-04-29,85.278,85.459,83.259,83.842,RisingBottoms_M3_P224_4 
+2022-05-06,83.914,84.823,83.35,83.651,FallingTops_X2_P134_2 ;RisingTops_X1_P176_4 
+2022-05-13,83.621,83.667,79.441,81.199,RisingBottoms_M1_P339_8 ;RisingBottoms_M2_P338_8 ;RisingBottoms_M3_P337_8 
+2022-05-20,81.201,82.485,80.164,81.932,RisingBottoms_M2_P446_12 ;RisingBottoms_M3_P445_12 
+2022-05-27,81.89,83.118,81.277,83.081,FallingTops_X3_P134_2 
+2022-06-03,83.003,85.394,82.97,85.211,RisingBottoms_M2_P339_8 ;RisingBottoms_M3_P338_8 ;RisingTops_X1_P177_4 ;RisingTops_X2_P176_4 
+2022-06-10,85.161,86.811,84.762,85.441,RisingTops_X1_P303_8 
+2022-06-17,85.287,85.728,82.963,85.211,
+2022-06-24,85.211,86.574,84.373,85.392,
+2022-07-01,85.32,85.687,83.138,83.937,
+2022-07-08,83.905,84.878,83.007,84.285,
+2022-07-15,84.195,85.497,83.595,85.314,RisingTops_X1_P178_4 ;RisingTops_X2_P177_4 ;RisingTops_X3_P176_4 
+2022-07-22,85.219,86.593,84.85,85.09,
+2022-07-29,85.124,85.759,83.494,83.788,RisingBottoms_M3_P339_8 
+2022-08-05,83.672,84.753,82.121,84.206,RisingBottoms_M3_P446_12 
+2022-08-12,84.319,86.234,84.217,86.159,FallingTops_X1_P135_2 ;RisingTops_X1_P416_12 ;RisingTops_X1_P517_26 ;RisingTops_X1_P597_52 ;RisingTops_X2_P178_4 ;RisingTops_X2_P303_8 ;RisingTops_X2_P415_12 ;RisingTops_X2_P516_26 ;RisingTops_X2_P596_52 ;RisingTops_X3_P177_4 ;RisingTops_X3_P2_NN ;RisingTops_X3_P414_12 ;RisingTops_X3_P515_26 ;RisingTops_X3_P595_52 
+2022-08-19,86.072,86.144,84.367,84.517,
+2022-08-26,84.508,85.308,84.24,84.515,
+2022-09-02,84.305,86.031,84.3,85.684,FallingTops_X1_P136_2 ;FallingTops_X2_P135_2 
+2022-09-09,85.276,87.627,85.256,87.035,RisingTops_X1_P518_26 ;RisingTops_X1_P598_52 ;RisingTops_X2_P416_12 ;RisingTops_X2_P517_26 ;RisingTops_X2_P597_52 ;RisingTops_X3_P178_4 ;RisingTops_X3_P303_8 ;RisingTops_X3_P415_12 ;RisingTops_X3_P516_26 ;RisingTops_X3_P596_52 
+2022-09-16,86.931,87.866,85.121,85.642,
+2022-09-23,85.521,85.737,82.16,82.334,FallingTops_X2_P136_2 ;FallingTops_X3_P135_2 
+2022-09-30,82.365,83.031,80.569,81.002,RisingBottoms_M3_P538_26 
+2022-10-07,81.047,84.011,80.987,81.476,
+2022-10-14,81.501,83.738,80.686,82.779,FallingTops_X3_P136_2 ;RisingBottoms_M1_P225_4 ;RisingBottoms_M1_P88_2 
+2022-10-21,82.609,86.47,82.457,85.046,RisingTops_X1_P179_4 
+2022-10-28,85.644,86.179,84.12,85.734,
+2022-11-04,85.72,87.139,85.133,86.978,
+2022-11-11,86.4,87.225,83.834,84.869,RisingBottoms_M2_P88_2 
+2022-11-18,84.894,86.741,84.716,86.325,RisingBottoms_M2_P225_4 
+2022-11-25,86.337,87.456,86.016,86.976,RisingTops_X2_P179_4 
+2022-12-02,86.652,87.089,85.42,86.073,RisingBottoms_M3_P88_2 
+2022-12-09,85.738,87.713,85.73,87.569,RisingBottoms_M3_P225_4 ;RisingTops_X1_P519_26 ;RisingTops_X1_P599_52 ;RisingTops_X2_P518_26 ;RisingTops_X2_P598_52 ;RisingTops_X3_P416_12 ;RisingTops_X3_P517_26 ;RisingTops_X3_P597_52 
+2022-12-16,87.395,88.166,86.767,87.148,RisingTops_X3_P179_4 
+2022-12-23,86.753,87.371,82.515,83.469,
+2022-12-30,83.125,84.989,82.892,83.199,
+2023-01-06,82.861,83.977,81.024,83.84,
+2023-01-13,83.603,84.672,81.109,81.559,RisingBottoms_M1_P89_2 
+2023-01-20,81.573,84.802,81.446,83.823,
+2023-01-27,83.724,84.912,83.563,84.239,RisingTops_X1_P304_8 ;Staircase_X0_P283_8 
+2023-02-03,84.053,84.699,82.885,82.967,RisingBottoms_M2_P89_2 
+2023-02-10,83.536,83.88,82.313,82.854,
+2023-02-17,82.869,84.481,82.848,83.751,
+2023-02-24,83.737,84.27,83.455,84.089,RisingBottoms_M3_P89_2 
+2023-03-03,84.062,85.237,83.604,84.525,RisingTops_X1_P305_8 ;RisingTops_X2_P304_8 
+2023-03-10,84.546,84.581,82.541,82.804,
+2023-03-17,82.215,84.056,81.124,82.646,RisingBottoms_M1_P90_2 ;Staircase_M1_P283_8 
+2023-03-24,82.698,83.262,80.426,81.081,RisingBottoms_M1_P447_12 
+2023-03-31,80.934,83.821,80.9,83.121,RisingBottoms_M1_P539_26 ;RisingBottoms_M1_P620_52 ;RisingBottoms_M1_P7_NN ;RisingBottoms_M2_P619_52 ;RisingBottoms_M3_P618_52 ;RisingTops_X1_P48_2 
+2023-04-07,83.252,83.895,82.11,82.712,RisingTops_X1_P180_4 ;RisingTops_X1_P3_NN 
+2023-04-14,82.61,83.764,82.386,83.035,RisingBottoms_M1_P91_2 ;RisingBottoms_M2_P90_2 
+2023-04-21,82.97,83.693,81.941,82.328,
+2023-04-28,82.229,84.321,81.554,84.297,RisingBottoms_M1_P226_4 ;RisingBottoms_M1_P340_8 ;RisingBottoms_M1_P448_12 ;RisingBottoms_M1_P540_26 ;RisingBottoms_M1_P621_52 ;RisingBottoms_M1_P8_NN ;RisingBottoms_M2_P447_12 ;RisingBottoms_M2_P539_26 ;RisingBottoms_M2_P620_52 ;RisingBottoms_M2_P7_NN ;RisingBottoms_M3_P619_52 ;RisingTops_X1_P181_4 ;RisingTops_X2_P180_4 ;RisingTops_X2_P48_2 
+2023-05-05,84.196,85.411,83.417,84.876,RisingTops_X1_P417_12 ;RisingTops_X2_P305_8 ;RisingTops_X3_P304_8 ;Staircase_X1_P283_8 
+2023-05-12,84.833,85.912,83.718,84.042,RisingBottoms_M1_P92_2 ;RisingBottoms_M2_P91_2 ;RisingBottoms_M3_P90_2 
+2023-05-19,84.083,87.088,84.03,86.545,RisingBottoms_M1_P227_4 ;RisingBottoms_M1_P341_8 ;RisingBottoms_M1_P449_12 ;RisingBottoms_M1_P541_26 ;RisingBottoms_M1_P622_52 ;RisingBottoms_M2_P226_4 ;RisingBottoms_M2_P340_8 ;RisingBottoms_M2_P448_12 ;RisingBottoms_M2_P540_26 ;RisingBottoms_M2_P621_52 ;RisingBottoms_M3_P447_12 ;RisingBottoms_M3_P539_26 ;RisingBottoms_M3_P620_52 ;RisingTops_X2_P181_4 ;RisingTops_X3_P180_4 ;RisingTops_X3_P48_2 ;Staircase_M2_P283_8 
+2023-05-26,86.513,87.305,84.441,85.087,
+2023-06-02,85.061,85.34,83.515,84.805,RisingBottoms_M2_P92_2 ;RisingBottoms_M3_P91_2 
+2023-06-09,84.727,85.553,84.412,85.472,RisingBottoms_M1_P342_8 ;RisingBottoms_M1_P450_12 ;RisingBottoms_M1_P542_26 ;RisingBottoms_M1_P623_52 ;RisingBottoms_M2_P227_4 ;RisingBottoms_M2_P341_8 ;RisingBottoms_M2_P449_12 ;RisingBottoms_M2_P541_26 ;RisingBottoms_M2_P622_52 ;RisingBottoms_M3_P226_4 ;RisingBottoms_M3_P340_8 ;RisingBottoms_M3_P448_12 ;RisingBottoms_M3_P540_26 ;RisingBottoms_M3_P621_52 
+2023-06-16,85.363,88.554,85.145,88.45,RisingTops_X1_P418_12 ;RisingTops_X1_P520_26 ;RisingTops_X1_P600_52 ;RisingTops_X2_P417_12 ;RisingTops_X2_P519_26 ;RisingTops_X2_P599_52 ;RisingTops_X3_P181_4 ;RisingTops_X3_P305_8 ;RisingTops_X3_P518_26 ;RisingTops_X3_P598_52 
+2023-06-23,88.391,88.577,86.849,88.256,
+2023-06-30,88.14,88.976,87.585,88.569,FallingTops_X1_P137_2 ;RisingBottoms_M3_P92_2 ;RisingTops_X1_P4_NN ;RisingTops_X2_P3_NN 
+2023-07-07,88.479,89.694,88.166,88.259,
+2023-07-14,88.166,88.686,86.222,88.406,
+2023-07-21,88.258,88.367,86.452,87.456,FallingTops_X2_P137_2 ;RisingBottoms_M3_P227_4 
+2023-07-28,87.438,87.977,84.931,86.892,
+2023-08-04,86.851,88.591,86.355,86.445,
+2023-08-11,86.419,87.793,86.317,86.736,
+2023-08-18,86.768,87.237,85.977,86.101,FallingTops_X3_P137_2 ;RisingBottoms_M1_P228_4 ;RisingBottoms_M1_P343_8 ;RisingBottoms_M1_P93_2 ;RisingBottoms_M2_P342_8 ;RisingBottoms_M3_P341_8 ;RisingTops_X1_P49_2 
+2023-08-25,86.118,86.943,85.784,86.478,RisingBottoms_M1_P451_12 ;RisingBottoms_M1_P543_26 ;RisingBottoms_M1_P624_52 ;RisingBottoms_M2_P450_12 ;RisingBottoms_M2_P542_26 ;RisingBottoms_M2_P623_52 ;RisingBottoms_M3_P449_12 ;RisingBottoms_M3_P541_26 ;RisingBottoms_M3_P622_52 
+2023-09-01,86.409,87.526,86.38,86.885,RisingTops_X1_P182_4 
+2023-09-08,86.886,87.261,86.292,86.97,
+2023-09-15,86.446,87.63,86.443,87.207,RisingBottoms_M1_P229_4 ;RisingBottoms_M1_P344_8 ;RisingBottoms_M1_P452_12 ;RisingBottoms_M1_P544_26 ;RisingBottoms_M2_P228_4 ;RisingBottoms_M2_P343_8 ;RisingBottoms_M2_P451_12 ;RisingBottoms_M2_P543_26 ;RisingBottoms_M2_P624_52 ;RisingBottoms_M2_P93_2 ;RisingBottoms_M3_P342_8 ;RisingBottoms_M3_P450_12 ;RisingBottoms_M3_P542_26 ;RisingBottoms_M3_P623_52 ;RisingTops_X2_P49_2 
+2023-09-22,87.168,88.733,87.071,88.456,RisingTops_X1_P183_4 ;RisingTops_X1_P306_8 ;RisingTops_X2_P182_4 
+2023-09-29,88.326,90.201,88.173,89.571,RisingTops_X1_P419_12 ;RisingTops_X1_P521_26 ;RisingTops_X1_P601_52 ;RisingTops_X2_P418_12 ;RisingTops_X2_P520_26 ;RisingTops_X2_P600_52 ;RisingTops_X3_P417_12 ;RisingTops_X3_P519_26 ;RisingTops_X3_P599_52 
+2023-10-06,89.587,89.887,87.054,89.429,RisingTops_X3_P49_2 
+2023-10-13,88.931,89.927,87.954,88.024,RisingBottoms_M3_P93_2 
+2023-10-20,88.237,88.695,87.113,87.31,RisingBottoms_M1_P230_4 ;RisingBottoms_M2_P229_4 ;RisingBottoms_M3_P228_4 
+2023-10-27,87.329,87.948,86.775,86.938,
+2023-11-03,86.867,89.605,86.834,89.584,RisingBottoms_M1_P345_8 ;RisingBottoms_M1_P453_12 ;RisingBottoms_M1_P545_26 ;RisingBottoms_M2_P344_8 ;RisingBottoms_M2_P452_12 ;RisingBottoms_M2_P544_26 ;RisingBottoms_M3_P343_8 ;RisingBottoms_M3_P451_12 ;RisingBottoms_M3_P543_26 ;RisingTops_X2_P183_4 ;RisingTops_X3_P182_4 
+2023-11-10,89.475,89.862,88.921,89.224,
+2023-11-17,89.168,91.202,88.926,89.603,
+2023-11-24,89.701,91.021,89.177,90.876,RisingTops_X1_P307_8 ;RisingTops_X1_P420_12 ;RisingTops_X1_P522_26 ;RisingTops_X1_P602_52 ;RisingTops_X2_P306_8 ;RisingTops_X2_P419_12 ;RisingTops_X2_P521_26 ;RisingTops_X2_P601_52 ;RisingTops_X3_P183_4 ;RisingTops_X3_P418_12 ;RisingTops_X3_P520_26 ;RisingTops_X3_P600_52 ;Staircase_X0_P151_4 
+2023-12-01,90.868,91.514,90.226,91.13,RisingTops_X1_P5_NN ;RisingTops_X2_P4_NN ;RisingTops_X3_P3_NN 
+2023-12-08,90.866,91.072,87.671,88.689,RisingBottoms_M1_P231_4 ;RisingBottoms_M2_P230_4 ;RisingBottoms_M3_P229_4 
+2023-12-15,88.658,89.657,87.706,88.247,RisingBottoms_M1_P94_2 
+2023-12-22,88.123,90.433,88.102,89.617,RisingBottoms_M1_P346_8 ;RisingBottoms_M1_P454_12 ;RisingBottoms_M2_P345_8 ;RisingBottoms_M2_P453_12 ;RisingBottoms_M2_P545_26 ;RisingBottoms_M2_P8_NN ;RisingBottoms_M3_P344_8 ;RisingBottoms_M3_P452_12 ;RisingBottoms_M3_P544_26 ;RisingBottoms_M3_P7_NN ;RisingTops_X1_P50_2 
+2023-12-29,89.638,90.419,89.02,89.066,
+2024-01-05,88.856,90.512,88.63,90.296,RisingBottoms_M1_P232_4 ;RisingBottoms_M1_P95_2 ;RisingBottoms_M2_P231_4 ;RisingBottoms_M2_P94_2 ;RisingBottoms_M3_P230_4 ;RisingTops_X1_P184_4 ;Staircase_M1_P151_4 ;Staircase_X0_P152_4 
+2024-01-12,90.235,90.983,89.678,90.404,RisingTops_X1_P51_2 ;RisingTops_X2_P50_2 
+2024-01-19,90.44,90.8,89.884,90.554,
+2024-01-26,90.643,90.807,89.736,90.174,RisingBottoms_M2_P95_2 ;RisingBottoms_M3_P94_2 
+2024-02-02,90.277,90.718,89.252,89.944,RisingBottoms_M1_P347_8 ;RisingBottoms_M1_P455_12 ;RisingBottoms_M2_P232_4 ;RisingBottoms_M2_P346_8 ;RisingBottoms_M2_P454_12 ;RisingBottoms_M3_P231_4 ;RisingBottoms_M3_P345_8 ;RisingBottoms_M3_P453_12 ;RisingBottoms_M3_P545_26 ;RisingBottoms_M3_P8_NN ;Staircase_M1_P152_4 
+2024-02-09,90.08,91.863,89.757,91.784,RisingTops_X1_P308_8 ;RisingTops_X1_P421_12 ;RisingTops_X1_P523_26 ;RisingTops_X1_P603_52 ;RisingTops_X2_P184_4 ;RisingTops_X2_P307_8 ;RisingTops_X2_P420_12 ;RisingTops_X2_P51_2 ;RisingTops_X2_P522_26 ;RisingTops_X2_P602_52 ;RisingTops_X3_P306_8 ;RisingTops_X3_P419_12 ;RisingTops_X3_P50_2 ;RisingTops_X3_P521_26 ;RisingTops_X3_P601_52 ;Staircase_X1_P151_4 
+2024-02-16,91.738,92.115,91.033,91.964,RisingBottoms_M3_P95_2 
+2024-02-23,91.896,93.449,91.869,93.233,
+2024-03-01,93.277,93.277,91.047,91.639,RisingTops_X1_P309_8 ;RisingTops_X2_P308_8 ;RisingTops_X3_P184_4 ;RisingTops_X3_P307_8 ;RisingTops_X3_P51_2 ;Staircase_X1_P152_4 
+2024-03-08,91.606,91.827,90.71,90.8,RisingBottoms_M3_P232_4 ;Staircase_M2_P151_4 
+2024-03-15,90.818,91.212,90.357,90.661,
+2024-03-22,90.683,92.2,90.484,90.764,
+2024-03-29,90.724,91.246,90.16,90.483,RisingBottoms_M1_P233_4 ;RisingBottoms_M1_P96_2 ;Staircase_M2_P152_4 
+2024-04-05,90.419,91.703,90.099,91.168,RisingBottoms_M1_P348_8 ;RisingBottoms_M2_P347_8 ;RisingBottoms_M2_P455_12 ;RisingBottoms_M3_P346_8 ;RisingBottoms_M3_P454_12 ;RisingTops_X1_P185_4 ;RisingTops_X1_P52_2 
+2024-04-12,91.079,92.369,90.696,90.993,
+2024-04-19,90.922,91.611,89.948,91.071,
+2024-04-26,91.007,94.087,90.994,94.036,RisingBottoms_M1_P234_4 ;RisingBottoms_M1_P349_8 ;RisingBottoms_M1_P97_2 ;RisingBottoms_M2_P233_4 ;RisingBottoms_M2_P348_8 ;RisingBottoms_M2_P96_2 ;RisingBottoms_M3_P347_8 ;RisingBottoms_M3_P455_12 ;RisingTops_X1_P186_4 ;RisingTops_X1_P310_8 ;RisingTops_X1_P422_12 ;RisingTops_X1_P524_26 ;RisingTops_X1_P53_2 ;RisingTops_X1_P604_52 ;RisingTops_X2_P185_4 ;RisingTops_X2_P309_8 ;RisingTops_X2_P421_12 ;RisingTops_X2_P523_26 ;RisingTops_X2_P52_2 ;RisingTops_X2_P5_NN ;RisingTops_X2_P603_52 ;RisingTops_X3_P308_8 ;RisingTops_X3_P420_12 ;RisingTops_X3_P4_NN ;RisingTops_X3_P522_26 ;RisingTops_X3_P602_52 
+2024-05-03,93.838,95.393,90.778,91.939,
+2024-05-10,91.81,93.908,91.792,93.753,
+2024-05-17,93.613,95.571,93.469,95.486,RisingBottoms_M1_P98_2 ;RisingBottoms_M2_P234_4 ;RisingBottoms_M2_P349_8 ;RisingBottoms_M2_P97_2 ;RisingBottoms_M3_P233_4 ;RisingBottoms_M3_P348_8 ;RisingBottoms_M3_P96_2 ;RisingTops_X1_P187_4 ;RisingTops_X1_P311_8 ;RisingTops_X1_P423_12 ;RisingTops_X1_P525_26 ;RisingTops_X1_P54_2 ;RisingTops_X1_P605_52 ;RisingTops_X2_P186_4 ;RisingTops_X2_P310_8 ;RisingTops_X2_P422_12 ;RisingTops_X2_P524_26 ;RisingTops_X2_P53_2 ;RisingTops_X2_P604_52 ;RisingTops_X3_P185_4 ;RisingTops_X3_P309_8 ;RisingTops_X3_P421_12 ;RisingTops_X3_P523_26 ;RisingTops_X3_P52_2 ;RisingTops_X3_P603_52 
+2024-05-24,95.436,96.146,95.057,96.086,
+2024-05-31,96.001,96.739,95.42,96.651,
+2024-06-07,96.523,96.856,95.26,95.666,RisingBottoms_M2_P98_2 ;RisingBottoms_M3_P97_2 
+2024-06-14,95.658,97.248,95.602,96.652,RisingBottoms_M3_P234_4 ;RisingTops_X2_P54_2 ;RisingTops_X3_P53_2 
+2024-06-21,96.541,97.791,96.086,97.775,RisingTops_X2_P187_4 ;RisingTops_X2_P311_8 ;RisingTops_X2_P423_12 ;RisingTops_X2_P525_26 ;RisingTops_X2_P605_52 ;RisingTops_X3_P186_4 ;RisingTops_X3_P310_8 ;RisingTops_X3_P422_12 ;RisingTops_X3_P524_26 ;RisingTops_X3_P604_52 
+2024-06-28,97.591,98.144,97.269,97.994,RisingBottoms_M3_P98_2 
+2024-07-05,97.929,98.859,97.74,98.791,FallingTops_X1_P138_2 ;FallingTops_X1_P13_NN ;RisingTops_X3_P54_2 ;RisingTops_X3_P5_NN 
+2024-07-12,98.674,99.016,96.064,96.607,FallingTops_X1_P379_8 ;FallingTops_X1_P484_12 ;FallingTops_X1_P569_26 ;FallingTops_X1_P638_52 ;RisingTops_X3_P187_4 ;RisingTops_X3_P311_8 ;RisingTops_X3_P423_12 ;RisingTops_X3_P525_26 ;RisingTops_X3_P605_52 
+2024-07-19,96.596,96.661,94.427,94.633,RisingBottoms_M3_P349_8 
+2024-07-26,94.659,94.831,89.787,90.525,FallingTops_X2_P138_2 
+2024-08-02,90.519,91.522,87.227,87.296,RisingTops_X1_P188_4 ;Staircase_X0_P153_4 
+2024-08-09,87.212,88.975,83.034,87.973,RisingBottoms_M1_P235_4 ;RisingBottoms_M1_P99_2 
+2024-08-16,87.994,89.772,87.961,89.367,FallingTops_X3_P138_2 
+2024-08-23,89.28,90.272,88.232,90.005,
+2024-08-30,89.662,91.41,89.122,91.353,RisingTops_X2_P188_4 
+2024-09-06,91.28,91.653,87.688,87.848,RisingBottoms_M1_P100_2 ;RisingBottoms_M1_P236_4 ;RisingBottoms_M2_P235_4 ;RisingBottoms_M2_P99_2 ;Staircase_M1_P153_4 
+2024-09-13,87.676,88.414,86.305,86.682,FallingBottoms_M1_P653_52 ;RisingBottoms_M3_P624_52 
+2024-09-20,86.726,89.946,86.265,89.726,
+2024-09-27,89.682,92.288,89.364,90.157,RisingBottoms_M1_P101_2 ;RisingBottoms_M2_P100_2 ;RisingBottoms_M2_P236_4 ;RisingBottoms_M3_P235_4 ;RisingBottoms_M3_P99_2 
+2024-10-04,90.129,91.96,89.857,91.585,FallingTops_X1_P270_4 ;FallingTops_X1_P380_8 ;FallingTops_X2_P379_8 ;RisingTops_X3_P188_4 ;Staircase_X1_P153_4 
+2024-10-11,91.613,91.917,90.085,91.143,FallingTops_X1_P485_12 ;FallingTops_X1_P570_26 ;FallingTops_X1_P639_52 ;FallingTops_X2_P484_12 ;FallingTops_X2_P569_26 ;FallingTops_X2_P638_52 
+2024-10-18,90.916,91.356,90.061,90.769,RisingBottoms_M2_P101_2 ;RisingBottoms_M3_P100_2 
+2024-10-25,90.73,92.045,90.556,91.027,
+2024-11-01,91.345,91.857,90.414,91.232,
+2024-11-08,91.443,92.46,90.735,91.053,FallingTops_X1_P14_NN ;FallingTops_X1_P271_4 ;FallingTops_X1_P381_8 ;FallingTops_X1_P486_12 ;FallingTops_X1_P571_26 ;FallingTops_X1_P640_52 ;FallingTops_X2_P13_NN ;FallingTops_X2_P270_4 ;FallingTops_X2_P380_8 ;FallingTops_X2_P485_12 ;FallingTops_X2_P570_26 ;FallingTops_X2_P639_52 ;FallingTops_X3_P379_8 ;FallingTops_X3_P484_12 ;FallingTops_X3_P569_26 ;FallingTops_X3_P638_52 ;RisingBottoms_M3_P101_2 
+2024-11-15,91.068,91.945,90.233,90.53,RisingBottoms_M3_P236_4 ;Staircase_M2_P153_4 
+2024-11-22,90.578,91.804,89.983,90.299,
+2024-11-29,90.315,90.55,88.456,88.686,FallingTops_X1_P382_8 ;FallingTops_X1_P487_12 ;FallingTops_X1_P572_26 ;FallingTops_X2_P271_4 ;FallingTops_X2_P381_8 ;FallingTops_X2_P486_12 ;FallingTops_X2_P571_26 ;FallingTops_X2_P640_52 ;FallingTops_X3_P270_4 ;FallingTops_X3_P380_8 ;FallingTops_X3_P485_12 ;FallingTops_X3_P570_26 ;FallingTops_X3_P639_52 
+2024-12-06,88.468,88.902,87.269,87.457,
+2024-12-13,87.613,88.985,87.011,88.486,
+2024-12-20,88.488,89.297,86.713,88.478,
+2024-12-27,88.34,89.085,88.268,88.893,FallingTops_X3_P271_4 
+2025-01-03,88.807,89.431,87.714,88.249,
+2025-01-10,88.288,89.699,87.473,87.608,
+2025-01-17,87.626,88.726,86.679,87.267,
+2025-01-24,87.41,89.273,87.207,89.026,FallingTops_X1_P139_2 ;FallingTops_X1_P272_4 ;FallingTops_X1_P383_8 ;FallingTops_X1_P488_12 ;FallingTops_X2_P14_NN ;FallingTops_X2_P382_8 ;FallingTops_X2_P487_12 ;FallingTops_X2_P572_26 ;FallingTops_X3_P13_NN ;FallingTops_X3_P381_8 ;FallingTops_X3_P486_12 ;FallingTops_X3_P571_26 ;FallingTops_X3_P640_52 
+2025-01-31,88.837,88.841,86.645,87.484,
+2025-02-07,86.505,87.466,85.262,85.684,FallingBottoms_M2_P653_52 
+2025-02-14,85.331,87.399,85.271,87.257,FallingTops_X1_P273_4 ;FallingTops_X1_P384_8 ;FallingTops_X2_P139_2 ;FallingTops_X2_P272_4 ;FallingTops_X2_P383_8 ;FallingTops_X2_P488_12 ;FallingTops_X3_P382_8 ;FallingTops_X3_P487_12 
+2025-02-21,87.117,87.327,85.449,85.738,
+2025-02-28,85.754,86.156,83.653,84.278,FallingBottoms_M3_P653_52 
+2025-03-07,84.417,85.631,83.143,84.511,FallingTops_X3_P139_2 
+2025-03-09,83.77,85.622,83.152,84.271,
+2025-03-16,83.735,86.416,83.31,85.458,
+2025-03-23,86.986,87.358,85.041,85.972,FallingTops_X2_P273_4 ;FallingTops_X2_P384_8 ;FallingTops_X3_P14_NN ;FallingTops_X3_P272_4 ;FallingTops_X3_P383_8 ;FallingTops_X3_P488_12 ;RisingTops_X1_P424_12 ;Staircase_X0_P1_NN 
+2025-03-30,86.328,86.816,84.652,85.363,
+2025-04-02,84.986,85.6,84.576,85.472,
+2025-04-04,85.346,86.752,81.085,82.235,RisingBottoms_M1_P237_4 ;RisingBottoms_M1_P350_8 ;RisingBottoms_M1_P456_12 ;RisingBottoms_M1_P546_26 ;RisingTops_X1_P55_2 
+2025-04-11,81.151,83.839,79.78,83.594,Staircase_M1_P1_NN 
+2025-04-18,83.834,85.227,83.243,84.484,RisingBottoms_M1_P102_2 
+2025-04-25,84.582,86.061,84.012,85.644,FallingTops_X3_P273_4 ;RisingBottoms_M1_P238_4 ;RisingBottoms_M1_P351_8 ;RisingBottoms_M1_P457_12 ;RisingBottoms_M1_P547_26 ;RisingBottoms_M2_P237_4 ;RisingBottoms_M2_P350_8 ;RisingBottoms_M2_P456_12 ;RisingBottoms_M2_P546_26 ;RisingTops_X1_P189_4 ;RisingTops_X1_P56_2 ;RisingTops_X2_P55_2 
+2025-05-02,85.619,86.438,84.2,86.192,
+2025-05-09,86.111,86.35,85.26,85.889,
+2025-05-16,86.492,87.725,85.061,85.651,FallingTops_X3_P384_8 ;RisingBottoms_M1_P103_2 ;RisingBottoms_M2_P102_2 ;RisingTops_X1_P190_4 ;RisingTops_X1_P312_8 ;RisingTops_X1_P57_2 ;RisingTops_X2_P189_4 ;RisingTops_X2_P56_2 ;RisingTops_X3_P55_2 ;Staircase_X1_P1_NN 
+2025-05-23,85.463,86.176,84.595,85.342,RisingBottoms_M1_P239_4 ;RisingBottoms_M2_P238_4 ;RisingBottoms_M3_P237_4 
+2025-05-30,85.265,87.012,85.177,85.863,RisingBottoms_M2_P351_8 ;RisingBottoms_M2_P457_12 ;RisingBottoms_M2_P547_26 ;RisingBottoms_M3_P350_8 ;RisingBottoms_M3_P456_12 ;RisingBottoms_M3_P546_26 
+2025-06-06,85.864,87.262,85.531,87.11,RisingBottoms_M1_P104_2 ;RisingBottoms_M2_P103_2 ;RisingBottoms_M3_P102_2 ;RisingTops_X1_P191_4 ;RisingTops_X1_P313_8 ;RisingTops_X1_P425_12 ;RisingTops_X1_P58_2 ;RisingTops_X2_P190_4 ;RisingTops_X2_P312_8 ;RisingTops_X2_P424_12 ;RisingTops_X2_P57_2 ;RisingTops_X3_P189_4 ;RisingTops_X3_P56_2 
+2025-06-13,87.183,87.911,85.835,86.694,
+2025-06-20,86.729,88.004,86.644,87.112,RisingBottoms_M2_P239_4 ;RisingBottoms_M3_P238_4 ;RisingBottoms_M3_P351_8 
+2025-06-27,86.966,87.806,86.787,87.602,RisingBottoms_M2_P104_2 ;RisingBottoms_M3_P103_2 ;RisingTops_X2_P191_4 ;RisingTops_X2_P313_8 ;RisingTops_X2_P425_12 ;RisingTops_X2_P58_2 ;RisingTops_X3_P190_4 ;RisingTops_X3_P312_8 ;RisingTops_X3_P424_12 ;RisingTops_X3_P57_2 
+2025-07-04,87.479,88.045,87.022,87.602,
+2025-07-11,87.48822,89.14029,86.31812,88.57266,
+2025-07-18,88.32272,89.49541,86.8179,88.72052,FallingTops_X1_P140_2 ;FallingTops_X1_P385_8 ;FallingTops_X3_P572_26 ;RisingTops_X3_P191_4 ;RisingTops_X3_P313_8 ;RisingTops_X3_P425_12 ;RisingTops_X3_P58_2 
+2025-07-25,88.24972,89.34097,86.87294,88.80272,
+2025-08-01,88.76219,89.61742,86.23244,87.17818,RisingBottoms_M3_P104_2 ;RisingBottoms_M3_P239_4 
+2025-08-08,86.95703,88.31109,86.18614,87.9968,FallingTops_X1_P141_2 ;FallingTops_X2_P140_2 
+2025-08-15,87.56462,88.82192,86.33981,87.11584,
+2025-08-22,87.02419,87.92972,84.96389,86.20383,
+2025-08-29,86.05416,87.0397,85.63942,86.47716,RisingBottoms_M3_P457_12 ;Staircase_M2_P1_NN 
+2025-09-05,86.48599,87.97886,85.68716,86.85103,FallingTops_X2_P141_2 ;FallingTops_X3_P140_2 
+2025-09-12,87.01791,88.51625,86.57996,87.93153,FallingTops_X2_P385_8 ;RisingTops_X1_P426_12 
+2025-09-19,87.77522,88.49639,86.12974,86.64846,
+2025-09-24,86.54523,87.35061,85.6385,86.57046,
+2025-09-26,86.54523,87.41835,85.51448,86.28563,FallingTops_X3_P141_2 ;RisingTops_X1_P59_2 
+2025-09-29,86.09346,86.64105,85.55173,85.81981,RisingBottoms_M3_P547_26 
+2025-10-03,86.09346,86.64105,84.77609,85.97226,
+2025-10-10,86.7689,88.96534,86.37651,86.47292,RisingTops_X1_P192_4 ;RisingTops_X1_P60_2 ;RisingTops_X2_P59_2 
+2025-10-13,86.88832,87.62251,86.65104,87.17458,FallingTops_X3_P385_8 ;RisingTops_X1_P314_8 
+2025-10-15,86.88832,87.62251,86.06195,86.44019,
+2025-10-17,86.88832,87.62251,85.28456,86.24501,
+2025-10-24,85.93074,88.2697,85.79275,87.85818,RisingTops_X1_P193_4 ;RisingTops_X1_P61_2 ;RisingTops_X2_P192_4 ;RisingTops_X2_P314_8 ;RisingTops_X2_P60_2 ;RisingTops_X3_P59_2 
+2025-10-28,87.77227,88.67045,87.35096,87.92901,
+2025-10-31,87.77227,89.38987,87.09066,88.1188,RisingTops_X2_P426_12 
+2025-11-07,88.05148,88.54703,85.62912,86.30284,RisingTops_X2_P193_4 ;RisingTops_X2_P61_2 ;RisingTops_X3_P192_4 ;RisingTops_X3_P60_2 
+2025-11-10,86.20157,87.15125,85.9411,87.01203,
+2025-11-14,86.20157,88.07668,85.9411,87.76327,
+2025-11-21,87.73008,89.01838,86.72017,87.78171,
+2025-11-28,87.86147,89.92389,87.06544,89.53641,RisingTops_X3_P193_4 ;RisingTops_X3_P314_8 ;RisingTops_X3_P426_12 ;RisingTops_X3_P61_2 
+2025-12-05,89.50774,90.06343,88.30515,89.67778,

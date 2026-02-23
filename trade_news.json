@@ -1,0 +1,56 @@
+{
+  "US": [],
+  "Canada": [],
+  "Japan": [],
+  "UK": [
+    {
+      "date": "2025-06-17",
+      "otherCountries": [
+        "US"
+      ],
+      "eventType": "More Demand for Export",
+      "description": "Tariff cuts on cars by 10%, aerospace, steel"
+    },
+    {
+      "date": "2025-06-25",
+      "otherCountries": [
+        "None"
+      ],
+      "eventType": "Strategy",
+      "description": "Expanding export finance"
+    }
+  ],
+  "Australia": [
+    {
+      "date": "2025-06-17",
+      "otherCountries": [
+        "US"
+      ],
+      "eventType": "War",
+      "description": "Israel/Iran War"
+    },
+    {
+      "date": "2025-06-22",
+      "otherCountries": [
+        "All"
+      ],
+      "eventType": "More Demand for Import",
+      "description": "Hybrid Bond Market"
+    },
+    {
+      "date": "2025-06-22",
+      "otherCountries": [
+        "US"
+      ],
+      "eventType": "New Disagreement/Enemy",
+      "description": "Iran War"
+    }
+  ],
+  "China": [],
+  "Russia": [],
+  "Switzerland": [],
+  "New Zealand": [],
+  "Slovakia": [],
+  "Germany": [],
+  "France": []
+}

@@ -1,0 +1,346 @@
+{
+  "US": {
+    "Interest Rate": [],
+    "Inflation Rate": [],
+    "Retail Price Index": [],
+    "Balance of Trade": [],
+    "Unemployment Rate": [],
+    "GDP Growth Rate": [],
+    "Manufacturing PMI": [],
+    "Non Farm Payrolls": [],
+    "CPI": [],
+    "PCE": [],
+    "Consumer Confidence Index": [],
+    "Home Sales": [],
+    "10-Year Bond Yields": []
+  },
+  "Canada": {
+    "Interest Rate": [],
+    "Inflation Rate": [],
+    "Retail Price Index": [],
+    "Balance of Trade": [],
+    "Unemployment Rate": [],
+    "GDP Growth Rate": [],
+    "Manufacturing PMI": [],
+    "Non Farm Payrolls": [],
+    "CPI": [],
+    "PCE": [],
+    "Consumer Confidence Index": [],
+    "Home Sales": [],
+    "10-Year Bond Yields": []
+  },
+  "Japan": {
+    "Interest Rate": [],
+    "Inflation Rate": [],
+    "Retail Price Index": [],
+    "Balance of Trade": [],
+    "Unemployment Rate": [],
+    "GDP Growth Rate": [],
+    "Manufacturing PMI": [],
+    "Non Farm Payrolls": [],
+    "CPI": [],
+    "PCE": [],
+    "Consumer Confidence Index": [],
+    "Home Sales": [],
+    "10-Year Bond Yields": []
+  },
+  "UK": {
+    "Interest Rate": [
+      {
+        "date": "2025-06-17",
+        "value": 4.25
+      },
+      {
+        "date": "2025-06-18",
+        "value": 4.25
+      }
+    ],
+    "Inflation Rate": [
+      {
+        "date": "2025-06-17",
+        "value": 3.5
+      }
+    ],
+    "Retail Price Index": [
+      {
+        "date": "2025-06-17",
+        "value": 4.5
+      },
+      {
+        "date": "2025-06-18",
+        "value": 4.3
+      }
+    ],
+    "Balance of Trade": [
+      {
+        "date": "2025-06-17",
+        "value": -7026
+      },
+      {
+        "date": "2025-07-11",
+        "value": -5699
+      }
+    ],
+    "Unemployment Rate": [
+      {
+        "date": "2025-06-17",
+        "value": 4.6
+      }
+    ],
+    "GDP Growth Rate": [
+      {
+        "date": "2025-06-17",
+        "value": 0.7
+      }
+    ],
+    "Manufacturing PMI": [
+      {
+        "date": "2025-06-17",
+        "value": 46.4
+      },
+      {
+        "date": "2025-06-23",
+        "value": 47.7
+      }
+    ],
+    "Non Farm Payrolls": [
+      {
+        "date": "2025-06-17",
+        "value": -109
+      }
+    ],
+    "CPI": [
+      {
+        "date": "2025-06-17",
+        "value": 138
+      }
+    ],
+    "PCE": [],
+    "Consumer Confidence Index": [
+      {
+        "date": "2025-06-17",
+        "value": -20
+      },
+      {
+        "date": "2025-06-18",
+        "value": -18
+      }
+    ],
+    "Home Sales": [
+      {
+        "date": "2025-06-17",
+        "value": 30860
+      }
+    ],
+    "10-Year Bond Yields": [
+      {
+        "date": "2025-06-17",
+        "value": 4.558
+      }
+    ]
+  },
+  "Australia": {
+    "Interest Rate": [
+      {
+        "date": "2025-06-17",
+        "value": 3.85
+      },
+      {
+        "date": "2025-07-08",
+        "value": 3.85
+      }
+    ],
+    "Inflation Rate": [
+      {
+        "date": "2025-06-17",
+        "value": 2.4
+      }
+    ],
+    "Retail Price Index": [
+      {
+        "date": "2025-06-17",
+        "value": -0.1
+      },
+      {
+        "date": "2025-07-01",
+        "value": 0.2
+      }
+    ],
+    "Balance of Trade": [
+      {
+        "date": "2025-06-17",
+        "value": 5413
+      },
+      {
+        "date": "2025-07-02",
+        "value": 2238
+      }
+    ],
+    "Unemployment Rate": [
+      {
+        "date": "2025-06-17",
+        "value": 4.1
+      },
+      {
+        "date": "2025-06-19",
+        "value": 4.1
+      }
+    ],
+    "GDP Growth Rate": [
+      {
+        "date": "2025-06-17",
+        "value": 0.2
+      }
+    ],
+    "Manufacturing PMI": [
+      {
+        "date": "2025-06-17",
+        "value": 51
+      },
+      {
+        "date": "2025-06-22",
+        "value": 50.6
+      }
+    ],
+    "Non Farm Payrolls": [
+      {
+        "date": "2025-06-17",
+        "value": 67.1
+      },
+      {
+        "date": "2025-06-19",
+        "value": 67
+      }
+    ],
+    "CPI": [
+      {
+        "date": "2025-06-17",
+        "value": 141
+      }
+    ],
+    "PCE": [],
+    "Consumer Confidence Index": [
+      {
+        "date": "2025-06-17",
+        "value": 92.6
+      }
+    ],
+    "Home Sales": [
+      {
+        "date": "2025-06-17",
+        "value": 4287
+      }
+    ],
+    "10-Year Bond Yields": [
+      {
+        "date": "2025-06-17",
+        "value": 4.252
+      }
+    ]
+  },
+  "China": {
+    "Interest Rate": [],
+    "Inflation Rate": [],
+    "Retail Price Index": [],
+    "Balance of Trade": [],
+    "Unemployment Rate": [],
+    "GDP Growth Rate": [],
+    "Manufacturing PMI": [],
+    "Non Farm Payrolls": [],
+    "CPI": [],
+    "PCE": [],
+    "Consumer Confidence Index": [],
+    "Home Sales": [],
+    "10-Year Bond Yields": []
+  },
+  "Russia": {
+    "Interest Rate": [],
+    "Inflation Rate": [],
+    "Retail Price Index": [],
+    "Balance of Trade": [],
+    "Unemployment Rate": [],
+    "GDP Growth Rate": [],
+    "Manufacturing PMI": [],
+    "Non Farm Payrolls": [],
+    "CPI": [],
+    "PCE": [],
+    "Consumer Confidence Index": [],
+    "Home Sales": [],
+    "10-Year Bond Yields": []
+  },
+  "Switzerland": {
+    "Interest Rate": [],
+    "Inflation Rate": [],
+    "Retail Price Index": [],
+    "Balance of Trade": [],
+    "Unemployment Rate": [],
+    "GDP Growth Rate": [],
+    "Manufacturing PMI": [],
+    "Non Farm Payrolls": [],
+    "CPI": [],
+    "PCE": [],
+    "Consumer Confidence Index": [],
+    "Home Sales": [],
+    "10-Year Bond Yields": []
+  },
+  "New Zealand": {
+    "Interest Rate": [],
+    "Inflation Rate": [],
+    "Retail Price Index": [],
+    "Balance of Trade": [],
+    "Unemployment Rate": [],
+    "GDP Growth Rate": [],
+    "Manufacturing PMI": [],
+    "Non Farm Payrolls": [],
+    "CPI": [],
+    "PCE": [],
+    "Consumer Confidence Index": [],
+    "Home Sales": [],
+    "10-Year Bond Yields": []
+  },
+  "Slovakia": {
+    "Interest Rate": [],
+    "Inflation Rate": [],
+    "Retail Price Index": [],
+    "Balance of Trade": [],
+    "Unemployment Rate": [],
+    "GDP Growth Rate": [],
+    "Manufacturing PMI": [],
+    "Non Farm Payrolls": [],
+    "CPI": [],
+    "PCE": [],
+    "Consumer Confidence Index": [],
+    "Home Sales": [],
+    "10-Year Bond Yields": []
+  },
+  "Germany": {
+    "Interest Rate": [],
+    "Inflation Rate": [],
+    "Retail Price Index": [],
+    "Balance of Trade": [],
+    "Unemployment Rate": [],
+    "GDP Growth Rate": [],
+    "Manufacturing PMI": [],
+    "Non Farm Payrolls": [],
+    "CPI": [],
+    "PCE": [],
+    "Consumer Confidence Index": [],
+    "Home Sales": [],
+    "10-Year Bond Yields": []
+  },
+  "France": {
+    "Interest Rate": [],
+    "Inflation Rate": [],
+    "Retail Price Index": [],
+    "Balance of Trade": [],
+    "Unemployment Rate": [],
+    "GDP Growth Rate": [],
+    "Manufacturing PMI": [],
+    "Non Farm Payrolls": [],
+    "CPI": [],
+    "PCE": [],
+    "Consumer Confidence Index": [],
+    "Home Sales": [],
+    "10-Year Bond Yields": []
+  }
+}

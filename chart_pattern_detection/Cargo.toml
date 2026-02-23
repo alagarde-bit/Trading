@@ -1,0 +1,70 @@
+[package]
+name = "chart_pattern_detection"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+rayon = "1.8.0"
+polars = { version = "0.35.4", features = ["lazy", "csv", "strings"] }
+regex = "1.10.2"
+lazy_static = "1.4.0"
+anyhow = "1.0.75"
+lru = "0.12.1"
+
+[[bin]]
+name = "chart_patterns_basic"
+path = "src/chart_pattern_detection_basic.rs"
+
+[[bin]]
+name = "chart_pattern_detection_hs"
+path = "src/chart_pattern_detection_hs.rs"
+
+
+[[bin]]
+name = "chart_patterns_basic2"
+path = "src/chart_pattern_detection_basic2.rs"
+
+
+[[bin]]
+name = "chart_patterns_basic3"
+path = "src/chart_pattern_detection_basic3.rs"
+
+[[bin]]
+name = "chart_patterns_basic4"
+path = "src/chart_pattern_detection_basic4.rs"
+
+[[bin]]
+name = "candlestick_detection"
+path = "src/candlestick_detection.rs"
+
+[[bin]]
+name = "candlestick_double_detection"
+path = "src/candlestick_double_detection.rs"
+
+[[bin]]
+name = "candlestick_triple_detection"
+path = "src/candlestick_triple_detection.rs"
+
+[[bin]]
+name = "chart_pattern_historical_metrics"
+path = "src/chart_pattern_historical_metrics.rs"
+
+[[bin]]
+name = "merge_patterns_script"
+path = "src/merge_patterns_script.rs"
+
+[[bin]]
+name = "merge_candlesticks"
+path = "src/merge_candlesticks.rs"
+
+[[bin]]
+name = "add_historical_patterns"
+path = "src/add_historical_patterns.rs"
+
+[[bin]]
+name = "add_historical_candlesticks"
+path = "src/add_historical_candlesticks.rs"
+
+[[bin]]
+name = "combine_patterns_and_indicators"
+path = "src/combine_patterns_and_indicators.rs"

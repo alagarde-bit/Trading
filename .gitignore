@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Node
+node_modules/
+package-lock.json
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Compiled files
+*.exe
+*.pdb
+*.dll
+
+# Model files (large)
+*.h5
+*.pkl
+*.model
+
+# Generated images (optional - remove if you want to track these)
+*.png
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.venv/
+venv/
+
+# Rust
+target/
+Cargo.lock

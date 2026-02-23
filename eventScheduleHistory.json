@@ -1,0 +1,116 @@
+[
+  {
+    "timestamp": "2025-06-16 22:18:29",
+    "country": "UK",
+    "event": "Inflationary Reports",
+    "date": "2025-06-18"
+  },
+  {
+    "timestamp": "2025-06-16 22:19:13",
+    "country": "Australia",
+    "event": "Labor Market Reports",
+    "date": "2025-06-18"
+  },
+  {
+    "timestamp": "2025-06-16 22:23:57",
+    "country": "Australia",
+    "event": "Industrial Reports",
+    "date": "2025-06-22"
+  },
+  {
+    "timestamp": "2025-06-16 22:25:29",
+    "country": "UK",
+    "event": "Consumer Confidence",
+    "date": "2025-06-18"
+  },
+  {
+    "timestamp": "2025-06-16 22:26:21",
+    "country": "UK",
+    "event": "Inflationary Reports",
+    "date": "2025-06-20"
+  },
+  {
+    "timestamp": "2025-06-16 22:28:00",
+    "country": "Australia",
+    "event": "Inflationary Reports",
+    "date": "2025-06-24"
+  },
+  {
+    "timestamp": "2025-06-16 22:29:34",
+    "country": "UK",
+    "event": "Industrial Reports",
+    "date": "2025-06-23"
+  },
+  {
+    "timestamp": "2025-06-16 22:33:50",
+    "country": "Australia",
+    "event": "Trade Balance Reports",
+    "date": "2025-06-16"
+  },
+  {
+    "timestamp": "2025-06-16 22:36:07",
+    "country": "Australia",
+    "event": "Consumer Confidence",
+    "date": "2025-07-01"
+  },
+  {
+    "timestamp": "2025-06-29 22:43:34",
+    "country": "UK",
+    "event": "Labor Market Reports",
+    "date": "2025-07-17"
+  },
+  {
+    "timestamp": "2025-06-29 22:44:40",
+    "country": "UK",
+    "event": "Inflationary Reports",
+    "date": "2025-07-16"
+  },
+  {
+    "timestamp": "2025-06-29 22:53:40",
+    "country": "Australia",
+    "event": "Labor Market Reports",
+    "date": "2025-07-16"
+  },
+  {
+    "timestamp": "2025-07-10 01:00:31",
+    "country": "UK",
+    "event": "Consumer Confidence",
+    "date": "2025-07-24"
+  },
+  {
+    "timestamp": "2025-07-10 01:01:30",
+    "country": "UK",
+    "event": "Industrial Reports",
+    "date": "2025-07-24"
+  },
+  {
+    "timestamp": "2025-07-10 01:02:27",
+    "country": "Australia",
+    "event": "Industrial Reports",
+    "date": "2025-07-23"
+  },
+  {
+    "timestamp": "2025-07-10 01:03:41",
+    "country": "Australia",
+    "event": "Inflationary Reports",
+    "date": "2025-07-29"
+  },
+  {
+    "timestamp": "2025-07-10 01:04:40",
+    "country": "Australia",
+    "event": "Trade Balance Reports",
+    "date": "2025-08-06"
+  },
+  {
+    "timestamp": "2025-07-10 01:05:26",
+    "country": "Australia",
+    "event": "Consumer Confidence",
+    "date": "2025-08-12"
+  },
+  {
+    "timestamp": "2025-07-11 20:15:11",
+    "country": "UK",
+    "event": "Trade Balance Reports",
+    "date": "2025-08-15"
+  }
+]
