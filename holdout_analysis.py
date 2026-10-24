@@ -1,4 +1,5 @@
 import warnings
+import os
 import pandas as pd
 import numpy as np
 from pathlib import Path
@@ -52,6 +53,18 @@ RUN_CALIBRATION_DIAGNOSTICS = True  # bin by vol regime, report mean pred vs rea
 # Final holdout: optimize threshold/cap on first (1-HOLDOUT_FRAC) of OOS; report metrics on unseen holdout
 USE_FINAL_HOLDOUT = True
 HOLDOUT_FRAC = 0.2                  # last 20% of OOS by time = holdout (unseen)
+
+PAIRS = ['GBPAUD', 'NZDJPY', 'GBPUSD', 'USDCHF', 'USDJPY']
+
+# Fast iteration: FX_TRADER_FAST=1 reduces walk-forward work (for development, not final results)
+if os.environ.get("FX_TRADER_FAST", "").strip().lower() in ("1", "true", "yes"):
+    N_WF_FOLDS = 2
+    MIN_TRAIN_FRAC = 0.80
+    RUN_AB_THRESHOLD_SCENARIOS = False
+    RUN_TIME_SLICE_ANALYSIS = False
+    RUN_CALIBRATION_DIAGNOSTICS = False
+    print("FX_TRADER_FAST=1: using 2 walk-forward folds and skipping extra diagnostics.")
+
 
 def _parse_tff_number(s):
     if pd.isna(s) or s == '' or str(s).strip() == '':
@@ -455,154 +468,7 @@ def _compute_relative_features_impl(df):
     df['weekly_vs_monthly_close'] = df['weekly_close'] / df['monthly_close'] - 1
     df['daily_vs_monthly_close'] = df['daily_close'] / df['monthly_close'] - 1
 
-# ============================================================
-# Load and preprocess data
-#   - Train on cumulative combined patterns/indicators for all pairs
-#     using the per-pair Rust outputs: combined_{PAIR}_daily.csv
-# ============================================================
-PAIRS = ['GBPAUD', 'NZDJPY', 'GBPUSD', 'USDCHF', 'USDJPY']
-dfs = []
-for pair in PAIRS:
-    path = Path(f'combined_{pair}_daily.csv')
-    if not path.exists():
-        continue
-    tmp = pd.read_csv(path, parse_dates=['date'])
-    tmp['pair'] = pair
-    dfs.append(tmp)
 
-if not dfs:
-    raise FileNotFoundError("No per-pair combined_*_daily.csv files found for PAIRS.")
-
-df = pd.concat(dfs, ignore_index=True)
-df = df.sort_values(['pair', 'date']).reset_index(drop=True)
-
-# Optionally materialize the cumulative file for inspection/reuse
-try:
-    df.to_csv('combined_all_pairs_daily.csv', index=False)
-except Exception:
-    # Non-fatal if we cannot write; training can still proceed
-    pass
-
-df, cot_features = load_and_merge_tff(df)
-# Compute rolling/shift features per pair to avoid cross-pair contamination
-if 'pair' in df.columns and df['pair'].nunique() > 1:
-    df = df.groupby('pair', group_keys=False).apply(compute_relative_features).reset_index(drop=True)
-else:
-    df = compute_relative_features(df)
-
-def simplify_pattern(pattern):
-    parts = pattern.split('_')
-    if len(parts) >= 2:
-        return parts[0] + '_' + parts[-1]
-    return pattern
-
-def simplify_chart_patterns(cell):
-    if pd.isna(cell) or cell == '':
-        return ''
-    patterns = cell.split(';')
-    simplified = [simplify_pattern(p) for p in patterns]
-    return ';'.join(simplified)
-
-chart_pattern_cols = [
-    'daily_chart_patterns', 'daily_chart_prev_pattern', 'daily_chart_prev_3_patterns', 'daily_chart_prev_10_patterns',
-    'weekly_chart_patterns', 'weekly_chart_prev_pattern', 'weekly_chart_prev_3_patterns', 'weekly_chart_prev_10_patterns',
-    'monthly_chart_patterns', 'monthly_chart_prev_pattern', 'monthly_chart_prev_3_patterns', 'monthly_chart_prev_10_patterns'
-]
-for col in chart_pattern_cols:
-    df[col] = df[col].apply(simplify_chart_patterns)
-
-if cot_features and TRAIN_COT_ONLY:
-    dropped_avail = 0
-    # Pair-aware: keep row only if this pair's two COT currencies have available=1
-    def _row_has_cot(row):
-        c1, c2 = PAIR_TO_CURRENCIES.get(row['pair'], (None, None))
-        a1 = row.get(f'cot_{c1}_available', 0) == 1 if c1 else True
-        a2 = row.get(f'cot_{c2}_available', 0) == 1 if c2 else True
-        return a1 and a2
-    if 'pair' in df.columns:
-        before = len(df)
-        df = df.loc[df.apply(_row_has_cot, axis=1)].copy()
-        dropped_avail = before - len(df)
-    if COT_START_DATE is not None:
-        start = pd.to_datetime(COT_START_DATE)
-        before = len(df)
-        df = df.loc[df['date'] >= start].copy()
-        dropped_date = before - len(df)
-        print(f"COT-only mode: from {COT_START_DATE}, using {len(df)} rows (dropped {dropped_avail} without COT, {dropped_date} before start date)")
-    else:
-        print(f"COT-only mode: using {len(df)} rows (dropped {dropped_avail} without COT)")
-
-# ============================================================
-# Target: 5-day forward return (only model used for trading)
-# No look-ahead: target uses shift(-5) (future); features use only past/current (pct_change, rolling, shift(1)).
-# Signal and "entry" are at bar-t close; future bars used only for exit.
-# Computed per pair to avoid cross-pair leakage at pair boundaries.
-# ============================================================
-df['next_5d_return'] = df.groupby('pair')['daily_close'].transform(lambda s: s.shift(-5) / s - 1)
-
-# Re-sort by date for time-series walk-forward (all pairs interleaved chronologically)
-df = df.sort_values('date').reset_index(drop=True)
-
-# ============================================================
-# Features (all use current or lagged data only)
-# ============================================================
-num_features = [
-    'daily_return', 'daily_range_pct', 'daily_body_pct',
-    'close_vs_daily_sma20', 'close_vs_daily_sma50', 'close_vs_daily_sma200',
-    'daily_sma20_vs_sma50', 'daily_sma50_vs_sma200',
-    'daily_rsi',
-    'atr_pct', 'bb_width', 'realized_vol_5', 'realized_vol_20', 'vol_ratio',
-    'roc_5', 'roc_20', 'macd', 'macd_signal', 'macd_hist',
-    # First differences (speed)
-    'daily_rsi_chg', 'weekly_rsi_chg', 'monthly_rsi_chg',
-    'atr_pct_chg', 'bb_width_chg', 'realized_vol_5_chg', 'realized_vol_20_chg',
-    'close_vs_sma20_chg', 'close_vs_sma50_chg', 'close_vs_sma200_chg',
-    # Second differences (acceleration)
-    'daily_rsi_acc', 'atr_pct_acc',
-    # HAR-style multi-scale
-    'return_5d_avg', 'return_22d_avg', 'realized_vol_22',
-    'rv_5d_avg', 'rv_22d_avg', 'atr_pct_5d_avg', 'atr_pct_22d_avg',
-    # Area / persistence
-    'area_sma20_10d', 'area_sma20_20d', 'area_sma50_10d', 'area_sma50_20d',
-    'area_sma200_10d', 'area_sma200_20d',
-    # Autocorr and distribution shape
-    'return_autocorr_10d', 'return_autocorr_20d',
-    'return_sq_autocorr_10d', 'return_sq_autocorr_20d',
-    'return_skew_10d', 'return_skew_20d', 'return_kurt_10d', 'return_kurt_20d',
-    # Pattern strength (wick/body, consolidation)
-    'daily_wick_ratio', 'consolidation_len_20',
-    'return_lag_2', 'return_lag_3', 'return_lag_5', 'return_lag_10', 'return_lag_20', 'return_lag_60',
-    'weekly_range_pct', 'weekly_body_pct',
-    'close_vs_weekly_sma4', 'close_vs_weekly_sma10', 'close_vs_weekly_sma40',
-    'weekly_sma4_vs_sma10', 'weekly_sma10_vs_sma40',
-    'weekly_rsi',
-    'monthly_range_pct', 'monthly_body_pct',
-    'close_vs_monthly_sma1', 'close_vs_monthly_sma3', 'close_vs_monthly_sma10',
-    'monthly_sma1_vs_sma3', 'monthly_sma3_vs_sma10',
-    'monthly_rsi',
-    'daily_vs_weekly_close', 'weekly_vs_monthly_close', 'daily_vs_monthly_close',
-]
-# Keep only features that exist; add all COT-related columns (from TFF merge + derived _chg, _acc, _sum_*, _extreme_*)
-num_features = [f for f in num_features if f in df.columns]
-num_features = num_features + [f for f in cot_features if f in df.columns and f not in num_features]
-_cot_extra = [c for c in df.columns if c.startswith('cot_') and not c.endswith('_available') and c not in num_features]
-num_features = num_features + _cot_extra
-# Deduplicate while preserving order
-_seen = set()
-num_features = [f for f in num_features if not (f in _seen or _seen.add(f))]
-
-pattern_cols = [
-    'daily_candlestick_patterns', 'daily_candlestick_prev_pattern', 'daily_candlestick_prev_3_patterns', 'daily_candlestick_prev_10_patterns',
-    'daily_chart_patterns', 'daily_chart_prev_pattern', 'daily_chart_prev_3_patterns', 'daily_chart_prev_10_patterns',
-    'weekly_candlestick_patterns', 'weekly_candlestick_prev_pattern', 'weekly_candlestick_prev_3_patterns', 'weekly_candlestick_prev_10_patterns',
-    'weekly_chart_patterns', 'weekly_chart_prev_pattern', 'weekly_chart_prev_3_patterns', 'weekly_chart_prev_10_patterns',
-    'monthly_candlestick_patterns', 'monthly_candlestick_prev_pattern', 'monthly_candlestick_prev_3_patterns', 'monthly_candlestick_prev_10_patterns',
-    'monthly_chart_patterns', 'monthly_chart_prev_pattern', 'monthly_chart_prev_3_patterns', 'monthly_chart_prev_10_patterns'
-]
-
-# Pattern name -> group; keywords must match actual pattern strings used in the model:
-# Candlestick (as-is): Hammer, Hanging_Man, Shooting_Star, *Doji, Three_White_Soldiers_3, etc.
-# Chart (after simplify_chart_patterns): HeadAndShoulders_NN, DoubleTop_NN, BearishFlag_NN, Ascending_NN, etc.
 PATTERN_GROUP_MAP = {
     'reversal': [
         'doji', 'hammer', 'hanging_man', 'shooting_star', 'inverted_hammer', 'gravestone', 'dragonfly',
@@ -620,6 +486,23 @@ PATTERN_GROUP_MAP = {
     ]
 }
 
+pattern_grp_cols = [f'pattern_grp_{g}' for g in PATTERN_GROUP_MAP.keys()]
+
+def simplify_pattern(pattern):
+    parts = pattern.split('_')
+    if len(parts) >= 2:
+        return parts[0] + '_' + parts[-1]
+    return pattern
+
+
+def simplify_chart_patterns(cell):
+    if pd.isna(cell) or cell == '':
+        return ''
+    patterns = cell.split(';')
+    simplified = [simplify_pattern(p) for p in patterns]
+    return ';'.join(simplified)
+
+
 def _pattern_to_group(name):
     if not name or not isinstance(name, str):
         return None
@@ -628,6 +511,7 @@ def _pattern_to_group(name):
         if any(kw in n for kw in keywords):
             return group
     return None
+
 
 def add_pattern_group_counts(df, pattern_cols, group_map=PATTERN_GROUP_MAP):
     """Add columns pattern_grp_reversal, pattern_grp_continuation, pattern_grp_breakout, pattern_grp_compression."""
@@ -647,51 +531,10 @@ def add_pattern_group_counts(df, pattern_cols, group_map=PATTERN_GROUP_MAP):
     df[pattern_grp_cols] = df.apply(count_groups, axis=1)
     return df
 
-pattern_grp_cols = [f'pattern_grp_{g}' for g in PATTERN_GROUP_MAP.keys()]
-add_pattern_group_counts(df, pattern_cols)
-num_features = num_features + [c for c in pattern_grp_cols if c in df.columns]
 
-# Encode patterns with frequency filtering (optional; skipped if USE_PATTERN_GROUPS_ONLY)
-all_encoded = None
-encoded_cols = []
-if not USE_PATTERN_GROUPS_ONLY:
-    encoded_dfs = []
-    for col in pattern_cols:
-        mlb = MultiLabelBinarizer()
-        df[col] = df[col].astype(str)
-        patterns = df[col].str.split(';').fillna('')
-        encoded = mlb.fit_transform(patterns)
-        encoded_df = pd.DataFrame(encoded, columns=[f"{col}_{cls}" for cls in mlb.classes_], index=df.index)
-        encoded_dfs.append(encoded_df)
-    all_encoded = pd.concat(encoded_dfs, axis=1)
-    pattern_counts = all_encoded.sum()
-    keep_mask = pattern_counts >= MIN_PATTERN_OCC
-    dropped_pat = int((~keep_mask).sum())
-    kept_pat = int(keep_mask.sum())
-    all_encoded = all_encoded.loc[:, keep_mask]
-    encoded_cols = list(all_encoded.columns)
-    print(f"Pattern features: {kept_pat} kept, {dropped_pat} dropped (< {MIN_PATTERN_OCC} occurrences)")
-else:
-    print("Pattern features: using group counts + strength only (USE_PATTERN_GROUPS_ONLY=True)")
-
-# Combine features
-if all_encoded is not None:
-    X = pd.concat([df[num_features], all_encoded], axis=1)
-else:
-    X = df[num_features].copy()
-
-# Drop any duplicate columns (XGBoost crashes if data[col] returns a DataFrame instead of Series)
-if X.columns.duplicated().any():
-    dupes = X.columns[X.columns.duplicated()].unique().tolist()
-    print(f"Warning: dropping {len(dupes)} duplicate column names: {dupes[:10]}...")
-    X = X.loc[:, ~X.columns.duplicated()]
-
-valid_rows = X.notna().all(axis=1) & df['next_5d_return'].notna()
-X = X.loc[valid_rows]
-df = df.loc[valid_rows]
-
-def build_interaction_constraints(feature_names):
+def build_interaction_constraints(feature_names, encoded_cols=None):
     """COT <-> trend/vol only; pattern <-> range/body/vol only. Returns list of lists of feature *names* (XGBoost expects names when X is DataFrame)."""
+    encoded_cols = encoded_cols or []
     cot_names = [n for n in feature_names if n.startswith('cot_') and not n.endswith('_available')]
     pattern_names = [n for n in feature_names if n.startswith('pattern_grp_') or (n in encoded_cols)]
     trend_vol_names = [n for n in feature_names if n not in cot_names and n not in pattern_names]
@@ -699,114 +542,6 @@ def build_interaction_constraints(feature_names):
         return None
     return [cot_names + trend_vol_names, trend_vol_names + pattern_names]
 
-# ============================================================
-# 5-day return walk-forward (expanding window)
-# ============================================================
-y_5d = df['next_5d_return']
-n = len(X)
-min_train = int(n * MIN_TRAIN_FRAC)
-test_chunk = max(1, (n - min_train) // N_WF_FOLDS)
-
-param_grid = {
-    'n_estimators': [80, 100, 120],
-    'learning_rate': [0.05, 0.1, 0.15],
-    'max_depth': [3, 4],
-    'subsample': [0.9, 1.0]
-}
-
-oos_5d_indices = []
-oos_5d_preds = []
-oos_5d_actuals = []
-last_5d_params = None
-fold_importances = []
-
-interaction_constraints = None
-if USE_INTERACTION_CONSTRAINTS:
-    interaction_constraints = build_interaction_constraints(list(X.columns))
-    if interaction_constraints is not None:
-        print(f"Interaction constraints: COT<->trend/vol, pattern<->trend/vol (no COT<->pattern)")
-
-print(f"\n--- 5-Day Return Walk-Forward ({N_WF_FOLDS} folds, min train {MIN_TRAIN_FRAC*100:.0f}%) ---")
-print(f"Total rows: {n}, min train: {min_train}, test chunk: ~{test_chunk}")
-
-for fold in range(N_WF_FOLDS):
-    train_end = min_train + fold * test_chunk
-    test_end = train_end + test_chunk if fold < N_WF_FOLDS - 1 else n
-
-    X_train_fold = X.iloc[:train_end]
-    y_train_fold = y_5d.iloc[:train_end]
-    X_test_fold = X.iloc[train_end:test_end]
-    y_test_fold = y_5d.iloc[train_end:test_end]
-
-    if len(X_test_fold) == 0:
-        continue
-
-    # GridSearchCV runs 36 param combos × 3 CV splits = 108 fits per fold; no output until done
-    print(f"  Fold {fold+1}: fitting GridSearchCV ({len(X_train_fold)} train, {len(X_test_fold)} test)...", flush=True)
-
-    model_kw = dict(objective='reg:squarederror')
-    if interaction_constraints is not None:
-        model_kw['interaction_constraints'] = interaction_constraints
-    model = xgb.XGBRegressor(**model_kw)
-    tscv_inner = TimeSeriesSplit(n_splits=3)
-    grid_search = GridSearchCV(
-        estimator=model,
-        param_grid=param_grid,
-        cv=tscv_inner,
-        scoring='neg_mean_absolute_error',
-        n_jobs=-1,
-        verbose=0
-    )
-    grid_search.fit(X_train_fold, y_train_fold)
-    last_5d_params = grid_search.best_params_
-    fold_importances.append(grid_search.best_estimator_.feature_importances_)
-
-    preds = grid_search.best_estimator_.predict(X_test_fold)
-    fold_mae = mean_absolute_error(y_test_fold, preds)
-    fold_dir_acc = np.mean(np.sign(preds) == np.sign(y_test_fold.values)) * 100
-
-    print(f"  Fold {fold+1}: Train={train_end}, Test={len(X_test_fold)}, "
-          f"MAE={fold_mae:.6f}, Dir Acc={fold_dir_acc:.1f}%")
-
-    oos_5d_indices.extend(X_test_fold.index.tolist())
-    oos_5d_preds.extend(preds.tolist())
-    oos_5d_actuals.extend(y_test_fold.values.tolist())
-
-oos_5d_preds = np.array(oos_5d_preds)
-oos_5d_actuals = np.array(oos_5d_actuals)
-
-# Feature importance stability across folds (from 5d WF)
-if fold_importances and len(fold_importances) >= 2:
-    imp_arr = np.array(fold_importances)
-    imp_mean = imp_arr.mean(axis=0)
-    imp_std = imp_arr.std(axis=0)
-    with np.errstate(invalid='ignore', divide='ignore'):
-        imp_cv = np.where(imp_mean > 1e-8, imp_std / imp_mean, np.nan)
-    low_thresh = np.nanpercentile(imp_mean, IMPORTANCE_LOW_PCT)
-    drop_low = imp_mean < low_thresh
-    drop_unstable = np.isfinite(imp_cv) & (imp_cv > IMPORTANCE_CV_MAX)
-    drop_mask = drop_low | drop_unstable
-    stable_names = [X.columns[i] for i in range(len(drop_mask)) if not drop_mask[i]]
-    unstable_or_low = [X.columns[i] for i in range(len(drop_mask)) if drop_mask[i]]
-    if unstable_or_low and DROP_UNSTABLE_FEATURES:
-        print(f"\nFeature importance: dropping {len(unstable_or_low)} low/unstable features (low pct={IMPORTANCE_LOW_PCT}, cv_max={IMPORTANCE_CV_MAX})")
-        X = X[stable_names]
-        fold_importances = []
-    else:
-        print(f"\nFeature importance: {X.shape[1]} features; mean importance range [{imp_mean.min():.4f}, {imp_mean.max():.4f}]")
-
-if cot_features:
-    n_cot = len([f for f in cot_features if f in X.columns])
-    avail = [f for f in cot_features if f.endswith('_available')]
-    print(f"COT/TFF features in model: {n_cot} (incl. availability: {', '.join(avail)})")
-
-# Align for 5d model and trade sim
-X_5d = X
-y_5d = df['next_5d_return']
-df_oos_5d = df.loc[[i for i in oos_5d_indices if i in df.index]]
-
-print(f"\n5-Day Aggregate OOS MAE: {mean_absolute_error(oos_5d_actuals, oos_5d_preds):.6f}")
-print(f"5-Day Aggregate OOS Dir Acc: {np.mean(np.sign(oos_5d_preds) == np.sign(oos_5d_actuals)) * 100:.1f}%")
 
 def check_surpass_and_pnl(row, df_ref, pred_return, days=5, spread=0.0002,
                           trade_size=10000, stop_loss_mult=STOP_LOSS_MULT):
@@ -871,9 +606,7 @@ def check_surpass_and_pnl(row, df_ref, pred_return, days=5, spread=0.0002,
     surpass = (final_close >= pred_close) if is_long else (final_close <= pred_close)
     return surpass, pnl, 'expire', exit_idx
 
-# ============================================================
-# Trade performance (realistic: threshold + stop-loss + confidence sizing)
-# ============================================================
+
 def _max_drawdown(profits, initial_balance=100000):
     """Compute max drawdown (fraction of peak balance)."""
     balance = initial_balance
@@ -886,6 +619,7 @@ def _max_drawdown(profits, initial_balance=100000):
             dd = (peak - balance) / peak
             max_dd = max(max_dd, dd)
     return max_dd
+
 
 def run_trade_sim(all_oos_indices, all_oos_preds, df_oos, days, label="",
                   min_threshold=None, base_size=None, max_conf_cap=None,
@@ -1018,199 +752,7 @@ def run_trade_sim(all_oos_indices, all_oos_preds, df_oos, days, label="",
         print(f"  {d.upper():5s}: {r['count']} trades, surpass {d_surp:.1f}%, "
               f"PnL {r['pnl']:+.2f}, Sharpe {d_sharpe:.2f}")
 
-# --- Isotonic calibration: raw 5d preds -> realized 5d returns ---
-calibrator_5d = None
-oos_5d_calibrated = oos_5d_preds.copy()
-if USE_CALIBRATION and len(oos_5d_preds) >= 20:
-    calibrator_5d = IsotonicRegression(out_of_bounds='clip')
-    calibrator_5d.fit(oos_5d_preds, oos_5d_actuals)
-    oos_5d_calibrated = calibrator_5d.predict(oos_5d_preds)
-    cal_mae = mean_absolute_error(oos_5d_actuals, oos_5d_calibrated)
-    cal_dir = np.mean(np.sign(oos_5d_calibrated) == np.sign(oos_5d_actuals)) * 100
-    print(f"Calibration (isotonic): MAE={cal_mae:.6f}, Dir Acc={cal_dir:.1f}%")
 
-# --- Split OOS into optimization vs final holdout (when USE_FINAL_HOLDOUT) ---
-opt_indices, holdout_indices = None, None
-opt_preds, holdout_preds = None, None
-df_opt_5d, df_holdout_5d = None, None
-if USE_FINAL_HOLDOUT and len(oos_5d_indices) >= 50:
-    n_oos = len(oos_5d_indices)
-    order = sorted(range(n_oos), key=lambda i: oos_5d_indices[i])
-    opt_n = max(1, int(n_oos * (1 - HOLDOUT_FRAC)))
-    opt_pos, holdout_pos = order[:opt_n], order[opt_n:]
-    opt_indices = [oos_5d_indices[i] for i in opt_pos]
-    holdout_indices = [oos_5d_indices[i] for i in holdout_pos]
-    opt_preds = (oos_5d_calibrated if (USE_CALIBRATION and calibrator_5d is not None) else oos_5d_preds)[opt_pos]
-    holdout_preds = (oos_5d_calibrated if (USE_CALIBRATION and calibrator_5d is not None) else oos_5d_preds)[holdout_pos]
-    df_opt_5d = df_oos_5d.loc[[i for i in opt_indices if i in df_oos_5d.index]]
-    df_holdout_5d = df_oos_5d.loc[[i for i in holdout_indices if i in df_oos_5d.index]]
-    print(f"Final holdout: {len(holdout_indices)} bars (last {HOLDOUT_FRAC*100:.0f}% of OOS); threshold/cap optimized on {len(opt_indices)} bars only.")
-
-# --- Re-optimize threshold and max size on calibrated OOS (or opt subset only when USE_FINAL_HOLDOUT) ---
-CALIBRATED_THRESHOLD = MIN_TRADE_THRESHOLD
-CALIBRATED_MAX_CAP = MAX_CONFIDENCE_CAP
-_thresh_indices = opt_indices if (USE_FINAL_HOLDOUT and opt_indices is not None) else oos_5d_indices
-_thresh_preds = opt_preds if (USE_FINAL_HOLDOUT and opt_preds is not None) else (oos_5d_calibrated if (USE_CALIBRATION and calibrator_5d is not None) else oos_5d_preds)
-_thresh_df = df_opt_5d if (USE_FINAL_HOLDOUT and df_opt_5d is not None) else df_oos_5d
-if USE_CALIBRATION and calibrator_5d is not None and len(_thresh_indices) >= 20:
-    best_score = -np.inf
-    best_thresh = MIN_TRADE_THRESHOLD
-    best_cap = MAX_CONFIDENCE_CAP
-    for thresh in [0.001, 0.0015, 0.002, 0.0025, 0.003, 0.0035]:
-        for cap in [2.0, 2.5, 3.0]:
-            m = run_trade_sim(
-                _thresh_indices, _thresh_preds, _thresh_df, days=TRADE_WINDOW_DAYS,
-                min_threshold=thresh, max_conf_cap=cap, return_metrics=True,
-                execution_haircut_pct=EXECUTION_HAIRCUT_PCT)
-            if m['n_trades'] < 10:
-                continue
-            score = m['sharpe'] - 0.5 * m['max_drawdown']
-            if score > best_score:
-                best_score = score
-                best_thresh = thresh
-                best_cap = cap
-    CALIBRATED_THRESHOLD = best_thresh
-    CALIBRATED_MAX_CAP = best_cap
-    print(f"Optimized (calibrated) on {'holdout-opt subset' if USE_FINAL_HOLDOUT and opt_indices else 'full OOS'}: threshold={CALIBRATED_THRESHOLD*100:.2f}%, max_cap={CALIBRATED_MAX_CAP}")
-
-# --- Optional meta "trade vs no trade" gate (calibrated pred + vol regime + COT flags) ---
-trade_gate_proba = None
-trade_gate_clf = None
-if USE_TRADE_GATE and len(oos_5d_indices) >= 50:
-    X_meta_list = []
-    for i, idx in enumerate(oos_5d_indices):
-        row = df_oos_5d.loc[idx] if idx in df_oos_5d.index else None
-        if row is None:
-            X_meta_list.append([oos_5d_calibrated[i], 0, 0, 0, 0])
-            continue
-        rv5_v = row.get('rv_5d_avg', row.get('realized_vol_5', 0)) or 0
-        rv22_v = row.get('rv_22d_avg', row.get('realized_vol_20', 0)) or 0
-        atr_v = row.get('atr_pct', 0) or 0
-        X_meta_list.append([oos_5d_calibrated[i], rv5_v, rv22_v, atr_v, row.get('cot_gbp_Lev_Money_net_z', 0) or 0])
-    X_meta = np.array(X_meta_list)
-    y_meta = []
-    for i, idx in enumerate(oos_5d_indices):
-        row = df_oos_5d.loc[idx] if idx in df_oos_5d.index else None
-        if row is None:
-            y_meta.append(0)
-            continue
-        pred_ret = oos_5d_calibrated[i]
-        if abs(pred_ret) < CALIBRATED_THRESHOLD:
-            y_meta.append(0)
-            continue
-        surpass, profit, _, _ = check_surpass_and_pnl(row, df_oos_5d, pred_ret, days=TRADE_WINDOW_DAYS, trade_size=10000)
-        y_meta.append(1 if profit > 0 else 0)
-    y_meta = np.array(y_meta)
-    if np.unique(y_meta).size >= 2:
-        trade_gate_clf = LogisticRegression(max_iter=500, class_weight='balanced')
-        trade_gate_clf.fit(X_meta, y_meta)
-        trade_gate_proba = trade_gate_clf.predict_proba(X_meta)[:, 1]
-        gate_acc = (trade_gate_proba >= 0.5).astype(int) == y_meta
-        print(f"Trade gate (meta): OOS accuracy = {gate_acc.mean()*100:.1f}%")
-
-best_model_5d = xgb.XGBRegressor(objective='reg:squarederror', **last_5d_params)
-best_model_5d.fit(X_5d, y_5d)
-
-preds_for_sim = oos_5d_calibrated if (USE_CALIBRATION and calibrator_5d is not None) else oos_5d_preds
-thresh_sim = CALIBRATED_THRESHOLD if (USE_CALIBRATION and calibrator_5d is not None) else MIN_TRADE_THRESHOLD
-cap_sim = CALIBRATED_MAX_CAP if (USE_CALIBRATION and calibrator_5d is not None) else MAX_CONFIDENCE_CAP
-if EXECUTION_HAIRCUT_PCT > 0:
-    print(f"Execution haircut applied: {EXECUTION_HAIRCUT_PCT*10000:.1f} bps round-trip.")
-for days in [5, 10, 15]:
-    run_trade_sim(oos_5d_indices, preds_for_sim, df_oos_5d, days, label="5d-model ",
-                 min_threshold=thresh_sim, max_conf_cap=cap_sim, trade_gate_proba=trade_gate_proba,
-                 execution_haircut_pct=EXECUTION_HAIRCUT_PCT)
-
-# --- Holdout (unseen): report metrics on last HOLDOUT_FRAC of OOS only ---
-if USE_FINAL_HOLDOUT and holdout_indices is not None and len(holdout_indices) >= 10 and df_holdout_5d is not None:
-    print("\n--- Holdout (unseen; threshold/cap not tuned on this period) ---")
-    for days in [5, 10, 15]:
-        run_trade_sim(holdout_indices, holdout_preds, df_holdout_5d, days, label="Holdout ",
-                     min_threshold=thresh_sim, max_conf_cap=cap_sim,
-                     execution_haircut_pct=EXECUTION_HAIRCUT_PCT)
-
-# --- A/B threshold scenarios (0.25%, 0.30%, 0.35%) for 5d window ---
-if RUN_AB_THRESHOLD_SCENARIOS and len(oos_5d_indices) > 0:
-    print("\n--- A/B threshold scenarios (5d window, calibrated) ---")
-    ab_thresholds = [0.0025, 0.003, 0.0035]
-    ab_rows = []
-    for th in ab_thresholds:
-        m = run_trade_sim(oos_5d_indices, preds_for_sim, df_oos_5d, days=5,
-                          min_threshold=th, max_conf_cap=cap_sim, trade_gate_proba=trade_gate_proba,
-                          execution_haircut_pct=EXECUTION_HAIRCUT_PCT, return_metrics=True)
-        ab_rows.append({
-            'threshold_pct': th * 100,
-            'n_trades': m['n_trades'],
-            'surpass_pct': m['surpass_pct'],
-            'account_pct': m['account_pct'],
-            'sharpe': m['sharpe'],
-            'max_drawdown': m['max_drawdown'] * 100,
-        })
-    print(f"  Threshold   Trades  Surpass%  Account%   Sharpe  MaxDD%")
-    for r in ab_rows:
-        print(f"  {r['threshold_pct']:.2f}%      {r['n_trades']:5d}   {r['surpass_pct']:5.1f}%   {r['account_pct']:+6.2f}%   {r['sharpe']:5.2f}   {r['max_drawdown']:.1f}%")
-
-# --- Time-slice analysis: early / mid / late third of OOS ---
-if RUN_TIME_SLICE_ANALYSIS and len(oos_5d_indices) > 0:
-    print("\n--- Time-slice analysis (5d window, early/mid/late third) ---")
-    df_oos_5d_sorted = df_oos_5d.loc[oos_5d_indices].sort_index()
-    n = len(df_oos_5d_sorted)
-    if n >= 3:
-        third = n // 3
-        slices = [
-            ('early', df_oos_5d_sorted.index[:third].tolist()),
-            ('mid', df_oos_5d_sorted.index[third:2 * third].tolist()),
-            ('late', df_oos_5d_sorted.index[2 * third:].tolist()),
-        ]
-        print(f"  Slice   Trades  Surpass%  Account%   Sharpe  MaxDD%")
-        for name, idx_list in slices:
-            preds_slice = np.array([preds_for_sim[oos_5d_indices.index(i)] for i in idx_list if i in oos_5d_indices])
-            # Build index list that matches preds_slice order
-            idx_in_oos = [i for i in idx_list if i in oos_5d_indices]
-            if len(idx_in_oos) < 5:
-                continue
-            m = run_trade_sim(idx_in_oos, preds_slice, df_oos_5d.loc[idx_in_oos], days=5,
-                              min_threshold=thresh_sim, max_conf_cap=cap_sim,
-                              execution_haircut_pct=EXECUTION_HAIRCUT_PCT, return_metrics=True)
-            print(f"  {name:5s}   {m['n_trades']:5d}   {m['surpass_pct']:5.1f}%   {m['account_pct']:+6.2f}%   {m['sharpe']:5.2f}   {m['max_drawdown']*100:.1f}%")
-
-# --- Calibration diagnostics: bin by vol regime (ATR% or rv_5d_avg tertiles) ---
-if RUN_CALIBRATION_DIAGNOSTICS and len(oos_5d_indices) >= 30 and calibrator_5d is not None:
-    print("\n--- Calibration diagnostics by vol regime (tertiles of atr_pct) ---")
-    vol_col = 'atr_pct' if 'atr_pct' in df_oos_5d.columns else 'rv_5d_avg'
-    if vol_col not in df_oos_5d.columns:
-        vol_col = 'realized_vol_5' if 'realized_vol_5' in df_oos_5d.columns else None
-    if vol_col is not None:
-        valid_idx = [i for i in oos_5d_indices if i in df_oos_5d.index]
-        vol_vals = np.array([df_oos_5d.loc[i, vol_col] for i in valid_idx], dtype=float)
-        pos_in_oos = [oos_5d_indices.index(i) for i in valid_idx]
-        pred_cal = oos_5d_calibrated[pos_in_oos]
-        actual = oos_5d_actuals[pos_in_oos]
-        if len(vol_vals) >= 15:
-            q1, q2 = np.nanpercentile(vol_vals, [33.33, 66.67])
-            low = np.where(vol_vals <= q1)[0]
-            mid = np.where((vol_vals > q1) & (vol_vals <= q2))[0]
-            high = np.where(vol_vals > q2)[0]
-            print(f"  Regime (by {vol_col})   N    Mean Pred%   Mean Real%   Bias%")
-            for label, idx in [('low_vol', low), ('mid_vol', mid), ('high_vol', high)]:
-                if len(idx) < 5:
-                    continue
-                mean_pred = np.mean(pred_cal[idx]) * 100
-                mean_real = np.mean(actual[idx]) * 100
-                bias = mean_pred - mean_real
-                print(f"  {label:10s}           {len(idx):4d}   {mean_pred:+.3f}      {mean_real:+.3f}      {bias:+.3f}")
-
-# ============================================================
-# Production prediction for latest day
-# ============================================================
-original_df = pd.read_csv('combined_GBPAUD_daily.csv', parse_dates=['date'])
-original_df, _ = load_and_merge_tff(original_df)
-original_df = compute_relative_features(original_df)
-# Pattern group counts for latest row (must match training)
-add_pattern_group_counts(original_df, pattern_cols)
-latest_row = original_df.iloc[-1]
-
-# Build feature vector in same order as X.columns (only columns that exist in original_df or are one-hot)
 def get_latest_feature_vector(X_cols, df_source, pattern_cols):
     out = []
     for col in X_cols:
@@ -1229,28 +771,525 @@ def get_latest_feature_vector(X_cols, df_source, pattern_cols):
                 out.append(0.0)
     return np.array(out, dtype=float).reshape(1, -1)
 
-latest_data = get_latest_feature_vector(X.columns, original_df, pattern_cols)
 
-current_close = latest_row['daily_close']
-pred_5d_raw = best_model_5d.predict(latest_data)[0]
-pred_5d = calibrator_5d.predict(np.array([pred_5d_raw]))[0] if (USE_CALIBRATION and calibrator_5d is not None) else pred_5d_raw
+def main():
+    # ============================================================
+    # Load and preprocess data
+    #   - Train on cumulative combined patterns/indicators for all pairs
+    #     using the per-pair Rust outputs: combined_{PAIR}_daily.csv
+    # ============================================================
+    dfs = []
+    for pair in PAIRS:
+        path = Path(f'combined_{pair}_daily.csv')
+        if not path.exists():
+            continue
+        tmp = pd.read_csv(path, parse_dates=['date'])
+        tmp['pair'] = pair
+        dfs.append(tmp)
 
-prod_threshold = CALIBRATED_THRESHOLD if (USE_CALIBRATION and calibrator_5d is not None) else MIN_TRADE_THRESHOLD
-trade_ok = abs(pred_5d) > prod_threshold
-if USE_TRADE_GATE and trade_gate_clf is not None and trade_ok:
-    rv5_v = latest_row.get('rv_5d_avg', latest_row.get('realized_vol_5', 0)) or 0
-    rv22_v = latest_row.get('rv_22d_avg', latest_row.get('realized_vol_20', 0)) or 0
-    atr_v = latest_row.get('atr_pct', 0) or 0
-    cot_z_v = latest_row.get('cot_gbp_Lev_Money_net_z', 0) or 0
-    X_meta_latest = np.array([[pred_5d, rv5_v, rv22_v, atr_v, cot_z_v]])
-    gate_proba = trade_gate_clf.predict_proba(X_meta_latest)[0, 1]
-    trade_ok = trade_ok and (gate_proba >= 0.5)
+    if not dfs:
+        raise FileNotFoundError("No per-pair combined_*_daily.csv files found for PAIRS.")
 
-print(f"\nCurrent Close: {current_close:.5f}")
-print(f"5-Day Predicted Return (raw): {pred_5d_raw*100:.4f}%")
-if USE_CALIBRATION and calibrator_5d is not None:
-    print(f"5-Day Calibrated Return: {pred_5d*100:.4f}% -> {current_close*(1+pred_5d):.5f}")
-else:
-    print(f"5-Day Predicted Return: {pred_5d*100:.4f}% -> {current_close*(1+pred_5d):.5f}")
-trade_signal = "LONG" if (trade_ok and pred_5d > prod_threshold) else ("SHORT" if (trade_ok and pred_5d < -prod_threshold) else "NO TRADE")
-print(f"Signal: {trade_signal} (threshold={prod_threshold*100:.2f}%)")
+    df = pd.concat(dfs, ignore_index=True)
+    df = df.sort_values(['pair', 'date']).reset_index(drop=True)
+
+    # Optionally materialize the cumulative file for inspection/reuse
+    try:
+        df.to_csv('combined_all_pairs_daily.csv', index=False)
+    except Exception:
+        # Non-fatal if we cannot write; training can still proceed
+        pass
+
+    df, cot_features = load_and_merge_tff(df)
+    # Compute rolling/shift features per pair to avoid cross-pair contamination
+    if 'pair' in df.columns and df['pair'].nunique() > 1:
+        df = df.groupby('pair', group_keys=False).apply(compute_relative_features).reset_index(drop=True)
+    else:
+        df = compute_relative_features(df)
+
+    chart_pattern_cols = [
+        'daily_chart_patterns', 'daily_chart_prev_pattern', 'daily_chart_prev_3_patterns', 'daily_chart_prev_10_patterns',
+        'weekly_chart_patterns', 'weekly_chart_prev_pattern', 'weekly_chart_prev_3_patterns', 'weekly_chart_prev_10_patterns',
+        'monthly_chart_patterns', 'monthly_chart_prev_pattern', 'monthly_chart_prev_3_patterns', 'monthly_chart_prev_10_patterns'
+    ]
+    for col in chart_pattern_cols:
+        df[col] = df[col].apply(simplify_chart_patterns)
+
+    if cot_features and TRAIN_COT_ONLY:
+        dropped_avail = 0
+        # Pair-aware: keep row only if this pair's two COT currencies have available=1
+        def _row_has_cot(row):
+            c1, c2 = PAIR_TO_CURRENCIES.get(row['pair'], (None, None))
+            a1 = row.get(f'cot_{c1}_available', 0) == 1 if c1 else True
+            a2 = row.get(f'cot_{c2}_available', 0) == 1 if c2 else True
+            return a1 and a2
+        if 'pair' in df.columns:
+            before = len(df)
+            df = df.loc[df.apply(_row_has_cot, axis=1)].copy()
+            dropped_avail = before - len(df)
+        if COT_START_DATE is not None:
+            start = pd.to_datetime(COT_START_DATE)
+            before = len(df)
+            df = df.loc[df['date'] >= start].copy()
+            dropped_date = before - len(df)
+            print(f"COT-only mode: from {COT_START_DATE}, using {len(df)} rows (dropped {dropped_avail} without COT, {dropped_date} before start date)")
+        else:
+            print(f"COT-only mode: using {len(df)} rows (dropped {dropped_avail} without COT)")
+
+    # ============================================================
+    # Target: 5-day forward return (only model used for trading)
+    # No look-ahead: target uses shift(-5) (future); features use only past/current (pct_change, rolling, shift(1)).
+    # Signal and "entry" are at bar-t close; future bars used only for exit.
+    # Computed per pair to avoid cross-pair leakage at pair boundaries.
+    # ============================================================
+    df['next_5d_return'] = df.groupby('pair')['daily_close'].transform(lambda s: s.shift(-5) / s - 1)
+
+    # Re-sort by date for time-series walk-forward (all pairs interleaved chronologically)
+    df = df.sort_values('date').reset_index(drop=True)
+
+    # ============================================================
+    # Features (all use current or lagged data only)
+    # ============================================================
+    num_features = [
+        'daily_return', 'daily_range_pct', 'daily_body_pct',
+        'close_vs_daily_sma20', 'close_vs_daily_sma50', 'close_vs_daily_sma200',
+        'daily_sma20_vs_sma50', 'daily_sma50_vs_sma200',
+        'daily_rsi',
+        'atr_pct', 'bb_width', 'realized_vol_5', 'realized_vol_20', 'vol_ratio',
+        'roc_5', 'roc_20', 'macd', 'macd_signal', 'macd_hist',
+        # First differences (speed)
+        'daily_rsi_chg', 'weekly_rsi_chg', 'monthly_rsi_chg',
+        'atr_pct_chg', 'bb_width_chg', 'realized_vol_5_chg', 'realized_vol_20_chg',
+        'close_vs_sma20_chg', 'close_vs_sma50_chg', 'close_vs_sma200_chg',
+        # Second differences (acceleration)
+        'daily_rsi_acc', 'atr_pct_acc',
+        # HAR-style multi-scale
+        'return_5d_avg', 'return_22d_avg', 'realized_vol_22',
+        'rv_5d_avg', 'rv_22d_avg', 'atr_pct_5d_avg', 'atr_pct_22d_avg',
+        # Area / persistence
+        'area_sma20_10d', 'area_sma20_20d', 'area_sma50_10d', 'area_sma50_20d',
+        'area_sma200_10d', 'area_sma200_20d',
+        # Autocorr and distribution shape
+        'return_autocorr_10d', 'return_autocorr_20d',
+        'return_sq_autocorr_10d', 'return_sq_autocorr_20d',
+        'return_skew_10d', 'return_skew_20d', 'return_kurt_10d', 'return_kurt_20d',
+        # Pattern strength (wick/body, consolidation)
+        'daily_wick_ratio', 'consolidation_len_20',
+        'return_lag_2', 'return_lag_3', 'return_lag_5', 'return_lag_10', 'return_lag_20', 'return_lag_60',
+        'weekly_range_pct', 'weekly_body_pct',
+        'close_vs_weekly_sma4', 'close_vs_weekly_sma10', 'close_vs_weekly_sma40',
+        'weekly_sma4_vs_sma10', 'weekly_sma10_vs_sma40',
+        'weekly_rsi',
+        'monthly_range_pct', 'monthly_body_pct',
+        'close_vs_monthly_sma1', 'close_vs_monthly_sma3', 'close_vs_monthly_sma10',
+        'monthly_sma1_vs_sma3', 'monthly_sma3_vs_sma10',
+        'monthly_rsi',
+        'daily_vs_weekly_close', 'weekly_vs_monthly_close', 'daily_vs_monthly_close',
+    ]
+    # Keep only features that exist; add all COT-related columns (from TFF merge + derived _chg, _acc, _sum_*, _extreme_*)
+    num_features = [f for f in num_features if f in df.columns]
+    num_features = num_features + [f for f in cot_features if f in df.columns and f not in num_features]
+    _cot_extra = [c for c in df.columns if c.startswith('cot_') and not c.endswith('_available') and c not in num_features]
+    num_features = num_features + _cot_extra
+    # Deduplicate while preserving order
+    _seen = set()
+    num_features = [f for f in num_features if not (f in _seen or _seen.add(f))]
+
+    pattern_cols = [
+        'daily_candlestick_patterns', 'daily_candlestick_prev_pattern', 'daily_candlestick_prev_3_patterns', 'daily_candlestick_prev_10_patterns',
+        'daily_chart_patterns', 'daily_chart_prev_pattern', 'daily_chart_prev_3_patterns', 'daily_chart_prev_10_patterns',
+        'weekly_candlestick_patterns', 'weekly_candlestick_prev_pattern', 'weekly_candlestick_prev_3_patterns', 'weekly_candlestick_prev_10_patterns',
+        'weekly_chart_patterns', 'weekly_chart_prev_pattern', 'weekly_chart_prev_3_patterns', 'weekly_chart_prev_10_patterns',
+        'monthly_candlestick_patterns', 'monthly_candlestick_prev_pattern', 'monthly_candlestick_prev_3_patterns', 'monthly_candlestick_prev_10_patterns',
+        'monthly_chart_patterns', 'monthly_chart_prev_pattern', 'monthly_chart_prev_3_patterns', 'monthly_chart_prev_10_patterns'
+    ]
+
+    # Pattern name -> group; keywords must match actual pattern strings used in the model:
+    # Candlestick (as-is): Hammer, Hanging_Man, Shooting_Star, *Doji, Three_White_Soldiers_3, etc.
+    # Chart (after simplify_chart_patterns): HeadAndShoulders_NN, DoubleTop_NN, BearishFlag_NN, Ascending_NN, etc.
+
+    pattern_grp_cols = [f'pattern_grp_{g}' for g in PATTERN_GROUP_MAP.keys()]
+    add_pattern_group_counts(df, pattern_cols)
+    num_features = num_features + [c for c in pattern_grp_cols if c in df.columns]
+
+    # Encode patterns with frequency filtering (optional; skipped if USE_PATTERN_GROUPS_ONLY)
+    all_encoded = None
+    encoded_cols = []
+    if not USE_PATTERN_GROUPS_ONLY:
+        encoded_dfs = []
+        for col in pattern_cols:
+            mlb = MultiLabelBinarizer()
+            df[col] = df[col].astype(str)
+            patterns = df[col].str.split(';').fillna('')
+            encoded = mlb.fit_transform(patterns)
+            encoded_df = pd.DataFrame(encoded, columns=[f"{col}_{cls}" for cls in mlb.classes_], index=df.index)
+            encoded_dfs.append(encoded_df)
+        all_encoded = pd.concat(encoded_dfs, axis=1)
+        pattern_counts = all_encoded.sum()
+        keep_mask = pattern_counts >= MIN_PATTERN_OCC
+        dropped_pat = int((~keep_mask).sum())
+        kept_pat = int(keep_mask.sum())
+        all_encoded = all_encoded.loc[:, keep_mask]
+        encoded_cols = list(all_encoded.columns)
+        print(f"Pattern features: {kept_pat} kept, {dropped_pat} dropped (< {MIN_PATTERN_OCC} occurrences)")
+    else:
+        print("Pattern features: using group counts + strength only (USE_PATTERN_GROUPS_ONLY=True)")
+
+    # Combine features
+    if all_encoded is not None:
+        X = pd.concat([df[num_features], all_encoded], axis=1)
+    else:
+        X = df[num_features].copy()
+
+    # Drop any duplicate columns (XGBoost crashes if data[col] returns a DataFrame instead of Series)
+    if X.columns.duplicated().any():
+        dupes = X.columns[X.columns.duplicated()].unique().tolist()
+        print(f"Warning: dropping {len(dupes)} duplicate column names: {dupes[:10]}...")
+        X = X.loc[:, ~X.columns.duplicated()]
+
+    valid_rows = X.notna().all(axis=1) & df['next_5d_return'].notna()
+    X = X.loc[valid_rows]
+    df = df.loc[valid_rows]
+
+    # ============================================================
+    # 5-day return walk-forward (expanding window)
+    # ============================================================
+    y_5d = df['next_5d_return']
+    n = len(X)
+    min_train = int(n * MIN_TRAIN_FRAC)
+    test_chunk = max(1, (n - min_train) // N_WF_FOLDS)
+
+    if os.environ.get("FX_TRADER_FAST", "").strip().lower() in ("1", "true", "yes"):
+        param_grid = {
+            'n_estimators': [80],
+            'learning_rate': [0.1],
+            'max_depth': [3],
+            'subsample': [0.9]
+        }
+    else:
+        param_grid = {
+            'n_estimators': [80, 100, 120],
+            'learning_rate': [0.05, 0.1, 0.15],
+            'max_depth': [3, 4],
+            'subsample': [0.9, 1.0]
+        }
+
+    oos_5d_indices = []
+    oos_5d_preds = []
+    oos_5d_actuals = []
+    last_5d_params = None
+    fold_importances = []
+
+    interaction_constraints = None
+    if USE_INTERACTION_CONSTRAINTS:
+        interaction_constraints = build_interaction_constraints(list(X.columns), encoded_cols)
+        if interaction_constraints is not None:
+            print(f"Interaction constraints: COT<->trend/vol, pattern<->trend/vol (no COT<->pattern)")
+
+    print(f"\n--- 5-Day Return Walk-Forward ({N_WF_FOLDS} folds, min train {MIN_TRAIN_FRAC*100:.0f}%) ---")
+    print(f"Total rows: {n}, min train: {min_train}, test chunk: ~{test_chunk}")
+
+    for fold in range(N_WF_FOLDS):
+        train_end = min_train + fold * test_chunk
+        test_end = train_end + test_chunk if fold < N_WF_FOLDS - 1 else n
+
+        X_train_fold = X.iloc[:train_end]
+        y_train_fold = y_5d.iloc[:train_end]
+        X_test_fold = X.iloc[train_end:test_end]
+        y_test_fold = y_5d.iloc[train_end:test_end]
+
+        if len(X_test_fold) == 0:
+            continue
+
+        # GridSearchCV runs 36 param combos × 3 CV splits = 108 fits per fold; no output until done
+        print(f"  Fold {fold+1}: fitting GridSearchCV ({len(X_train_fold)} train, {len(X_test_fold)} test)...", flush=True)
+
+        model_kw = dict(objective='reg:squarederror')
+        if interaction_constraints is not None:
+            model_kw['interaction_constraints'] = interaction_constraints
+        model = xgb.XGBRegressor(**model_kw)
+        tscv_inner = TimeSeriesSplit(n_splits=3)
+        grid_search = GridSearchCV(
+            estimator=model,
+            param_grid=param_grid,
+            cv=tscv_inner,
+            scoring='neg_mean_absolute_error',
+            n_jobs=-1,
+            verbose=0
+        )
+        grid_search.fit(X_train_fold, y_train_fold)
+        last_5d_params = grid_search.best_params_
+        fold_importances.append(grid_search.best_estimator_.feature_importances_)
+
+        preds = grid_search.best_estimator_.predict(X_test_fold)
+        fold_mae = mean_absolute_error(y_test_fold, preds)
+        fold_dir_acc = np.mean(np.sign(preds) == np.sign(y_test_fold.values)) * 100
+
+        print(f"  Fold {fold+1}: Train={train_end}, Test={len(X_test_fold)}, "
+              f"MAE={fold_mae:.6f}, Dir Acc={fold_dir_acc:.1f}%")
+
+        oos_5d_indices.extend(X_test_fold.index.tolist())
+        oos_5d_preds.extend(preds.tolist())
+        oos_5d_actuals.extend(y_test_fold.values.tolist())
+
+    oos_5d_preds = np.array(oos_5d_preds)
+    oos_5d_actuals = np.array(oos_5d_actuals)
+
+    # Feature importance stability across folds (from 5d WF)
+    if fold_importances and len(fold_importances) >= 2:
+        imp_arr = np.array(fold_importances)
+        imp_mean = imp_arr.mean(axis=0)
+        imp_std = imp_arr.std(axis=0)
+        with np.errstate(invalid='ignore', divide='ignore'):
+            imp_cv = np.where(imp_mean > 1e-8, imp_std / imp_mean, np.nan)
+        low_thresh = np.nanpercentile(imp_mean, IMPORTANCE_LOW_PCT)
+        drop_low = imp_mean < low_thresh
+        drop_unstable = np.isfinite(imp_cv) & (imp_cv > IMPORTANCE_CV_MAX)
+        drop_mask = drop_low | drop_unstable
+        stable_names = [X.columns[i] for i in range(len(drop_mask)) if not drop_mask[i]]
+        unstable_or_low = [X.columns[i] for i in range(len(drop_mask)) if drop_mask[i]]
+        if unstable_or_low and DROP_UNSTABLE_FEATURES:
+            print(f"\nFeature importance: dropping {len(unstable_or_low)} low/unstable features (low pct={IMPORTANCE_LOW_PCT}, cv_max={IMPORTANCE_CV_MAX})")
+            X = X[stable_names]
+            fold_importances = []
+        else:
+            print(f"\nFeature importance: {X.shape[1]} features; mean importance range [{imp_mean.min():.4f}, {imp_mean.max():.4f}]")
+
+    if cot_features:
+        n_cot = len([f for f in cot_features if f in X.columns])
+        avail = [f for f in cot_features if f.endswith('_available')]
+        print(f"COT/TFF features in model: {n_cot} (incl. availability: {', '.join(avail)})")
+
+    # Align for 5d model and trade sim
+    X_5d = X
+    y_5d = df['next_5d_return']
+    df_oos_5d = df.loc[[i for i in oos_5d_indices if i in df.index]]
+
+    print(f"\n5-Day Aggregate OOS MAE: {mean_absolute_error(oos_5d_actuals, oos_5d_preds):.6f}")
+    print(f"5-Day Aggregate OOS Dir Acc: {np.mean(np.sign(oos_5d_preds) == np.sign(oos_5d_actuals)) * 100:.1f}%")
+
+    # ============================================================
+    # Trade performance (realistic: threshold + stop-loss + confidence sizing)
+    # ============================================================
+    # --- Isotonic calibration: raw 5d preds -> realized 5d returns ---
+    calibrator_5d = None
+    oos_5d_calibrated = oos_5d_preds.copy()
+    if USE_CALIBRATION and len(oos_5d_preds) >= 20:
+        calibrator_5d = IsotonicRegression(out_of_bounds='clip')
+        calibrator_5d.fit(oos_5d_preds, oos_5d_actuals)
+        oos_5d_calibrated = calibrator_5d.predict(oos_5d_preds)
+        cal_mae = mean_absolute_error(oos_5d_actuals, oos_5d_calibrated)
+        cal_dir = np.mean(np.sign(oos_5d_calibrated) == np.sign(oos_5d_actuals)) * 100
+        print(f"Calibration (isotonic): MAE={cal_mae:.6f}, Dir Acc={cal_dir:.1f}%")
+
+    # --- Split OOS into optimization vs final holdout (when USE_FINAL_HOLDOUT) ---
+    opt_indices, holdout_indices = None, None
+    opt_preds, holdout_preds = None, None
+    df_opt_5d, df_holdout_5d = None, None
+    if USE_FINAL_HOLDOUT and len(oos_5d_indices) >= 50:
+        n_oos = len(oos_5d_indices)
+        order = sorted(range(n_oos), key=lambda i: oos_5d_indices[i])
+        opt_n = max(1, int(n_oos * (1 - HOLDOUT_FRAC)))
+        opt_pos, holdout_pos = order[:opt_n], order[opt_n:]
+        opt_indices = [oos_5d_indices[i] for i in opt_pos]
+        holdout_indices = [oos_5d_indices[i] for i in holdout_pos]
+        opt_preds = (oos_5d_calibrated if (USE_CALIBRATION and calibrator_5d is not None) else oos_5d_preds)[opt_pos]
+        holdout_preds = (oos_5d_calibrated if (USE_CALIBRATION and calibrator_5d is not None) else oos_5d_preds)[holdout_pos]
+        df_opt_5d = df_oos_5d.loc[[i for i in opt_indices if i in df_oos_5d.index]]
+        df_holdout_5d = df_oos_5d.loc[[i for i in holdout_indices if i in df_oos_5d.index]]
+        print(f"Final holdout: {len(holdout_indices)} bars (last {HOLDOUT_FRAC*100:.0f}% of OOS); threshold/cap optimized on {len(opt_indices)} bars only.")
+
+    # --- Re-optimize threshold and max size on calibrated OOS (or opt subset only when USE_FINAL_HOLDOUT) ---
+    CALIBRATED_THRESHOLD = MIN_TRADE_THRESHOLD
+    CALIBRATED_MAX_CAP = MAX_CONFIDENCE_CAP
+    _thresh_indices = opt_indices if (USE_FINAL_HOLDOUT and opt_indices is not None) else oos_5d_indices
+    _thresh_preds = opt_preds if (USE_FINAL_HOLDOUT and opt_preds is not None) else (oos_5d_calibrated if (USE_CALIBRATION and calibrator_5d is not None) else oos_5d_preds)
+    _thresh_df = df_opt_5d if (USE_FINAL_HOLDOUT and df_opt_5d is not None) else df_oos_5d
+    if USE_CALIBRATION and calibrator_5d is not None and len(_thresh_indices) >= 20:
+        best_score = -np.inf
+        best_thresh = MIN_TRADE_THRESHOLD
+        best_cap = MAX_CONFIDENCE_CAP
+        for thresh in [0.001, 0.0015, 0.002, 0.0025, 0.003, 0.0035]:
+            for cap in [2.0, 2.5, 3.0]:
+                m = run_trade_sim(
+                    _thresh_indices, _thresh_preds, _thresh_df, days=TRADE_WINDOW_DAYS,
+                    min_threshold=thresh, max_conf_cap=cap, return_metrics=True,
+                    execution_haircut_pct=EXECUTION_HAIRCUT_PCT)
+                if m['n_trades'] < 10:
+                    continue
+                score = m['sharpe'] - 0.5 * m['max_drawdown']
+                if score > best_score:
+                    best_score = score
+                    best_thresh = thresh
+                    best_cap = cap
+        CALIBRATED_THRESHOLD = best_thresh
+        CALIBRATED_MAX_CAP = best_cap
+        print(f"Optimized (calibrated) on {'holdout-opt subset' if USE_FINAL_HOLDOUT and opt_indices else 'full OOS'}: threshold={CALIBRATED_THRESHOLD*100:.2f}%, max_cap={CALIBRATED_MAX_CAP}")
+
+    # --- Optional meta "trade vs no trade" gate (calibrated pred + vol regime + COT flags) ---
+    trade_gate_proba = None
+    trade_gate_clf = None
+    if USE_TRADE_GATE and len(oos_5d_indices) >= 50:
+        X_meta_list = []
+        for i, idx in enumerate(oos_5d_indices):
+            row = df_oos_5d.loc[idx] if idx in df_oos_5d.index else None
+            if row is None:
+                X_meta_list.append([oos_5d_calibrated[i], 0, 0, 0, 0])
+                continue
+            rv5_v = row.get('rv_5d_avg', row.get('realized_vol_5', 0)) or 0
+            rv22_v = row.get('rv_22d_avg', row.get('realized_vol_20', 0)) or 0
+            atr_v = row.get('atr_pct', 0) or 0
+            X_meta_list.append([oos_5d_calibrated[i], rv5_v, rv22_v, atr_v, row.get('cot_gbp_Lev_Money_net_z', 0) or 0])
+        X_meta = np.array(X_meta_list)
+        y_meta = []
+        for i, idx in enumerate(oos_5d_indices):
+            row = df_oos_5d.loc[idx] if idx in df_oos_5d.index else None
+            if row is None:
+                y_meta.append(0)
+                continue
+            pred_ret = oos_5d_calibrated[i]
+            if abs(pred_ret) < CALIBRATED_THRESHOLD:
+                y_meta.append(0)
+                continue
+            surpass, profit, _, _ = check_surpass_and_pnl(row, df_oos_5d, pred_ret, days=TRADE_WINDOW_DAYS, trade_size=10000)
+            y_meta.append(1 if profit > 0 else 0)
+        y_meta = np.array(y_meta)
+        if np.unique(y_meta).size >= 2:
+            trade_gate_clf = LogisticRegression(max_iter=500, class_weight='balanced')
+            trade_gate_clf.fit(X_meta, y_meta)
+            trade_gate_proba = trade_gate_clf.predict_proba(X_meta)[:, 1]
+            gate_acc = (trade_gate_proba >= 0.5).astype(int) == y_meta
+            print(f"Trade gate (meta): OOS accuracy = {gate_acc.mean()*100:.1f}%")
+
+    best_model_5d = xgb.XGBRegressor(objective='reg:squarederror', **last_5d_params)
+    best_model_5d.fit(X_5d, y_5d)
+
+    preds_for_sim = oos_5d_calibrated if (USE_CALIBRATION and calibrator_5d is not None) else oos_5d_preds
+    thresh_sim = CALIBRATED_THRESHOLD if (USE_CALIBRATION and calibrator_5d is not None) else MIN_TRADE_THRESHOLD
+    cap_sim = CALIBRATED_MAX_CAP if (USE_CALIBRATION and calibrator_5d is not None) else MAX_CONFIDENCE_CAP
+    if EXECUTION_HAIRCUT_PCT > 0:
+        print(f"Execution haircut applied: {EXECUTION_HAIRCUT_PCT*10000:.1f} bps round-trip.")
+    for days in [5, 10, 15]:
+        run_trade_sim(oos_5d_indices, preds_for_sim, df_oos_5d, days, label="5d-model ",
+                     min_threshold=thresh_sim, max_conf_cap=cap_sim, trade_gate_proba=trade_gate_proba,
+                     execution_haircut_pct=EXECUTION_HAIRCUT_PCT)
+
+    # --- Holdout (unseen): report metrics on last HOLDOUT_FRAC of OOS only ---
+    if USE_FINAL_HOLDOUT and holdout_indices is not None and len(holdout_indices) >= 10 and df_holdout_5d is not None:
+        print("\n--- Holdout (unseen; threshold/cap not tuned on this period) ---")
+        for days in [5, 10, 15]:
+            run_trade_sim(holdout_indices, holdout_preds, df_holdout_5d, days, label="Holdout ",
+                         min_threshold=thresh_sim, max_conf_cap=cap_sim,
+                         execution_haircut_pct=EXECUTION_HAIRCUT_PCT)
+
+    # --- A/B threshold scenarios (0.25%, 0.30%, 0.35%) for 5d window ---
+    if RUN_AB_THRESHOLD_SCENARIOS and len(oos_5d_indices) > 0:
+        print("\n--- A/B threshold scenarios (5d window, calibrated) ---")
+        ab_thresholds = [0.0025, 0.003, 0.0035]
+        ab_rows = []
+        for th in ab_thresholds:
+            m = run_trade_sim(oos_5d_indices, preds_for_sim, df_oos_5d, days=5,
+                              min_threshold=th, max_conf_cap=cap_sim, trade_gate_proba=trade_gate_proba,
+                              execution_haircut_pct=EXECUTION_HAIRCUT_PCT, return_metrics=True)
+            ab_rows.append({
+                'threshold_pct': th * 100,
+                'n_trades': m['n_trades'],
+                'surpass_pct': m['surpass_pct'],
+                'account_pct': m['account_pct'],
+                'sharpe': m['sharpe'],
+                'max_drawdown': m['max_drawdown'] * 100,
+            })
+        print(f"  Threshold   Trades  Surpass%  Account%   Sharpe  MaxDD%")
+        for r in ab_rows:
+            print(f"  {r['threshold_pct']:.2f}%      {r['n_trades']:5d}   {r['surpass_pct']:5.1f}%   {r['account_pct']:+6.2f}%   {r['sharpe']:5.2f}   {r['max_drawdown']:.1f}%")
+
+    # --- Time-slice analysis: early / mid / late third of OOS ---
+    if RUN_TIME_SLICE_ANALYSIS and len(oos_5d_indices) > 0:
+        print("\n--- Time-slice analysis (5d window, early/mid/late third) ---")
+        df_oos_5d_sorted = df_oos_5d.loc[oos_5d_indices].sort_index()
+        n = len(df_oos_5d_sorted)
+        if n >= 3:
+            third = n // 3
+            slices = [
+                ('early', df_oos_5d_sorted.index[:third].tolist()),
+                ('mid', df_oos_5d_sorted.index[third:2 * third].tolist()),
+                ('late', df_oos_5d_sorted.index[2 * third:].tolist()),
+            ]
+            print(f"  Slice   Trades  Surpass%  Account%   Sharpe  MaxDD%")
+            for name, idx_list in slices:
+                preds_slice = np.array([preds_for_sim[oos_5d_indices.index(i)] for i in idx_list if i in oos_5d_indices])
+                # Build index list that matches preds_slice order
+                idx_in_oos = [i for i in idx_list if i in oos_5d_indices]
+                if len(idx_in_oos) < 5:
+                    continue
+                m = run_trade_sim(idx_in_oos, preds_slice, df_oos_5d.loc[idx_in_oos], days=5,
+                                  min_threshold=thresh_sim, max_conf_cap=cap_sim,
+                                  execution_haircut_pct=EXECUTION_HAIRCUT_PCT, return_metrics=True)
+                print(f"  {name:5s}   {m['n_trades']:5d}   {m['surpass_pct']:5.1f}%   {m['account_pct']:+6.2f}%   {m['sharpe']:5.2f}   {m['max_drawdown']*100:.1f}%")
+
+    # --- Calibration diagnostics: bin by vol regime (ATR% or rv_5d_avg tertiles) ---
+    if RUN_CALIBRATION_DIAGNOSTICS and len(oos_5d_indices) >= 30 and calibrator_5d is not None:
+        print("\n--- Calibration diagnostics by vol regime (tertiles of atr_pct) ---")
+        vol_col = 'atr_pct' if 'atr_pct' in df_oos_5d.columns else 'rv_5d_avg'
+        if vol_col not in df_oos_5d.columns:
+            vol_col = 'realized_vol_5' if 'realized_vol_5' in df_oos_5d.columns else None
+        if vol_col is not None:
+            valid_idx = [i for i in oos_5d_indices if i in df_oos_5d.index]
+            vol_vals = np.array([df_oos_5d.loc[i, vol_col] for i in valid_idx], dtype=float)
+            pos_in_oos = [oos_5d_indices.index(i) for i in valid_idx]
+            pred_cal = oos_5d_calibrated[pos_in_oos]
+            actual = oos_5d_actuals[pos_in_oos]
+            if len(vol_vals) >= 15:
+                q1, q2 = np.nanpercentile(vol_vals, [33.33, 66.67])
+                low = np.where(vol_vals <= q1)[0]
+                mid = np.where((vol_vals > q1) & (vol_vals <= q2))[0]
+                high = np.where(vol_vals > q2)[0]
+                print(f"  Regime (by {vol_col})   N    Mean Pred%   Mean Real%   Bias%")
+                for label, idx in [('low_vol', low), ('mid_vol', mid), ('high_vol', high)]:
+                    if len(idx) < 5:
+                        continue
+                    mean_pred = np.mean(pred_cal[idx]) * 100
+                    mean_real = np.mean(actual[idx]) * 100
+                    bias = mean_pred - mean_real
+                    print(f"  {label:10s}           {len(idx):4d}   {mean_pred:+.3f}      {mean_real:+.3f}      {bias:+.3f}")
+
+    # ============================================================
+    # Production prediction for latest day
+    # ============================================================
+    original_df = pd.read_csv('combined_GBPAUD_daily.csv', parse_dates=['date'])
+    original_df, _ = load_and_merge_tff(original_df)
+    original_df = compute_relative_features(original_df)
+    # Pattern group counts for latest row (must match training)
+    add_pattern_group_counts(original_df, pattern_cols)
+    latest_row = original_df.iloc[-1]
+
+    # Build feature vector in same order as X.columns (only columns that exist in original_df or are one-hot)
+    latest_data = get_latest_feature_vector(X.columns, original_df, pattern_cols)
+
+    current_close = latest_row['daily_close']
+    pred_5d_raw = best_model_5d.predict(latest_data)[0]
+    pred_5d = calibrator_5d.predict(np.array([pred_5d_raw]))[0] if (USE_CALIBRATION and calibrator_5d is not None) else pred_5d_raw
+
+    prod_threshold = CALIBRATED_THRESHOLD if (USE_CALIBRATION and calibrator_5d is not None) else MIN_TRADE_THRESHOLD
+    trade_ok = abs(pred_5d) > prod_threshold
+    if USE_TRADE_GATE and trade_gate_clf is not None and trade_ok:
+        rv5_v = latest_row.get('rv_5d_avg', latest_row.get('realized_vol_5', 0)) or 0
+        rv22_v = latest_row.get('rv_22d_avg', latest_row.get('realized_vol_20', 0)) or 0
+        atr_v = latest_row.get('atr_pct', 0) or 0
+        cot_z_v = latest_row.get('cot_gbp_Lev_Money_net_z', 0) or 0
+        X_meta_latest = np.array([[pred_5d, rv5_v, rv22_v, atr_v, cot_z_v]])
+        gate_proba = trade_gate_clf.predict_proba(X_meta_latest)[0, 1]
+        trade_ok = trade_ok and (gate_proba >= 0.5)
+
+    print(f"\nCurrent Close: {current_close:.5f}")
+    print(f"5-Day Predicted Return (raw): {pred_5d_raw*100:.4f}%")
+    if USE_CALIBRATION and calibrator_5d is not None:
+        print(f"5-Day Calibrated Return: {pred_5d*100:.4f}% -> {current_close*(1+pred_5d):.5f}")
+    else:
+        print(f"5-Day Predicted Return: {pred_5d*100:.4f}% -> {current_close*(1+pred_5d):.5f}")
+    trade_signal = "LONG" if (trade_ok and pred_5d > prod_threshold) else ("SHORT" if (trade_ok and pred_5d < -prod_threshold) else "NO TRADE")
+    print(f"Signal: {trade_signal} (threshold={prod_threshold*100:.2f}%)")
+
+
+if __name__ == '__main__':
+    main()

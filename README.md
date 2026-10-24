@@ -57,8 +57,10 @@ python holdout_analysis.py
 
 Expected inputs (already committed):
 
-- `combined_{PAIR}_daily.csv` for each pair
+- `combined_{PAIR}_daily.csv` for each pair (`GBPAUD`, `GBPUSD`, `USDCHF`, `USDJPY`, `NZDJPY`)
 - `TFF_-_Futures_Only_20260227.csv` (update `TFF_PATH` in `holdout_analysis.py` if you use a newer TFF dump)
+
+Walk-forward GridSearch on ~22k rows is slow (often tens of minutes). That is expected.
 
 Weekly/monthly analysis:
 
@@ -66,7 +68,38 @@ Weekly/monthly analysis:
 python timeframe_holdout_analysis.py
 ```
 
-Walk-forward GridSearch on ~22k rows is slow (often tens of minutes). That is expected.
+## Test the model (quick, no full training)
+
+These checks confirm required data is present and that pair-pooled features/exits do not mix prices across pairs. They do **not** run GridSearch.
+
+```bash
+pytest
+```
+
+## Develop the model
+
+Knobs live at the top of `holdout_analysis.py` (`N_WF_FOLDS`, `MIN_TRADE_THRESHOLD`, `USE_CALIBRATION`, `PAIRS`, `TFF_PATH`, feature flags).
+
+`holdout_analysis.py` is import-safe: helpers (`load_and_merge_tff`, `compute_relative_features`, `check_surpass_and_pnl`, `run_trade_sim`) can be imported without starting a full train. Training starts only via `python holdout_analysis.py` (`main()`).
+
+Faster iteration while changing features or sim logic:
+
+Windows (PowerShell):
+
+```powershell
+$env:FX_TRADER_FAST = "1"
+python holdout_analysis.py
+```
+
+macOS / Linux:
+
+```bash
+FX_TRADER_FAST=1 python holdout_analysis.py
+```
+
+That uses 2 walk-forward folds, a smaller XGBoost grid, and skips extra diagnostics. **Do not treat FAST results as the published backtest.**
+
+After changing pattern detection, rebuild combined files with the Rust pipeline below, then re-run `pytest` and `python holdout_analysis.py`.
 
 ## Optional: refresh FX prices
 
@@ -137,3 +170,4 @@ That writes `combined_{PAIR}_daily.csv` in the project root.
 - Do not commit `.env` or API keys.
 - If you previously cloned an older copy of this repo, pull `master` before running.
 - `n_jobs=-1` in GridSearch can use all CPU cores.
+- GitHub warns that `combined_all_pairs_daily.csv` is large (~90 MB). The model rebuilds a pooled frame from the per-pair `combined_*_daily.csv` files; those smaller files are the source of truth.

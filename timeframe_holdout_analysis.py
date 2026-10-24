@@ -8,7 +8,7 @@ from sklearn.metrics import mean_absolute_error
 from scipy.stats import mannwhitneyu
 
 # --- TFF (CFTC Commitments of Traders) integration ---
-TFF_PATH = Path('TFF_-_Futures_Only_20260223.csv')
+TFF_PATH = Path('TFF_-_Futures_Only_20260227.csv')
 TRAIN_COT_ONLY = True
 COT_START_DATE = None
 TFF_NUMERIC_COLS = [
