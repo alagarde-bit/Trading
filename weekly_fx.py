@@ -5,7 +5,9 @@ import time
 from datetime import datetime
 
 pairs = [("GBP", "AUD"), ("GBP", "USD"), ("USD", "CHF"), ("USD", "JPY"), ("NZD", "JPY")]
-api_key = "UR3BSHVUTSLZ9LPT"
+api_key = os.environ.get("ALPHA_VANTAGE_API_KEY")
+if not api_key:
+    raise SystemExit("Set ALPHA_VANTAGE_API_KEY (see .env.example) before fetching FX data.")
 
 for from_symbol, to_symbol in pairs:
     file_name = f"{from_symbol}{to_symbol}_weekly.csv"
