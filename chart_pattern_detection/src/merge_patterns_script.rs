@@ -172,6 +172,18 @@ fn main() {
     // Process NZDJPY
     println!("Processing NZDJPY chart patterns...");
     process_merge_patterns("NZDJPY");
+
+    // Process GBPUSD
+    println!("Processing GBPUSD chart patterns...");
+    process_merge_patterns("GBPUSD");
+
+    // Process USDCHF
+    println!("Processing USDCHF chart patterns...");
+    process_merge_patterns("USDCHF");
+
+    // Process USDJPY
+    println!("Processing USDJPY chart patterns...");
+    process_merge_patterns("USDJPY");
 }
 
 fn process_merge_patterns(currency: &str) {

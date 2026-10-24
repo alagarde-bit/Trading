@@ -159,6 +159,18 @@ fn main() {
     // Process NZDJPY
     println!("Processing NZDJPY candlestick patterns...");
     process_merge_candlesticks("NZDJPY");
+
+    // Process GBPUSD
+    println!("Processing GBPUSD candlestick patterns...");
+    process_merge_candlesticks("GBPUSD");
+
+    // Process USDCHF
+    println!("Processing USDCHF candlestick patterns...");
+    process_merge_candlesticks("USDCHF");
+
+    // Process USDJPY
+    println!("Processing USDJPY candlestick patterns...");
+    process_merge_candlesticks("USDJPY");
 }
 
 fn process_merge_candlesticks(currency: &str) {

@@ -1,0 +1,1060 @@
+date,open,high,low,close,pattern
+2006-01-13,1.2774,1.2891,1.2685,1.2759,
+2006-01-20,1.275,1.289,1.2725,1.2768,
+2006-01-27,1.2758,1.2851,1.2555,1.283,RisingTops_X1_P74_2 
+2006-02-03,1.2827,1.2995,1.2737,1.2944,
+2006-02-10,1.2922,1.3071,1.2911,1.3065,
+2006-02-17,1.3068,1.3156,1.3027,1.3106,BearishFlag_M0_P34_2 ;RisingTops_X2_P74_2 
+2006-02-24,1.3104,1.318,1.3018,1.3173,
+2006-03-03,1.3172,1.3238,1.295,1.2982,
+2006-03-10,1.2967,1.3229,1.2893,1.3165,BearishFlag_M1_P34_2 ;FallingBottoms_M1_P519_4 
+2006-03-17,1.3163,1.3172,1.2868,1.2893,FallingBottoms_M1_P696_8 ;FallingTops_X1_P1027_52 ;FallingTops_X1_P207_2 ;FallingTops_X1_P433_4 ;FallingTops_X1_P626_8 ;FallingTops_X1_P791_12 ;FallingTops_X1_P932_26 ;RisingTops_X3_P74_2 
+2006-03-24,1.2915,1.3196,1.2888,1.3106,
+2006-03-31,1.31,1.3126,1.2955,1.3034,
+2006-04-07,1.3033,1.3135,1.2805,1.3013,BearishFlag_X1_P34_2 ;FallingBottoms_M1_P295_2 ;FallingTops_X1_P1028_52 ;FallingTops_X1_P208_2 ;FallingTops_X1_P434_4 ;FallingTops_X1_P627_8 ;FallingTops_X1_P792_12 ;FallingTops_X1_P933_26 ;FallingTops_X2_P1027_52 ;FallingTops_X2_P207_2 ;FallingTops_X2_P433_4 ;FallingTops_X2_P626_8 ;FallingTops_X2_P791_12 ;FallingTops_X2_P932_26 
+2006-04-14,1.2998,1.306,1.2933,1.2983,
+2006-04-21,1.2971,1.2973,1.2646,1.2756,FallingBottoms_M2_P519_4 ;FallingBottoms_M2_P696_8 
+2006-04-28,1.2728,1.2749,1.2382,1.2402,BearishFlag_M2_P34_2 ;FallingBottoms_M2_P295_2 ;FallingTops_X1_P628_8 ;FallingTops_X2_P208_2 ;FallingTops_X2_P434_4 ;FallingTops_X2_P627_8 ;FallingTops_X2_P792_12 ;FallingTops_X3_P207_2 ;FallingTops_X3_P433_4 ;FallingTops_X3_P626_8 ;FallingTops_X3_P791_12 
+2006-05-05,1.2382,1.2449,1.2213,1.2257,
+2006-05-12,1.2243,1.2319,1.1961,1.1968,FallingBottoms_M3_P519_4 ;FallingBottoms_M3_P696_8 ;RisingBottoms_M1_P374_4 ;RisingBottoms_M1_P585_8 ;RisingBottoms_M1_P758_12 
+2006-05-19,1.1955,1.2242,1.1918,1.2163,FallingBottoms_M3_P295_2 ;RisingBottoms_M1_P137_2 
+2006-05-26,1.2174,1.23,1.2014,1.2273,BearishFlag_X2_P34_2 ;FallingTops_X3_P208_2 
+2006-06-02,1.2269,1.2293,1.2051,1.2073,
+2006-06-09,1.2066,1.2365,1.2016,1.231,BearishFlag_M3_P34_2 ;FallingTops_X3_P434_4 ;RisingBottoms_M1_P375_4 ;RisingBottoms_M1_P586_8 ;RisingBottoms_M2_P137_2 ;RisingBottoms_M2_P374_4 ;RisingBottoms_M2_P585_8 ;RisingBottoms_M2_P758_12 
+2006-06-16,1.2337,1.2406,1.2256,1.2308,Staircase_X0_P22_2 
+2006-06-23,1.2307,1.2528,1.2298,1.2485,FallingTops_X2_P628_8 ;FallingTops_X3_P627_8 
+2006-06-30,1.2488,1.2502,1.2225,1.2226,RisingBottoms_M3_P137_2 ;Staircase_M1_P22_2 
+2006-07-07,1.2232,1.2358,1.2182,1.2221,
+2006-07-14,1.2225,1.2377,1.2219,1.2345,RisingTops_X1_P75_2 ;Staircase_X0_P23_2 
+2006-07-21,1.2344,1.2594,1.233,1.2362,
+2006-07-28,1.2357,1.2545,1.2306,1.2336,
+2006-08-04,1.2317,1.2366,1.219,1.2222,RisingBottoms_M1_P138_2 ;Staircase_M1_P23_2 
+2006-08-11,1.2212,1.2437,1.2194,1.243,BearishFlag_M0_P719_12 ;FallingBottoms_M1_P856_12 ;RisingBottoms_M1_P376_4 ;RisingBottoms_M1_P587_8 ;RisingBottoms_M2_P375_4 ;RisingBottoms_M2_P586_8 ;RisingBottoms_M3_P374_4 ;RisingBottoms_M3_P585_8 ;RisingBottoms_M3_P758_12 ;RisingTops_X1_P322_4 ;RisingTops_X1_P76_2 ;RisingTops_X2_P75_2 ;Staircase_X1_P22_2 
+2006-08-18,1.2422,1.2444,1.2237,1.2331,
+2006-08-25,1.2318,1.2422,1.2183,1.2397,RisingBottoms_M1_P139_2 ;RisingBottoms_M2_P138_2 ;Staircase_M2_P22_2 
+2006-09-01,1.2392,1.2396,1.2228,1.2303,
+2006-09-08,1.2296,1.2507,1.2273,1.2466,FallingTops_X3_P628_8 ;RisingBottoms_M1_P377_4 ;RisingBottoms_M2_P376_4 ;RisingBottoms_M2_P587_8 ;RisingBottoms_M3_P375_4 ;RisingBottoms_M3_P586_8 ;RisingTops_X2_P322_4 ;RisingTops_X2_P76_2 ;RisingTops_X3_P75_2 ;Staircase_X1_P23_2 
+2006-09-15,1.2477,1.2622,1.2397,1.2559,FallingTops_X3_P792_12 
+2006-09-22,1.2566,1.2572,1.232,1.2357,RisingBottoms_M2_P139_2 ;RisingBottoms_M3_P138_2 ;Staircase_M2_P23_2 
+2006-09-29,1.2353,1.2567,1.2292,1.2505,FallingBottoms_M1_P697_8 ;RisingBottoms_M2_P377_4 ;RisingBottoms_M3_P376_4 ;RisingBottoms_M3_P587_8 
+2006-10-06,1.2498,1.2633,1.2405,1.26,FallingTops_X1_P209_2 ;FallingTops_X1_P435_4 ;FallingTops_X1_P629_8 ;FallingTops_X1_P793_12 ;RisingTops_X3_P322_4 ;RisingTops_X3_P76_2 
+2006-10-13,1.2612,1.2769,1.259,1.2728,
+2006-10-20,1.274,1.2753,1.2549,1.2591,FallingBottoms_M1_P296_2 ;FallingTops_X1_P1029_52 ;FallingTops_X1_P934_26 ;FallingTops_X2_P1028_52 ;FallingTops_X2_P933_26 ;FallingTops_X3_P1027_52 ;FallingTops_X3_P932_26 ;RisingBottoms_M3_P139_2 
+2006-10-27,1.2579,1.2703,1.2467,1.2486,FallingTops_X1_P210_2 ;FallingTops_X1_P436_4 ;FallingTops_X1_P794_12 ;FallingTops_X2_P209_2 ;FallingTops_X2_P435_4 ;FallingTops_X2_P629_8 ;FallingTops_X2_P793_12 
+2006-11-03,1.249,1.2569,1.2405,1.2535,
+2006-11-10,1.2534,1.2579,1.2346,1.2417,FallingBottoms_M2_P296_2 ;RisingBottoms_M3_P377_4 
+2006-11-17,1.2394,1.2537,1.2358,1.2436,
+2006-11-24,1.2436,1.245,1.2074,1.2091,BearishFlag_M1_P719_12 ;FallingBottoms_M2_P697_8 ;FallingBottoms_M2_P856_12 ;FallingTops_X2_P210_2 ;FallingTops_X2_P436_4 ;FallingTops_X3_P209_2 ;FallingTops_X3_P435_4 
+2006-12-01,1.2061,1.2115,1.1899,1.1931,FallingBottoms_M3_P296_2 ;RisingBottoms_M1_P140_2 ;RisingBottoms_M1_P378_4 
+2006-12-08,1.1932,1.2058,1.1881,1.205,
+2006-12-15,1.2066,1.223,1.1983,1.2213,FallingBottoms_M3_P697_8 ;FallingBottoms_M3_P856_12 ;FallingTops_X3_P210_2 ;RisingTops_X1_P77_2 
+2006-12-22,1.2215,1.2268,1.2111,1.2199,
+2006-12-29,1.221,1.2271,1.2162,1.219,
+2007-01-05,1.2187,1.2393,1.2112,1.2358,FallingBottoms_M1_P698_8 ;FallingTops_X3_P436_4 ;RisingBottoms_M2_P140_2 ;RisingBottoms_M2_P378_4 ;RisingTops_X2_P77_2 
+2007-01-12,1.2351,1.2526,1.2326,1.247,FallingTops_X3_P629_8 
+2007-01-19,1.2489,1.2546,1.2417,1.2479,
+2007-01-26,1.2485,1.2564,1.2376,1.2534,FallingTops_X1_P211_2 ;FallingTops_X1_P437_4 ;RisingTops_X3_P77_2 
+2007-02-02,1.2533,1.2571,1.2377,1.2479,BearishFlag_X1_P719_12 ;FallingTops_X1_P1030_52 ;FallingTops_X1_P630_8 ;FallingTops_X1_P935_26 ;FallingTops_X2_P1029_52 ;FallingTops_X2_P794_12 ;FallingTops_X2_P934_26 ;FallingTops_X3_P1028_52 ;FallingTops_X3_P793_12 ;FallingTops_X3_P933_26 
+2007-02-09,1.2479,1.252,1.2379,1.2474,
+2007-02-16,1.2487,1.2551,1.2332,1.2349,FallingTops_X1_P212_2 ;FallingTops_X1_P438_4 ;FallingTops_X2_P211_2 ;FallingTops_X2_P437_4 ;RisingBottoms_M3_P140_2 ;RisingBottoms_M3_P378_4 
+2007-02-23,1.2337,1.2435,1.2295,1.2325,
+2007-03-02,1.2323,1.2332,1.2143,1.2163,FallingBottoms_M1_P699_8 ;FallingBottoms_M2_P698_8 
+2007-03-09,1.2165,1.2355,1.2109,1.2346,FallingTops_X1_P213_2 ;FallingTops_X1_P439_4 ;FallingTops_X2_P212_2 ;FallingTops_X2_P438_4 ;FallingTops_X2_P630_8 ;FallingTops_X3_P211_2 ;FallingTops_X3_P437_4 ;FallingTops_X3_P794_12 
+2007-03-16,1.2329,1.235,1.2031,1.2069,BearishFlag_M2_P719_12 ;FallingBottoms_M1_P857_12 ;RisingBottoms_M1_P379_4 
+2007-03-23,1.2057,1.2193,1.2047,1.219,
+2007-03-30,1.2189,1.2238,1.2084,1.2154,
+2007-04-06,1.2134,1.2232,1.2119,1.222,FallingTops_X2_P213_2 ;FallingTops_X3_P212_2 ;Staircase_X0_P24_2 
+2007-04-13,1.222,1.2284,1.2068,1.2146,FallingTops_X2_P439_4 ;FallingTops_X3_P438_4 
+2007-04-20,1.2133,1.215,1.2003,1.2084,RisingBottoms_M1_P380_4 ;RisingBottoms_M2_P379_4 
+2007-04-27,1.2078,1.2126,1.1996,1.2055,RisingBottoms_M1_P141_2 
+2007-05-04,1.2047,1.2188,1.2031,1.2113,FallingBottoms_M1_P700_8 ;FallingBottoms_M2_P699_8 ;FallingBottoms_M3_P698_8 ;FallingTops_X3_P213_2 ;RisingTops_X1_P78_2 
+2007-05-11,1.21,1.2222,1.2083,1.2189,FallingTops_X3_P439_4 ;RisingBottoms_M2_P380_4 ;RisingBottoms_M3_P379_4 ;RisingTops_X1_P323_4 
+2007-05-18,1.2183,1.228,1.2127,1.2271,FallingTops_X3_P630_8 ;RisingBottoms_M2_P141_2 ;Staircase_M1_P24_2 
+2007-05-25,1.2265,1.2331,1.2241,1.2282,
+2007-06-01,1.227,1.2329,1.22,1.2297,FallingBottoms_M1_P520_4 ;RisingBottoms_M3_P380_4 ;RisingTops_X2_P323_4 ;RisingTops_X2_P78_2 ;Staircase_X1_P24_2 
+2007-06-08,1.2297,1.2366,1.2148,1.2351,BearishFlag_M0_P35_2 ;BearishFlag_X2_P719_12 ;FallingBottoms_M1_P297_2 ;FallingTops_X1_P631_8 ;FallingTops_X1_P795_12 ;RisingBottoms_M3_P141_2 
+2007-06-15,1.2353,1.2468,1.2353,1.2412,
+2007-06-22,1.2417,1.2427,1.2285,1.2291,FallingTops_X1_P1031_52 ;FallingTops_X1_P214_2 ;FallingTops_X1_P440_4 ;FallingTops_X1_P936_26 ;FallingTops_X2_P1030_52 ;FallingTops_X2_P935_26 ;FallingTops_X3_P1029_52 ;FallingTops_X3_P934_26 ;RisingTops_X3_P323_4 ;RisingTops_X3_P78_2 
+2007-06-29,1.2288,1.234,1.2208,1.2214,BearishFlag_M0_P36_2 ;BearishFlag_M1_P35_2 ;FallingBottoms_M1_P298_2 ;FallingBottoms_M1_P521_4 ;FallingBottoms_M2_P297_2 ;FallingBottoms_M2_P520_4 ;FallingTops_X1_P632_8 ;FallingTops_X1_P796_12 ;FallingTops_X2_P631_8 ;FallingTops_X2_P795_12 ;Staircase_M2_P24_2 
+2007-07-06,1.221,1.2231,1.209,1.2179,
+2007-07-13,1.2178,1.2194,1.1988,1.2024,BearishFlag_M0_P720_12 ;BearishFlag_X1_P35_2 ;FallingBottoms_M1_P701_8 ;FallingBottoms_M1_P858_12 ;FallingBottoms_M1_P974_26 ;FallingBottoms_M2_P700_8 ;FallingBottoms_M2_P857_12 ;FallingBottoms_M3_P699_8 ;FallingTops_X1_P1032_52 ;FallingTops_X1_P441_4 ;FallingTops_X1_P937_26 ;FallingTops_X2_P1031_52 ;FallingTops_X2_P214_2 ;FallingTops_X2_P440_4 ;FallingTops_X2_P936_26 ;FallingTops_X3_P1030_52 ;FallingTops_X3_P935_26 
+2007-07-20,1.2024,1.2064,1.1961,1.2007,BearishFlag_M0_P37_2 ;BearishFlag_M1_P36_2 ;FallingBottoms_M2_P298_2 ;FallingBottoms_M2_P521_4 ;FallingBottoms_M3_P297_2 ;FallingBottoms_M3_P520_4 
+2007-07-27,1.2007,1.2163,1.1982,1.2084,
+2007-08-03,1.2087,1.2092,1.1867,1.1905,BearishFlag_M0_P721_12 ;BearishFlag_M1_P720_12 ;BearishFlag_M3_P719_12 ;BearishFlag_X1_P36_2 ;FallingBottoms_M1_P1062_52 ;FallingBottoms_M1_P702_8 ;FallingBottoms_M1_P859_12 ;FallingBottoms_M1_P975_26 ;FallingBottoms_M2_P701_8 ;FallingBottoms_M2_P858_12 ;FallingBottoms_M2_P974_26 ;FallingBottoms_M3_P700_8 ;FallingBottoms_M3_P857_12 ;FallingTops_X3_P214_2 
+2007-08-10,1.1873,1.2015,1.1824,1.1985,BearishFlag_M1_P37_2 ;BearishFlag_M2_P35_2 ;FallingBottoms_M3_P298_2 ;FallingBottoms_M3_P521_4 
+2007-08-17,1.1985,1.2213,1.1974,1.2077,
+2007-08-24,1.2075,1.211,1.1993,1.2009,
+2007-08-31,1.2006,1.2089,1.1962,1.2085,
+2007-09-07,1.2081,1.2151,1.1861,1.1883,BearishFlag_M0_P38_2 ;BearishFlag_M2_P36_2 ;BearishFlag_X1_P37_2 ;BearishFlag_X1_P720_12 ;BearishFlag_X2_P35_2 ;FallingBottoms_M1_P522_4 ;FallingTops_X1_P1033_52 ;FallingTops_X1_P215_2 ;FallingTops_X1_P442_4 ;FallingTops_X1_P633_8 ;FallingTops_X1_P797_12 ;FallingTops_X1_P938_26 ;FallingTops_X2_P1032_52 ;FallingTops_X2_P441_4 ;FallingTops_X2_P632_8 ;FallingTops_X2_P796_12 ;FallingTops_X2_P937_26 ;FallingTops_X3_P1031_52 ;FallingTops_X3_P440_4 ;FallingTops_X3_P631_8 ;FallingTops_X3_P795_12 ;FallingTops_X3_P936_26 
+2007-09-14,1.1874,1.1921,1.1802,1.1893,
+2007-09-21,1.189,1.1898,1.1678,1.1723,BearishFlag_M1_P721_12 ;FallingBottoms_M1_P1063_52 ;FallingBottoms_M1_P703_8 ;FallingBottoms_M1_P860_12 ;FallingBottoms_M1_P976_26 ;FallingBottoms_M2_P1062_52 ;FallingBottoms_M2_P702_8 ;FallingBottoms_M2_P859_12 ;FallingBottoms_M2_P975_26 ;FallingBottoms_M3_P701_8 ;FallingBottoms_M3_P858_12 ;FallingBottoms_M3_P974_26 
+2007-09-28,1.1721,1.1757,1.1625,1.1639,BearishFlag_M1_P38_2 ;BearishFlag_M2_P37_2 ;BearishFlag_M3_P35_2 ;FallingBottoms_M1_P523_4 ;FallingBottoms_M2_P522_4 
+2007-10-05,1.1633,1.1853,1.1613,1.1782,BearishFlag_X2_P36_2 ;FallingTops_X1_P216_2 ;FallingTops_X2_P215_2 
+2007-10-12,1.1776,1.1893,1.1761,1.1844,
+2007-10-19,1.1843,1.1856,1.1656,1.1663,BearishFlag_M0_P39_2 ;BearishFlag_M3_P36_2 ;BearishFlag_X1_P721_12 ;FallingBottoms_M1_P299_2 ;FallingTops_X1_P634_8 ;FallingTops_X1_P798_12 ;FallingTops_X1_P939_26 ;FallingTops_X2_P1033_52 ;FallingTops_X2_P442_4 ;FallingTops_X2_P633_8 ;FallingTops_X2_P797_12 ;FallingTops_X2_P938_26 ;FallingTops_X3_P1032_52 ;FallingTops_X3_P441_4 ;FallingTops_X3_P632_8 ;FallingTops_X3_P796_12 ;FallingTops_X3_P937_26 
+2007-10-26,1.1663,1.1786,1.1601,1.1641,BearishFlag_X1_P38_2 ;BearishFlag_X2_P37_2 ;FallingTops_X2_P216_2 ;FallingTops_X3_P215_2 
+2007-11-02,1.1637,1.167,1.1493,1.1541,BearishFlag_M2_P720_12 ;FallingBottoms_M1_P1064_52 ;FallingBottoms_M1_P704_8 ;FallingBottoms_M1_P861_12 ;FallingBottoms_M1_P977_26 ;FallingBottoms_M2_P1063_52 ;FallingBottoms_M2_P523_4 ;FallingBottoms_M2_P703_8 ;FallingBottoms_M2_P860_12 ;FallingBottoms_M2_P976_26 ;FallingBottoms_M3_P1062_52 ;FallingBottoms_M3_P522_4 ;FallingBottoms_M3_P702_8 ;FallingBottoms_M3_P859_12 ;FallingBottoms_M3_P975_26 
+2007-11-09,1.1536,1.1557,1.1188,1.1224,BearishFlag_M0_P40_2 ;BearishFlag_M1_P39_2 ;BearishFlag_M2_P38_2 ;BearishFlag_M3_P37_2 ;FallingBottoms_M2_P299_2 ;FallingTops_X3_P442_4 
+2007-11-16,1.1221,1.1299,1.1159,1.1174,FallingTops_X3_P216_2 
+2007-11-23,1.117,1.1201,1.0896,1.102,BearishFlag_M2_P721_12 ;FallingBottoms_M1_P1065_52 ;FallingBottoms_M1_P705_8 ;FallingBottoms_M1_P862_12 ;FallingBottoms_M1_P978_26 ;FallingBottoms_M2_P1064_52 ;FallingBottoms_M2_P704_8 ;FallingBottoms_M2_P861_12 ;FallingBottoms_M2_P977_26 ;FallingBottoms_M3_P1063_52 ;FallingBottoms_M3_P523_4 ;FallingBottoms_M3_P703_8 ;FallingBottoms_M3_P860_12 ;FallingBottoms_M3_P976_26 
+2007-11-30,1.1034,1.1326,1.0954,1.1316,BearishFlag_M1_P40_2 ;FallingBottoms_M3_P299_2 
+2007-12-07,1.1308,1.1351,1.1153,1.128,
+2007-12-14,1.1278,1.1546,1.1236,1.1528,BearishFlag_X1_P39_2 ;BearishFlag_X2_P38_2 ;FallingTops_X1_P217_2 ;FallingTops_X1_P443_4 
+2007-12-21,1.1559,1.1595,1.1478,1.1553,
+2007-12-28,1.1554,1.1626,1.124,1.1268,BearishFlag_M2_P39_2 ;BearishFlag_M3_P38_2 ;BearishFlag_X2_P720_12 ;FallingBottoms_M1_P300_2 ;FallingTops_X1_P635_8 ;FallingTops_X1_P799_12 ;FallingTops_X1_P940_26 ;FallingTops_X2_P634_8 ;FallingTops_X2_P798_12 ;FallingTops_X2_P939_26 ;FallingTops_X3_P633_8 ;FallingTops_X3_P797_12 ;FallingTops_X3_P938_26 
+2008-01-04,1.1281,1.1369,1.1017,1.1054,BearishFlag_X1_P40_2 ;FallingBottoms_M1_P524_4 ;FallingTops_X1_P444_4 ;FallingTops_X2_P217_2 ;FallingTops_X2_P443_4 
+2008-01-11,1.1073,1.119,1.0977,1.1013,
+2008-01-18,1.1007,1.1085,1.0836,1.0992,BearishFlag_M2_P40_2 ;BearishFlag_M3_P720_12 ;FallingBottoms_M1_P1066_52 ;FallingBottoms_M1_P301_2 ;FallingBottoms_M1_P706_8 ;FallingBottoms_M1_P863_12 ;FallingBottoms_M1_P979_26 ;FallingBottoms_M2_P1065_52 ;FallingBottoms_M2_P300_2 ;FallingBottoms_M2_P705_8 ;FallingBottoms_M2_P862_12 ;FallingBottoms_M2_P978_26 ;FallingBottoms_M3_P1064_52 ;FallingBottoms_M3_P704_8 ;FallingBottoms_M3_P861_12 ;FallingBottoms_M3_P977_26 
+2008-01-25,1.0994,1.1121,1.0845,1.0969,BearishFlag_X2_P39_2 ;FallingBottoms_M1_P525_4 ;FallingBottoms_M2_P524_4 ;FallingTops_X3_P217_2 
+2008-02-01,1.0963,1.0965,1.0732,1.0886,
+2008-02-08,1.0906,1.1101,1.0862,1.1018,BearishFlag_M3_P39_2 ;FallingBottoms_M1_P302_2 ;FallingBottoms_M2_P301_2 ;FallingBottoms_M3_P300_2 
+2008-02-15,1.102,1.1105,1.0891,1.0923,BearishFlag_X2_P40_2 ;BearishFlag_X2_P721_12 ;FallingTops_X1_P218_2 ;FallingTops_X1_P445_4 ;FallingTops_X1_P800_12 ;FallingTops_X2_P444_4 ;FallingTops_X2_P635_8 ;FallingTops_X2_P799_12 ;FallingTops_X2_P940_26 ;FallingTops_X3_P443_4 ;FallingTops_X3_P634_8 ;FallingTops_X3_P798_12 ;FallingTops_X3_P939_26 
+2008-02-22,1.0933,1.1046,1.0835,1.0841,BearishFlag_M3_P721_12 ;FallingBottoms_M1_P1067_52 ;FallingBottoms_M1_P526_4 ;FallingBottoms_M1_P707_8 ;FallingBottoms_M1_P864_12 ;FallingBottoms_M1_P980_26 ;FallingBottoms_M2_P1066_52 ;FallingBottoms_M2_P525_4 ;FallingBottoms_M2_P706_8 ;FallingBottoms_M2_P863_12 ;FallingBottoms_M2_P979_26 ;FallingBottoms_M3_P1065_52 ;FallingBottoms_M3_P524_4 ;FallingBottoms_M3_P705_8 ;FallingBottoms_M3_P862_12 ;FallingBottoms_M3_P978_26 
+2008-02-29,1.0849,1.0929,1.0417,1.0429,BearishFlag_M3_P40_2 ;FallingBottoms_M2_P302_2 ;FallingBottoms_M3_P301_2 
+2008-03-07,1.0396,1.0453,1.0137,1.0244,FallingTops_X2_P218_2 ;FallingTops_X2_P445_4 ;FallingTops_X3_P444_4 ;FallingTops_X3_P635_8 
+2008-03-14,1.0228,1.0352,0.9977,0.9985,FallingBottoms_M2_P1067_52 ;FallingBottoms_M2_P526_4 ;FallingBottoms_M2_P707_8 ;FallingBottoms_M2_P864_12 ;FallingBottoms_M2_P980_26 ;FallingBottoms_M3_P1066_52 ;FallingBottoms_M3_P525_4 ;FallingBottoms_M3_P706_8 ;FallingBottoms_M3_P863_12 ;FallingBottoms_M3_P979_26 
+2008-03-21,0.9913,1.0166,0.968,1.009,FallingBottoms_M3_P302_2 ;RisingBottoms_M1_P142_2 ;RisingBottoms_M1_P9_NN 
+2008-03-28,1.0102,1.0249,0.9883,0.9954,FallingTops_X3_P218_2 ;FallingTops_X3_P445_4 ;RisingTops_X1_P324_4 ;RisingTops_X1_P79_2 
+2008-04-04,0.9941,1.0217,0.9869,1.0056,FallingBottoms_M3_P1067_52 ;FallingBottoms_M3_P526_4 ;FallingBottoms_M3_P707_8 ;FallingBottoms_M3_P864_12 ;FallingBottoms_M3_P980_26 ;RisingBottoms_M1_P1009_52 ;RisingBottoms_M1_P381_4 ;RisingBottoms_M1_P588_8 ;RisingBottoms_M1_P759_12 ;RisingBottoms_M1_P906_26 
+2008-04-11,1.0058,1.0171,0.9888,1.0011,RisingBottoms_M2_P142_2 
+2008-04-18,1.0042,1.0281,0.9925,1.0178,RisingTops_X2_P324_4 ;RisingTops_X2_P79_2 
+2008-04-25,1.0176,1.0429,0.9997,1.0337,RisingBottoms_M2_P381_4 
+2008-05-02,1.0343,1.0606,1.0301,1.0571,FallingBottoms_M1_P303_2 ;RisingBottoms_M3_P142_2 
+2008-05-09,1.0563,1.062,1.0389,1.041,FallingTops_X1_P219_2 ;FallingTops_X1_P446_4 ;FallingTops_X2_P800_12 ;FallingTops_X3_P799_12 ;RisingTops_X3_P324_4 ;RisingTops_X3_P79_2 
+2008-05-16,1.0417,1.0599,1.0405,1.0475,
+2008-05-23,1.0476,1.0571,1.0215,1.0238,FallingBottoms_M1_P304_2 ;FallingBottoms_M2_P303_2 ;RisingBottoms_M3_P381_4 
+2008-05-30,1.024,1.0526,1.0223,1.042,
+2008-06-06,1.042,1.052,1.0183,1.0184,
+2008-06-13,1.0178,1.0538,1.0148,1.0467,FallingBottoms_M2_P304_2 ;FallingBottoms_M3_P303_2 ;FallingTops_X2_P219_2 ;FallingTops_X2_P446_4 ;RisingTops_X1_P539_8 ;Staircase_X0_P1_NN 
+2008-06-20,1.0454,1.0518,1.0303,1.0355,
+2008-06-27,1.0345,1.0492,1.0165,1.0182,
+2008-07-04,1.0189,1.0282,1.0116,1.0252,
+2008-07-11,1.0253,1.0349,1.0136,1.0159,FallingBottoms_M3_P304_2 ;FallingTops_X3_P219_2 ;RisingBottoms_M1_P1010_52 ;RisingBottoms_M1_P143_2 ;RisingBottoms_M1_P382_4 ;RisingBottoms_M1_P589_8 ;RisingBottoms_M1_P760_12 ;RisingBottoms_M1_P907_26 ;RisingBottoms_M2_P1009_52 ;RisingBottoms_M2_P588_8 ;RisingBottoms_M2_P759_12 ;RisingBottoms_M2_P906_26 ;RisingBottoms_M2_P9_NN ;RisingTops_X1_P80_2 ;Staircase_M1_P1_NN 
+2008-07-18,1.0194,1.0258,1.0012,1.0226,
+2008-07-25,1.0225,1.0406,1.0137,1.0362,FallingTops_X3_P446_4 ;RisingTops_X1_P325_4 
+2008-08-01,1.0371,1.0521,1.0319,1.0495,FallingTops_X3_P800_12 ;RisingBottoms_M1_P144_2 ;RisingBottoms_M1_P590_8 ;RisingBottoms_M2_P1010_52 ;RisingBottoms_M2_P143_2 ;RisingBottoms_M2_P382_4 ;RisingBottoms_M2_P589_8 ;RisingBottoms_M2_P760_12 ;RisingBottoms_M2_P907_26 ;RisingBottoms_M3_P1009_52 ;RisingBottoms_M3_P588_8 ;RisingBottoms_M3_P759_12 ;RisingBottoms_M3_P906_26 ;RisingTops_X1_P540_8 ;RisingTops_X1_P722_12 ;RisingTops_X1_P81_2 ;RisingTops_X2_P539_8 ;RisingTops_X2_P80_2 
+2008-08-08,1.049,1.0836,1.0432,1.0822,
+2008-08-15,1.0836,1.1008,1.0741,1.0959,FallingTops_X3_P940_26 ;RisingTops_X1_P326_4 ;RisingTops_X1_P881_26 ;RisingTops_X2_P325_4 
+2008-08-22,1.0962,1.1039,1.0842,1.0984,RisingBottoms_M1_P145_2 ;RisingBottoms_M2_P144_2 ;RisingBottoms_M3_P143_2 ;RisingBottoms_M3_P382_4 ;RisingTops_X1_P541_8 ;RisingTops_X1_P723_12 ;RisingTops_X2_P540_8 ;RisingTops_X2_P722_12 ;RisingTops_X2_P81_2 ;RisingTops_X3_P539_8 ;RisingTops_X3_P80_2 
+2008-08-29,1.0983,1.1085,1.0882,1.1011,
+2008-09-05,1.0987,1.1192,1.0964,1.118,RisingTops_X1_P327_4 ;RisingTops_X1_P882_26 ;RisingTops_X2_P326_4 ;RisingTops_X2_P881_26 ;RisingTops_X3_P325_4 
+2008-09-12,1.1174,1.1418,1.1129,1.1305,RisingTops_X1_P542_8 ;RisingTops_X1_P724_12 ;RisingTops_X2_P541_8 ;RisingTops_X2_P723_12 ;RisingTops_X3_P540_8 ;RisingTops_X3_P722_12 ;RisingTops_X3_P81_2 
+2008-09-19,1.1303,1.1305,1.0901,1.1049,RisingBottoms_M1_P146_2 ;RisingBottoms_M2_P145_2 ;RisingBottoms_M3_P144_2 
+2008-09-26,1.1049,1.1055,1.0691,1.0903,RisingBottoms_M1_P383_4 
+2008-10-03,1.0902,1.1413,1.0815,1.129,RisingBottoms_M2_P590_8 ;RisingBottoms_M3_P589_8 ;RisingBottoms_M3_P760_12 ;RisingTops_X1_P82_2 
+2008-10-10,1.129,1.1488,1.113,1.1386,RisingBottoms_M1_P147_2 ;RisingBottoms_M2_P146_2 ;RisingBottoms_M3_P145_2 ;RisingTops_X1_P328_4 ;RisingTops_X1_P543_8 ;RisingTops_X1_P725_12 ;RisingTops_X1_P883_26 ;RisingTops_X2_P327_4 ;RisingTops_X2_P542_8 ;RisingTops_X2_P724_12 ;RisingTops_X2_P882_26 ;RisingTops_X3_P326_4 ;RisingTops_X3_P541_8 ;RisingTops_X3_P723_12 ;RisingTops_X3_P881_26 
+2008-10-17,1.1379,1.1491,1.1243,1.1369,
+2008-10-24,1.1365,1.1748,1.1322,1.1676,FallingBottoms_M1_P708_8 ;FallingTops_X3_P1033_52 ;RisingBottoms_M2_P383_4 ;RisingBottoms_M3_P590_8 ;RisingTops_X1_P83_2 ;RisingTops_X1_P998_52 ;RisingTops_X2_P82_2 
+2008-10-31,1.1668,1.1712,1.1205,1.1579,
+2008-11-07,1.1571,1.1802,1.1475,1.178,RisingBottoms_M2_P147_2 ;RisingBottoms_M3_P146_2 ;RisingTops_X2_P328_4 ;RisingTops_X2_P543_8 ;RisingTops_X2_P725_12 ;RisingTops_X2_P883_26 ;RisingTops_X3_P327_4 ;RisingTops_X3_P542_8 ;RisingTops_X3_P724_12 ;RisingTops_X3_P882_26 
+2008-11-14,1.1787,1.2001,1.1715,1.1942,BullishFlag_X0_P27_2 ;RisingBottoms_M3_P383_4 ;RisingTops_X2_P83_2 ;RisingTops_X2_P998_52 ;RisingTops_X3_P82_2 
+2008-11-21,1.1984,1.2255,1.1944,1.2226,Staircase_X1_P1_NN 
+2008-11-28,1.1934,1.22,1.183,1.2131,RisingBottoms_M3_P147_2 
+2008-12-05,1.2135,1.2251,1.1925,1.2192,BullishFlag_X1_P27_2 ;RisingTops_X3_P83_2 
+2008-12-12,1.2203,1.223,1.1739,1.1781,FallingTops_X1_P1034_52 ;FallingTops_X1_P801_12 ;FallingTops_X1_P941_26 ;RisingTops_X3_P328_4 ;RisingTops_X3_P543_8 ;RisingTops_X3_P725_12 ;RisingTops_X3_P883_26 ;RisingTops_X3_P998_52 
+2008-12-19,1.1771,1.1798,1.0413,1.1033,BullishFlag_M1_P27_2 ;FallingBottoms_M2_P708_8 
+2008-12-26,1.1033,1.1053,1.0668,1.0702,RisingTops_X1_P84_2 
+2009-01-02,1.0702,1.0847,1.0369,1.0802,RisingBottoms_M1_P384_4 
+2009-01-09,1.0799,1.1279,1.0704,1.1127,FallingBottoms_M3_P708_8 ;RisingBottoms_M1_P148_2 
+2009-01-16,1.1132,1.129,1.1099,1.1197,BullishFlag_X2_P27_2 ;FallingBottoms_M1_P865_12 ;RisingTops_X1_P329_4 ;RisingTops_X1_P85_2 ;RisingTops_X2_P84_2 
+2009-01-23,1.1199,1.1715,1.1124,1.1541,RisingBottoms_M1_P385_4 ;RisingBottoms_M2_P384_4 
+2009-01-30,1.1533,1.166,1.1315,1.1599,BullishFlag_M2_P27_2 ;RisingBottoms_M1_P149_2 ;RisingBottoms_M2_P148_2 
+2009-02-06,1.1598,1.1744,1.1401,1.1616,RisingTops_X1_P330_4 ;RisingTops_X1_P86_2 ;RisingTops_X2_P329_4 ;RisingTops_X2_P85_2 ;RisingTops_X3_P84_2 
+2009-02-13,1.1612,1.1781,1.1503,1.1606,
+2009-02-20,1.1603,1.1888,1.1463,1.1558,RisingBottoms_M2_P149_2 ;RisingBottoms_M3_P148_2 
+2009-02-27,1.1558,1.1761,1.1464,1.1691,BullishFlag_X3_P27_2 ;RisingTops_X2_P330_4 ;RisingTops_X2_P86_2 ;RisingTops_X3_P329_4 ;RisingTops_X3_P85_2 
+2009-03-06,1.17,1.1848,1.1487,1.1591,
+2009-03-13,1.1578,1.1967,1.1433,1.1849,BearishFlag_M0_P41_2 ;FallingTops_X1_P802_12 ;FallingTops_X2_P801_12 ;RisingBottoms_M3_P149_2 
+2009-03-20,1.1847,1.1913,1.116,1.1271,FallingBottoms_M1_P709_8 ;FallingTops_X1_P1035_52 ;FallingTops_X1_P220_2 ;FallingTops_X1_P447_4 ;FallingTops_X1_P636_8 ;FallingTops_X1_P942_26 ;FallingTops_X2_P1034_52 ;FallingTops_X2_P941_26 ;RisingBottoms_M2_P385_4 ;RisingBottoms_M3_P384_4 ;RisingTops_X3_P330_4 ;RisingTops_X3_P86_2 
+2009-03-27,1.1266,1.1479,1.117,1.1439,
+2009-04-03,1.1452,1.1549,1.1298,1.1305,
+2009-04-10,1.1305,1.1624,1.1242,1.1542,BearishFlag_M1_P41_2 ;FallingBottoms_M1_P527_4 ;FallingTops_X1_P221_2 ;FallingTops_X2_P220_2 ;RisingBottoms_M3_P385_4 
+2009-04-17,1.1551,1.1688,1.1305,1.1647,FallingTops_X1_P448_4 ;FallingTops_X2_P447_4 
+2009-04-24,1.165,1.1742,1.135,1.1387,FallingTops_X1_P637_8 ;FallingTops_X1_P803_12 ;FallingTops_X1_P943_26 ;FallingTops_X2_P1035_52 ;FallingTops_X2_P636_8 ;FallingTops_X2_P802_12 ;FallingTops_X2_P942_26 ;FallingTops_X3_P1034_52 ;FallingTops_X3_P801_12 ;FallingTops_X3_P941_26 
+2009-05-01,1.1397,1.1603,1.1271,1.1355,BearishFlag_M0_P42_2 ;BearishFlag_X1_P41_2 ;FallingTops_X1_P222_2 ;FallingTops_X2_P221_2 ;FallingTops_X3_P220_2 
+2009-05-08,1.1356,1.1425,1.105,1.1053,BearishFlag_M0_P528_8 ;FallingBottoms_M1_P866_12 ;FallingBottoms_M2_P527_4 ;FallingBottoms_M2_P709_8 ;FallingBottoms_M2_P865_12 ;FallingTops_X1_P449_4 ;FallingTops_X2_P448_4 ;FallingTops_X3_P447_4 
+2009-05-15,1.105,1.125,1.0978,1.1212,
+2009-05-22,1.1209,1.1265,1.081,1.0855,BearishFlag_M0_P43_2 ;BearishFlag_M1_P42_2 ;BearishFlag_M2_P41_2 ;FallingTops_X1_P638_8 ;FallingTops_X1_P804_12 ;FallingTops_X1_P944_26 ;FallingTops_X2_P222_2 ;FallingTops_X2_P637_8 ;FallingTops_X2_P803_12 ;FallingTops_X2_P943_26 ;FallingTops_X3_P221_2 ;FallingTops_X3_P636_8 ;FallingTops_X3_P802_12 ;FallingTops_X3_P942_26 
+2009-05-29,1.0846,1.0954,1.0657,1.0667,BearishFlag_M1_P528_8 ;FallingBottoms_M1_P867_12 ;FallingBottoms_M1_P981_26 ;FallingBottoms_M2_P866_12 ;FallingBottoms_M3_P527_4 ;FallingBottoms_M3_P709_8 ;FallingBottoms_M3_P865_12 ;RisingBottoms_M3_P907_26 
+2009-06-05,1.0663,1.091,1.059,1.0853,
+2009-06-12,1.0854,1.099,1.065,1.0791,BearishFlag_X1_P42_2 ;BearishFlag_X2_P41_2 ;FallingTops_X3_P222_2 
+2009-06-19,1.0789,1.0957,1.0763,1.0812,BearishFlag_M1_P43_2 
+2009-06-26,1.0806,1.1023,1.0633,1.0835,
+2009-07-03,1.0828,1.0912,1.0707,1.0857,BearishFlag_X1_P43_2 
+2009-07-10,1.0865,1.096,1.075,1.0865,
+2009-07-17,1.0863,1.094,1.0703,1.0766,BearishFlag_M0_P311_4 ;BearishFlag_M0_P44_2 ;BearishFlag_M2_P42_2 ;BearishFlag_M3_P41_2 ;FallingTops_X1_P450_4 ;FallingTops_X1_P639_8 ;FallingTops_X1_P805_12 ;FallingTops_X1_P945_26 ;FallingTops_X2_P449_4 ;FallingTops_X2_P638_8 ;FallingTops_X2_P804_12 ;FallingTops_X2_P944_26 ;FallingTops_X3_P448_4 ;FallingTops_X3_P637_8 ;FallingTops_X3_P803_12 ;FallingTops_X3_P943_26 
+2009-07-24,1.0761,1.0774,1.0623,1.0724,BearishFlag_X2_P42_2 
+2009-07-31,1.0714,1.0934,1.0653,1.0689,FallingBottoms_M1_P710_8 
+2009-08-07,1.0683,1.0844,1.0563,1.081,BearishFlag_M0_P45_2 ;BearishFlag_M1_P44_2 ;BearishFlag_M2_P43_2 
+2009-08-14,1.0808,1.0884,1.067,1.072,BearishFlag_X1_P44_2 ;BearishFlag_X1_P528_8 ;BearishFlag_X2_P43_2 ;FallingTops_X1_P223_2 ;FallingTops_X1_P451_4 ;FallingTops_X1_P640_8 ;FallingTops_X1_P806_12 ;FallingTops_X2_P450_4 ;FallingTops_X2_P639_8 ;FallingTops_X2_P805_12 ;FallingTops_X2_P945_26 ;FallingTops_X3_P449_4 ;FallingTops_X3_P638_8 ;FallingTops_X3_P804_12 ;FallingTops_X3_P944_26 
+2009-08-21,1.0731,1.0832,1.0551,1.0585,BearishFlag_M0_P312_4 ;BearishFlag_M1_P311_4 ;BearishFlag_M2_P528_8 ;FallingBottoms_M1_P1068_52 ;FallingBottoms_M1_P711_8 ;FallingBottoms_M1_P868_12 ;FallingBottoms_M1_P982_26 ;FallingBottoms_M2_P710_8 ;FallingBottoms_M2_P867_12 ;FallingBottoms_M2_P981_26 ;FallingBottoms_M3_P866_12 ;RisingBottoms_M3_P1010_52 
+2009-08-28,1.058,1.0715,1.0528,1.0596,BearishFlag_M0_P46_2 ;BearishFlag_M1_P45_2 ;BearishFlag_M3_P42_2 
+2009-09-04,1.0595,1.0706,1.0544,1.0605,
+2009-09-11,1.06,1.0614,1.034,1.0384,BearishFlag_M1_P312_4 ;BearishFlag_X1_P311_4 ;BearishFlag_X1_P45_2 ;FallingBottoms_M1_P1069_52 ;FallingBottoms_M1_P712_8 ;FallingBottoms_M1_P869_12 ;FallingBottoms_M1_P983_26 ;FallingBottoms_M2_P1068_52 ;FallingBottoms_M2_P711_8 ;FallingBottoms_M2_P868_12 ;FallingBottoms_M2_P982_26 ;FallingBottoms_M3_P710_8 ;FallingBottoms_M3_P867_12 ;FallingBottoms_M3_P981_26 ;FallingTops_X1_P224_2 ;FallingTops_X1_P452_4 ;FallingTops_X2_P223_2 ;FallingTops_X2_P451_4 ;FallingTops_X2_P640_8 ;FallingTops_X2_P806_12 ;FallingTops_X3_P450_4 ;FallingTops_X3_P639_8 ;FallingTops_X3_P805_12 ;Staircase_X0_P717_12 
+2009-09-18,1.0374,1.0422,1.0276,1.0295,BearishFlag_M1_P46_2 ;BearishFlag_M2_P44_2 ;BearishFlag_M3_P43_2 
+2009-09-25,1.0295,1.039,1.0185,1.0275,
+2009-10-02,1.027,1.0453,1.025,1.0351,BearishFlag_X1_P46_2 ;BearishFlag_X2_P44_2 ;FallingTops_X1_P225_2 ;FallingTops_X2_P224_2 ;FallingTops_X3_P223_2 
+2009-10-09,1.035,1.036,1.0229,1.0314,BearishFlag_X1_P312_4 ;BearishFlag_X2_P528_8 ;FallingTops_X2_P452_4 ;FallingTops_X3_P451_4 ;FallingTops_X3_P640_8 
+2009-10-16,1.0316,1.0354,1.0118,1.0181,BearishFlag_M2_P311_4 ;BearishFlag_M2_P45_2 ;BearishFlag_M3_P528_8 ;FallingBottoms_M1_P1070_52 ;FallingBottoms_M2_P1069_52 ;FallingBottoms_M2_P712_8 ;FallingBottoms_M2_P869_12 ;FallingBottoms_M2_P983_26 ;FallingBottoms_M3_P1068_52 ;FallingBottoms_M3_P711_8 ;FallingBottoms_M3_P868_12 ;FallingBottoms_M3_P982_26 
+2009-10-23,1.0181,1.023,1.0033,1.0086,
+2009-10-30,1.0085,1.029,1.005,1.0261,BearishFlag_X2_P45_2 ;FallingTops_X2_P225_2 ;FallingTops_X3_P224_2 
+2009-11-06,1.026,1.034,1.0127,1.0172,BearishFlag_X2_P311_4 ;FallingTops_X3_P452_4 ;RisingTops_X1_P331_4 
+2009-11-13,1.0171,1.0194,1.0035,1.0124,BearishFlag_M2_P46_2 ;BearishFlag_M3_P44_2 
+2009-11-20,1.012,1.0223,1.0048,1.0176,
+2009-11-27,1.0178,1.0198,0.9915,1.0056,BearishFlag_M2_P312_4 ;BearishFlag_X2_P46_2 ;FallingBottoms_M1_P1071_52 ;FallingBottoms_M2_P1070_52 ;FallingBottoms_M3_P1069_52 ;FallingBottoms_M3_P712_8 ;FallingBottoms_M3_P869_12 ;FallingBottoms_M3_P983_26 ;FallingTops_X3_P225_2 ;RisingBottoms_M1_P386_4 ;RisingBottoms_M1_P591_8 ;RisingBottoms_M1_P761_12 ;RisingBottoms_M1_P908_26 ;Staircase_M1_P717_12 
+2009-12-04,1.0055,1.0191,0.9961,1.0157,BearishFlag_M3_P45_2 ;RisingBottoms_M1_P150_2 
+2009-12-11,1.0165,1.037,1.0137,1.0342,BearishFlag_X2_P312_4 ;RisingTops_X1_P332_4 ;RisingTops_X1_P544_8 ;RisingTops_X2_P331_4 
+2009-12-18,1.0343,1.051,1.0296,1.0416,FallingTops_X3_P806_12 ;RisingTops_X1_P726_12 
+2009-12-25,1.0423,1.0504,1.0322,1.0355,
+2010-01-01,1.0356,1.0422,1.0278,1.0351,
+2010-01-08,1.0351,1.042,1.0217,1.0236,BearishFlag_M3_P311_4 ;BearishFlag_M3_P46_2 ;RisingBottoms_M1_P151_2 ;RisingBottoms_M1_P387_4 ;RisingBottoms_M2_P150_2 ;RisingBottoms_M2_P386_4 ;RisingTops_X1_P87_2 
+2010-01-15,1.0237,1.0287,1.013,1.0257,RisingBottoms_M1_P592_8 ;RisingBottoms_M2_P591_8 ;RisingBottoms_M2_P761_12 ;RisingBottoms_M2_P908_26 
+2010-01-22,1.0252,1.0496,1.0227,1.0406,RisingTops_X2_P332_4 ;RisingTops_X3_P331_4 
+2010-01-29,1.041,1.0643,1.0367,1.0601,BearishFlag_M3_P312_4 ;RisingBottoms_M2_P151_2 ;RisingBottoms_M2_P387_4 ;RisingBottoms_M3_P150_2 ;RisingBottoms_M3_P386_4 ;RisingTops_X1_P545_8 ;RisingTops_X1_P727_12 ;RisingTops_X2_P544_8 ;RisingTops_X2_P726_12 ;RisingTops_X2_P87_2 ;Staircase_X1_P717_12 
+2010-02-05,1.0605,1.0796,1.0498,1.0723,
+2010-02-12,1.0724,1.083,1.061,1.0752,FallingTops_X1_P453_4 ;FallingTops_X3_P945_26 ;RisingTops_X1_P884_26 ;RisingTops_X3_P332_4 
+2010-02-19,1.0753,1.09,1.0648,1.0753,
+2010-02-26,1.0754,1.088,1.0695,1.0734,RisingBottoms_M3_P151_2 ;RisingTops_X1_P546_8 ;RisingTops_X2_P545_8 ;RisingTops_X3_P544_8 ;RisingTops_X3_P87_2 
+2010-03-05,1.0731,1.089,1.0649,1.0737,
+2010-03-12,1.074,1.0804,1.0576,1.0576,FallingTops_X2_P453_4 ;RisingBottoms_M3_P387_4 
+2010-03-19,1.0579,1.065,1.0507,1.0613,
+2010-03-26,1.0608,1.0751,1.0547,1.065,RisingTops_X1_P88_2 
+2010-04-02,1.0648,1.069,1.0428,1.0606,
+2010-04-09,1.0611,1.0786,1.0578,1.0651,
+2010-04-16,1.0569,1.0634,1.0493,1.0613,BearishFlag_M0_P7_NN ;FallingBottoms_M1_P16_NN ;RisingBottoms_M1_P152_2 ;RisingBottoms_M1_P388_4 ;RisingBottoms_M2_P592_8 ;RisingBottoms_M3_P591_8 ;RisingBottoms_M3_P761_12 ;RisingBottoms_M3_P9_NN ;Staircase_M2_P1_NN ;Staircase_M2_P717_12 
+2010-04-23,1.063,1.0851,1.0598,1.0723,FallingTops_X3_P453_4 ;RisingTops_X1_P333_4 ;RisingTops_X1_P89_2 ;RisingTops_X2_P88_2 
+2010-04-30,1.0744,1.0924,1.0694,1.0775,RisingTops_X1_P547_8 ;RisingTops_X1_P728_12 ;RisingTops_X1_P885_26 ;RisingTops_X2_P546_8 ;RisingTops_X2_P727_12 ;RisingTops_X2_P884_26 ;RisingTops_X3_P545_8 ;RisingTops_X3_P726_12 
+2010-05-07,1.0756,1.1246,1.0751,1.1078,FallingBottoms_M1_P713_8 ;RisingBottoms_M2_P152_2 ;RisingBottoms_M2_P388_4 ;RisingBottoms_M3_P592_8 
+2010-05-14,1.1065,1.134,1.0919,1.1331,FallingTops_X3_P1035_52 ;RisingTops_X2_P333_4 ;RisingTops_X2_P89_2 ;RisingTops_X3_P88_2 
+2010-05-21,1.1339,1.159,1.1264,1.1494,RisingTops_X2_P547_8 ;RisingTops_X2_P728_12 ;RisingTops_X2_P885_26 ;RisingTops_X3_P546_8 ;RisingTops_X3_P727_12 ;RisingTops_X3_P884_26 
+2010-05-28,1.1533,1.1696,1.1474,1.1589,BearishFlag_M0_P47_2 ;RisingBottoms_M3_P152_2 
+2010-06-04,1.1578,1.1732,1.1415,1.1625,FallingTops_X1_P1036_52 ;FallingTops_X1_P226_2 ;FallingTops_X1_P454_4 ;RisingTops_X3_P333_4 ;RisingTops_X3_P89_2 
+2010-06-11,1.1632,1.1674,1.1394,1.1488,FallingTops_X1_P641_8 ;FallingTops_X1_P807_12 ;FallingTops_X1_P946_26 ;RisingTops_X3_P547_8 ;RisingTops_X3_P728_12 ;RisingTops_X3_P885_26 
+2010-06-18,1.1483,1.149,1.1075,1.1083,BearishFlag_M0_P48_2 ;BearishFlag_M1_P47_2 ;RisingBottoms_M3_P388_4 
+2010-06-25,1.1024,1.114,1.0916,1.0926,BearishFlag_X1_P47_2 ;FallingTops_X1_P1037_52 ;FallingTops_X1_P227_2 ;FallingTops_X1_P455_4 ;FallingTops_X2_P1036_52 ;FallingTops_X2_P226_2 ;FallingTops_X2_P454_4 
+2010-07-02,1.0939,1.094,1.0574,1.0623,BearishFlag_M0_P529_8 ;FallingBottoms_M1_P714_8 ;FallingBottoms_M2_P713_8 ;FallingTops_X1_P642_8 ;FallingTops_X1_P808_12 ;FallingTops_X1_P947_26 ;FallingTops_X2_P641_8 ;FallingTops_X2_P807_12 ;FallingTops_X2_P946_26 
+2010-07-09,1.0638,1.0674,1.0475,1.0572,BearishFlag_M0_P49_2 ;BearishFlag_M1_P48_2 ;FallingBottoms_M1_P870_12 
+2010-07-16,1.0555,1.068,1.0394,1.0504,
+2010-07-23,1.0479,1.0564,1.039,1.0545,BearishFlag_M0_P530_8 ;BearishFlag_M1_P529_8 ;FallingBottoms_M1_P715_8 ;FallingBottoms_M2_P714_8 ;FallingBottoms_M3_P713_8 
+2010-07-30,1.0541,1.064,1.0357,1.0409,BearishFlag_M0_P50_2 ;BearishFlag_M1_P49_2 ;BearishFlag_M2_P47_2 ;BearishFlag_X1_P48_2 ;BearishFlag_X1_P529_8 ;FallingBottoms_M1_P871_12 ;FallingBottoms_M1_P984_26 ;FallingBottoms_M2_P870_12 ;FallingTops_X1_P1038_52 ;FallingTops_X1_P228_2 ;FallingTops_X1_P456_4 ;FallingTops_X1_P643_8 ;FallingTops_X1_P809_12 ;FallingTops_X1_P948_26 ;FallingTops_X2_P1037_52 ;FallingTops_X2_P227_2 ;FallingTops_X2_P455_4 ;FallingTops_X2_P642_8 ;FallingTops_X2_P808_12 ;FallingTops_X2_P947_26 ;FallingTops_X3_P1036_52 ;FallingTops_X3_P226_2 ;FallingTops_X3_P454_4 ;FallingTops_X3_P641_8 ;FallingTops_X3_P807_12 ;FallingTops_X3_P946_26 ;RisingBottoms_M3_P908_26 
+2010-08-06,1.0402,1.0555,1.0329,1.0388,
+2010-08-13,1.0377,1.0628,1.0368,1.0509,BearishFlag_M0_P531_8 ;BearishFlag_M1_P530_8 ;FallingBottoms_M1_P716_8 ;FallingBottoms_M2_P715_8 ;FallingBottoms_M3_P714_8 
+2010-08-20,1.0479,1.0534,1.0253,1.0335,BearishFlag_M1_P50_2 ;BearishFlag_M2_P48_2 ;BearishFlag_X1_P49_2 ;BearishFlag_X1_P530_8 ;BearishFlag_X2_P47_2 ;FallingBottoms_M1_P872_12 ;FallingBottoms_M1_P985_26 ;FallingBottoms_M2_P871_12 ;FallingBottoms_M2_P984_26 ;FallingBottoms_M3_P870_12 ;FallingTops_X1_P1039_52 ;FallingTops_X1_P229_2 ;FallingTops_X1_P457_4 ;FallingTops_X1_P644_8 ;FallingTops_X1_P810_12 ;FallingTops_X1_P949_26 ;FallingTops_X2_P1038_52 ;FallingTops_X2_P228_2 ;FallingTops_X2_P456_4 ;FallingTops_X2_P643_8 ;FallingTops_X2_P809_12 ;FallingTops_X2_P948_26 ;FallingTops_X3_P1037_52 ;FallingTops_X3_P227_2 ;FallingTops_X3_P455_4 ;FallingTops_X3_P642_8 ;FallingTops_X3_P808_12 ;FallingTops_X3_P947_26 
+2010-08-27,1.0345,1.045,1.0217,1.0276,
+2010-09-03,1.0272,1.0312,1.0062,1.016,BearishFlag_M0_P532_8 ;BearishFlag_M1_P531_8 ;BearishFlag_M2_P529_8 ;FallingBottoms_M2_P716_8 ;FallingBottoms_M3_P715_8 
+2010-09-10,1.0161,1.028,1.0058,1.0192,
+2010-09-17,1.019,1.0207,0.993,1.0097,BearishFlag_M2_P49_2 ;BearishFlag_M3_P47_2 ;BearishFlag_X1_P50_2 ;BearishFlag_X1_P531_8 ;BearishFlag_X2_P48_2 ;BearishFlag_X2_P529_8 ;FallingBottoms_M1_P873_12 ;FallingBottoms_M1_P986_26 ;FallingBottoms_M2_P872_12 ;FallingBottoms_M2_P985_26 ;FallingBottoms_M3_P871_12 ;FallingBottoms_M3_P984_26 ;FallingTops_X1_P1040_52 ;FallingTops_X1_P645_8 ;FallingTops_X1_P811_12 ;FallingTops_X1_P950_26 ;FallingTops_X2_P1039_52 ;FallingTops_X2_P229_2 ;FallingTops_X2_P457_4 ;FallingTops_X2_P644_8 ;FallingTops_X2_P810_12 ;FallingTops_X2_P949_26 ;FallingTops_X3_P1038_52 ;FallingTops_X3_P228_2 ;FallingTops_X3_P456_4 ;FallingTops_X3_P643_8 ;FallingTops_X3_P809_12 ;FallingTops_X3_P948_26 
+2010-09-24,1.0101,1.012,0.9777,0.9827,BearishFlag_M0_P533_8 ;BearishFlag_M1_P532_8 ;BearishFlag_M2_P530_8 ;FallingBottoms_M1_P1072_52 ;FallingBottoms_M2_P1071_52 ;FallingBottoms_M3_P1070_52 ;FallingBottoms_M3_P716_8 
+2010-10-01,0.983,0.988,0.9704,0.9735,
+2010-10-08,0.9754,0.979,0.9552,0.9626,BearishFlag_M2_P50_2 ;BearishFlag_M3_P48_2 ;BearishFlag_X2_P49_2 ;FallingBottoms_M1_P874_12 ;FallingBottoms_M1_P987_26 ;FallingBottoms_M2_P873_12 ;FallingBottoms_M2_P986_26 ;FallingBottoms_M3_P872_12 ;FallingBottoms_M3_P985_26 ;FallingTops_X3_P229_2 ;RisingTops_X1_P90_2 
+2010-10-15,0.9601,0.973,0.9462,0.9587,BearishFlag_M0_P534_8 ;BearishFlag_M1_P533_8 ;BearishFlag_M2_P531_8 ;BearishFlag_M3_P529_8 ;FallingBottoms_M1_P1073_52 ;FallingBottoms_M2_P1072_52 ;FallingBottoms_M3_P1071_52 
+2010-10-22,0.9579,0.9805,0.9539,0.9766,
+2010-10-29,0.977,0.993,0.966,0.9823,BearishFlag_X2_P50_2 ;FallingTops_X3_P457_4 ;RisingTops_X2_P90_2 
+2010-11-05,0.9821,0.9971,0.9545,0.9608,BearishFlag_M3_P49_2 
+2010-11-12,0.9615,0.9814,0.9583,0.9807,
+2010-11-19,0.9784,0.9997,0.9758,0.992,BearishFlag_X1_P532_8 ;BearishFlag_X2_P530_8 ;FallingTops_X1_P230_2 ;FallingTops_X1_P458_4 ;FallingTops_X1_P646_8 ;FallingTops_X2_P645_8 ;FallingTops_X3_P644_8 ;RisingTops_X3_P90_2 
+2010-11-26,0.9919,1.0054,0.9845,1.0026,
+2010-12-03,1.0023,1.0066,0.9724,0.9734,BearishFlag_M0_P51_2 ;BearishFlag_M3_P50_2 ;FallingTops_X1_P1041_52 ;FallingTops_X1_P812_12 ;FallingTops_X1_P951_26 ;FallingTops_X2_P1040_52 ;FallingTops_X2_P811_12 ;FallingTops_X2_P950_26 ;FallingTops_X3_P1039_52 ;FallingTops_X3_P810_12 ;FallingTops_X3_P949_26 
+2010-12-10,0.9755,0.9915,0.9722,0.9806,
+2010-12-17,0.9839,0.9851,0.9555,0.9688,BearishFlag_X1_P533_8 ;BearishFlag_X2_P531_8 ;FallingTops_X1_P647_8 ;FallingTops_X2_P230_2 ;FallingTops_X2_P458_4 ;FallingTops_X2_P646_8 ;FallingTops_X3_P645_8 
+2010-12-24,0.9681,0.972,0.9494,0.9621,BearishFlag_M1_P51_2 
+2010-12-31,0.9614,0.965,0.9298,0.9339,BearishFlag_M0_P535_8 ;BearishFlag_M1_P534_8 ;BearishFlag_M1_P7_NN ;BearishFlag_M2_P532_8 ;BearishFlag_M3_P530_8 ;FallingBottoms_M1_P1074_52 ;FallingBottoms_M1_P17_NN ;FallingBottoms_M1_P875_12 ;FallingBottoms_M1_P988_26 ;FallingBottoms_M2_P1073_52 ;FallingBottoms_M2_P16_NN ;FallingBottoms_M2_P874_12 ;FallingBottoms_M2_P987_26 ;FallingBottoms_M3_P1072_52 ;FallingBottoms_M3_P873_12 ;FallingBottoms_M3_P986_26 
+2011-01-07,0.9354,0.971,0.9317,0.9672,BearishFlag_X1_P51_2 ;FallingTops_X3_P230_2 
+2011-01-14,0.9683,0.9783,0.9602,0.9632,BearishFlag_X1_P7_NN ;FallingTops_X3_P458_4 
+2011-01-21,0.9626,0.969,0.9519,0.9581,BearishFlag_M0_P52_2 
+2011-01-28,0.9554,0.9623,0.9387,0.9419,
+2011-02-04,0.9411,0.9594,0.9325,0.9545,
+2011-02-11,0.9574,0.9775,0.952,0.9729,BearishFlag_X1_P534_8 ;BearishFlag_X2_P532_8 ;FallingTops_X1_P231_2 ;FallingTops_X1_P459_4 ;FallingTops_X1_P648_8 ;FallingTops_X2_P647_8 ;FallingTops_X3_P646_8 
+2011-02-18,0.9742,0.9745,0.9434,0.9444,BearishFlag_M0_P53_2 ;BearishFlag_M1_P52_2 ;BearishFlag_M2_P51_2 ;FallingTops_X1_P813_12 ;FallingTops_X1_P952_26 ;FallingTops_X2_P1041_52 ;FallingTops_X2_P812_12 ;FallingTops_X2_P951_26 ;FallingTops_X3_P1040_52 ;FallingTops_X3_P811_12 ;FallingTops_X3_P950_26 
+2011-02-25,0.943,0.9505,0.9228,0.9285,BearishFlag_M0_P536_8 ;BearishFlag_M1_P535_8 ;BearishFlag_M2_P533_8 ;BearishFlag_M3_P531_8 ;FallingBottoms_M1_P1075_52 ;FallingBottoms_M1_P876_12 ;FallingBottoms_M1_P989_26 ;FallingBottoms_M2_P1074_52 ;FallingBottoms_M2_P875_12 ;FallingBottoms_M2_P988_26 ;FallingBottoms_M3_P1073_52 ;FallingBottoms_M3_P874_12 ;FallingBottoms_M3_P987_26 
+2011-03-04,0.9278,0.933,0.9199,0.9244,
+2011-03-11,0.9255,0.937,0.9234,0.9295,BearishFlag_X1_P52_2 ;BearishFlag_X1_P535_8 ;BearishFlag_X2_P51_2 ;BearishFlag_X2_P533_8 ;FallingTops_X1_P232_2 ;FallingTops_X1_P460_4 ;FallingTops_X1_P649_8 ;FallingTops_X1_P814_12 ;FallingTops_X2_P231_2 ;FallingTops_X2_P459_4 ;FallingTops_X2_P648_8 ;FallingTops_X2_P813_12 ;FallingTops_X2_P952_26 ;FallingTops_X3_P647_8 ;FallingTops_X3_P812_12 ;FallingTops_X3_P951_26 
+2011-03-18,0.9272,0.932,0.8915,0.9007,BearishFlag_M1_P536_8 ;BearishFlag_M1_P53_2 ;BearishFlag_M2_P534_8 ;BearishFlag_M2_P7_NN ;BearishFlag_M3_P532_8 ;FallingBottoms_M1_P1076_52 ;FallingBottoms_M1_P18_NN ;FallingBottoms_M1_P877_12 ;FallingBottoms_M1_P990_26 ;FallingBottoms_M2_P1075_52 ;FallingBottoms_M2_P17_NN ;FallingBottoms_M2_P876_12 ;FallingBottoms_M2_P989_26 ;FallingBottoms_M3_P1074_52 ;FallingBottoms_M3_P16_NN ;FallingBottoms_M3_P875_12 ;FallingBottoms_M3_P988_26 
+2011-03-25,0.9018,0.9215,0.8975,0.9198,
+2011-04-01,0.9207,0.934,0.9124,0.9235,BearishFlag_X1_P53_2 ;FallingTops_X2_P232_2 ;FallingTops_X3_P231_2 
+2011-04-08,0.925,0.9295,0.9049,0.9063,BearishFlag_M0_P54_2 ;BearishFlag_M2_P52_2 ;BearishFlag_M3_P51_2 ;BearishFlag_X1_P536_8 ;BearishFlag_X2_P534_8 ;BearishFlag_X2_P7_NN ;FallingTops_X1_P461_4 ;FallingTops_X1_P650_8 ;FallingTops_X1_P815_12 ;FallingTops_X2_P460_4 ;FallingTops_X2_P649_8 ;FallingTops_X2_P814_12 ;FallingTops_X3_P459_4 ;FallingTops_X3_P648_8 ;FallingTops_X3_P813_12 ;FallingTops_X3_P952_26 ;RisingTops_X1_P886_26 
+2011-04-15,0.908,0.9105,0.8894,0.8921,BearishFlag_M0_P313_4 ;BearishFlag_M2_P535_8 ;BearishFlag_M3_P533_8 ;FallingBottoms_M1_P1077_52 ;FallingBottoms_M1_P878_12 ;FallingBottoms_M1_P991_26 ;FallingBottoms_M2_P1076_52 ;FallingBottoms_M2_P877_12 ;FallingBottoms_M2_P990_26 ;FallingBottoms_M3_P1075_52 ;FallingBottoms_M3_P876_12 ;FallingBottoms_M3_P989_26 
+2011-04-22,0.8928,0.9011,0.878,0.8855,BearishFlag_X2_P52_2 ;FallingTops_X3_P232_2 
+2011-04-29,0.8854,0.8874,0.8622,0.8656,BearishFlag_M0_P55_2 ;BearishFlag_M1_P54_2 ;BearishFlag_M2_P53_2 
+2011-05-06,0.8641,0.88,0.8551,0.8784,BearishFlag_M0_P314_4 ;BearishFlag_M1_P313_4 ;BearishFlag_M2_P536_8 ;BearishFlag_M3_P534_8 ;BearishFlag_M3_P7_NN ;FallingBottoms_M1_P1078_52 ;FallingBottoms_M1_P879_12 ;FallingBottoms_M1_P992_26 ;FallingBottoms_M2_P1077_52 ;FallingBottoms_M2_P18_NN ;FallingBottoms_M2_P878_12 ;FallingBottoms_M2_P991_26 ;FallingBottoms_M3_P1076_52 ;FallingBottoms_M3_P17_NN ;FallingBottoms_M3_P877_12 ;FallingBottoms_M3_P990_26 
+2011-05-13,0.8772,0.895,0.8704,0.8924,BearishFlag_X1_P54_2 ;BearishFlag_X2_P53_2 ;FallingTops_X1_P233_2 
+2011-05-20,0.8932,0.8939,0.8747,0.8772,BearishFlag_X1_P313_4 ;BearishFlag_X2_P535_8 ;FallingTops_X1_P462_4 ;FallingTops_X2_P461_4 ;FallingTops_X2_P650_8 ;FallingTops_X2_P815_12 ;FallingTops_X3_P460_4 ;FallingTops_X3_P649_8 ;FallingTops_X3_P814_12 
+2011-05-27,0.8785,0.8893,0.8459,0.849,BearishFlag_M1_P314_4 ;BearishFlag_M1_P55_2 ;BearishFlag_M3_P52_2 ;BearishFlag_M3_P535_8 ;FallingBottoms_M1_P1079_52 ;FallingBottoms_M1_P880_12 ;FallingBottoms_M1_P993_26 ;FallingBottoms_M2_P1078_52 ;FallingBottoms_M2_P879_12 ;FallingBottoms_M2_P992_26 ;FallingBottoms_M3_P1077_52 ;FallingBottoms_M3_P878_12 ;FallingBottoms_M3_P991_26 
+2011-06-03,0.8504,0.855,0.8329,0.8337,BearishFlag_X1_P55_2 ;FallingBottoms_M3_P18_NN ;FallingTops_X1_P234_2 ;FallingTops_X2_P233_2 
+2011-06-10,0.8347,0.8445,0.8323,0.8428,
+2011-06-17,0.8426,0.8551,0.8345,0.8486,
+2011-06-24,0.8484,0.8517,0.8315,0.8332,BearishFlag_M2_P313_4 ;BearishFlag_M2_P54_2 ;BearishFlag_M3_P53_2 
+2011-07-01,0.8343,0.8526,0.8274,0.8476,
+2011-07-08,0.8474,0.8519,0.8358,0.8367,BearishFlag_X1_P314_4 ;BearishFlag_X2_P536_8 ;BearishFlag_X2_P54_2 ;FallingTops_X1_P235_2 ;FallingTops_X1_P463_4 ;FallingTops_X2_P234_2 ;FallingTops_X2_P462_4 ;FallingTops_X3_P233_2 ;FallingTops_X3_P461_4 ;FallingTops_X3_P650_8 ;RisingTops_X1_P548_8 
+2011-07-15,0.8358,0.8397,0.8078,0.8154,BearishFlag_M2_P314_4 ;BearishFlag_M2_P55_2 ;BearishFlag_M3_P536_8 ;FallingBottoms_M2_P1079_52 ;FallingBottoms_M2_P880_12 ;FallingBottoms_M2_P993_26 ;FallingBottoms_M3_P1078_52 ;FallingBottoms_M3_P879_12 ;FallingBottoms_M3_P992_26 
+2011-07-22,0.8101,0.8277,0.8093,0.8199,
+2011-07-29,0.8123,0.8155,0.7846,0.7854,BearishFlag_X2_P313_4 ;BearishFlag_X2_P55_2 ;FallingTops_X2_P235_2 ;FallingTops_X2_P463_4 ;FallingTops_X3_P234_2 ;FallingTops_X3_P462_4 
+2011-08-05,0.7931,0.7952,0.7577,0.767,BearishFlag_M3_P313_4 ;BearishFlag_M3_P54_2 ;FallingBottoms_M3_P1079_52 ;FallingBottoms_M3_P880_12 ;FallingBottoms_M3_P993_26 ;RisingBottoms_M1_P1011_52 ;RisingBottoms_M1_P153_2 ;RisingBottoms_M1_P389_4 ;RisingBottoms_M1_P593_8 ;RisingBottoms_M1_P762_12 ;RisingBottoms_M1_P909_26 
+2011-08-12,0.7583,0.7786,0.7066,0.7777,RisingBottoms_M1_P10_NN 
+2011-08-19,0.7819,0.8016,0.7768,0.7853,FallingTops_X3_P235_2 ;RisingTops_X1_P91_2 
+2011-08-26,0.79,0.8157,0.7837,0.8064,BearishFlag_X2_P314_4 ;FallingTops_X3_P463_4 ;RisingTops_X1_P334_4 
+2011-09-02,0.8087,0.824,0.771,0.7885,BearishFlag_M3_P55_2 ;RisingBottoms_M1_P154_2 ;RisingBottoms_M2_P153_2 
+2011-09-09,0.788,0.8864,0.7819,0.8836,BearishFlag_M3_P314_4 ;FallingTops_X3_P815_12 ;RisingBottoms_M1_P1012_52 ;RisingBottoms_M1_P390_4 ;RisingBottoms_M1_P594_8 ;RisingBottoms_M1_P763_12 ;RisingBottoms_M1_P910_26 ;RisingBottoms_M2_P1011_52 ;RisingBottoms_M2_P389_4 ;RisingBottoms_M2_P593_8 ;RisingBottoms_M2_P762_12 ;RisingBottoms_M2_P909_26 ;RisingTops_X1_P549_8 ;RisingTops_X1_P729_12 ;RisingTops_X2_P548_8 ;RisingTops_X2_P91_2 
+2011-09-16,0.888,0.8928,0.8646,0.8743,RisingTops_X2_P334_4 
+2011-09-23,0.8825,0.9182,0.8724,0.9043,RisingBottoms_M2_P154_2 ;RisingBottoms_M3_P153_2 
+2011-09-30,0.9045,0.9143,0.8916,0.9079,RisingTops_X1_P550_8 ;RisingTops_X1_P730_12 ;RisingTops_X2_P549_8 ;RisingTops_X2_P729_12 ;RisingTops_X3_P548_8 ;RisingTops_X3_P91_2 
+2011-10-07,0.9086,0.9315,0.9035,0.9269,RisingTops_X1_P887_26 ;RisingTops_X2_P886_26 ;RisingTops_X3_P334_4 
+2011-10-14,0.9261,0.9272,0.8901,0.8925,RisingBottoms_M3_P154_2 
+2011-10-21,0.8914,0.9082,0.8804,0.882,RisingBottoms_M1_P391_4 ;RisingBottoms_M2_P390_4 ;RisingBottoms_M3_P389_4 ;RisingTops_X1_P92_2 
+2011-10-28,0.883,0.8877,0.8566,0.8627,
+2011-11-04,0.8614,0.896,0.8609,0.8845,RisingBottoms_M1_P1013_52 ;RisingBottoms_M1_P11_NN ;RisingBottoms_M1_P155_2 ;RisingBottoms_M1_P764_12 ;RisingBottoms_M1_P911_26 ;RisingBottoms_M2_P1012_52 ;RisingBottoms_M2_P10_NN ;RisingBottoms_M2_P594_8 ;RisingBottoms_M2_P763_12 ;RisingBottoms_M2_P910_26 ;RisingBottoms_M3_P1011_52 ;RisingBottoms_M3_P593_8 ;RisingBottoms_M3_P762_12 ;RisingBottoms_M3_P909_26 
+2011-11-11,0.8871,0.915,0.8865,0.8998,RisingBottoms_M1_P392_4 ;RisingBottoms_M2_P391_4 ;RisingBottoms_M3_P390_4 ;RisingTops_X1_P335_4 ;RisingTops_X1_P93_2 ;RisingTops_X2_P92_2 
+2011-11-18,0.898,0.9236,0.8959,0.9163,
+2011-11-25,0.9164,0.933,0.9106,0.9301,RisingBottoms_M1_P156_2 ;RisingBottoms_M2_P155_2 ;RisingBottoms_M3_P594_8 ;RisingTops_X1_P551_8 ;RisingTops_X1_P731_12 ;RisingTops_X1_P888_26 ;RisingTops_X1_P8_NN ;RisingTops_X2_P550_8 ;RisingTops_X2_P730_12 ;RisingTops_X2_P887_26 ;RisingTops_X3_P549_8 ;RisingTops_X3_P729_12 ;RisingTops_X3_P886_26 ;Staircase_X0_P2_NN 
+2011-12-02,0.9273,0.9306,0.9065,0.9214,BullishFlag_X0_P28_2 ;RisingTops_X1_P94_2 ;RisingTops_X2_P93_2 ;RisingTops_X3_P92_2 
+2011-12-09,0.9205,0.9296,0.9163,0.9226,RisingBottoms_M2_P392_4 ;RisingBottoms_M3_P391_4 
+2011-12-16,0.9249,0.9547,0.9246,0.9357,BullishFlag_X0_P309_4 ;RisingBottoms_M2_P156_2 ;RisingBottoms_M3_P155_2 ;RisingTops_X1_P889_26 ;RisingTops_X2_P335_4 ;RisingTops_X2_P551_8 ;RisingTops_X2_P731_12 ;RisingTops_X2_P888_26 ;RisingTops_X3_P550_8 ;RisingTops_X3_P730_12 ;RisingTops_X3_P887_26 
+2011-12-23,0.9364,0.94,0.9243,0.9363,
+2011-12-30,0.9371,0.947,0.9319,0.9387,BullishFlag_X1_P28_2 ;RisingTops_X2_P94_2 ;RisingTops_X3_P93_2 
+2012-01-06,0.9385,0.9578,0.9303,0.9549,BearishFlag_M0_P56_2 ;BullishFlag_X1_P309_4 ;FallingTops_X1_P464_4 ;FallingTops_X1_P651_8 ;FallingTops_X1_P816_12 ;RisingBottoms_M3_P156_2 ;RisingTops_X1_P890_26 ;RisingTops_X2_P889_26 ;RisingTops_X3_P335_4 ;RisingTops_X3_P551_8 ;RisingTops_X3_P731_12 ;RisingTops_X3_P888_26 
+2012-01-13,0.9572,0.9595,0.9405,0.9516,FallingTops_X3_P1041_52 ;RisingTops_X1_P999_52 ;RisingTops_X2_P8_NN 
+2012-01-20,0.9548,0.9573,0.9304,0.9341,FallingTops_X1_P236_2 ;RisingBottoms_M3_P392_4 ;RisingTops_X3_P94_2 
+2012-01-27,0.9373,0.938,0.911,0.9122,BearishFlag_M1_P56_2 ;BullishFlag_M1_P28_2 ;FallingTops_X2_P464_4 ;FallingTops_X2_P651_8 ;FallingTops_X2_P816_12 ;Staircase_X0_P305_4 
+2012-02-03,0.9118,0.9249,0.9114,0.9179,
+2012-02-10,0.92,0.9263,0.9088,0.9163,BearishFlag_X1_P56_2 ;BullishFlag_X2_P28_2 ;FallingTops_X1_P237_2 ;FallingTops_X2_P236_2 
+2012-02-17,0.915,0.93,0.91,0.9193,
+2012-02-24,0.9172,0.9178,0.893,0.8958,BullishFlag_M1_P309_4 ;RisingBottoms_M1_P393_4 ;RisingBottoms_M1_P595_8 ;RisingBottoms_M1_P765_12 ;RisingBottoms_M2_P764_12 ;RisingBottoms_M3_P763_12 
+2012-03-02,0.8945,0.9149,0.8933,0.9138,RisingBottoms_M1_P1014_52 ;RisingBottoms_M1_P912_26 ;RisingBottoms_M2_P1013_52 ;RisingBottoms_M2_P11_NN ;RisingBottoms_M2_P911_26 ;RisingBottoms_M3_P1012_52 ;RisingBottoms_M3_P10_NN ;RisingBottoms_M3_P910_26 ;Staircase_M1_P2_NN 
+2012-03-09,0.9142,0.9207,0.9069,0.9187,BearishFlag_M2_P56_2 ;BullishFlag_M2_P28_2 ;FallingTops_X2_P237_2 ;FallingTops_X3_P236_2 
+2012-03-16,0.9193,0.9334,0.9138,0.9154,BullishFlag_X2_P309_4 ;FallingTops_X3_P464_4 
+2012-03-23,0.915,0.9178,0.9064,0.9078,
+2012-03-30,0.9079,0.9136,0.9007,0.9015,RisingBottoms_M1_P157_2 ;RisingBottoms_M1_P394_4 ;RisingBottoms_M2_P393_4 ;Staircase_M1_P305_4 
+2012-04-06,0.9009,0.9222,0.9,0.9166,BearishFlag_X2_P56_2 ;BullishFlag_X3_P28_2 ;FallingTops_X3_P237_2 ;RisingBottoms_M1_P596_8 ;RisingBottoms_M1_P766_12 ;RisingBottoms_M1_P913_26 ;RisingBottoms_M2_P1014_52 ;RisingBottoms_M2_P595_8 ;RisingBottoms_M2_P765_12 ;RisingBottoms_M2_P912_26 ;RisingBottoms_M3_P1013_52 ;RisingBottoms_M3_P764_12 ;RisingBottoms_M3_P911_26 ;RisingTops_X1_P95_2 
+2012-04-13,0.9167,0.9217,0.9089,0.9191,RisingTops_X1_P336_4 ;Staircase_X1_P305_4 
+2012-04-20,0.92,0.9251,0.9082,0.9082,BearishFlag_M3_P56_2 ;RisingBottoms_M1_P158_2 ;RisingBottoms_M2_P157_2 
+2012-04-27,0.9105,0.9172,0.9049,0.9064,
+2012-05-04,0.9068,0.9184,0.9041,0.918,BullishFlag_M2_P309_4 ;RisingBottoms_M1_P395_4 ;RisingBottoms_M1_P597_8 ;RisingBottoms_M1_P767_12 ;RisingBottoms_M2_P394_4 ;RisingBottoms_M2_P596_8 ;RisingBottoms_M2_P766_12 ;RisingBottoms_M2_P913_26 ;RisingBottoms_M3_P393_4 ;RisingBottoms_M3_P595_8 ;RisingBottoms_M3_P765_12 ;RisingBottoms_M3_P912_26 ;RisingTops_X2_P95_2 
+2012-05-11,0.9219,0.9306,0.9191,0.929,BullishFlag_X3_P309_4 ;FallingTops_X3_P651_8 ;FallingTops_X3_P816_12 ;RisingBottoms_M2_P158_2 ;RisingBottoms_M3_P157_2 ;RisingTops_X1_P337_4 ;RisingTops_X1_P552_8 ;RisingTops_X1_P732_12 ;RisingTops_X2_P336_4 
+2012-05-18,0.9315,0.95,0.9303,0.9397,
+2012-05-25,0.94,0.961,0.9366,0.9591,RisingBottoms_M1_P396_4 ;RisingBottoms_M1_P598_8 ;RisingBottoms_M2_P395_4 ;RisingBottoms_M2_P597_8 ;RisingBottoms_M2_P767_12 ;RisingBottoms_M3_P394_4 ;RisingBottoms_M3_P596_8 ;RisingBottoms_M3_P766_12 ;RisingTops_X1_P1000_52 ;RisingTops_X1_P891_26 ;RisingTops_X2_P890_26 ;RisingTops_X2_P999_52 ;RisingTops_X3_P889_26 ;RisingTops_X3_P95_2 ;Staircase_M2_P305_4 
+2012-06-01,0.9559,0.9771,0.953,0.9659,RisingBottoms_M3_P158_2 ;RisingTops_X1_P338_4 ;RisingTops_X1_P553_8 ;RisingTops_X1_P733_12 ;RisingTops_X2_P337_4 ;RisingTops_X2_P552_8 ;RisingTops_X2_P732_12 ;RisingTops_X3_P336_4 
+2012-06-08,0.9657,0.9696,0.9512,0.9594,
+2012-06-15,0.9488,0.965,0.9476,0.95,
+2012-06-22,0.9424,0.9592,0.942,0.9547,FallingBottoms_M1_P19_NN ;RisingBottoms_M2_P396_4 ;RisingBottoms_M2_P598_8 ;RisingBottoms_M3_P11_NN ;RisingBottoms_M3_P395_4 ;RisingBottoms_M3_P597_8 ;RisingBottoms_M3_P767_12 
+2012-06-29,0.9566,0.9678,0.9462,0.9481,
+2012-07-06,0.9481,0.9794,0.9479,0.9772,RisingTops_X2_P1000_52 ;RisingTops_X2_P338_4 ;RisingTops_X2_P553_8 ;RisingTops_X2_P733_12 ;RisingTops_X2_P891_26 ;RisingTops_X3_P337_4 ;RisingTops_X3_P552_8 ;RisingTops_X3_P732_12 ;RisingTops_X3_P890_26 ;RisingTops_X3_P999_52 
+2012-07-13,0.979,0.9873,0.9736,0.9802,FallingTops_X1_P238_2 
+2012-07-20,0.9803,0.9887,0.9745,0.9878,
+2012-07-27,0.9906,0.9972,0.9694,0.9747,FallingTops_X1_P1042_52 ;FallingTops_X1_P465_4 ;FallingTops_X1_P652_8 ;FallingTops_X1_P817_12 ;FallingTops_X1_P953_26 ;RisingTops_X3_P1000_52 ;RisingTops_X3_P338_4 ;RisingTops_X3_P553_8 ;RisingTops_X3_P733_12 ;RisingTops_X3_P891_26 ;RisingTops_X3_P8_NN ;Staircase_X1_P2_NN 
+2012-08-03,0.9763,0.9898,0.9692,0.9702,RisingBottoms_M3_P396_4 
+2012-08-10,0.9691,0.981,0.9655,0.9765,
+2012-08-17,0.9773,0.9799,0.9695,0.9739,FallingTops_X1_P1043_52 ;FallingTops_X1_P239_2 ;FallingTops_X1_P466_4 ;FallingTops_X1_P653_8 ;FallingTops_X1_P818_12 ;FallingTops_X1_P954_26 ;FallingTops_X2_P1042_52 ;FallingTops_X2_P238_2 ;FallingTops_X2_P465_4 ;FallingTops_X2_P652_8 ;FallingTops_X2_P817_12 ;FallingTops_X2_P953_26 
+2012-08-24,0.9735,0.9768,0.9537,0.9595,
+2012-08-31,0.9599,0.9635,0.95,0.9545,RisingBottoms_M3_P598_8 
+2012-09-07,0.9543,0.9608,0.9433,0.944,FallingTops_X1_P240_2 ;FallingTops_X1_P467_4 ;FallingTops_X1_P654_8 ;FallingTops_X1_P819_12 ;FallingTops_X2_P239_2 ;FallingTops_X2_P466_4 ;FallingTops_X2_P653_8 ;FallingTops_X2_P818_12 ;FallingTops_X2_P954_26 ;FallingTops_X3_P238_2 ;FallingTops_X3_P465_4 ;FallingTops_X3_P652_8 ;FallingTops_X3_P817_12 ;FallingTops_X3_P953_26 
+2012-09-14,0.9438,0.9483,0.9237,0.9254,FallingBottoms_M1_P994_26 ;FallingBottoms_M2_P19_NN ;RisingBottoms_M3_P913_26 ;Staircase_M2_P2_NN 
+2012-09-21,0.9264,0.9356,0.9244,0.9325,
+2012-09-28,0.9326,0.9417,0.9322,0.9396,FallingTops_X2_P240_2 ;FallingTops_X3_P239_2 
+2012-10-05,0.9429,0.9438,0.9272,0.9295,FallingTops_X2_P467_4 ;FallingTops_X3_P466_4 
+2012-10-12,0.9295,0.9432,0.9295,0.9332,
+2012-10-19,0.9326,0.9372,0.9213,0.9275,
+2012-10-26,0.9278,0.9386,0.9246,0.9346,FallingTops_X3_P240_2 
+2012-11-02,0.9341,0.9414,0.9275,0.9399,FallingTops_X3_P467_4 
+2012-11-09,0.9412,0.9499,0.9379,0.9482,FallingTops_X2_P654_8 ;FallingTops_X3_P653_8 
+2012-11-16,0.9484,0.9512,0.9401,0.9453,FallingTops_X1_P241_2 ;FallingTops_X2_P819_12 ;FallingTops_X3_P818_12 
+2012-11-23,0.9445,0.9458,0.9264,0.9278,FallingTops_X1_P468_4 
+2012-11-30,0.9282,0.9341,0.9244,0.9278,
+2012-12-07,0.9281,0.9382,0.9239,0.9341,FallingTops_X2_P241_2 
+2012-12-14,0.9368,0.937,0.9161,0.9175,FallingBottoms_M2_P994_26 ;FallingTops_X1_P469_4 ;FallingTops_X2_P468_4 ;FallingTops_X3_P654_8 ;FallingTops_X3_P819_12 ;RisingTops_X1_P554_8 ;RisingTops_X1_P734_12 
+2012-12-21,0.9168,0.9194,0.9082,0.9154,
+2012-12-28,0.916,0.9181,0.9091,0.9134,
+2013-01-04,0.9131,0.9303,0.9076,0.9244,FallingTops_X3_P241_2 
+2013-01-11,0.9244,0.9286,0.9109,0.9133,
+2013-01-18,0.9125,0.9389,0.9115,0.9339,FallingTops_X2_P469_4 ;FallingTops_X3_P468_4 
+2013-01-25,0.9345,0.9349,0.922,0.9266,
+2013-02-01,0.9267,0.9292,0.9018,0.9077,FallingBottoms_M3_P994_26 ;RisingBottoms_M1_P397_4 ;RisingBottoms_M1_P599_8 
+2013-02-08,0.9079,0.9201,0.9054,0.9172,RisingBottoms_M1_P159_2 
+2013-02-15,0.9178,0.9246,0.9148,0.9216,
+2013-02-22,0.9225,0.9332,0.9182,0.9294,FallingTops_X3_P469_4 ;RisingBottoms_M2_P397_4 ;RisingBottoms_M2_P599_8 
+2013-03-01,0.9292,0.9462,0.923,0.9422,RisingBottoms_M2_P159_2 ;RisingTops_X1_P555_8 ;RisingTops_X1_P735_12 ;RisingTops_X2_P554_8 ;RisingTops_X2_P734_12 
+2013-03-08,0.9422,0.9551,0.9391,0.9512,FallingTops_X1_P242_2 ;FallingTops_X3_P954_26 ;RisingTops_X1_P892_26 
+2013-03-15,0.9517,0.9567,0.9377,0.9377,FallingTops_X1_P470_4 ;RisingBottoms_M3_P397_4 
+2013-03-22,0.9443,0.9491,0.9377,0.9405,RisingBottoms_M3_P159_2 
+2013-03-29,0.9419,0.9553,0.9351,0.9492,FallingTops_X2_P242_2 
+2013-04-05,0.9496,0.9527,0.9311,0.9355,FallingTops_X2_P470_4 
+2013-04-12,0.9343,0.9366,0.9259,0.927,RisingBottoms_M1_P160_2 
+2013-04-19,0.9274,0.9342,0.9205,0.9336,RisingBottoms_M3_P599_8 
+2013-04-26,0.9328,0.9499,0.9308,0.9429,FallingTops_X3_P242_2 ;FallingTops_X3_P470_4 
+2013-05-03,0.941,0.943,0.9246,0.9348,
+2013-05-10,0.9349,0.9627,0.9331,0.956,RisingBottoms_M2_P160_2 ;RisingTops_X2_P555_8 ;RisingTops_X2_P735_12 ;RisingTops_X2_P892_26 ;RisingTops_X3_P554_8 ;RisingTops_X3_P734_12 
+2013-05-17,0.9582,0.976,0.9519,0.9722,FallingTops_X1_P1044_52 ;FallingTops_X1_P243_2 ;FallingTops_X2_P1043_52 ;FallingTops_X3_P1042_52 
+2013-05-24,0.9693,0.9836,0.959,0.9605,
+2013-05-31,0.9617,0.979,0.9511,0.9555,RisingBottoms_M3_P160_2 
+2013-06-07,0.9573,0.9624,0.9224,0.9355,FallingTops_X2_P243_2 
+2013-06-14,0.9358,0.9418,0.9129,0.9211,
+2013-06-21,0.9219,0.9367,0.9174,0.9345,
+2013-06-28,0.9356,0.9487,0.9311,0.9439,FallingTops_X3_P243_2 
+2013-07-05,0.9443,0.966,0.9437,0.964,FallingTops_X1_P471_4 
+2013-07-12,0.966,0.9749,0.9401,0.9458,FallingTops_X1_P1045_52 ;FallingTops_X1_P655_8 ;FallingTops_X1_P820_12 ;FallingTops_X1_P955_26 ;FallingTops_X2_P1044_52 ;FallingTops_X3_P1043_52 ;RisingTops_X3_P555_8 ;RisingTops_X3_P735_12 ;RisingTops_X3_P892_26 
+2013-07-19,0.946,0.9534,0.9361,0.9408,
+2013-07-26,0.9412,0.9412,0.9266,0.9284,FallingTops_X1_P472_4 ;FallingTops_X2_P471_4 
+2013-08-02,0.9284,0.9387,0.923,0.9285,
+2013-08-09,0.9286,0.933,0.9175,0.9228,
+2013-08-16,0.9221,0.939,0.9216,0.9264,
+2013-08-23,0.926,0.9287,0.9149,0.9216,
+2013-08-30,0.9209,0.9327,0.917,0.9282,BearishFlag_M0_P57_2 ;FallingTops_X1_P244_2 
+2013-09-06,0.9313,0.9453,0.931,0.9378,FallingTops_X2_P472_4 ;FallingTops_X3_P471_4 
+2013-09-13,0.9382,0.9391,0.9274,0.9297,FallingTops_X1_P656_8 ;FallingTops_X1_P821_12 ;FallingTops_X1_P956_26 ;FallingTops_X2_P1045_52 ;FallingTops_X2_P655_8 ;FallingTops_X2_P820_12 ;FallingTops_X2_P955_26 ;FallingTops_X3_P1044_52 
+2013-09-20,0.9245,0.9278,0.9089,0.9102,BearishFlag_M0_P58_2 ;BearishFlag_M1_P57_2 ;FallingBottoms_M1_P995_26 ;FallingTops_X2_P244_2 
+2013-09-27,0.9097,0.9137,0.9021,0.9052,FallingBottoms_M1_P1080_52 ;FallingBottoms_M3_P19_NN ;RisingBottoms_M3_P1014_52 
+2013-10-04,0.9065,0.9079,0.8968,0.9071,
+2013-10-11,0.9065,0.913,0.9015,0.9119,FallingTops_X3_P244_2 ;FallingTops_X3_P472_4 
+2013-10-18,0.9095,0.9177,0.9004,0.9015,BearishFlag_M1_P58_2 ;FallingBottoms_M1_P1081_52 ;FallingBottoms_M1_P996_26 ;FallingBottoms_M2_P1080_52 ;FallingBottoms_M2_P995_26 
+2013-10-25,0.9017,0.9043,0.8891,0.892,
+2013-11-01,0.8921,0.9136,0.8919,0.9118,BearishFlag_X1_P57_2 
+2013-11-08,0.9119,0.9244,0.9091,0.9209,BearishFlag_M0_P59_2 ;BearishFlag_M2_P57_2 ;FallingTops_X1_P473_4 
+2013-11-15,0.9227,0.923,0.9126,0.9149,BullishFlag_X0_P4_NN ;FallingTops_X1_P657_8 ;FallingTops_X1_P822_12 ;FallingTops_X2_P656_8 ;FallingTops_X2_P821_12 ;FallingTops_X2_P956_26 ;FallingTops_X3_P655_8 ;FallingTops_X3_P820_12 ;FallingTops_X3_P955_26 
+2013-11-22,0.9143,0.9187,0.9065,0.9065,BearishFlag_X1_P58_2 
+2013-11-29,0.9073,0.913,0.9028,0.906,FallingTops_X2_P473_4 
+2013-12-06,0.9058,0.9108,0.8912,0.8919,BearishFlag_M1_P59_2 ;BearishFlag_M2_P58_2 
+2013-12-13,0.8916,0.8933,0.8842,0.8891,FallingBottoms_M1_P1082_52 ;FallingBottoms_M1_P997_26 ;FallingBottoms_M2_P1081_52 ;FallingBottoms_M2_P996_26 ;FallingBottoms_M3_P1080_52 ;FallingBottoms_M3_P995_26 
+2013-12-20,0.8899,0.9,0.8836,0.8953,BearishFlag_X2_P57_2 
+2013-12-27,0.8955,0.8971,0.8811,0.8912,
+2014-01-03,0.8907,0.9056,0.886,0.9048,BearishFlag_M3_P57_2 ;FallingTops_X3_P473_4 
+2014-01-10,0.9049,0.9124,0.9006,0.9026,
+2014-01-17,0.9011,0.9118,0.8987,0.9098,BearishFlag_X1_P59_2 ;BearishFlag_X2_P58_2 ;FallingTops_X1_P245_2 ;FallingTops_X1_P658_8 ;FallingTops_X2_P657_8 ;FallingTops_X3_P656_8 
+2014-01-24,0.91,0.9151,0.8905,0.8941,BearishFlag_M2_P59_2 ;BearishFlag_M3_P58_2 ;FallingTops_X1_P474_4 ;FallingTops_X1_P823_12 ;FallingTops_X2_P822_12 ;FallingTops_X3_P821_12 ;FallingTops_X3_P956_26 ;RisingTops_X1_P893_26 
+2014-01-31,0.8947,0.9069,0.893,0.9058,
+2014-02-07,0.9064,0.9079,0.8967,0.8976,FallingTops_X1_P246_2 ;FallingTops_X2_P245_2 ;FallingTops_X2_P658_8 ;FallingTops_X3_P657_8 
+2014-02-14,0.8986,0.9036,0.8906,0.8923,FallingTops_X2_P474_4 ;FallingTops_X2_P823_12 ;FallingTops_X3_P822_12 
+2014-02-21,0.8913,0.8927,0.8856,0.8876,FallingBottoms_M1_P1083_52 ;FallingBottoms_M2_P1082_52 ;FallingBottoms_M2_P997_26 ;FallingBottoms_M3_P1081_52 ;FallingBottoms_M3_P996_26 
+2014-02-28,0.8874,0.8928,0.8778,0.8793,BearishFlag_X2_P59_2 ;FallingTops_X2_P246_2 ;FallingTops_X3_P245_2 
+2014-03-07,0.8805,0.8894,0.8757,0.8778,BearishFlag_M3_P59_2 
+2014-03-14,0.8779,0.8804,0.87,0.8723,FallingBottoms_M2_P1083_52 ;FallingBottoms_M3_P1082_52 ;FallingBottoms_M3_P997_26 ;RisingBottoms_M1_P600_8 ;RisingBottoms_M1_P768_12 ;RisingBottoms_M1_P914_26 
+2014-03-21,0.8724,0.8868,0.8713,0.8825,FallingTops_X3_P246_2 
+2014-03-28,0.8815,0.8897,0.8792,0.8869,FallingTops_X3_P474_4 
+2014-04-04,0.8868,0.8949,0.8815,0.8923,
+2014-04-11,0.8918,0.8923,0.8741,0.8759,
+2014-04-18,0.8767,0.8835,0.8763,0.8831,
+2014-04-25,0.883,0.886,0.8802,0.8809,
+2014-05-02,0.8806,0.8846,0.877,0.8778,
+2014-05-09,0.8774,0.8871,0.8704,0.8864,RisingBottoms_M1_P398_4 ;RisingBottoms_M1_P601_8 ;RisingBottoms_M1_P769_12 ;RisingBottoms_M2_P600_8 ;RisingBottoms_M2_P768_12 ;RisingBottoms_M2_P914_26 
+2014-05-16,0.8867,0.8958,0.8857,0.8915,
+2014-05-23,0.8918,0.8971,0.8898,0.8956,FallingTops_X3_P658_8 ;FallingTops_X3_P823_12 ;RisingTops_X1_P556_8 ;RisingTops_X1_P736_12 
+2014-05-30,0.8959,0.8988,0.8935,0.8942,
+2014-06-06,0.8954,0.9033,0.8908,0.8934,
+2014-06-13,0.8931,0.9011,0.8919,0.9,RisingTops_X1_P557_8 ;RisingTops_X1_P737_12 ;RisingTops_X2_P556_8 ;RisingTops_X2_P736_12 
+2014-06-20,0.9,0.9012,0.8911,0.894,
+2014-06-27,0.8953,0.8966,0.8903,0.8905,RisingBottoms_M1_P399_4 ;RisingBottoms_M2_P398_4 
+2014-07-04,0.8908,0.8951,0.8858,0.8942,RisingBottoms_M1_P161_2 ;RisingBottoms_M1_P602_8 ;RisingBottoms_M1_P770_12 ;RisingBottoms_M2_P601_8 ;RisingBottoms_M2_P769_12 ;RisingBottoms_M3_P600_8 ;RisingBottoms_M3_P768_12 ;RisingBottoms_M3_P914_26 
+2014-07-11,0.8943,0.8958,0.8901,0.892,
+2014-07-18,0.8921,0.9002,0.89,0.8983,RisingBottoms_M1_P400_4 ;RisingBottoms_M2_P399_4 ;RisingBottoms_M3_P398_4 ;RisingTops_X1_P339_4 ;RisingTops_X1_P96_2 
+2014-07-25,0.8979,0.9051,0.8971,0.9048,RisingBottoms_M1_P162_2 ;RisingBottoms_M1_P603_8 ;RisingBottoms_M1_P771_12 ;RisingBottoms_M2_P161_2 ;RisingBottoms_M2_P602_8 ;RisingBottoms_M2_P770_12 ;RisingBottoms_M3_P601_8 ;RisingBottoms_M3_P769_12 ;RisingTops_X1_P558_8 ;RisingTops_X1_P738_12 ;RisingTops_X2_P557_8 ;RisingTops_X2_P737_12 ;RisingTops_X3_P556_8 ;RisingTops_X3_P736_12 
+2014-08-01,0.9046,0.9105,0.9034,0.9055,
+2014-08-08,0.9057,0.9113,0.9033,0.9053,
+2014-08-15,0.9055,0.9103,0.902,0.902,RisingBottoms_M1_P163_2 ;RisingBottoms_M1_P401_4 ;RisingBottoms_M1_P604_8 ;RisingBottoms_M1_P772_12 ;RisingBottoms_M2_P162_2 ;RisingBottoms_M2_P400_4 ;RisingBottoms_M2_P603_8 ;RisingBottoms_M2_P771_12 ;RisingBottoms_M3_P161_2 ;RisingBottoms_M3_P399_4 ;RisingBottoms_M3_P602_8 ;RisingBottoms_M3_P770_12 
+2014-08-22,0.9033,0.9152,0.8975,0.9137,RisingTops_X1_P340_4 ;RisingTops_X1_P559_8 ;RisingTops_X1_P739_12 ;RisingTops_X1_P894_26 ;RisingTops_X1_P97_2 ;RisingTops_X2_P339_4 ;RisingTops_X2_P558_8 ;RisingTops_X2_P738_12 ;RisingTops_X2_P893_26 ;RisingTops_X2_P96_2 ;RisingTops_X3_P557_8 ;RisingTops_X3_P737_12 
+2014-08-29,0.9174,0.9184,0.9126,0.918,
+2014-09-05,0.9187,0.9335,0.9173,0.9309,RisingBottoms_M1_P164_2 ;RisingBottoms_M1_P402_4 ;RisingBottoms_M1_P605_8 ;RisingBottoms_M1_P773_12 ;RisingBottoms_M2_P163_2 ;RisingBottoms_M2_P401_4 ;RisingBottoms_M2_P604_8 ;RisingBottoms_M2_P772_12 ;RisingBottoms_M3_P162_2 ;RisingBottoms_M3_P400_4 ;RisingBottoms_M3_P603_8 ;RisingBottoms_M3_P771_12 
+2014-09-12,0.9309,0.939,0.9306,0.9332,FallingTops_X3_P1045_52 ;RisingTops_X1_P1001_52 ;RisingTops_X1_P560_8 ;RisingTops_X1_P740_12 ;RisingTops_X1_P895_26 ;RisingTops_X2_P340_4 ;RisingTops_X2_P559_8 ;RisingTops_X2_P739_12 ;RisingTops_X2_P894_26 ;RisingTops_X2_P97_2 ;RisingTops_X3_P339_4 ;RisingTops_X3_P558_8 ;RisingTops_X3_P738_12 ;RisingTops_X3_P893_26 ;RisingTops_X3_P96_2 
+2014-09-19,0.9331,0.9432,0.9302,0.9407,
+2014-09-26,0.941,0.9518,0.9354,0.9512,RisingBottoms_M1_P165_2 ;RisingBottoms_M1_P403_4 ;RisingBottoms_M2_P164_2 ;RisingBottoms_M2_P402_4 ;RisingBottoms_M2_P605_8 ;RisingBottoms_M2_P773_12 ;RisingBottoms_M3_P163_2 ;RisingBottoms_M3_P401_4 ;RisingBottoms_M3_P604_8 ;RisingBottoms_M3_P772_12 
+2014-10-03,0.9515,0.9683,0.9489,0.9671,RisingTops_X1_P1002_52 ;RisingTops_X1_P561_8 ;RisingTops_X1_P741_12 ;RisingTops_X1_P896_26 ;RisingTops_X2_P1001_52 ;RisingTops_X2_P560_8 ;RisingTops_X2_P740_12 ;RisingTops_X2_P895_26 ;RisingTops_X3_P340_4 ;RisingTops_X3_P559_8 ;RisingTops_X3_P739_12 ;RisingTops_X3_P894_26 ;RisingTops_X3_P97_2 
+2014-10-10,0.9676,0.9681,0.9471,0.9571,
+2014-10-17,0.9567,0.9568,0.9372,0.945,RisingBottoms_M1_P166_2 ;RisingBottoms_M2_P165_2 ;RisingBottoms_M2_P403_4 ;RisingBottoms_M3_P164_2 ;RisingBottoms_M3_P402_4 ;RisingBottoms_M3_P605_8 ;RisingBottoms_M3_P773_12 
+2014-10-24,0.9466,0.9557,0.9398,0.9518,
+2014-10-31,0.9515,0.966,0.9442,0.9624,RisingTops_X1_P98_2 
+2014-11-07,0.9642,0.9737,0.9582,0.9657,RisingTops_X1_P341_4 
+2014-11-14,0.96498,0.96886,0.9571,0.9589,RisingBottoms_M2_P166_2 ;RisingBottoms_M3_P165_2 
+2014-11-21,0.95982,0.97091,0.95284,0.96971,RisingBottoms_M3_P403_4 ;RisingTops_X1_P1003_52 ;RisingTops_X1_P562_8 ;RisingTops_X1_P742_12 ;RisingTops_X1_P897_26 ;RisingTops_X1_P99_2 ;RisingTops_X2_P1002_52 ;RisingTops_X2_P561_8 ;RisingTops_X2_P741_12 ;RisingTops_X2_P896_26 ;RisingTops_X2_P98_2 ;RisingTops_X3_P1001_52 ;RisingTops_X3_P560_8 ;RisingTops_X3_P740_12 ;RisingTops_X3_P895_26 
+2014-11-28,0.96696,0.96979,0.9593,0.964,
+2014-12-05,0.96686,0.97995,0.9611,0.97906,RisingTops_X2_P341_4 
+2014-12-12,0.97885,0.98177,0.9615,0.9633,RisingBottoms_M3_P166_2 
+2014-12-19,0.9627,0.98481,0.95519,0.98415,RisingTops_X1_P1004_52 ;RisingTops_X2_P1003_52 ;RisingTops_X2_P562_8 ;RisingTops_X2_P742_12 ;RisingTops_X2_P897_26 ;RisingTops_X2_P99_2 ;RisingTops_X3_P1002_52 ;RisingTops_X3_P561_8 ;RisingTops_X3_P741_12 ;RisingTops_X3_P896_26 ;RisingTops_X3_P98_2 
+2015-01-02,0.98422,1.00205,0.9797,1.0015,RisingTops_X3_P341_4 
+2015-01-09,1.0064,1.02167,1.003,1.0135,BullishFlag_X1_P4_NN 
+2015-01-16,1.01185,1.02403,0.74073,0.85857,BullishFlag_M1_P4_NN ;FallingBottoms_M3_P1083_52 ;FallingTops_X1_P659_8 ;FallingTops_X1_P824_12 ;FallingTops_X1_P957_26 ;RisingBottoms_M1_P1015_52 ;RisingBottoms_M1_P12_NN ;RisingBottoms_M1_P167_2 ;RisingBottoms_M1_P404_4 ;RisingBottoms_M1_P606_8 ;RisingBottoms_M1_P774_12 ;RisingBottoms_M1_P915_26 ;RisingTops_X3_P562_8 ;RisingTops_X3_P742_12 ;RisingTops_X3_P897_26 ;RisingTops_X3_P99_2 
+2015-01-23,0.86058,0.8837,0.8496,0.8803,
+2015-01-30,0.88066,0.9289,0.87564,0.92081,
+2015-02-06,0.92305,0.93452,0.917,0.92627,RisingBottoms_M1_P168_2 ;RisingBottoms_M1_P405_4 ;RisingBottoms_M2_P167_2 ;RisingBottoms_M2_P404_4 ;RisingBottoms_M2_P606_8 ;RisingBottoms_M2_P774_12 ;RisingTops_X1_P100_2 
+2015-02-13,0.92467,0.93367,0.91918,0.9317,
+2015-02-20,0.93151,0.95353,0.9277,0.93839,
+2015-02-27,0.93956,0.95465,0.9382,0.9539,RisingBottoms_M2_P168_2 ;RisingBottoms_M2_P405_4 ;RisingBottoms_M3_P167_2 ;RisingBottoms_M3_P404_4 ;RisingBottoms_M3_P606_8 ;RisingTops_X2_P100_2 
+2015-03-06,0.95366,0.98657,0.9529,0.98538,FallingTops_X1_P475_4 
+2015-03-13,0.98546,1.01286,0.9819,1.005,FallingTops_X1_P660_8 ;FallingTops_X2_P659_8 
+2015-03-20,1.00677,1.00914,0.96256,0.97461,BullishFlag_X0_P5_NN ;BullishFlag_X2_P4_NN ;FallingTops_X1_P247_2 ;FallingTops_X1_P825_12 ;FallingTops_X2_P824_12 ;FallingTops_X2_P957_26 ;RisingBottoms_M3_P168_2 ;RisingTops_X3_P100_2 
+2015-03-27,0.97751,0.9812,0.9484,0.96215,
+2015-04-03,0.96114,0.97565,0.9478,0.95195,RisingBottoms_M3_P405_4 
+2015-04-10,0.95121,0.98365,0.9494,0.97901,FallingTops_X1_P248_2 ;FallingTops_X2_P247_2 
+2015-04-17,0.9783,0.9863,0.9488,0.95193,FallingTops_X2_P475_4 ;FallingTops_X2_P660_8 ;FallingTops_X2_P825_12 ;FallingTops_X3_P659_8 ;FallingTops_X3_P824_12 
+2015-04-24,0.9527,0.97191,0.9494,0.95376,
+2015-05-01,0.95387,0.95987,0.9272,0.93229,FallingTops_X1_P249_2 ;FallingTops_X2_P248_2 ;FallingTops_X3_P247_2 
+2015-05-08,0.93343,0.9414,0.9063,0.93,RisingBottoms_M3_P774_12 
+2015-05-15,0.9317,0.9359,0.907,0.91547,
+2015-05-22,0.91574,0.94568,0.9145,0.94337,FallingTops_X2_P249_2 ;FallingTops_X3_P248_2 ;RisingBottoms_M1_P169_2 
+2015-05-29,0.9428,0.95435,0.9344,0.94054,FallingTops_X3_P475_4 
+2015-06-05,0.9404,0.9502,0.9276,0.9395,
+2015-06-12,0.94032,0.94293,0.9229,0.92819,FallingTops_X3_P249_2 ;RisingBottoms_M1_P170_2 ;RisingBottoms_M2_P169_2 
+2015-06-19,0.92907,0.93844,0.9148,0.916,BullishFlag_M2_P4_NN ;RisingBottoms_M1_P1016_52 ;RisingBottoms_M1_P406_4 ;RisingBottoms_M1_P607_8 ;RisingBottoms_M1_P775_12 ;RisingBottoms_M1_P916_26 ;RisingBottoms_M2_P1015_52 ;RisingBottoms_M2_P12_NN ;RisingBottoms_M2_P915_26 
+2015-06-26,0.91786,0.94158,0.9154,0.93314,
+2015-07-03,0.93886,0.95038,0.924,0.93978,RisingTops_X1_P101_2 
+2015-07-10,0.9428,0.95155,0.93274,0.93823,RisingBottoms_M1_P1017_52 ;RisingBottoms_M1_P407_4 ;RisingBottoms_M1_P608_8 ;RisingBottoms_M1_P776_12 ;RisingBottoms_M1_P917_26 ;RisingBottoms_M2_P1016_52 ;RisingBottoms_M2_P170_2 ;RisingBottoms_M2_P406_4 ;RisingBottoms_M2_P607_8 ;RisingBottoms_M2_P775_12 ;RisingBottoms_M2_P916_26 ;RisingBottoms_M3_P1015_52 ;RisingBottoms_M3_P169_2 ;RisingBottoms_M3_P915_26 ;RisingTops_X1_P342_4 
+2015-07-17,0.94077,0.9624,0.9366,0.9607,FallingTops_X3_P660_8 ;FallingTops_X3_P825_12 ;RisingTops_X1_P563_8 ;RisingTops_X1_P743_12 
+2015-07-24,0.96081,0.96497,0.9521,0.96228,RisingTops_X2_P101_2 
+2015-07-31,0.96237,0.97191,0.95282,0.9661,RisingBottoms_M3_P170_2 ;RisingTops_X1_P343_4 ;RisingTops_X2_P342_4 
+2015-08-07,0.96671,0.98839,0.9641,0.98343,RisingTops_X1_P564_8 ;RisingTops_X1_P744_12 ;RisingTops_X2_P563_8 ;RisingTops_X2_P743_12 
+2015-08-14,0.98307,0.9903,0.9673,0.97539,RisingTops_X3_P101_2 
+2015-08-21,0.97682,0.97987,0.94526,0.94592,RisingBottoms_M1_P408_4 ;RisingBottoms_M2_P407_4 ;RisingBottoms_M3_P406_4 ;RisingTops_X1_P344_4 ;RisingTops_X2_P343_4 ;RisingTops_X3_P342_4 
+2015-08-28,0.9458,0.96722,0.9254,0.96188,RisingBottoms_M1_P1018_52 ;RisingBottoms_M1_P609_8 ;RisingBottoms_M1_P777_12 ;RisingBottoms_M1_P918_26 ;RisingBottoms_M2_P1017_52 ;RisingBottoms_M2_P608_8 ;RisingBottoms_M2_P776_12 ;RisingBottoms_M2_P917_26 ;RisingBottoms_M3_P1016_52 ;RisingBottoms_M3_P607_8 ;RisingBottoms_M3_P775_12 ;RisingBottoms_M3_P916_26 
+2015-09-04,0.96176,0.97721,0.9567,0.9715,
+2015-09-11,0.9719,0.98238,0.96766,0.96819,
+2015-09-18,0.96828,0.97636,0.9523,0.9679,
+2015-09-25,0.96879,0.98433,0.96383,0.97925,RisingTops_X1_P345_4 ;RisingTops_X2_P344_4 ;RisingTops_X3_P343_4 
+2015-10-02,0.97924,0.98161,0.9643,0.971,
+2015-10-09,0.97173,0.97676,0.9583,0.96142,RisingBottoms_M1_P409_4 ;RisingBottoms_M2_P408_4 ;RisingBottoms_M3_P407_4 
+2015-10-16,0.96157,0.9647,0.94727,0.95275,RisingBottoms_M1_P171_2 
+2015-10-23,0.95324,0.98007,0.949,0.97809,BullishFlag_X0_P29_2 ;RisingBottoms_M2_P609_8 ;RisingBottoms_M2_P777_12 ;RisingBottoms_M3_P608_8 ;RisingBottoms_M3_P776_12 
+2015-10-30,0.97879,0.99574,0.9751,0.9875,FallingTops_X3_P957_26 ;RisingBottoms_M2_P409_4 ;RisingBottoms_M3_P408_4 ;RisingTops_X1_P565_8 ;RisingTops_X1_P745_12 ;RisingTops_X1_P898_26 ;RisingTops_X2_P345_4 ;RisingTops_X2_P564_8 ;RisingTops_X2_P744_12 ;RisingTops_X3_P344_4 ;RisingTops_X3_P563_8 ;RisingTops_X3_P743_12 
+2015-11-06,0.98571,1.00764,0.98311,1.00566,RisingBottoms_M2_P171_2 
+2015-11-13,1.00563,1.00949,0.99887,1.00595,
+2015-11-20,1.00574,1.022,1.0039,1.01826,BullishFlag_X1_P29_2 ;RisingTops_X1_P1005_52 ;RisingTops_X2_P1004_52 ;RisingTops_X2_P565_8 ;RisingTops_X2_P745_12 ;RisingTops_X2_P898_26 ;RisingTops_X3_P1003_52 ;RisingTops_X3_P345_4 ;RisingTops_X3_P564_8 ;RisingTops_X3_P744_12 
+2015-11-27,1.01886,1.033,1.01401,1.02985,
+2015-12-04,1.02961,1.03182,0.98739,0.99574,BearishFlag_M0_P60_2 ;BullishFlag_M1_P29_2 ;RisingBottoms_M3_P171_2 ;RisingBottoms_M3_P409_4 
+2015-12-11,0.99744,1.00316,0.98,0.9832,RisingTops_X1_P102_2 
+2015-12-18,0.98392,0.99911,0.9785,0.99197,RisingBottoms_M3_P609_8 
+2015-12-25,0.99301,0.99687,0.9848,0.98709,
+2016-01-01,0.98702,1.00289,0.9852,1.0001,BearishFlag_M1_P60_2 ;BullishFlag_X2_P29_2 ;RisingTops_X2_P102_2 
+2016-01-08,0.9996,1.01244,0.99178,0.99492,
+2016-01-15,0.9931,1.01064,0.9873,1.001,
+2016-01-22,1.00166,1.01656,0.9988,1.0157,BearishFlag_M0_P61_2 ;BearishFlag_X1_P60_2 ;BullishFlag_M2_P29_2 ;FallingTops_X1_P476_4 ;RisingTops_X3_P102_2 
+2016-01-29,1.0166,1.02564,1.0109,1.02166,FallingTops_X1_P661_8 ;RisingTops_X3_P565_8 
+2016-02-05,1.02363,1.02496,0.98781,0.99075,BullishFlag_X1_P5_NN ;BullishFlag_X3_P4_NN ;FallingTops_X1_P826_12 ;RisingTops_X2_P1005_52 ;RisingTops_X3_P1004_52 ;RisingTops_X3_P745_12 ;RisingTops_X3_P898_26 
+2016-02-12,0.99188,0.99729,0.96581,0.97697,BearishFlag_M1_P61_2 ;BearishFlag_M2_P60_2 ;BullishFlag_X0_P30_2 ;BullishFlag_X3_P29_2 ;RisingBottoms_M3_P777_12 
+2016-02-19,0.97741,0.99686,0.9769,0.98993,
+2016-02-26,0.99065,1.00032,0.9849,0.99671,
+2016-03-04,0.99696,1.0038,0.9877,0.99263,BearishFlag_X1_P61_2 ;BearishFlag_X2_P60_2 ;BullishFlag_X1_P30_2 ;FallingTops_X1_P662_8 ;FallingTops_X1_P827_12 ;FallingTops_X2_P476_4 ;FallingTops_X2_P661_8 ;FallingTops_X2_P826_12 ;RisingTops_X1_P899_26 
+2016-03-11,0.99402,1.00924,0.98,0.9809,
+2016-03-18,0.98195,0.9914,0.96481,0.96892,
+2016-03-25,0.96968,0.97871,0.9671,0.97649,
+2016-04-01,0.97824,0.97861,0.95517,0.95746,BearishFlag_M2_P61_2 ;BearishFlag_M3_P60_2 ;BullishFlag_M1_P30_2 ;FallingTops_X3_P476_4 ;RisingBottoms_M1_P172_2 
+2016-04-08,0.95891,0.96216,0.95178,0.9526,RisingBottoms_M1_P410_4 
+2016-04-15,0.95339,0.9688,0.9494,0.9669,RisingBottoms_M1_P919_26 ;RisingBottoms_M2_P1018_52 ;RisingBottoms_M2_P918_26 ;RisingBottoms_M3_P1017_52 ;RisingBottoms_M3_P917_26 
+2016-04-22,0.9673,0.97969,0.9582,0.97789,BearishFlag_X2_P61_2 ;BullishFlag_X2_P30_2 
+2016-04-29,0.97836,0.9786,0.95669,0.95864,RisingBottoms_M2_P172_2 
+2016-05-06,0.95936,0.97293,0.944,0.97215,RisingBottoms_M1_P411_4 ;RisingBottoms_M2_P410_4 
+2016-05-13,0.97235,0.97739,0.9659,0.97519,
+2016-05-20,0.97505,0.99268,0.97435,0.98996,BearishFlag_M3_P61_2 ;BullishFlag_M2_P30_2 ;FallingTops_X2_P662_8 ;FallingTops_X3_P661_8 ;RisingBottoms_M3_P172_2 
+2016-05-27,0.99091,0.99489,0.98678,0.99457,
+2016-06-03,0.99467,0.9956,0.97497,0.97503,BullishFlag_X3_P30_2 ;FallingTops_X2_P827_12 ;FallingTops_X3_P826_12 
+2016-06-10,0.97659,0.97757,0.9574,0.96395,RisingBottoms_M2_P411_4 ;RisingBottoms_M3_P410_4 ;RisingTops_X1_P346_4 
+2016-06-17,0.96414,0.96866,0.95681,0.95931,BullishFlag_M1_P5_NN ;RisingBottoms_M3_P12_NN 
+2016-06-24,0.96183,0.9803,0.95158,0.97233,BullishFlag_X0_P31_2 
+2016-07-01,0.97138,0.98371,0.9699,0.97334,RisingBottoms_M3_P411_4 
+2016-07-08,0.97464,0.98657,0.9684,0.98285,RisingTops_X2_P346_4 
+2016-07-15,0.98273,0.9898,0.976,0.9822,
+2016-07-22,0.98329,0.9906,0.98078,0.9871,BullishFlag_X1_P31_2 ;FallingTops_X1_P250_2 
+2016-07-29,0.98823,0.995,0.96352,0.96889,BullishFlag_X2_P5_NN ;FallingTops_X3_P662_8 ;FallingTops_X3_P827_12 ;RisingTops_X1_P566_8 ;RisingTops_X1_P746_12 ;RisingTops_X3_P346_4 ;Staircase_X0_P3_NN 
+2016-08-05,0.96956,0.98306,0.96292,0.98,
+2016-08-12,0.98018,0.98435,0.97058,0.9743,FallingTops_X2_P250_2 
+2016-08-19,0.97495,0.97591,0.95331,0.95963,BullishFlag_M1_P31_2 ;BullishFlag_M2_P5_NN ;FallingBottoms_M1_P1084_52 ;RisingBottoms_M1_P610_8 ;RisingBottoms_M1_P778_12 ;RisingBottoms_M1_P920_26 ;RisingBottoms_M2_P919_26 ;RisingBottoms_M3_P1018_52 ;RisingBottoms_M3_P918_26 ;Staircase_M1_P3_NN 
+2016-08-26,0.9607,0.97928,0.95896,0.9771,
+2016-09-02,0.97816,0.98847,0.9738,0.9786,BullishFlag_X2_P31_2 ;FallingTops_X3_P250_2 ;RisingTops_X1_P103_2 
+2016-09-09,0.98022,0.98138,0.96447,0.97527,RisingTops_X1_P347_4 
+2016-09-16,0.97503,0.98179,0.96881,0.97962,
+2016-09-23,0.97967,0.98188,0.9656,0.96953,RisingTops_X1_P104_2 ;RisingTops_X2_P103_2 
+2016-09-30,0.96956,0.97582,0.9637,0.9714,BullishFlag_M2_P31_2 ;RisingBottoms_M1_P173_2 
+2016-10-07,0.97179,0.98393,0.97,0.9774,
+2016-10-14,0.97761,0.9913,0.97682,0.9894,BullishFlag_X3_P31_2 ;RisingTops_X1_P105_2 ;RisingTops_X1_P348_4 ;RisingTops_X1_P567_8 ;RisingTops_X1_P747_12 ;RisingTops_X2_P104_2 ;RisingTops_X2_P347_4 ;RisingTops_X2_P566_8 ;RisingTops_X2_P746_12 ;RisingTops_X3_P103_2 
+2016-10-21,0.99008,0.99621,0.9842,0.99346,
+2016-10-28,0.99419,0.99989,0.98528,0.98719,RisingBottoms_M1_P174_2 ;RisingBottoms_M2_P173_2 
+2016-11-04,0.98785,0.99073,0.967,0.967,RisingBottoms_M2_P610_8 ;RisingBottoms_M2_P778_12 ;RisingBottoms_M2_P920_26 ;RisingBottoms_M3_P919_26 
+2016-11-11,0.97465,0.98968,0.95422,0.98745,
+2016-11-18,0.98832,1.01233,0.9878,1.00995,RisingBottoms_M1_P175_2 ;RisingBottoms_M2_P174_2 ;RisingBottoms_M3_P173_2 ;RisingTops_X1_P106_2 ;RisingTops_X1_P349_4 ;RisingTops_X1_P568_8 ;RisingTops_X1_P748_12 ;RisingTops_X1_P900_26 ;RisingTops_X2_P105_2 ;RisingTops_X2_P348_4 ;RisingTops_X2_P567_8 ;RisingTops_X2_P747_12 ;RisingTops_X2_P899_26 ;RisingTops_X3_P104_2 ;RisingTops_X3_P347_4 ;RisingTops_X3_P566_8 ;RisingTops_X3_P746_12 
+2016-11-25,1.0105,1.01918,1.0063,1.01389,
+2016-12-02,1.01353,1.02051,1.00672,1.01028,
+2016-12-09,1.01636,1.02137,1.00194,1.01639,BullishFlag_X0_P32_2 ;RisingBottoms_M2_P175_2 ;RisingBottoms_M3_P174_2 ;RisingTops_X2_P106_2 ;RisingTops_X2_P349_4 ;RisingTops_X2_P568_8 ;RisingTops_X2_P748_12 ;RisingTops_X2_P900_26 ;RisingTops_X3_P105_2 ;RisingTops_X3_P348_4 ;RisingTops_X3_P567_8 ;RisingTops_X3_P747_12 ;RisingTops_X3_P899_26 
+2016-12-16,1.01784,1.03437,1.0079,1.02595,FallingTops_X1_P1046_52 ;RisingTops_X3_P1005_52 
+2016-12-23,1.02684,1.03203,1.0216,1.026,
+2016-12-30,1.02503,1.03212,1.00446,1.0175,BullishFlag_X1_P32_2 ;FallingTops_X1_P251_2 ;FallingTops_X1_P477_4 ;FallingTops_X1_P663_8 ;FallingTops_X1_P828_12 ;FallingTops_X1_P958_26 ;RisingBottoms_M3_P175_2 ;RisingTops_X3_P106_2 ;RisingTops_X3_P349_4 ;RisingTops_X3_P568_8 ;RisingTops_X3_P748_12 ;RisingTops_X3_P900_26 
+2017-01-06,1.01784,1.03353,1.00833,1.0173,
+2017-01-13,1.01711,1.02482,1.0041,1.00873,FallingTops_X1_P1047_52 ;FallingTops_X2_P1046_52 ;RisingBottoms_M3_P610_8 
+2017-01-20,1.0102,1.01364,0.99927,1.0011,BearishFlag_M0_P62_2 ;BullishFlag_M1_P32_2 ;FallingTops_X2_P251_2 ;FallingTops_X2_P477_4 
+2017-01-27,1.00156,1.00277,0.99558,0.99856,
+2017-02-03,0.99777,1.00449,0.9858,0.99261,
+2017-02-10,0.99225,1.00623,0.9899,1.0019,BearishFlag_M1_P62_2 ;BullishFlag_X2_P32_2 ;FallingTops_X3_P251_2 
+2017-02-17,1.00311,1.01188,0.9963,1.00257,FallingTops_X3_P477_4 
+2017-02-24,1.00195,1.01408,1.00079,1.0065,
+2017-03-03,1.00759,1.01462,1.0007,1.00641,BearishFlag_M0_P63_2 ;BearishFlag_X1_P62_2 ;BullishFlag_M2_P32_2 
+2017-03-10,1.00834,1.01705,1.0068,1.0103,
+2017-03-17,1.0102,1.0117,0.99383,0.99837,
+2017-03-24,0.9977,1.00025,0.9879,0.99088,BearishFlag_M1_P63_2 ;BearishFlag_M2_P62_2 ;RisingBottoms_M3_P778_12 
+2017-03-31,0.9879,1.0039,0.98092,1.003,BullishFlag_X3_P32_2 
+2017-04-07,1.00191,1.00965,1.0002,1.0092,
+2017-04-14,1.00968,1.0108,1.00041,1.006,FallingTops_X1_P478_4 ;FallingTops_X1_P664_8 ;FallingTops_X1_P829_12 ;FallingTops_X2_P1047_52 ;FallingTops_X2_P663_8 ;FallingTops_X2_P828_12 ;FallingTops_X2_P958_26 ;FallingTops_X3_P1046_52 
+2017-04-21,1.00547,1.0056,0.9936,0.9954,BearishFlag_M0_P64_2 ;BearishFlag_X1_P63_2 ;BearishFlag_X2_P62_2 ;FallingTops_X1_P252_2 
+2017-04-28,0.99169,0.99808,0.9889,0.9936,
+2017-05-05,0.99446,0.9967,0.98533,0.9873,
+2017-05-12,0.9888,1.00998,0.98778,1.00081,FallingTops_X1_P253_2 ;FallingTops_X2_P252_2 
+2017-05-19,1.00125,1.00198,0.97215,0.9735,BearishFlag_M0_P65_2 ;BearishFlag_M1_P64_2 ;BearishFlag_M2_P63_2 ;BearishFlag_M3_P62_2 ;FallingTops_X1_P479_4 ;FallingTops_X2_P478_4 ;FallingTops_X2_P664_8 ;FallingTops_X2_P829_12 ;FallingTops_X3_P663_8 ;FallingTops_X3_P828_12 ;RisingBottoms_M3_P920_26 
+2017-05-26,0.97285,0.97765,0.96885,0.9721,
+2017-06-02,0.97442,0.9808,0.96142,0.9631,BearishFlag_X1_P64_2 ;BearishFlag_X2_P63_2 ;FallingTops_X1_P254_2 ;FallingTops_X2_P253_2 ;FallingTops_X3_P252_2 
+2017-06-09,0.96285,0.97279,0.96103,0.96871,BearishFlag_M1_P65_2 
+2017-06-16,0.96894,0.97706,0.96369,0.9727,
+2017-06-23,0.97303,0.97662,0.96723,0.9702,BearishFlag_X1_P65_2 ;FallingTops_X1_P480_4 ;FallingTops_X2_P254_2 ;FallingTops_X2_P479_4 ;FallingTops_X3_P253_2 ;FallingTops_X3_P478_4 
+2017-06-30,0.9693,0.97383,0.95484,0.9589,BearishFlag_M2_P64_2 ;BearishFlag_M3_P63_2 
+2017-07-07,0.95852,0.96883,0.9582,0.9646,
+2017-07-14,0.96378,0.97006,0.9599,0.9646,BearishFlag_X2_P64_2 ;FallingTops_X3_P254_2 
+2017-07-21,0.96345,0.96589,0.94348,0.9459,BearishFlag_M2_P65_2 ;FallingBottoms_M1_P1085_52 ;FallingBottoms_M2_P1084_52 
+2017-07-28,0.94519,0.97271,0.944,0.96842,FallingTops_X2_P480_4 ;FallingTops_X3_P479_4 
+2017-08-04,0.9685,0.97644,0.96286,0.97264,BearishFlag_X2_P65_2 ;Staircase_X0_P25_2 
+2017-08-11,0.97232,0.9773,0.95805,0.9612,BearishFlag_M3_P64_2 ;FallingTops_X3_P664_8 ;RisingTops_X1_P569_8 
+2017-08-18,0.96224,0.97659,0.9584,0.96463,
+2017-08-25,0.96527,0.96987,0.95471,0.95648,FallingTops_X3_P480_4 ;RisingTops_X1_P107_2 ;RisingTops_X1_P350_4 
+2017-09-01,0.95507,0.96798,0.9426,0.964,BearishFlag_M3_P65_2 ;RisingBottoms_M1_P176_2 ;Staircase_M1_P25_2 
+2017-09-08,0.96103,0.96179,0.9416,0.9451,RisingBottoms_M1_P611_8 
+2017-09-15,0.94719,0.97051,0.9464,0.95955,RisingBottoms_M1_P412_4 
+2017-09-22,0.96001,0.97476,0.9577,0.96897,RisingBottoms_M1_P177_2 ;RisingBottoms_M2_P176_2 ;RisingTops_X1_P108_2 ;RisingTops_X1_P351_4 ;RisingTops_X2_P107_2 ;RisingTops_X2_P350_4 ;Staircase_X1_P25_2 
+2017-09-29,0.97065,0.97697,0.964,0.96862,
+2017-10-06,0.96839,0.98368,0.9676,0.97888,FallingTops_X3_P829_12 ;RisingBottoms_M2_P412_4 ;RisingBottoms_M2_P611_8 ;RisingTops_X2_P569_8 
+2017-10-13,0.97796,0.98077,0.9702,0.9738,RisingBottoms_M2_P177_2 ;RisingBottoms_M3_P176_2 ;Staircase_M2_P25_2 
+2017-10-20,0.97536,0.98527,0.9727,0.98405,RisingTops_X2_P108_2 ;RisingTops_X2_P351_4 ;RisingTops_X3_P107_2 ;RisingTops_X3_P350_4 
+2017-10-27,0.9854,1.00386,0.9827,0.99735,FallingTops_X1_P665_8 ;FallingTops_X1_P830_12 ;RisingBottoms_M3_P412_4 ;RisingTops_X3_P569_8 
+2017-11-03,0.99868,1.00376,0.9935,1.0009,BullishFlag_X3_P5_NN ;FallingTops_X3_P958_26 ;Staircase_X1_P3_NN 
+2017-11-10,0.99986,1.00291,0.9919,0.99574,BearishFlag_M0_P66_2 ;FallingTops_X1_P255_2 ;FallingTops_X1_P481_4 ;RisingBottoms_M3_P177_2 ;RisingTops_X3_P108_2 ;RisingTops_X3_P351_4 
+2017-11-17,0.99621,0.99868,0.9844,0.98895,FallingTops_X1_P666_8 ;FallingTops_X1_P831_12 ;FallingTops_X2_P665_8 ;FallingTops_X2_P830_12 
+2017-11-24,0.98999,0.99468,0.97823,0.97897,
+2017-12-01,0.97952,0.98822,0.9733,0.97575,BearishFlag_M1_P66_2 ;RisingBottoms_M3_P611_8 ;Staircase_M2_P3_NN 
+2017-12-08,0.98012,0.99777,0.9786,0.99254,FallingTops_X1_P256_2 ;FallingTops_X2_P255_2 
+2017-12-15,0.9927,0.99357,0.9835,0.99003,FallingTops_X1_P482_4 ;FallingTops_X1_P667_8 ;FallingTops_X2_P481_4 ;FallingTops_X2_P666_8 ;FallingTops_X2_P831_12 ;FallingTops_X3_P665_8 ;FallingTops_X3_P830_12 
+2017-12-22,0.99055,0.99174,0.9826,0.98755,
+2017-12-29,0.9891,0.99159,0.9731,0.97409,BearishFlag_X1_P66_2 ;FallingTops_X1_P257_2 ;FallingTops_X2_P256_2 ;FallingTops_X3_P255_2 
+2018-01-05,0.9743,0.97977,0.9696,0.9742,
+2018-01-12,0.97499,0.98455,0.96636,0.96636,BearishFlag_M2_P66_2 ;FallingTops_X2_P482_4 ;FallingTops_X2_P667_8 ;FallingTops_X3_P481_4 ;FallingTops_X3_P666_8 ;FallingTops_X3_P831_12 
+2018-01-19,0.96754,0.96848,0.9533,0.96245,FallingTops_X1_P258_2 ;FallingTops_X2_P257_2 ;FallingTops_X3_P256_2 
+2018-01-26,0.96139,0.964,0.9286,0.9335,FallingBottoms_M2_P1085_52 ;FallingBottoms_M3_P1084_52 
+2018-02-02,0.93409,0.93934,0.92505,0.9303,
+2018-02-09,0.93228,0.94701,0.9283,0.9392,BearishFlag_X2_P66_2 ;FallingTops_X2_P258_2 ;FallingTops_X3_P257_2 
+2018-02-16,0.94002,0.94017,0.9184,0.92622,FallingBottoms_M3_P1085_52 ;RisingBottoms_M1_P1019_52 ;RisingBottoms_M1_P413_4 ;RisingBottoms_M1_P612_8 ;RisingBottoms_M1_P921_26 
+2018-02-23,0.92687,0.94092,0.926,0.93597,BearishFlag_M3_P66_2 ;RisingBottoms_M1_P178_2 ;RisingBottoms_M1_P779_12 
+2018-03-02,0.93706,0.94908,0.9322,0.93707,FallingTops_X3_P258_2 ;RisingTops_X1_P109_2 
+2018-03-09,0.93641,0.95345,0.9349,0.95121,FallingTops_X3_P482_4 ;RisingBottoms_M1_P1020_52 ;RisingBottoms_M1_P414_4 ;RisingBottoms_M1_P613_8 ;RisingBottoms_M1_P922_26 ;RisingBottoms_M2_P1019_52 ;RisingBottoms_M2_P413_4 ;RisingBottoms_M2_P612_8 ;RisingBottoms_M2_P921_26 ;RisingTops_X1_P352_4 
+2018-03-16,0.9511,0.95476,0.942,0.9516,
+2018-03-23,0.95268,0.95697,0.9441,0.9469,FallingTops_X3_P667_8 ;RisingBottoms_M1_P179_2 ;RisingBottoms_M2_P178_2 ;RisingTops_X1_P110_2 ;RisingTops_X1_P570_8 ;RisingTops_X2_P109_2 
+2018-03-30,0.94634,0.95835,0.9429,0.9532,RisingBottoms_M1_P1021_52 ;RisingBottoms_M1_P415_4 ;RisingBottoms_M1_P614_8 ;RisingBottoms_M1_P780_12 ;RisingBottoms_M1_P923_26 ;RisingBottoms_M2_P1020_52 ;RisingBottoms_M2_P414_4 ;RisingBottoms_M2_P613_8 ;RisingBottoms_M2_P779_12 ;RisingBottoms_M2_P922_26 ;RisingBottoms_M3_P1019_52 ;RisingBottoms_M3_P413_4 ;RisingBottoms_M3_P612_8 ;RisingBottoms_M3_P921_26 
+2018-04-06,0.95436,0.96496,0.9524,0.95867,RisingTops_X1_P353_4 ;RisingTops_X2_P352_4 
+2018-04-13,0.95922,0.96466,0.9529,0.9616,BullishFlag_X0_P33_2 ;RisingBottoms_M1_P180_2 ;RisingBottoms_M2_P179_2 ;RisingBottoms_M3_P178_2 ;RisingTops_X1_P571_8 ;RisingTops_X2_P110_2 ;RisingTops_X2_P570_8 ;RisingTops_X3_P109_2 
+2018-04-20,0.96354,0.97596,0.9573,0.97449,RisingBottoms_M2_P415_4 ;RisingBottoms_M2_P614_8 ;RisingBottoms_M2_P780_12 ;RisingBottoms_M3_P414_4 ;RisingBottoms_M3_P613_8 ;RisingBottoms_M3_P779_12 
+2018-04-27,0.9755,0.99205,0.9742,0.9873,RisingTops_X1_P354_4 ;RisingTops_X2_P353_4 ;RisingTops_X3_P352_4 
+2018-05-04,0.98826,1.00226,0.9868,0.9998,BullishFlag_X1_P33_2 ;RisingBottoms_M2_P180_2 ;RisingBottoms_M3_P179_2 ;RisingTops_X2_P571_8 ;RisingTops_X3_P110_2 ;RisingTops_X3_P570_8 
+2018-05-11,1.00003,1.00563,0.9973,0.99965,
+2018-05-18,1.00032,1.00418,0.9946,0.9972,RisingTops_X2_P354_4 ;RisingTops_X3_P353_4 
+2018-05-25,0.99777,1.00015,0.988,0.9896,BullishFlag_M1_P33_2 ;RisingBottoms_M3_P180_2 
+2018-06-01,0.99269,0.99831,0.9823,0.98799,RisingBottoms_M3_P415_4 
+2018-06-08,0.98862,0.98943,0.9786,0.9846,
+2018-06-15,0.98474,0.99883,0.9821,0.99737,BullishFlag_X2_P33_2 ;RisingBottoms_M1_P181_2 ;RisingBottoms_M3_P614_8 
+2018-06-22,0.99787,0.99903,0.987,0.9878,
+2018-06-29,0.98774,0.99925,0.9852,0.99032,
+2018-07-06,0.99047,0.99655,0.9881,0.9893,
+2018-07-13,0.98921,1.00681,0.9853,1.0014,BullishFlag_M2_P33_2 ;FallingTops_X1_P259_2 ;FallingTops_X1_P483_4 ;RisingBottoms_M2_P181_2 ;RisingTops_X1_P901_26 ;RisingTops_X3_P354_4 ;RisingTops_X3_P571_8 
+2018-07-20,1.00208,1.00434,0.9912,0.99187,
+2018-07-27,0.99182,0.99782,0.9896,0.994,
+2018-08-03,0.9941,0.99656,0.9864,0.994,
+2018-08-10,0.99455,0.99847,0.9889,0.99479,
+2018-08-17,0.99325,0.99827,0.9897,0.9957,RisingBottoms_M3_P181_2 
+2018-08-24,0.99526,0.99686,0.9803,0.98329,BullishFlag_X3_P33_2 ;FallingTops_X2_P259_2 ;FallingTops_X2_P483_4 ;RisingBottoms_M3_P780_12 
+2018-08-31,0.98286,0.9846,0.9648,0.9685,
+2018-09-07,0.96958,0.97674,0.9637,0.96905,
+2018-09-14,0.96891,0.97587,0.9629,0.96835,FallingTops_X3_P259_2 ;RisingTops_X1_P111_2 
+2018-09-21,0.96729,0.97004,0.9537,0.95871,RisingBottoms_M1_P182_2 
+2018-09-28,0.9583,0.98194,0.9575,0.9813,FallingTops_X3_P483_4 ;RisingBottoms_M2_P1021_52 ;RisingBottoms_M2_P923_26 ;RisingBottoms_M3_P1020_52 ;RisingBottoms_M3_P922_26 ;RisingTops_X1_P355_4 
+2018-10-05,0.98122,0.99553,0.9804,0.99175,RisingTops_X2_P111_2 
+2018-10-12,0.9918,0.99558,0.9852,0.9928,
+2018-10-19,0.99127,0.99777,0.9843,0.9958,RisingBottoms_M2_P182_2 ;RisingTops_X2_P355_4 
+2018-10-26,0.9965,1.00267,0.9935,0.99605,
+2018-11-02,0.9972,1.00949,0.9962,1.0024,FallingTops_X1_P260_2 ;RisingTops_X1_P749_12 ;RisingTops_X3_P111_2 
+2018-11-09,1.00278,1.0086,0.9946,1.0052,FallingTops_X1_P484_4 ;FallingTops_X3_P1047_52 ;RisingTops_X1_P1006_52 ;RisingTops_X1_P902_26 ;RisingTops_X2_P901_26 ;RisingTops_X3_P355_4 
+2018-11-16,1.00565,1.01285,0.99878,0.99963,RisingBottoms_M3_P182_2 
+2018-11-23,0.99946,1.00071,0.9902,0.9965,FallingTops_X1_P261_2 ;FallingTops_X2_P260_2 
+2018-11-30,0.99684,1.0006,0.9912,0.99765,
+2018-12-07,0.99942,1.00085,0.9887,0.9919,FallingTops_X2_P484_4 
+2018-12-14,0.99023,0.99895,0.9857,0.9975,
+2018-12-21,0.99722,0.9983,0.9838,0.99363,FallingTops_X2_P261_2 ;FallingTops_X3_P260_2 ;Staircase_X0_P26_2 
+2018-12-28,0.99394,0.99636,0.9785,0.98439,
+2019-01-04,0.98396,0.99204,0.9792,0.98743,
+2019-01-11,0.98642,0.9874,0.971,0.98313,
+2019-01-18,0.98341,0.99592,0.9794,0.9951,FallingTops_X3_P261_2 ;FallingTops_X3_P484_4 ;RisingBottoms_M1_P183_2 ;RisingTops_X1_P112_2 ;RisingTops_X1_P356_4 ;Staircase_M1_P26_2 
+2019-01-25,0.99491,0.999,0.9919,0.99336,
+2019-02-01,0.9932,0.9995,0.9901,0.9955,
+2019-02-08,0.99528,1.0029,0.9944,0.9999,RisingBottoms_M2_P183_2 ;RisingTops_X1_P357_4 ;RisingTops_X1_P572_8 ;RisingTops_X2_P112_2 ;RisingTops_X2_P356_4 ;Staircase_X1_P26_2 
+2019-02-15,0.99898,1.00982,0.9983,1.0046,RisingTops_X1_P750_12 ;RisingTops_X2_P749_12 
+2019-02-22,1.00464,1.00606,0.9978,0.9999,
+2019-03-01,1.00032,1.00198,0.992,0.9988,RisingBottoms_M3_P183_2 ;Staircase_M2_P26_2 
+2019-03-08,0.99806,1.01242,0.9974,1.0081,RisingTops_X1_P1007_52 ;RisingTops_X1_P358_4 ;RisingTops_X1_P573_8 ;RisingTops_X1_P751_12 ;RisingTops_X1_P903_26 ;RisingTops_X2_P1006_52 ;RisingTops_X2_P357_4 ;RisingTops_X2_P572_8 ;RisingTops_X2_P750_12 ;RisingTops_X2_P902_26 ;RisingTops_X3_P112_2 ;RisingTops_X3_P356_4 ;RisingTops_X3_P749_12 ;RisingTops_X3_P901_26 
+2019-03-15,1.0079,1.01196,1.0007,1.0018,
+2019-03-22,1.00182,1.00251,0.9892,0.993,RisingBottoms_M1_P184_2 ;RisingBottoms_M1_P416_4 
+2019-03-29,0.99383,0.99744,0.9903,0.9949,
+2019-04-05,0.99523,1.00125,0.99306,0.9985,
+2019-04-12,0.99988,1.00464,0.9972,1.00239,RisingBottoms_M2_P184_2 ;RisingBottoms_M2_P416_4 
+2019-04-19,1.00226,1.01594,1.0002,1.0142,RisingTops_X2_P1007_52 ;RisingTops_X2_P358_4 ;RisingTops_X2_P573_8 ;RisingTops_X2_P751_12 ;RisingTops_X2_P903_26 ;RisingTops_X3_P1006_52 ;RisingTops_X3_P357_4 ;RisingTops_X3_P572_8 ;RisingTops_X3_P750_12 ;RisingTops_X3_P902_26 
+2019-04-26,1.01452,1.02372,1.0142,1.0195,FallingTops_X1_P262_2 
+2019-05-03,1.0193,1.02158,1.0125,1.0164,
+2019-05-10,1.01639,1.02263,1.0098,1.01169,BearishFlag_M0_P67_2 ;FallingTops_X1_P1048_52 ;FallingTops_X1_P485_4 ;FallingTops_X1_P668_8 ;FallingTops_X1_P832_12 ;FallingTops_X1_P959_26 ;RisingBottoms_M3_P184_2 ;RisingTops_X3_P1007_52 ;RisingTops_X3_P358_4 ;RisingTops_X3_P573_8 ;RisingTops_X3_P751_12 ;RisingTops_X3_P903_26 
+2019-05-17,1.011,1.01216,1.0047,1.0101,RisingBottoms_M3_P416_4 
+2019-05-24,1.01062,1.0121,1.0004,1.0016,FallingTops_X1_P263_2 ;FallingTops_X2_P262_2 
+2019-05-31,1.00187,1.00982,0.9996,1.00021,BearishFlag_M1_P67_2 ;FallingTops_X1_P1049_52 ;FallingTops_X1_P486_4 ;FallingTops_X1_P669_8 ;FallingTops_X1_P833_12 ;FallingTops_X1_P960_26 ;FallingTops_X2_P1048_52 ;FallingTops_X2_P485_4 ;FallingTops_X2_P668_8 ;FallingTops_X2_P832_12 ;FallingTops_X2_P959_26 
+2019-06-07,0.99978,0.99999,0.9851,0.98761,
+2019-06-14,0.98982,0.99953,0.9882,0.9989,
+2019-06-21,0.9983,1.0015,0.9753,0.97626,FallingTops_X1_P487_4 ;FallingTops_X2_P263_2 ;FallingTops_X2_P486_4 ;FallingTops_X2_P669_8 ;FallingTops_X2_P833_12 ;FallingTops_X3_P262_2 ;FallingTops_X3_P485_4 ;FallingTops_X3_P668_8 ;FallingTops_X3_P832_12 ;RisingBottoms_M3_P923_26 
+2019-06-28,0.97603,0.98142,0.9692,0.97591,
+2019-07-05,0.97913,0.99321,0.9784,0.9915,
+2019-07-12,0.99122,0.99515,0.9831,0.98402,BearishFlag_X1_P67_2 ;FallingTops_X3_P263_2 
+2019-07-19,0.9844,0.99078,0.9803,0.9815,BearishFlag_M2_P67_2 
+2019-07-26,0.98217,0.99461,0.9797,0.99308,FallingTops_X2_P487_4 ;FallingTops_X3_P486_4 
+2019-08-02,0.99312,0.99758,0.9809,0.98172,FallingTops_X3_P669_8 ;RisingTops_X1_P574_8 
+2019-08-09,0.9825,0.9828,0.9689,0.9723,
+2019-08-16,0.97257,0.98092,0.9654,0.97786,
+2019-08-23,0.97892,0.98772,0.9733,0.97414,BearishFlag_X2_P67_2 ;RisingTops_X1_P113_2 
+2019-08-30,0.97236,0.99178,0.972,0.99,BearishFlag_M3_P67_2 ;FallingTops_X3_P487_4 ;RisingTops_X1_P359_4 
+2019-09-06,0.98886,0.9929,0.97947,0.9871,
+2019-09-13,0.9879,0.99467,0.9848,0.99046,RisingTops_X1_P114_2 ;RisingTops_X2_P113_2 
+2019-09-20,0.98747,0.99837,0.9859,0.99083,
+2019-09-27,0.99138,0.99491,0.9841,0.9904,
+2019-10-04,0.99051,1.00276,0.9902,0.995,FallingTops_X3_P833_12 ;RisingTops_X1_P115_2 ;RisingTops_X2_P114_2 ;RisingTops_X2_P359_4 ;RisingTops_X2_P574_8 ;RisingTops_X3_P113_2 
+2019-10-11,0.99456,0.99907,0.9899,0.9966,
+2019-10-18,0.99806,0.9996,0.98312,0.984,RisingBottoms_M1_P185_2 
+2019-10-25,0.98481,0.99549,0.9835,0.99446,
+2019-11-01,0.99442,0.99703,0.98464,0.9854,
+2019-11-08,0.98562,0.99788,0.9848,0.99721,RisingBottoms_M2_P185_2 ;RisingTops_X2_P115_2 ;RisingTops_X3_P114_2 
+2019-11-15,0.99711,0.99771,0.9864,0.98996,
+2019-11-22,0.98928,0.99802,0.9862,0.9972,
+2019-11-29,0.99789,1.00233,0.9954,0.9994,FallingTops_X1_P264_2 ;FallingTops_X1_P488_4 ;RisingTops_X3_P115_2 ;RisingTops_X3_P359_4 ;RisingTops_X3_P574_8 
+2019-12-06,0.99983,1.00086,0.9849,0.99103,FallingTops_X1_P1050_52 ;FallingTops_X1_P961_26 ;FallingTops_X2_P1049_52 ;FallingTops_X2_P960_26 ;FallingTops_X3_P1048_52 ;FallingTops_X3_P959_26 ;RisingBottoms_M3_P185_2 
+2019-12-13,0.98995,0.99103,0.9804,0.98377,BearishFlag_M0_P315_4 
+2019-12-20,0.98339,0.98469,0.9764,0.9825,FallingTops_X2_P264_2 ;FallingTops_X2_P488_4 
+2019-12-27,0.9819,0.98314,0.9726,0.974,
+2020-01-03,0.97436,0.9744,0.9641,0.97323,
+2020-01-10,0.97078,0.97623,0.9658,0.9724,BearishFlag_M0_P316_4 ;BearishFlag_M1_P315_4 ;RisingBottoms_M3_P1021_52 
+2020-01-17,0.97273,0.97366,0.961,0.96769,FallingTops_X3_P264_2 ;RisingTops_X1_P116_2 
+2020-01-24,0.96799,0.9729,0.9655,0.97173,
+2020-01-31,0.97036,0.9767,0.96245,0.96252,BearishFlag_M1_P316_4 
+2020-02-07,0.96357,0.97813,0.9625,0.97739,BearishFlag_X1_P315_4 ;BullishFlag_X0_P310_4 ;FallingTops_X3_P488_4 ;RisingTops_X1_P117_2 ;RisingTops_X2_P116_2 
+2020-02-14,0.9767,0.98236,0.9735,0.98204,
+2020-02-21,0.98165,0.98485,0.9766,0.97816,
+2020-02-28,0.97943,0.98159,0.9606,0.96526,RisingTops_X2_P117_2 ;RisingTops_X3_P116_2 
+2020-03-06,0.96353,0.9655,0.9313,0.93732,BearishFlag_M2_P315_4 ;RisingBottoms_M1_P417_4 
+2020-03-13,0.9282,0.95694,0.91759,0.95117,
+2020-03-20,0.94666,0.9901,0.9386,0.98543,BearishFlag_X1_P316_4 ;BullishFlag_X1_P310_4 ;FallingTops_X1_P265_2 ;FallingTops_X1_P489_4 ;FallingTops_X1_P670_8 ;FallingTops_X1_P834_12 ;RisingTops_X3_P117_2 
+2020-03-27,0.98791,0.9891,0.94971,0.9511,FallingTops_X1_P1051_52 ;FallingTops_X1_P962_26 ;FallingTops_X2_P1050_52 ;FallingTops_X2_P961_26 ;FallingTops_X3_P1049_52 ;FallingTops_X3_P960_26 
+2020-04-03,0.952,0.9796,0.9498,0.97615,BearishFlag_M2_P316_4 ;BullishFlag_M1_P310_4 ;RisingBottoms_M2_P417_4 
+2020-04-10,0.9763,0.97973,0.96366,0.9661,BearishFlag_X2_P315_4 ;FallingTops_X1_P266_2 ;FallingTops_X1_P490_4 ;FallingTops_X1_P671_8 ;FallingTops_X1_P835_12 ;FallingTops_X2_P265_2 ;FallingTops_X2_P489_4 ;FallingTops_X2_P670_8 ;FallingTops_X2_P834_12 
+2020-04-17,0.96542,0.97242,0.95913,0.9671,
+2020-04-24,0.96776,0.98027,0.965,0.973,
+2020-05-01,0.97377,0.98002,0.9586,0.96104,BearishFlag_M3_P315_4 ;BearishFlag_X2_P316_4 ;BullishFlag_X2_P310_4 ;FallingTops_X1_P1052_52 ;FallingTops_X1_P267_2 ;FallingTops_X1_P491_4 ;FallingTops_X1_P672_8 ;FallingTops_X1_P836_12 ;FallingTops_X1_P963_26 ;FallingTops_X2_P1051_52 ;FallingTops_X2_P266_2 ;FallingTops_X2_P490_4 ;FallingTops_X2_P671_8 ;FallingTops_X2_P835_12 ;FallingTops_X2_P962_26 ;FallingTops_X3_P1050_52 ;FallingTops_X3_P265_2 ;FallingTops_X3_P489_4 ;FallingTops_X3_P670_8 ;FallingTops_X3_P834_12 ;FallingTops_X3_P961_26 ;RisingBottoms_M3_P417_4 
+2020-05-08,0.96322,0.97843,0.9619,0.97087,
+2020-05-15,0.97155,0.97554,0.9662,0.97182,
+2020-05-22,0.97173,0.97609,0.9634,0.9709,
+2020-05-29,0.97158,0.97363,0.9598,0.96103,BearishFlag_M3_P316_4 ;BullishFlag_M2_P310_4 ;FallingTops_X1_P1053_52 ;FallingTops_X1_P268_2 ;FallingTops_X1_P492_4 ;FallingTops_X1_P673_8 ;FallingTops_X1_P837_12 ;FallingTops_X1_P964_26 ;FallingTops_X2_P1052_52 ;FallingTops_X2_P267_2 ;FallingTops_X2_P491_4 ;FallingTops_X2_P672_8 ;FallingTops_X2_P836_12 ;FallingTops_X2_P963_26 ;FallingTops_X3_P1051_52 ;FallingTops_X3_P266_2 ;FallingTops_X3_P490_4 ;FallingTops_X3_P671_8 ;FallingTops_X3_P835_12 ;FallingTops_X3_P962_26 
+2020-06-05,0.96074,0.96504,0.9536,0.9624,
+2020-06-12,0.96156,0.96394,0.9371,0.95188,
+2020-06-19,0.95215,0.9547,0.9459,0.9523,
+2020-06-26,0.95209,0.95263,0.9417,0.9482,BullishFlag_X3_P310_4 ;FallingTops_X1_P269_2 ;FallingTops_X1_P493_4 ;FallingTops_X1_P674_8 ;FallingTops_X1_P838_12 ;FallingTops_X1_P965_26 ;FallingTops_X2_P1053_52 ;FallingTops_X2_P268_2 ;FallingTops_X2_P492_4 ;FallingTops_X2_P673_8 ;FallingTops_X2_P837_12 ;FallingTops_X2_P964_26 ;FallingTops_X3_P1052_52 ;FallingTops_X3_P267_2 ;FallingTops_X3_P491_4 ;FallingTops_X3_P672_8 ;FallingTops_X3_P836_12 ;FallingTops_X3_P963_26 
+2020-07-03,0.94769,0.95326,0.942,0.9448,
+2020-07-10,0.94503,0.94531,0.9356,0.9408,
+2020-07-17,0.94029,0.94678,0.9365,0.93868,FallingTops_X1_P494_4 ;FallingTops_X1_P675_8 ;FallingTops_X1_P839_12 ;FallingTops_X2_P269_2 ;FallingTops_X2_P493_4 ;FallingTops_X2_P674_8 ;FallingTops_X2_P838_12 ;FallingTops_X2_P965_26 ;FallingTops_X3_P268_2 ;FallingTops_X3_P492_4 ;FallingTops_X3_P673_8 ;FallingTops_X3_P837_12 ;FallingTops_X3_P964_26 
+2020-07-24,0.93855,0.94102,0.91959,0.9204,
+2020-07-31,0.92124,0.92302,0.9051,0.91378,
+2020-08-07,0.91315,0.92417,0.9044,0.9119,
+2020-08-14,0.91312,0.9198,0.9076,0.90908,FallingTops_X3_P269_2 
+2020-08-21,0.9091,0.91616,0.9005,0.91173,
+2020-08-28,0.91155,0.9128,0.9018,0.90381,
+2020-09-04,0.90391,0.91633,0.8994,0.9133,
+2020-09-11,0.9133,0.92004,0.9046,0.9088,
+2020-09-18,0.90867,0.91395,0.9046,0.91068,
+2020-09-25,0.9109,0.92962,0.9082,0.92757,FallingTops_X1_P270_2 ;FallingTops_X1_P495_4 ;FallingTops_X1_P676_8 ;FallingTops_X2_P494_4 ;FallingTops_X2_P675_8 ;FallingTops_X3_P493_4 ;FallingTops_X3_P674_8 
+2020-10-02,0.92849,0.92954,0.9159,0.92049,FallingTops_X1_P840_12 ;FallingTops_X2_P839_12 ;FallingTops_X3_P838_12 
+2020-10-09,0.91934,0.91997,0.90853,0.9094,
+2020-10-16,0.91042,0.91628,0.9081,0.91488,
+2020-10-23,0.91458,0.91655,0.9025,0.9035,
+2020-10-30,0.90405,0.9173,0.90369,0.91666,FallingTops_X1_P271_2 ;FallingTops_X2_P270_2 
+2020-11-06,0.91624,0.92077,0.8979,0.89878,FallingTops_X1_P496_4 ;FallingTops_X1_P677_8 ;FallingTops_X1_P841_12 ;FallingTops_X2_P495_4 ;FallingTops_X2_P676_8 ;FallingTops_X2_P840_12 ;FallingTops_X3_P494_4 ;FallingTops_X3_P675_8 ;FallingTops_X3_P839_12 
+2020-11-13,0.89925,0.9176,0.8978,0.91249,
+2020-11-20,0.9129,0.91515,0.9082,0.91082,FallingTops_X1_P272_2 ;FallingTops_X2_P271_2 ;FallingTops_X3_P270_2 
+2020-11-27,0.91056,0.9148,0.90331,0.90443,FallingTops_X2_P496_4 ;FallingTops_X2_P677_8 ;FallingTops_X2_P841_12 ;FallingTops_X3_P495_4 ;FallingTops_X3_P676_8 ;FallingTops_X3_P840_12 
+2020-12-04,0.90428,0.9093,0.8879,0.89153,
+2020-12-11,0.8909,0.89466,0.8845,0.88947,FallingTops_X2_P272_2 ;FallingTops_X3_P271_2 
+2020-12-18,0.88861,0.88957,0.8817,0.8829,
+2020-12-25,0.88475,0.89192,0.88337,0.89027,FallingTops_X3_P496_4 ;RisingTops_X1_P360_4 
+2021-01-01,0.88936,0.89188,0.879,0.88486,FallingTops_X3_P272_2 ;RisingTops_X1_P118_2 
+2021-01-08,0.88321,0.88845,0.8752,0.88727,RisingBottoms_M1_P1022_52 ;RisingBottoms_M1_P13_NN ;RisingBottoms_M1_P186_2 ;RisingBottoms_M1_P418_4 ;RisingBottoms_M1_P615_8 ;RisingBottoms_M1_P781_12 ;RisingBottoms_M1_P924_26 
+2021-01-15,0.88558,0.89204,0.88417,0.89073,
+2021-01-22,0.89023,0.89259,0.8833,0.88491,
+2021-01-29,0.88532,0.8919,0.88394,0.89035,RisingBottoms_M1_P1023_52 ;RisingBottoms_M1_P187_2 ;RisingBottoms_M1_P419_4 ;RisingBottoms_M1_P616_8 ;RisingBottoms_M1_P782_12 ;RisingBottoms_M1_P925_26 ;RisingBottoms_M2_P1022_52 ;RisingBottoms_M2_P186_2 ;RisingBottoms_M2_P418_4 ;RisingBottoms_M2_P615_8 ;RisingBottoms_M2_P781_12 ;RisingBottoms_M2_P924_26 
+2021-02-05,0.89,0.9046,0.88912,0.89867,FallingTops_X3_P677_8 ;RisingTops_X1_P119_2 ;RisingTops_X1_P361_4 ;RisingTops_X1_P575_8 ;RisingTops_X2_P118_2 ;RisingTops_X2_P360_4 
+2021-02-12,0.89867,0.90198,0.8885,0.89101,
+2021-02-19,0.89155,0.89955,0.8865,0.89611,RisingBottoms_M1_P1024_52 ;RisingBottoms_M1_P926_26 ;RisingBottoms_M2_P1023_52 ;RisingBottoms_M2_P187_2 ;RisingBottoms_M2_P419_4 ;RisingBottoms_M2_P616_8 ;RisingBottoms_M2_P782_12 ;RisingBottoms_M2_P925_26 ;RisingBottoms_M3_P1022_52 ;RisingBottoms_M3_P186_2 ;RisingBottoms_M3_P418_4 ;RisingBottoms_M3_P615_8 ;RisingBottoms_M3_P781_12 ;RisingBottoms_M3_P924_26 
+2021-02-26,0.8964,0.91018,0.8943,0.90833,FallingTops_X3_P841_12 ;RisingTops_X2_P119_2 ;RisingTops_X2_P361_4 ;RisingTops_X2_P575_8 ;RisingTops_X3_P118_2 ;RisingTops_X3_P360_4 
+2021-03-05,0.90805,0.9319,0.9064,0.93078,FallingTops_X3_P965_26 
+2021-03-12,0.9285,0.93755,0.92303,0.92923,
+2021-03-19,0.92869,0.93201,0.921,0.92924,RisingBottoms_M3_P187_2 
+2021-03-26,0.9297,0.94178,0.9216,0.93905,FallingTops_X1_P273_2 ;FallingTops_X1_P497_4 ;FallingTops_X1_P678_8 ;RisingTops_X3_P119_2 ;RisingTops_X3_P361_4 ;RisingTops_X3_P575_8 
+2021-04-02,0.93821,0.94726,0.9366,0.94132,
+2021-04-09,0.94229,0.9439,0.9226,0.9235,BullishFlag_X0_P6_NN ;FallingTops_X3_P1053_52 ;RisingBottoms_M3_P419_4 
+2021-04-16,0.92451,0.92684,0.9176,0.9197,FallingTops_X1_P679_8 ;FallingTops_X2_P273_2 ;FallingTops_X2_P497_4 ;FallingTops_X2_P678_8 
+2021-04-23,0.91928,0.92153,0.9123,0.91356,
+2021-04-30,0.91308,0.91815,0.9075,0.9129,
+2021-05-07,0.91243,0.91646,0.89988,0.9003,FallingTops_X3_P273_2 ;FallingTops_X3_P497_4 ;RisingBottoms_M3_P616_8 
+2021-05-14,0.90008,0.9094,0.8982,0.90123,
+2021-05-21,0.90114,0.90476,0.8949,0.8975,RisingBottoms_M3_P782_12 
+2021-05-28,0.89743,0.903,0.8925,0.8997,
+2021-06-04,0.89903,0.9054,0.894,0.89793,
+2021-06-11,0.89895,0.90102,0.8921,0.89779,
+2021-06-18,0.89782,0.9239,0.8959,0.92188,FallingTops_X1_P274_2 ;FallingTops_X1_P498_4 ;FallingTops_X2_P679_8 ;FallingTops_X3_P678_8 ;RisingBottoms_M1_P1025_52 ;RisingBottoms_M1_P420_4 ;RisingBottoms_M1_P617_8 ;RisingBottoms_M1_P783_12 ;RisingBottoms_M1_P927_26 ;RisingBottoms_M2_P1024_52 ;RisingBottoms_M2_P926_26 ;RisingBottoms_M3_P1023_52 ;RisingBottoms_M3_P925_26 
+2021-06-25,0.92165,0.92369,0.9137,0.9175,
+2021-07-02,0.91676,0.92748,0.916,0.9201,
+2021-07-09,0.92085,0.92676,0.91292,0.9136,FallingTops_X1_P275_2 ;FallingTops_X2_P274_2 ;FallingTops_X2_P498_4 ;FallingTops_X3_P679_8 ;Staircase_X0_P306_4 
+2021-07-16,0.91389,0.92035,0.9111,0.9186,
+2021-07-23,0.91866,0.9233,0.9151,0.9192,
+2021-07-30,0.91909,0.92024,0.9034,0.90489,FallingTops_X2_P275_2 ;FallingTops_X3_P274_2 ;FallingTops_X3_P498_4 ;RisingBottoms_M1_P188_2 ;RisingBottoms_M1_P421_4 ;RisingBottoms_M2_P420_4 ;Staircase_M1_P306_4 
+2021-08-06,0.90508,0.91566,0.9013,0.91383,RisingBottoms_M1_P1026_52 ;RisingBottoms_M1_P928_26 ;RisingBottoms_M2_P1025_52 ;RisingBottoms_M2_P617_8 ;RisingBottoms_M2_P783_12 ;RisingBottoms_M2_P927_26 ;RisingBottoms_M3_P1024_52 ;RisingBottoms_M3_P926_26 
+2021-08-13,0.91475,0.92421,0.9136,0.9149,
+2021-08-20,0.91555,0.9207,0.9093,0.9167,FallingTops_X3_P275_2 
+2021-08-27,0.9162,0.91997,0.91028,0.911,RisingBottoms_M1_P189_2 ;RisingBottoms_M2_P188_2 
+2021-09-03,0.91087,0.91893,0.9095,0.91304,RisingBottoms_M2_P421_4 ;RisingBottoms_M3_P420_4 ;RisingBottoms_M3_P617_8 
+2021-09-10,0.91304,0.9235,0.9127,0.91745,
+2021-09-17,0.91786,0.9325,0.9158,0.93138,RisingBottoms_M2_P189_2 ;RisingBottoms_M3_P188_2 ;Staircase_X1_P306_4 
+2021-09-24,0.93079,0.93331,0.9212,0.92423,
+2021-10-01,0.92389,0.93683,0.9232,0.93064,FallingTops_X1_P276_2 
+2021-10-08,0.92872,0.93111,0.9225,0.92745,
+2021-10-15,0.92636,0.93132,0.9192,0.92218,RisingBottoms_M3_P189_2 ;RisingBottoms_M3_P421_4 ;Staircase_M2_P306_4 
+2021-10-22,0.92328,0.92732,0.9146,0.91573,FallingTops_X2_P276_2 
+2021-10-29,0.916,0.92262,0.9096,0.9156,
+2021-11-05,0.9147,0.91751,0.90806,0.91145,RisingBottoms_M1_P190_2 ;RisingBottoms_M2_P13_NN ;RisingBottoms_M3_P783_12 
+2021-11-12,0.91246,0.92378,0.9098,0.92089,FallingTops_X3_P276_2 
+2021-11-19,0.921,0.93298,0.9181,0.92823,
+2021-11-26,0.92756,0.93735,0.921,0.92276,RisingTops_X1_P576_8 
+2021-12-03,0.92346,0.92728,0.9152,0.91664,RisingBottoms_M2_P190_2 
+2021-12-10,0.91726,0.92752,0.91618,0.92056,
+2021-12-17,0.9216,0.92944,0.9168,0.92311,
+2021-12-24,0.92373,0.9254,0.9162,0.91851,RisingBottoms_M3_P190_2 ;RisingTops_X1_P362_4 ;Staircase_X0_P307_4 
+2021-12-31,0.91856,0.92016,0.9099,0.91217,
+2022-01-07,0.9113,0.92326,0.91045,0.91872,
+2022-01-14,0.91836,0.92781,0.9087,0.9135,
+2022-01-21,0.91222,0.91812,0.9103,0.91074,
+2022-01-28,0.91152,0.93378,0.9103,0.93001,RisingBottoms_M1_P422_4 ;RisingBottoms_M1_P618_8 ;RisingBottoms_M1_P784_12 ;RisingBottoms_M1_P929_26 ;RisingBottoms_M2_P1026_52 ;RisingBottoms_M2_P928_26 ;RisingBottoms_M3_P1025_52 ;RisingBottoms_M3_P927_26 ;RisingTops_X1_P363_4 ;RisingTops_X1_P577_8 ;RisingTops_X1_P752_12 ;RisingTops_X2_P362_4 ;RisingTops_X2_P576_8 ;Staircase_M1_P307_4 
+2022-02-04,0.93081,0.9343,0.9174,0.92542,
+2022-02-11,0.92396,0.9297,0.9215,0.92578,
+2022-02-18,0.9248,0.92741,0.9183,0.92047,
+2022-02-25,0.92088,0.9289,0.9144,0.92512,
+2022-03-04,0.9267,0.9279,0.9144,0.91601,RisingBottoms_M1_P191_2 ;RisingBottoms_M1_P423_4 ;RisingBottoms_M2_P422_4 ;RisingTops_X1_P120_2 
+2022-03-11,0.9167,0.935,0.91567,0.93354,RisingBottoms_M1_P619_8 ;RisingBottoms_M1_P785_12 ;RisingBottoms_M1_P930_26 ;RisingBottoms_M2_P618_8 ;RisingBottoms_M2_P784_12 ;RisingBottoms_M2_P929_26 ;RisingBottoms_M3_P1026_52 ;RisingBottoms_M3_P928_26 ;RisingTops_X1_P364_4 ;RisingTops_X1_P578_8 ;RisingTops_X1_P753_12 ;RisingTops_X1_P904_26 ;RisingTops_X2_P363_4 ;RisingTops_X2_P577_8 ;RisingTops_X2_P752_12 ;RisingTops_X3_P362_4 ;RisingTops_X3_P576_8 ;Staircase_X1_P307_4 
+2022-03-18,0.93356,0.94601,0.93099,0.9315,
+2022-03-25,0.93131,0.93756,0.9254,0.9305,RisingBottoms_M1_P192_2 ;RisingBottoms_M2_P191_2 ;RisingTops_X1_P121_2 ;RisingTops_X2_P120_2 
+2022-04-01,0.93015,0.93814,0.9192,0.92533,
+2022-04-08,0.92516,0.9374,0.9235,0.93413,RisingBottoms_M2_P423_4 ;RisingBottoms_M2_P619_8 ;RisingBottoms_M2_P785_12 ;RisingBottoms_M2_P930_26 ;RisingBottoms_M3_P422_4 ;RisingBottoms_M3_P618_8 ;RisingBottoms_M3_P784_12 ;RisingBottoms_M3_P929_26 ;Staircase_M2_P307_4 
+2022-04-15,0.932,0.94434,0.9282,0.9426,RisingBottoms_M2_P192_2 ;RisingBottoms_M3_P191_2 ;RisingTops_X1_P1008_52 ;RisingTops_X1_P905_26 ;RisingTops_X2_P121_2 ;RisingTops_X2_P364_4 ;RisingTops_X2_P578_8 ;RisingTops_X2_P753_12 ;RisingTops_X2_P904_26 ;RisingTops_X3_P120_2 ;RisingTops_X3_P363_4 ;RisingTops_X3_P577_8 ;RisingTops_X3_P752_12 
+2022-04-22,0.94206,0.95925,0.9418,0.9569,
+2022-04-29,0.95631,0.97591,0.9541,0.97318,RisingBottoms_M3_P423_4 
+2022-05-06,0.97219,0.98921,0.9705,0.9884,BearishFlag_M0_P68_2 ;RisingBottoms_M3_P192_2 ;RisingTops_X2_P1008_52 ;RisingTops_X2_P905_26 ;RisingTops_X3_P121_2 ;RisingTops_X3_P364_4 ;RisingTops_X3_P578_8 ;RisingTops_X3_P753_12 ;RisingTops_X3_P904_26 
+2022-05-13,0.98766,1.00492,0.9867,1.00117,
+2022-05-20,1.0015,1.00643,0.9691,0.9737,
+2022-05-27,0.97332,0.97512,0.9541,0.95699,BearishFlag_M1_P68_2 
+2022-06-03,0.95666,0.96589,0.9548,0.9608,
+2022-06-10,0.96187,0.98981,0.9599,0.98759,
+2022-06-17,0.98761,1.00499,0.9616,0.9697,FallingTops_X1_P277_2 ;FallingTops_X1_P499_4 
+2022-06-24,0.96969,0.9714,0.9516,0.957,RisingBottoms_M3_P13_NN 
+2022-07-01,0.95809,0.96417,0.9492,0.95918,
+2022-07-08,0.95975,0.97975,0.95593,0.97619,BearishFlag_X1_P68_2 ;FallingTops_X2_P277_2 
+2022-07-15,0.9763,0.9886,0.97514,0.97519,
+2022-07-22,0.97577,0.979,0.9594,0.96069,BearishFlag_M2_P68_2 ;FallingTops_X2_P499_4 
+2022-07-29,0.96063,0.96677,0.9498,0.9512,RisingBottoms_M3_P619_8 ;RisingBottoms_M3_P785_12 
+2022-08-05,0.95108,0.96515,0.9468,0.96161,FallingTops_X3_P277_2 ;RisingTops_X1_P122_2 
+2022-08-12,0.9611,0.96351,0.9366,0.94083,RisingBottoms_M1_P193_2 
+2022-08-19,0.9413,0.95984,0.9403,0.9586,RisingBottoms_M1_P424_4 
+2022-08-26,0.95844,0.96924,0.9568,0.9662,BearishFlag_X2_P68_2 ;FallingTops_X3_P499_4 ;RisingTops_X1_P123_2 ;RisingTops_X1_P365_4 ;RisingTops_X2_P122_2 
+2022-09-02,0.96533,0.98609,0.96519,0.9803,RisingTops_X1_P579_8 
+2022-09-09,0.98179,0.98697,0.9543,0.9598,BearishFlag_M3_P68_2 ;RisingBottoms_M1_P194_2 ;RisingBottoms_M2_P193_2 ;RisingTops_X1_P754_12 
+2022-09-16,0.95859,0.96612,0.9476,0.9646,FallingBottoms_M1_P20_NN ;RisingBottoms_M2_P424_4 
+2022-09-23,0.96329,0.98502,0.9618,0.98139,RisingTops_X2_P123_2 ;RisingTops_X3_P122_2 
+2022-09-30,0.98172,0.99658,0.9735,0.986,RisingBottoms_M2_P194_2 ;RisingBottoms_M3_P193_2 ;RisingTops_X2_P365_4 ;RisingTops_X2_P579_8 ;RisingTops_X2_P754_12 
+2022-10-07,0.98657,0.99535,0.9777,0.9935,RisingBottoms_M3_P424_4 
+2022-10-14,0.9933,1.00739,0.9911,1.005,FallingTops_X1_P1054_52 ;FallingTops_X1_P278_2 ;FallingTops_X1_P966_26 ;RisingTops_X3_P1008_52 ;RisingTops_X3_P123_2 ;RisingTops_X3_P905_26 
+2022-10-21,1.00459,1.01478,0.9915,0.99771,FallingTops_X1_P500_4 ;FallingTops_X1_P680_8 ;FallingTops_X1_P842_12 ;RisingTops_X3_P365_4 ;RisingTops_X3_P579_8 ;RisingTops_X3_P754_12 
+2022-10-28,0.99538,1.00316,0.9836,0.996,RisingBottoms_M3_P194_2 
+2022-11-04,0.9959,1.01474,0.9908,0.99383,
+2022-11-11,0.99842,0.9987,0.9394,0.94088,BullishFlag_X1_P6_NN ;FallingBottoms_M1_P21_NN ;FallingBottoms_M2_P20_NN ;FallingTops_X1_P1055_52 ;FallingTops_X1_P279_2 ;FallingTops_X1_P501_4 ;FallingTops_X1_P681_8 ;FallingTops_X1_P843_12 ;FallingTops_X1_P967_26 ;FallingTops_X2_P1054_52 ;FallingTops_X2_P278_2 ;FallingTops_X2_P500_4 ;FallingTops_X2_P680_8 ;FallingTops_X2_P842_12 ;FallingTops_X2_P966_26 
+2022-11-18,0.94199,0.95574,0.9354,0.95432,
+2022-11-25,0.9533,0.95986,0.9382,0.94593,
+2022-12-02,0.94593,0.95474,0.932,0.93649,BearishFlag_M0_P317_4 ;FallingTops_X1_P1056_52 ;FallingTops_X1_P280_2 ;FallingTops_X1_P502_4 ;FallingTops_X1_P844_12 ;FallingTops_X1_P968_26 ;FallingTops_X2_P1055_52 ;FallingTops_X2_P279_2 ;FallingTops_X2_P501_4 ;FallingTops_X2_P681_8 ;FallingTops_X2_P843_12 ;FallingTops_X2_P967_26 ;FallingTops_X3_P1054_52 ;FallingTops_X3_P278_2 ;FallingTops_X3_P500_4 ;FallingTops_X3_P680_8 ;FallingTops_X3_P842_12 ;FallingTops_X3_P966_26 ;RisingBottoms_M3_P930_26 
+2022-12-09,0.93807,0.94558,0.9309,0.93307,BearishFlag_M0_P69_2 
+2022-12-16,0.93369,0.938,0.92079,0.93393,
+2022-12-23,0.9325,0.9348,0.9222,0.93282,
+2022-12-30,0.9332,0.93413,0.9197,0.92427,BearishFlag_M0_P318_4 ;BearishFlag_M0_P537_8 ;BearishFlag_M0_P70_2 ;BearishFlag_M1_P317_4 ;BearishFlag_M1_P69_2 ;FallingTops_X2_P280_2 ;FallingTops_X2_P502_4 ;FallingTops_X3_P279_2 ;FallingTops_X3_P501_4 ;FallingTops_X3_P681_8 
+2023-01-06,0.92438,0.9409,0.92105,0.92752,
+2023-01-13,0.92757,0.9362,0.9161,0.92666,
+2023-01-20,0.92682,0.92883,0.9084,0.91928,BearishFlag_M1_P318_4 ;BearishFlag_M1_P537_8 ;BearishFlag_M1_P70_2 ;FallingTops_X3_P280_2 
+2023-01-27,0.91918,0.92795,0.9153,0.92061,
+2023-02-03,0.92088,0.92882,0.9055,0.92567,
+2023-02-10,0.92765,0.9291,0.9155,0.92293,BearishFlag_X1_P69_2 ;FallingTops_X3_P502_4 
+2023-02-17,0.9232,0.93322,0.91357,0.92402,BearishFlag_M2_P69_2 
+2023-02-24,0.92563,0.94123,0.9215,0.93987,BearishFlag_X1_P537_8 ;FallingTops_X1_P682_8 ;FallingTops_X1_P845_12 ;FallingTops_X2_P844_12 ;FallingTops_X3_P843_12 
+2023-03-03,0.9397,0.94401,0.9338,0.93583,BearishFlag_X1_P317_4 ;BearishFlag_X1_P70_2 ;FallingTops_X1_P1057_52 ;FallingTops_X1_P281_2 ;FallingTops_X1_P503_4 ;FallingTops_X1_P969_26 ;FallingTops_X2_P1056_52 ;FallingTops_X2_P968_26 ;FallingTops_X3_P1055_52 ;FallingTops_X3_P967_26 
+2023-03-10,0.93563,0.94386,0.917,0.92108,BearishFlag_M0_P319_4 ;BearishFlag_M0_P71_2 ;BearishFlag_M2_P317_4 ;BearishFlag_M2_P70_2 
+2023-03-17,0.91749,0.93411,0.9065,0.9257,
+2023-03-24,0.92492,0.93171,0.9117,0.9193,BearishFlag_X1_P318_4 ;BearishFlag_X2_P69_2 ;FallingTops_X1_P1058_52 ;FallingTops_X1_P282_2 ;FallingTops_X1_P504_4 ;FallingTops_X1_P683_8 ;FallingTops_X1_P846_12 ;FallingTops_X2_P1057_52 ;FallingTops_X2_P281_2 ;FallingTops_X2_P503_4 ;FallingTops_X2_P682_8 ;FallingTops_X2_P845_12 ;FallingTops_X2_P969_26 ;FallingTops_X3_P1056_52 ;FallingTops_X3_P844_12 ;FallingTops_X3_P968_26 
+2023-03-31,0.91899,0.92231,0.911,0.9148,BearishFlag_M0_P320_4 ;BearishFlag_M1_P319_4 ;BearishFlag_M1_P71_2 ;BearishFlag_M2_P318_4 ;BearishFlag_M3_P69_2 
+2023-04-07,0.91401,0.91963,0.90045,0.9051,BearishFlag_M2_P537_8 
+2023-04-14,0.90404,0.91203,0.8859,0.8928,BearishFlag_X2_P317_4 ;BearishFlag_X2_P70_2 ;FallingTops_X2_P282_2 ;FallingTops_X2_P504_4 ;FallingTops_X3_P281_2 ;FallingTops_X3_P503_4 
+2023-04-21,0.8941,0.90029,0.8907,0.892,
+2023-04-28,0.8922,0.89764,0.8851,0.89371,
+2023-05-05,0.89271,0.89949,0.88197,0.89025,BearishFlag_M1_P320_4 ;BearishFlag_M3_P317_4 ;BearishFlag_M3_P70_2 
+2023-05-12,0.88967,0.89877,0.8867,0.89832,BearishFlag_X1_P319_4 ;BearishFlag_X1_P71_2 ;BearishFlag_X2_P318_4 ;FallingTops_X3_P282_2 ;FallingTops_X3_P504_4 
+2023-05-19,0.89769,0.90625,0.8918,0.899,
+2023-05-26,0.89854,0.90745,0.894,0.90449,BearishFlag_M2_P71_2 
+2023-06-02,0.90501,0.91476,0.9013,0.90866,BearishFlag_X1_P320_4 ;BearishFlag_X2_P537_8 ;FallingTops_X1_P283_2 ;FallingTops_X1_P505_4 ;FallingTops_X1_P684_8 ;FallingTops_X2_P683_8 ;FallingTops_X3_P682_8 
+2023-06-09,0.90795,0.91198,0.898,0.90272,FallingTops_X2_P846_12 ;FallingTops_X3_P845_12 
+2023-06-16,0.90266,0.91092,0.8901,0.89369,BearishFlag_M2_P319_4 ;BearishFlag_M3_P318_4 
+2023-06-23,0.89303,0.90133,0.89059,0.89641,
+2023-06-30,0.89594,0.9017,0.89113,0.89477,BearishFlag_X2_P319_4 ;BearishFlag_X2_P71_2 ;FallingTops_X2_P283_2 ;FallingTops_X2_P505_4 ;FallingTops_X2_P684_8 ;FallingTops_X3_P683_8 
+2023-07-07,0.89398,0.90042,0.8875,0.88778,BearishFlag_M2_P320_4 ;BearishFlag_M3_P537_8 ;BearishFlag_M3_P71_2 
+2023-07-14,0.88816,0.89179,0.85656,0.8613,
+2023-07-21,0.86163,0.86842,0.85543,0.8654,
+2023-07-28,0.86469,0.87365,0.85523,0.87005,BearishFlag_M3_P319_4 ;FallingTops_X3_P283_2 ;RisingBottoms_M1_P195_2 ;RisingBottoms_M1_P425_4 ;RisingBottoms_M1_P620_8 ;RisingBottoms_M1_P786_12 ;RisingTops_X1_P124_2 
+2023-08-04,0.86898,0.88059,0.8664,0.87239,
+2023-08-11,0.87228,0.8783,0.86896,0.876,BearishFlag_X2_P320_4 ;FallingTops_X3_P505_4 ;RisingTops_X1_P366_4 
+2023-08-18,0.87603,0.8828,0.87438,0.88098,BearishFlag_M3_P320_4 ;RisingBottoms_M1_P196_2 ;RisingBottoms_M1_P426_4 ;RisingBottoms_M2_P195_2 ;RisingBottoms_M2_P425_4 ;RisingBottoms_M2_P620_8 ;RisingBottoms_M2_P786_12 ;RisingTops_X1_P125_2 ;RisingTops_X2_P124_2 
+2023-08-25,0.88131,0.88763,0.8758,0.88402,
+2023-09-01,0.88377,0.8864,0.87444,0.8849,
+2023-09-08,0.88538,0.89449,0.88306,0.8923,FallingTops_X3_P684_8 ;RisingBottoms_M2_P196_2 ;RisingBottoms_M2_P426_4 ;RisingBottoms_M3_P195_2 ;RisingBottoms_M3_P425_4 ;RisingBottoms_M3_P620_8 ;RisingTops_X2_P125_2 ;RisingTops_X2_P366_4 ;RisingTops_X3_P124_2 
+2023-09-15,0.89124,0.89776,0.88958,0.89766,BullishFlag_X0_P718_12 ;FallingTops_X3_P846_12 
+2023-09-22,0.89661,0.90783,0.8931,0.90633,
+2023-09-29,0.90669,0.92253,0.90591,0.91451,FallingTops_X1_P506_4 ;FallingTops_X1_P685_8 ;RisingBottoms_M3_P196_2 ;RisingTops_X3_P125_2 ;RisingTops_X3_P366_4 
+2023-10-06,0.91439,0.9244,0.90727,0.90948,BullishFlag_X1_P718_12 ;FallingTops_X1_P847_12 ;FallingTops_X3_P969_26 
+2023-10-13,0.90932,0.91235,0.89863,0.90219,
+2023-10-20,0.90109,0.90422,0.89019,0.89133,RisingBottoms_M3_P426_4 
+2023-10-27,0.89121,0.9035,0.88878,0.90217,
+2023-11-03,0.90105,0.91125,0.89648,0.89882,
+2023-11-10,0.8981,0.90459,0.89532,0.90149,
+2023-11-17,0.90212,0.90522,0.88497,0.88502,FallingTops_X1_P284_2 ;FallingTops_X1_P507_4 ;FallingTops_X1_P686_8 ;FallingTops_X2_P506_4 ;FallingTops_X2_P685_8 ;FallingTops_X2_P847_12 
+2023-11-24,0.88643,0.88745,0.88045,0.88223,RisingBottoms_M3_P786_12 
+2023-12-01,0.882,0.8828,0.86787,0.86886,BullishFlag_M1_P6_NN ;FallingBottoms_M2_P21_NN ;FallingBottoms_M3_P20_NN 
+2023-12-08,0.87023,0.88206,0.86658,0.87965,
+2023-12-15,0.88005,0.88161,0.86298,0.87008,FallingTops_X2_P284_2 ;FallingTops_X2_P507_4 ;FallingTops_X2_P686_8 ;FallingTops_X3_P506_4 ;FallingTops_X3_P685_8 
+2023-12-22,0.86859,0.87113,0.85135,0.85503,
+2023-12-29,0.8555,0.85798,0.83322,0.84109,
+2024-01-05,0.8399,0.85771,0.83859,0.84945,FallingBottoms_M3_P21_NN 
+2024-01-12,0.84952,0.85662,0.84599,0.85171,BullishFlag_M1_P718_12 ;FallingTops_X3_P284_2 ;RisingBottoms_M1_P197_2 ;RisingBottoms_M1_P427_4 ;RisingBottoms_M1_P621_8 ;RisingBottoms_M1_P787_12 ;RisingTops_X1_P126_2 
+2024-01-19,0.85179,0.87044,0.85105,0.86764,FallingTops_X3_P507_4 ;RisingTops_X1_P367_4 
+2024-01-26,0.86786,0.87282,0.86061,0.86364,
+2024-02-02,0.86346,0.86806,0.85504,0.86669,RisingBottoms_M1_P198_2 ;RisingBottoms_M1_P428_4 ;RisingBottoms_M1_P622_8 ;RisingBottoms_M1_P788_12 ;RisingBottoms_M2_P197_2 ;RisingBottoms_M2_P427_4 ;RisingBottoms_M2_P621_8 ;RisingBottoms_M2_P787_12 
+2024-02-09,0.86649,0.87621,0.86431,0.8746,FallingTops_X3_P686_8 ;RisingTops_X1_P127_2 ;RisingTops_X1_P368_4 ;RisingTops_X1_P580_8 ;RisingTops_X2_P126_2 ;RisingTops_X2_P367_4 
+2024-02-16,0.8744,0.88857,0.87262,0.88025,
+2024-02-23,0.8808,0.88378,0.87418,0.88054,
+2024-03-01,0.8793,0.88926,0.87776,0.88292,BullishFlag_X2_P718_12 ;FallingTops_X3_P847_12 ;RisingBottoms_M1_P199_2 ;RisingBottoms_M2_P198_2 ;RisingBottoms_M3_P197_2 ;RisingTops_X1_P128_2 ;RisingTops_X1_P369_4 ;RisingTops_X1_P581_8 ;RisingTops_X1_P755_12 ;RisingTops_X2_P127_2 ;RisingTops_X2_P368_4 ;RisingTops_X2_P580_8 ;RisingTops_X3_P126_2 ;RisingTops_X3_P367_4 
+2024-03-08,0.88387,0.88663,0.87293,0.8764,
+2024-03-15,0.87685,0.8853,0.87467,0.8832,BullishFlag_M2_P718_12 ;RisingBottoms_M2_P428_4 ;RisingBottoms_M2_P622_8 ;RisingBottoms_M2_P788_12 ;RisingBottoms_M3_P427_4 ;RisingBottoms_M3_P621_8 ;RisingBottoms_M3_P787_12 
+2024-03-22,0.8826,0.90203,0.88212,0.8967,RisingBottoms_M1_P200_2 ;RisingBottoms_M2_P199_2 ;RisingBottoms_M3_P198_2 ;RisingTops_X2_P128_2 ;RisingTops_X2_P369_4 ;RisingTops_X2_P581_8 ;RisingTops_X2_P755_12 ;RisingTops_X3_P127_2 ;RisingTops_X3_P368_4 ;RisingTops_X3_P580_8 
+2024-03-29,0.89677,0.90715,0.89645,0.901,
+2024-04-05,0.90108,0.90953,0.89974,0.90161,
+2024-04-12,0.90177,0.91475,0.90124,0.91385,BullishFlag_X3_P718_12 ;RisingBottoms_M2_P200_2 ;RisingBottoms_M3_P199_2 ;RisingBottoms_M3_P428_4 ;RisingTops_X3_P128_2 ;RisingTops_X3_P369_4 ;RisingTops_X3_P581_8 ;RisingTops_X3_P755_12 
+2024-04-19,0.91245,0.9152,0.90102,0.90955,
+2024-04-26,0.90974,0.91568,0.90864,0.9133,
+2024-05-03,0.91264,0.92242,0.90054,0.90466,RisingBottoms_M3_P200_2 
+2024-05-10,0.90459,0.90986,0.90355,0.9059,
+2024-05-17,0.90479,0.91021,0.89876,0.90854,
+2024-05-24,0.90919,0.91583,0.90765,0.914,FallingTops_X1_P508_4 
+2024-05-31,0.91394,0.91537,0.90021,0.90185,BearishFlag_M0_P321_4 ;BearishFlag_M0_P72_2 ;FallingTops_X1_P687_8 ;FallingTops_X1_P848_12 
+2024-06-07,0.9018,0.90357,0.88807,0.8955,BearishFlag_M0_P538_8 ;RisingBottoms_M3_P622_8 
+2024-06-14,0.89625,0.89932,0.88926,0.88962,RisingBottoms_M3_P788_12 
+2024-06-21,0.89005,0.89444,0.88263,0.8929,BearishFlag_M1_P321_4 ;BearishFlag_M1_P72_2 
+2024-06-28,0.89322,0.90098,0.89127,0.89832,
+2024-07-05,0.89828,0.90504,0.8951,0.8951,FallingTops_X1_P285_2 ;FallingTops_X1_P509_4 ;FallingTops_X1_P688_8 ;FallingTops_X1_P849_12 ;FallingTops_X2_P508_4 ;FallingTops_X2_P687_8 ;FallingTops_X2_P848_12 
+2024-07-12,0.89525,0.9001,0.89135,0.894,
+2024-07-19,0.89445,0.8979,0.88192,0.88824,BearishFlag_M1_P538_8 
+2024-07-26,0.88877,0.8924,0.87764,0.8831,BearishFlag_X1_P321_4 ;BearishFlag_X1_P538_8 ;BearishFlag_X1_P72_2 ;FallingTops_X1_P286_2 ;FallingTops_X1_P510_4 ;FallingTops_X1_P689_8 ;FallingTops_X2_P285_2 ;FallingTops_X2_P509_4 ;FallingTops_X2_P688_8 ;FallingTops_X2_P849_12 ;FallingTops_X3_P508_4 ;FallingTops_X3_P687_8 ;FallingTops_X3_P848_12 
+2024-08-02,0.88285,0.88755,0.85705,0.85772,BearishFlag_M2_P72_2 
+2024-08-09,0.85795,0.86739,0.84317,0.8648,
+2024-08-16,0.86378,0.87484,0.86218,0.86584,FallingTops_X2_P286_2 ;FallingTops_X3_P285_2 
+2024-08-23,0.86641,0.86775,0.847,0.847,BearishFlag_M2_P321_4 ;FallingTops_X2_P510_4 ;FallingTops_X2_P689_8 ;FallingTops_X3_P509_4 ;FallingTops_X3_P688_8 ;Staircase_X0_P308_4 
+2024-08-30,0.84711,0.85103,0.83998,0.84974,
+2024-09-06,0.84938,0.85376,0.83736,0.8428,BearishFlag_X2_P72_2 ;FallingTops_X3_P286_2 ;RisingTops_X1_P129_2 
+2024-09-13,0.8427,0.85495,0.84215,0.8481,BearishFlag_M3_P72_2 
+2024-09-20,0.84771,0.8517,0.839,0.85001,
+2024-09-27,0.84972,0.85179,0.83987,0.84031,BearishFlag_M2_P538_8 ;RisingBottoms_M1_P429_4 ;RisingBottoms_M1_P623_8 ;RisingBottoms_M1_P789_12 ;RisingBottoms_M1_P931_26 ;Staircase_M1_P308_4 
+2024-10-04,0.84042,0.86077,0.84009,0.85788,BearishFlag_X2_P321_4 ;FallingTops_X3_P510_4 ;RisingBottoms_M1_P201_2 ;RisingTops_X1_P130_2 ;RisingTops_X1_P370_4 ;RisingTops_X2_P129_2 
+2024-10-11,0.85864,0.86144,0.85298,0.8563,
+2024-10-18,0.85733,0.86697,0.85692,0.8639,BearishFlag_M3_P321_4 ;BearishFlag_X2_P538_8 ;FallingTops_X3_P689_8 ;RisingBottoms_M1_P430_4 ;RisingBottoms_M1_P624_8 ;RisingBottoms_M1_P790_12 ;RisingBottoms_M2_P429_4 ;RisingBottoms_M2_P623_8 ;RisingBottoms_M2_P789_12 ;RisingBottoms_M2_P931_26 ;RisingTops_X1_P582_8 
+2024-10-25,0.86472,0.8686,0.86326,0.8663,RisingBottoms_M1_P202_2 ;RisingBottoms_M2_P201_2 ;RisingTops_X1_P131_2 ;RisingTops_X1_P371_4 ;RisingTops_X2_P130_2 ;RisingTops_X2_P370_4 ;RisingTops_X3_P129_2 ;Staircase_X1_P308_4 
+2024-11-01,0.86743,0.87111,0.86258,0.8694,FallingTops_X3_P849_12 ;RisingTops_X1_P756_12 
+2024-11-08,0.8674,0.8774,0.86146,0.87518,BearishFlag_M3_P538_8 ;RisingBottoms_M1_P431_4 ;RisingBottoms_M1_P625_8 ;RisingBottoms_M2_P430_4 ;RisingBottoms_M2_P624_8 ;RisingBottoms_M2_P790_12 ;RisingBottoms_M3_P429_4 ;RisingBottoms_M3_P623_8 ;RisingBottoms_M3_P789_12 ;RisingTops_X1_P583_8 ;RisingTops_X2_P582_8 ;Staircase_M2_P308_4 
+2024-11-15,0.87457,0.89177,0.87457,0.88695,RisingBottoms_M1_P203_2 ;RisingBottoms_M2_P202_2 ;RisingBottoms_M3_P201_2 ;RisingTops_X1_P132_2 ;RisingTops_X1_P372_4 ;RisingTops_X2_P131_2 ;RisingTops_X2_P371_4 ;RisingTops_X3_P130_2 ;RisingTops_X3_P370_4 
+2024-11-22,0.8852,0.89575,0.88007,0.89363,BullishFlag_X2_P6_NN ;RisingTops_X1_P757_12 ;RisingTops_X2_P756_12 
+2024-11-29,0.88995,0.89186,0.87951,0.8807,
+2024-12-06,0.8807,0.88896,0.8734,0.87812,RisingBottoms_M1_P204_2 ;RisingBottoms_M2_P203_2 ;RisingBottoms_M3_P202_2 
+2024-12-13,0.87849,0.89457,0.87583,0.89201,RisingBottoms_M2_P431_4 ;RisingBottoms_M2_P625_8 ;RisingBottoms_M3_P430_4 ;RisingBottoms_M3_P624_8 ;RisingBottoms_M3_P790_12 ;RisingTops_X1_P133_2 ;RisingTops_X2_P132_2 ;RisingTops_X3_P131_2 
+2024-12-20,0.89194,0.90216,0.88983,0.893,RisingTops_X2_P372_4 ;RisingTops_X3_P371_4 
+2024-12-27,0.89255,0.90274,0.89102,0.90186,RisingBottoms_M2_P204_2 ;RisingBottoms_M3_P203_2 ;RisingTops_X2_P583_8 ;RisingTops_X2_P757_12 ;RisingTops_X3_P582_8 ;RisingTops_X3_P756_12 
+2025-01-03,0.9005,0.91371,0.90043,0.90822,RisingBottoms_M3_P431_4 ;RisingTops_X2_P133_2 ;RisingTops_X3_P132_2 
+2025-01-10,0.9085,0.91883,0.90079,0.91603,FallingTops_X1_P1059_52 ;FallingTops_X1_P511_4 ;FallingTops_X2_P1058_52 ;FallingTops_X3_P1057_52 ;RisingTops_X3_P372_4 
+2025-01-17,0.9164,0.92011,0.90775,0.91443,FallingTops_X1_P690_8 ;FallingTops_X1_P850_12 ;FallingTops_X1_P970_26 ;RisingTops_X3_P583_8 ;RisingTops_X3_P757_12 
+2025-01-24,0.91262,0.91522,0.9027,0.90483,BearishFlag_M0_P73_2 ;FallingTops_X1_P287_2 ;RisingBottoms_M3_P204_2 ;RisingTops_X3_P133_2 
+2025-01-31,0.9052,0.91158,0.89648,0.91008,
+2025-02-07,0.9151,0.91966,0.90012,0.90923,FallingTops_X1_P1060_52 ;FallingTops_X1_P14_NN ;FallingTops_X1_P512_4 ;FallingTops_X1_P691_8 ;FallingTops_X1_P851_12 ;FallingTops_X1_P971_26 ;FallingTops_X2_P1059_52 ;FallingTops_X2_P511_4 ;FallingTops_X2_P690_8 ;FallingTops_X2_P850_12 ;FallingTops_X2_P970_26 ;FallingTops_X3_P1058_52 
+2025-02-14,0.91017,0.91557,0.89717,0.89949,BearishFlag_M1_P73_2 ;FallingTops_X1_P288_2 ;FallingTops_X2_P287_2 
+2025-02-21,0.89809,0.9055,0.89674,0.89755,RisingBottoms_M3_P625_8 
+2025-02-28,0.8965,0.9036,0.89118,0.90243,
+2025-03-07,0.9021,0.90312,0.87666,0.8792,FallingTops_X1_P1061_52 ;FallingTops_X1_P289_2 ;FallingTops_X1_P513_4 ;FallingTops_X1_P692_8 ;FallingTops_X1_P852_12 ;FallingTops_X1_P972_26 ;FallingTops_X2_P1060_52 ;FallingTops_X2_P288_2 ;FallingTops_X2_P512_4 ;FallingTops_X2_P691_8 ;FallingTops_X2_P851_12 ;FallingTops_X2_P971_26 ;FallingTops_X3_P1059_52 ;FallingTops_X3_P287_2 ;FallingTops_X3_P511_4 ;FallingTops_X3_P690_8 ;FallingTops_X3_P850_12 ;FallingTops_X3_P970_26 
+2025-03-09,0.8966,0.89708,0.87585,0.87734,BullishFlag_M2_P6_NN 
+2025-03-16,0.87998,0.88627,0.8773,0.88409,
+2025-03-23,0.8812,0.88454,0.8756,0.88292,
+2025-03-30,0.88269,0.8853,0.87815,0.88085,
+2025-04-02,0.88382,0.8843,0.88,0.88,BearishFlag_X1_P73_2 ;BullishFlag_X3_P6_NN ;FallingTops_X1_P15_NN ;FallingTops_X1_P514_4 ;FallingTops_X1_P693_8 ;FallingTops_X1_P853_12 ;FallingTops_X1_P973_26 ;FallingTops_X2_P1061_52 ;FallingTops_X2_P14_NN ;FallingTops_X2_P289_2 ;FallingTops_X2_P513_4 ;FallingTops_X2_P692_8 ;FallingTops_X2_P852_12 ;FallingTops_X2_P972_26 ;FallingTops_X3_P1060_52 ;FallingTops_X3_P288_2 ;FallingTops_X3_P512_4 ;FallingTops_X3_P691_8 ;FallingTops_X3_P851_12 ;FallingTops_X3_P971_26 
+2025-04-04,0.88047,0.88553,0.84763,0.85994,BearishFlag_M2_P73_2 ;RisingBottoms_M3_P931_26 
+2025-04-11,0.85432,0.8674,0.80989,0.81487,
+2025-04-18,0.81814,0.8269,0.81135,0.81561,
+2025-04-25,0.8154,0.83348,0.80391,0.82709,FallingTops_X3_P289_2 
+2025-05-02,0.8283,0.83332,0.8191,0.82631,
+2025-05-09,0.82546,0.8341,0.81852,0.83091,FallingTops_X1_P515_4 ;FallingTops_X2_P514_4 ;FallingTops_X3_P513_4 
+2025-05-16,0.83439,0.84764,0.8324,0.8375,BearishFlag_X2_P73_2 ;FallingTops_X1_P290_2 ;FallingTops_X1_P694_8 ;FallingTops_X1_P854_12 ;FallingTops_X2_P15_NN ;FallingTops_X2_P693_8 ;FallingTops_X2_P853_12 ;FallingTops_X2_P973_26 ;FallingTops_X3_P1061_52 ;FallingTops_X3_P14_NN ;FallingTops_X3_P692_8 ;FallingTops_X3_P852_12 ;FallingTops_X3_P972_26 
+2025-05-23,0.83605,0.8366,0.8204,0.8204,BearishFlag_M3_P73_2 
+2025-05-30,0.82051,0.83476,0.81874,0.8217,
+2025-06-06,0.82232,0.82499,0.81565,0.82156,
+2025-06-13,0.82179,0.82418,0.80555,0.81028,FallingTops_X1_P695_8 ;FallingTops_X1_P855_12 ;FallingTops_X2_P290_2 ;FallingTops_X2_P515_4 ;FallingTops_X2_P694_8 ;FallingTops_X2_P854_12 ;FallingTops_X3_P514_4 ;FallingTops_X3_P693_8 ;FallingTops_X3_P853_12 ;FallingTops_X3_P973_26 
+2025-06-20,0.81076,0.82153,0.80885,0.8176,
+2025-06-27,0.81681,0.8195,0.79573,0.79836,
+2025-07-04,0.79847,0.79945,0.78718,0.7933,FallingTops_X3_P290_2 ;RisingBottoms_M1_P205_2 ;RisingBottoms_M1_P432_4 
+2025-07-11,0.794,0.7994,0.7917,0.7964,
+2025-07-18,0.7963,0.8063,0.7944,0.8013,FallingTops_X3_P515_4 
+2025-07-25,0.7996,0.8022,0.7908,0.7948,RisingBottoms_M2_P205_2 
+2025-08-01,0.7952,0.8171,0.7942,0.8038,RisingBottoms_M2_P432_4 
+2025-08-08,0.8028,0.8117,0.8023,0.808,FallingTops_X1_P516_4 
+2025-08-15,0.8072,0.8131,0.8019,0.8063,FallingTops_X2_P695_8 ;FallingTops_X2_P855_12 ;FallingTops_X3_P694_8 ;FallingTops_X3_P854_12 
+2025-08-22,0.8046,0.8103,0.7998,0.8013,FallingTops_X1_P291_2 ;RisingBottoms_M3_P205_2 
+2025-08-27,0.7997,0.8076,0.7997,0.802,FallingTops_X2_P516_4 ;RisingBottoms_M3_P432_4 
+2025-08-29,0.7997,0.8076,0.7983,0.8002,FallingTops_X3_P695_8 ;RisingTops_X1_P584_8 
+2025-09-05,0.7985,0.8072,0.7954,0.7981,
+2025-09-12,0.7988,0.8004,0.7912,0.7963,FallingTops_X2_P291_2 ;FallingTops_X3_P516_4 
+2025-09-19,0.7962,0.7972,0.7827,0.7953,
+2025-09-24,0.7942,0.7972,0.7906,0.7949,RisingBottoms_M1_P206_2 
+2025-09-26,0.7942,0.8013,0.7906,0.7975,FallingTops_X3_P291_2 ;RisingTops_X1_P134_2 
+2025-09-29,0.7968,0.7987,0.7948,0.7974,
+2025-10-03,0.7968,0.8,0.7925,0.7953,RisingBottoms_M2_P206_2 
+2025-10-10,0.7966,0.8075,0.7944,0.7989,RisingTops_X1_P135_2 ;RisingTops_X1_P373_4 ;RisingTops_X2_P134_2 
+2025-10-13,0.8029,0.8057,0.7991,0.8038,FallingTops_X3_P15_NN ;FallingTops_X3_P855_12 ;RisingTops_X2_P584_8 
+2025-10-15,0.8029,0.8057,0.7955,0.7966,RisingBottoms_M3_P206_2 
+2025-10-17,0.8029,0.8057,0.787,0.7929,RisingTops_X1_P136_2 ;RisingTops_X2_P135_2 ;RisingTops_X3_P134_2 
+2025-10-24,0.7917,0.7986,0.7904,0.7954,
+2025-10-28,0.7973,0.7973,0.7923,0.7931,
+2025-10-31,0.7973,0.8052,0.7923,0.8042,RisingTops_X2_P136_2 ;RisingTops_X2_P373_4 ;RisingTops_X3_P135_2 
+2025-11-07,0.8041,0.8124,0.803,0.8048,
+2025-11-10,0.8052,0.8072,0.8042,0.8048,
+2025-11-14,0.8052,0.8072,0.7876,0.7937,
+2025-11-21,0.7933,0.8098,0.7917,0.8084,FallingTops_X1_P292_2 ;FallingTops_X1_P517_4 ;RisingTops_X3_P136_2 ;RisingTops_X3_P373_4 ;RisingTops_X3_P584_8 
+2025-11-28,0.808,0.8101,0.8023,0.8037,
+2025-12-05,0.8031,0.8054,0.799,0.8044,
+2025-12-12,0.8036,0.8085,0.7922,0.7959,FallingTops_X1_P293_2 ;FallingTops_X1_P518_4 ;FallingTops_X2_P292_2 ;FallingTops_X2_P517_4 
+2025-12-19,0.7953,0.7987,0.7924,0.7952,
+2025-12-26,0.7939,0.7959,0.7858,0.7891,
+2026-01-02,0.7879,0.7942,0.787,0.7921,
+2026-01-09,0.7916,0.8017,0.7904,0.8011,FallingTops_X1_P294_2 ;FallingTops_X2_P293_2 ;FallingTops_X2_P518_4 ;FallingTops_X3_P292_2 ;FallingTops_X3_P517_4 
+2026-01-16,0.8006,0.804,0.7953,0.8029,
+2026-01-23,0.8012,0.8023,0.7788,0.7801,
+2026-01-30,0.7801,0.7803,0.7603,0.7729,FallingTops_X2_P294_2 ;FallingTops_X3_P293_2 ;FallingTops_X3_P518_4 
+2026-02-06,0.7706,0.7817,0.77,0.7757,
+2026-02-13,0.7757,0.7771,0.7627,0.7674,
+2026-02-20,0.767,0.7772,0.767,0.7758,FallingTops_X3_P294_2 
+2026-02-26,0.7729,0.7768,0.7707,0.7738,

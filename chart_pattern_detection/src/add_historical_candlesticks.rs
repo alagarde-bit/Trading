@@ -155,6 +155,27 @@ fn main() {
         "../merged_candlesticks_NZDJPY.csv",
         "../historical_candlesticks_NZDJPY.csv"
     );
+
+    // Process GBPUSD
+    println!("Processing GBPUSD...");
+    process_historical_candlesticks(
+        "../merged_candlesticks_GBPUSD.csv",
+        "../historical_candlesticks_GBPUSD.csv"
+    );
+
+    // Process USDCHF
+    println!("Processing USDCHF...");
+    process_historical_candlesticks(
+        "../merged_candlesticks_USDCHF.csv",
+        "../historical_candlesticks_USDCHF.csv"
+    );
+
+    // Process USDJPY
+    println!("Processing USDJPY...");
+    process_historical_candlesticks(
+        "../merged_candlesticks_USDJPY.csv",
+        "../historical_candlesticks_USDJPY.csv"
+    );
 }
 
 fn process_historical_candlesticks(input_file: &str, output_file: &str) {

@@ -1,6 +1,7 @@
 import requests
 import pandas as pd
 import os
+import time
 from datetime import datetime
 
 pairs = [("GBP", "AUD"), ("GBP", "USD"), ("USD", "CHF"), ("USD", "JPY"), ("NZD", "JPY")]
@@ -25,6 +26,14 @@ for from_symbol, to_symbol in pairs:
     
     # Convert to DataFrame
     new_df = pd.DataFrame.from_dict(time_series, orient="index")
+    if new_df.empty:
+        print(f"No new data for {from_symbol}/{to_symbol} monthly")
+        time.sleep(1.5)  # Rate limit: wait before next request
+        continue
+    if len(new_df.columns) != 4:
+        print(f"Unexpected monthly format for {from_symbol}/{to_symbol} (got {len(new_df.columns)} columns)")
+        time.sleep(1.5)
+        continue
     new_df.columns = ["open", "high", "low", "close"]
     new_df.index = pd.to_datetime(new_df.index)
     
@@ -49,3 +58,4 @@ for from_symbol, to_symbol in pairs:
         print(f"Updated {from_symbol}/{to_symbol} monthly with {len(new_df)} new entries")
     else:
         print(f"No new data for {from_symbol}/{to_symbol} monthly")
+    time.sleep(1.5)  # Rate limit: wait before next request

@@ -494,4 +494,19 @@ fn main() {
     process_dataset("../NZDJPY_daily.csv", "../intermediate_NZDJPY_daily.csv", &daily_config);
     process_dataset("../NZDJPY_weekly.csv", "../intermediate_NZDJPY_weekly.csv", &weekly_config);
     process_dataset("../NZDJPY_monthly.csv", "../intermediate_NZDJPY_monthly.csv", &monthly_config);
+
+    // Process GBPUSD datasets
+    process_dataset("../GBPUSD_daily.csv", "../intermediate_GBPUSD_daily.csv", &daily_config);
+    process_dataset("../GBPUSD_weekly.csv", "../intermediate_GBPUSD_weekly.csv", &weekly_config);
+    process_dataset("../GBPUSD_monthly.csv", "../intermediate_GBPUSD_monthly.csv", &monthly_config);
+
+    // Process USDCHF datasets
+    process_dataset("../USDCHF_daily.csv", "../intermediate_USDCHF_daily.csv", &daily_config);
+    process_dataset("../USDCHF_weekly.csv", "../intermediate_USDCHF_weekly.csv", &weekly_config);
+    process_dataset("../USDCHF_monthly.csv", "../intermediate_USDCHF_monthly.csv", &monthly_config);
+
+    // Process USDJPY datasets
+    process_dataset("../USDJPY_daily.csv", "../intermediate_USDJPY_daily.csv", &daily_config);
+    process_dataset("../USDJPY_weekly.csv", "../intermediate_USDJPY_weekly.csv", &weekly_config);
+    process_dataset("../USDJPY_monthly.csv", "../intermediate_USDJPY_monthly.csv", &monthly_config);
 }

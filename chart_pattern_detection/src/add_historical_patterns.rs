@@ -155,6 +155,27 @@ fn main() {
         "../merged_patterns_NZDJPY_all.csv",
         "../historical_patterns_NZDJPY_all.csv"
     );
+
+    // Process GBPUSD
+    println!("Processing GBPUSD...");
+    process_historical_patterns(
+        "../merged_patterns_GBPUSD_all.csv",
+        "../historical_patterns_GBPUSD_all.csv"
+    );
+
+    // Process USDCHF
+    println!("Processing USDCHF...");
+    process_historical_patterns(
+        "../merged_patterns_USDCHF_all.csv",
+        "../historical_patterns_USDCHF_all.csv"
+    );
+
+    // Process USDJPY
+    println!("Processing USDJPY...");
+    process_historical_patterns(
+        "../merged_patterns_USDJPY_all.csv",
+        "../historical_patterns_USDJPY_all.csv"
+    );
 }
 
 fn process_historical_patterns(input_file: &str, output_file: &str) {

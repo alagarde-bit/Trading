@@ -216,6 +216,18 @@ fn main() {
     // Process NZDJPY
     println!("Processing NZDJPY data combination...");
     process_combine_patterns_and_indicators("NZDJPY");
+
+    // Process GBPUSD
+    println!("Processing GBPUSD data combination...");
+    process_combine_patterns_and_indicators("GBPUSD");
+
+    // Process USDCHF
+    println!("Processing USDCHF data combination...");
+    process_combine_patterns_and_indicators("USDCHF");
+
+    // Process USDJPY
+    println!("Processing USDJPY data combination...");
+    process_combine_patterns_and_indicators("USDJPY");
 }
 
 fn process_combine_patterns_and_indicators(currency: &str) {
