@@ -4,7 +4,7 @@ Daily FX prediction and backtest pipeline for five pairs: **GBPAUD, GBPUSD, USDC
 
 It loads combined OHLC + pattern + indicator files, merges CFTC TFF (Commitments of Traders) features, trains an XGBoost 5-day return model with walk-forward validation, then runs a trade simulation.
 
-Repo: https://github.com/alagarde-bit/AI-Bots
+Repo: https://github.com/alagarde-bit/Trading
 
 ## What you need
 
@@ -17,8 +17,8 @@ You do **not** need an API key or Rust to run the model. Combined pair files and
 ## Setup
 
 ```bash
-git clone https://github.com/alagarde-bit/AI-Bots.git
-cd AI-Bots
+git clone https://github.com/alagarde-bit/Trading.git
+cd Trading
 ```
 
 If this project lives in a subfolder on your machine, `cd` into it (for example `FX_Trader`).
